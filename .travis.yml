@@ -8,7 +8,7 @@ install:
 
 script:
   - cd src
-  - ../binaries/hugo
+  - ../binaries/hugo --theme=hyde-a
 
 deploy:
   provider: pages
