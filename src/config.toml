@@ -1,0 +1,104 @@
+baseurl = "http://purplepalmdash.github.io"
+title = "Dash"
+languageCode = "en-us"
+#disqusShortname = "dashsagittariussglory" # Optional, enable Disqus integration
+MetaDataFormat = "toml"
+theme = "hyde-a"
+paginate = 5
+
+[author]
+    name = "Dash"
+
+[permalinks]
+    # Optional. Change the permalink format for the 'post' content type.
+    # The format shown here is the same one Jekyll/Octopress uses by default.
+    post = "/blog/:year/:month/:day/:title/"
+
+[taxonomies]
+    # Optional. Use if you want tags and lists.
+    category = "categories"
+
+#
+# All parameters below here are optional and can be mixed and matched.
+#
+[params]
+    # If false display full article contents in blog index.
+    # Otherwise show description and 'read on' link to individual blog post page.
+    # Default (if omitted) is true.
+    truncate = false
+
+    # Used when a given page doesn't set its own.
+    defaultDescription = "Get busy living, or get busy dying."
+    defaultKeywords = "unix,virtualization,embedded,linux"
+
+    # Changes sidebar background and link/accent colours.
+    # See below for more colour options.
+    # This also works: "theme-base-08 layout-reverse", or just "layout-reverse".
+    theme = "theme-base-0c"
+
+    # Select a syntax highight.
+    # Check the static/css/highlight directory for options.
+    highlight = "googlecode"
+
+    # Displays under the author name in the sidebar, keep it short.
+    # You can use markdown here.
+    tagline = "Get busy living, or get busy dying."
+
+    # Text for the top menu link, which goes the root URL for the site.
+    # Default (if omitted) is "Blog".
+    home = "Blog"
+    myhome = "myblog1"
+
+    # Metadata used to drive integrations.
+    #googleAuthorship = "106572959364703833986"
+    #googleAnalytics = "UA-42175003-1"
+    gravatarHash = "49381c0004d32c0a4296b92dff0c0ae5"
+
+    # Sidebar social links, these must be full URLs.
+    github = "https://github.com/purplepalmdash"
+    bitbucket = ""
+    linkedin = "https://cn.linkedin.com/in/yang-feipeng-1b909319"
+    googleplus = "https://plus.google.com/u/0/106572959364703833986"
+    facebook = "https://www.facebook.com/yang.feipeng"
+    twitter = "https://twitter.com/dashwillfly"
+    youtube = ""
+
+    # Other social-like sidebar links
+    rss = true # switch to true to enable RSS icon link
+    #flattr = ""  # populate with your flattr uid
+
+    #pygmentsuseclasses = false
+    pygmentsuseclasses = true
+    #pygmentsstyle = "native"
+    pygmentsstyle = "solarized_dark"
+    #pygmentscodefences = true
+
+
+#######################################
+# Menus added here, result in side bar
+#######################################
+
+[[menu.main]]
+    name = "First Page"
+    url = "/"
+    weight = 1
+
+[[menu.main]]
+    name = "All Posts"
+    url = "/post/"
+    weight = 2
+
+[[menu.main]]
+    name = "Linux"
+    url = "/categories/linux/"
+    weight = 3
+
+[[menu.main]]
+    name = "Embedded System"
+    url = "/categories/embedded/"
+    weight = 4 
+
+[[menu.main]]
+    name = "Virtualization"
+    url = "/categories/virtualization"
+    weight = 5 

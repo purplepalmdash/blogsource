@@ -1,0 +1,13 @@
+---
+categories: ["Embedded"]
+comments: true
+date: 2015-11-05T09:53:38Z
+title: FRDM-KL02Z Tips(1)
+url: /2015/11/05/frdm-kl02z-tips-1/
+---
+
+Reference Material:   
+[http://www.freescale.com/zh-Hans/products/arm-processors/kinetis-cortex-m/l-series/freedom-development-platform-for-the-kinetis-kl02-family:FRDM-KL02Z?tab=In-Depth_Tab](http://www.freescale.com/zh-Hans/products/arm-processors/kinetis-cortex-m/l-series/freedom-development-platform-for-the-kinetis-kl02-family:FRDM-KL02Z?tab=In-Depth_Tab)   
+
+### Minicom
+115200/data-bit: 8/ no parity/stop bit 1.    

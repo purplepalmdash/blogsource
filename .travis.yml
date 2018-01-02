@@ -1,0 +1,21 @@
+addons:
+  apt:
+    packages:
+      - python-pygments
+
+install:
+  - rm -rf public || exit 0
+
+script:
+  - cd src
+  - ../binaries/hugo
+
+deploy:
+  provider: pages
+  skip_cleanup: true
+  local_dir: public
+  github_token: $GITHUB_TOKEN # Set in travis-ci.org dashboard
+  on:
+    branch: master
+  repo: purplepalmdash/purplepalmdash.github.io
+  target_branch: master

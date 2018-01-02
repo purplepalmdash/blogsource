@@ -1,0 +1,14 @@
+---
+categories: ["Linux"]
+comments: true
+date: 2015-10-09T22:21:11Z
+title: 20151009备注
+url: /2015/10/09/20151009bei-zhu/
+---
+
+### Mirantis
+定时任务，更新Mirantis镜像
+
+
+### Autossh Issue
+取远端服务器上的某个值，若该值为真，则临时建立反向链接。     
