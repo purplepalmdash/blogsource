@@ -556,4 +556,15 @@ dash@ubuntu:~/redsocks$ diff redsocks.conf redsocks.conf.example
 > }
 ``` 
 
+### usb network sharing
+ZTE cellphone for sharing its connection:    
 
+```
+auto usb0-
+allow-hotplug usb0
+iface usb0 inet static
+address 192.168.42.75
+netmask 255.255.255.0
+up route add default gw 192.168.42.129 dev usb0
+down route del default gw 192.168.42.129 dev usb0
+```
