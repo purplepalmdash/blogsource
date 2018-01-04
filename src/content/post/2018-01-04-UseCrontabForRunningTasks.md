@@ -33,3 +33,19 @@ this file you could do whatever you want.
 
 ![/images/2018_01_04_17_18_39_448x169.jpg](/images/2018_01_04_17_18_39_448x169.jpg)
 
+### SomeTips For Virtualbox
+[https://www.virtualbox.org/manual/ch09.html](https://www.virtualbox.org/manual/ch09.html)    
+
+```
+9.11.4. Binding NAT sockets to a specific interface
+By default, VirtualBox's NAT engine will route TCP/IP packets through the default interface assigned by the host's TCP/IP stack. (The technical reason for this is that the NAT engine uses sockets for communication.) If, for some reason, you want to change this behavior, you can tell the NAT engine to bind to a particular IP address instead. Use the following command:
+
+VBoxManage modifyvm "VM name" --natbindip1 "10.45.0.2"
+After this, all outgoing traffic will be sent through the interface with the IP address 10.45.0.2. Please make sure that this interface is up and running prior to this assignment.
+```
+
+Some reference topics:    
+
+[https://forums.virtualbox.org/viewtopic.php?f=6&t=81631](https://forums.virtualbox.org/viewtopic.php?f=6&t=81631)    
+
+[https://forums.virtualbox.org/viewtopic.php?f=1&t=38879](https://forums.virtualbox.org/viewtopic.php?f=1&t=38879)    
