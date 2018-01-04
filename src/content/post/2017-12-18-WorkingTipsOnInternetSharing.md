@@ -72,7 +72,7 @@ $ sudo service hostapd restart
 If you didn't see your hostapd working, simply reboot your machine, and check
 again.    
 
-#### hostapd configuration
+#### 8188eu hostapd configuration
 Your hostapd configuration file is located in `/etc/hostapd/hostapd.conf`,
 following are the configuration example:    
 
@@ -115,6 +115,27 @@ $ sudo systemctl status hostapd
    CGroup: /system.slice/hostapd.service
            └─1525 /usr/local/bin/hostapd -B -P /var/run/hostapd.pid /etc/hostapd/hostapd.conf
 ```
+#### ra2770 configuration
+Edit the /etc/hostapd/hostapd.conf file listed as following:    
+
+```
+# RT2770
+interface=wlan0
+driver=nl80211
+ssid=my_ap
+hw_mode=g
+channel=6
+macaddr_acl=0
+auth_algs=1
+ignore_broadcast_ssid=0
+wpa=3
+wpa_passphrase=xxxxxxxxxxxxxxxxxxxx
+wpa_key_mgmt=WPA-PSK
+wpa_pairwise=TKIP
+rsn_pairwise=CCMP
+```
+
+
 #### wlan0 configuration
 Setup the wlan0 ip address via following:    
 

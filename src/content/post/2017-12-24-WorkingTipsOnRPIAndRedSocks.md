@@ -480,6 +480,22 @@ wpa_passphrase=xxxxxxxxxxx
 $ sudo systemctl enable hostapd
 $ sudo systemctl start hostapd
 ```
+Or if you couldnot enable and start the hostpad via systemd, simply use the
+following configuration:    
+
+```
+$ sudo vim /etc/default/hostapd
+Change:
+#DAEMON_CONF=""
+to
+DAEMON_CONF="/etc/hostapd/hostapd.conf"
+
+Check the DAEMON_OPTS="" is preceded by a #, so is #DAEMON_OPTS=""
+And save.
+```
+Then your hostapd will start at the systemboot.    
+
+
 ### iptables rules
 Use iptables-persistent for saving the rules:    
 
