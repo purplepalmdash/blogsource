@@ -210,3 +210,13 @@ WantedBy=multi-user.target
 Domain kismatic_etcd01 defined from etcd01.xml
 ```
 进入到系统后，配置仓库，配置好`/etc/hosts`下的条目，节点机即做完准备。    
+
+### 部署
+配置过程以后再写。
+
+### 使用集群
+集群部署完成后，使用`./kismatic dashboard`来访问kubernetes的dashboard:   
+
+![/images/2018_01_08_16_11_55_550x654.jpg](/images/2018_01_08_16_11_55_550x654.jpg)
+
+根据提示配置好kubeconfig文件即可。
