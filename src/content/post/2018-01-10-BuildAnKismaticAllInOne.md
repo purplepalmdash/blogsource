@@ -409,6 +409,14 @@ Failed, why aptly could not be run.
 Client usage:   
 
 ```
+# sudo vim /etc/ssh/sshd_config
+PermitRootLogin yes
+# vim /etc/network/interfaces
+Change ip addresss
+```
+
+
+```
 First in server, export keys:   
 
     # gpg --export --armor >mypublic.pub
@@ -442,6 +450,9 @@ following definition of the registry:
 # vim /etc/hosts
 10.15.205.2	mirror.xxxxx.com
 ```
+
+Then add the kismaticuser.key.pub into the server's
+`/root/.ssh/authorized_keys`.    
 
 ### helm
 
