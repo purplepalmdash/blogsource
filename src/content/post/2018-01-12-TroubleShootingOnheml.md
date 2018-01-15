@@ -78,3 +78,9 @@ monkey-monocular   *         10.15.205.200   80        20m
 打开网页，发现可以访问到monocular, 然而其charts列表暂时无法显示， why?
 
 
+
+迅速部署应用，避免每次重新拉取镜像：    
+
+```
+# helm install --name=tiger --set "persistence.enabled=false,mongodb.persistence.enabled=false,pullPolicy=IfNotPresent,api.image.pullPolicy=IfNotPresent,ui.image.pullPolicy=IfNotPresent,prerender.image.pullPolicy=IfNotPresent" monocular/monocular
+```
