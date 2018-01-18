@@ -1,7 +1,7 @@
 +++
-title = "StoragePassUsingLocalPath"
+title = "StoragePathUsingLocalPath"
 date = "2018-01-18T09:02:02+08:00"
-description = "StoragePassUsingLocalPath"
+description = "StoragePathUsingLocalPath"
 keywords = ["Linux"]
 categories = ["Linux"]
 +++
