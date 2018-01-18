@@ -35,6 +35,13 @@ Prerequisites:
 ```
 $ helm install stable/nginx-ingress --set controller.hostNetwork=true
 ```
+If on kismatic, run following:    
+
+```
+$ helm install stable/nginx-ingress --set controller.hostNetwork=true,rbac.create=true
+```
+
+
 Then install the mocular via following commands:    
 
 ```
