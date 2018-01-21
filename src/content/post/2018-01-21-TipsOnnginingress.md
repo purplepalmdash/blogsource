@@ -57,3 +57,34 @@ spec:
           servicePort: 8080
 ```
 Visit your `ubuntu.xxxxx.com`, you will get the nginx service webpage.   
+
+### Config examples
+For monocular, do following:    
+
+```
+# vim custom-domains.yaml
+ingress:
+  hosts:
+  - monocular.xxxxxx.com
+# helm install --name=gou -f custom-domains.yaml .
+```
+Now adding monocular.xxxxxx.com into your `/etc/hosts` file, you could
+directly access monocular UI using domain name.    
+
+
+For wordpress:    
+
+```
+# vim values.yaml
+ingress:
+  ## Set to true to enable ingress record generation
+  enabled: true
+
+  ## The list of hostnames to be covered with this ingress record.
+  ## Most likely this will be just one host, but in the event more hosts are needed, this is an array
+  hosts:
+  - name: wordpress.xxxxxx.com
+
+```
+The same as before, you could use wordpress.xxxxxx.com for accessing
+wordpress.     
