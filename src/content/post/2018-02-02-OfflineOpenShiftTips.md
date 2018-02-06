@@ -175,3 +175,6 @@ Ansible play magic:
 # cd openshift-ansible
 # ansible-playbook playbooks/byo/config.yml
 ```
+
+### Access Webpage
+visit `https://10.33.34.2:8443`, username is dev, password is dev.    
