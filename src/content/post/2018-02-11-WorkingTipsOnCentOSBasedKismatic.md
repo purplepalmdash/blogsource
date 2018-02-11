@@ -159,3 +159,22 @@ AAAAB3NzaC1yc2EAAAADAQABAA
 
 
 至此，kubernetes环境搭建成功。    
+
+### Dashboard对外访问
+更改运行中dashboard的service：    
+
+```
+# ./kubectl --kubeconfig generated/kubeconfig edit svc kubernetes-dashboard -n
+kube-system
+```
+将`type:ClusterIP` 改为 `type:NodePort`.    
+
+外部访问则是通过:    
+
+```
+# ./kubectl --kubeconfig generated/kubeconfig get svc kubernetes-dashboard -n
+kube-system
+```
+得到kubernetes-dashboard的NodePort端口即可.    
+
+![./images/2018_02_11_11_35_39_698x721.jpg](./images/2018_02_11_11_35_39_698x721.jpg)    
