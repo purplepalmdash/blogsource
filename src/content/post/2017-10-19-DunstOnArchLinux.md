@@ -16,6 +16,7 @@ via:
 $ yaourt dunst-git
 ```
 ### Configuration
+!!! Be sure to see the archlinux's dunst page!!!!    
 Enable the user's systemd configuration via:    
 
 ```
