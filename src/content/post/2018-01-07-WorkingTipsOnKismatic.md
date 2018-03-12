@@ -220,3 +220,19 @@ Domain kismatic_etcd01 defined from etcd01.xml
 ![/images/2018_01_08_16_11_55_550x654.jpg](/images/2018_01_08_16_11_55_550x654.jpg)
 
 根据提示配置好kubeconfig文件即可。
+
+### 镜像仓库使用
+要使用镜像仓库作为集群的中心仓库，外围机器（用于上传和管理镜像的机器）需要做以下设置（以DEBIAN为例）：    
+
+```
+# mkdir -p /usr/local/share/ca-certificates/docker-dev-cert/
+# cp KISMATIC_FOLDER/devdockerCA.crt /usr/local/share/ca-certificates/docker-dev-cert/
+# update-ca-certificates
+# systemctl restart docker
+# echo "10.15.205.113 mirror.xxxx.com">>/etc/hosts
+# docker login mirror.xxxxx.com
+Username: clouder
+Password: 
+Login Succeeded
+```
+Thus you could directly push images to the registry mirror.    
