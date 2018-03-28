@@ -113,6 +113,29 @@ Client:
  Version:      17.05.0-ce
 ......
 ```
+更新： aliyun不可用，所以换到官方源上:    
+
+```
+# sudo yum-config-manager \
+    --add-repo \
+    https://download.docker.com/linux/centos/docker-ce.repo
+# yum install docker-ce
+# docker version
+Client:
+ Version:	18.03.0-ce
+ API version:	1.37
+ Go version:	go1.9.4
+ Git commit:	0520e24
+ Built:	Wed Mar 21 23:09:15 2018
+ OS/Arch:	linux/amd64
+ Experimental:	false
+ Orchestrator:	swarm
+Cannot connect to the Docker daemon at unix:///var/run/docker.sock. Is the docker daemon running?
+# systemctl start docker
+# systemctl enable docker
+```
+
+
 ### 配置
 在project下可以找到的runner配置信息如下:    
 
@@ -130,7 +153,7 @@ Client:
 ```
 
 ### 项目配置
-创建一个`.gitlab-cimyml`文件于`firstproject`的目录下:    
+创建一个`.gitlab-ci.yml`文件于`firstproject`的目录下:    
 
 ```
 image: "my3dlib:latest"
