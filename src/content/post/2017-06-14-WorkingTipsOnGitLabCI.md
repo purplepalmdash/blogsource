@@ -116,6 +116,7 @@ Client:
 更新： aliyun不可用，所以换到官方源上:    
 
 ```
+# sudo yum install -y yum-utils
 # sudo yum-config-manager \
     --add-repo \
     https://download.docker.com/linux/centos/docker-ce.repo
