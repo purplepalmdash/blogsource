@@ -19,7 +19,7 @@ Then continue to create the virtual machine via importing the img.
 Using virtviewer for view the remote machine.   
 
 ```
-$ sudo pacman -S virtviewer
+$ sudo pacman -S virt-viewer
 $ remote-viewer spice://localhost:5900
 ```
 Or you could view the desktop via `spicec`.   
