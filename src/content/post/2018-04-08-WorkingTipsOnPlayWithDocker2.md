@@ -72,3 +72,20 @@ Then your image will display correctly.
 ### Google Fonts
 Download the Fonts description from the website, then put all of the related
 fonts under your local folder.    
+
+### dnsmasq
+Download the rpm package via:    
+
+```
+# yum install yum-plugin-downloadonly
+# yum reinstall --downloadonly --downloaddir=/root/rpms dnsmasq
+```
+Transfer the package to intranet and install it. Then edit the configuration
+file of dnsmasq:    
+
+```
+# vim /etc/dnsmasq.conf
+address=/192.192.189.114/192.192.189.114
+# systemclt enable dnsmasq && systemctl start dnsmasq
+```
+
