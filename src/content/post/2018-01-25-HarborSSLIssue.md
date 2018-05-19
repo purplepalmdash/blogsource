@@ -29,3 +29,11 @@ Change the certifications via:
 # service docker restart
 ```
 Now you could docker login into the new web server.    
+
+### RHEL
+update the ca, then docker login .   
+
+```
+cp certs/domain.crt /etc/pki/ca-trust/source/anchors/myregistrydomain.com.crt
+update-ca-trust
+```
