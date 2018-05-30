@@ -117,5 +117,51 @@ docker_registry:
 
 ```
 # ./kismatic seed-registry --verbose
+```
+
+同步完毕以后，取回镜像包：    
 
 ```
+# systemctl stop docker-infra.service
+# cd /var/lib/
+# tar czvf portus.tar.gz portus/
+```
+
+### rpm包取回
+设置节点机的`/etc/yum.conf`下为保存rpm包，一次在线安装后，即可获得所有的rpm包。createrepo
+后直接取回。   
+
+
+### 重组安装源
+一次详细的重组步骤如下:    
+
+```
+# 复制旧版本框架
+cp -r ansible ansible_kismatic1110
+cd ansible_kismatic1110
+# 更新docker镜像源
+rm -f portus.tar.gz
+scp root@10.168.100.150:/var/lib/portus.tar.gz .
+rm -f kismaticpkgs.tar.gz 
+# 更新rpm源
+scp -r root@10.168.100.150:/usr/local/kismaticpkgs.tar.gz .
+# 更新kismatic部署框架
+tar xzvf kismatic.tar.gz
+cd kismatic/cluster00
+rm -rf ./*
+sudo cp -ar /media/sda5/Code/kismatic1110/* .
+sudo rm -rf generated
+sudo rm -rf ./runs/apply/*
+sudo rm -rf ./runs/preflight/*
+sudo rm -rf ./runs/smoketest/*
+rm -f kismatic.tar.gz
+sudo tar czvf kismatic.tar.gz kismatic
+sudo rm -rf kismatic
+```
+重组后的大小:    
+
+```
+# du -hs ansible_kismatic1110 
+1.2G	ansible_kismatic1110
+```
+现在就可以用原有方法进行系统的部署了。
