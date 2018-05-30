@@ -135,7 +135,7 @@ In order to work offline, we have to use local repository.
 # vim config.yml
 proxy:
       remoteurl: https://registry-1.docker.io
-# mdkir ~/data/data
+# mkdir ~/data/data
 # docker run -d --restart=always -p 5000:5000 --name docker-registry-proxy-2 -v /root/data/config.yml:/etc/docker/registry/config.yml -v /root/data/data:/var/lib/registry registry:2
 ```
 Now examine the docker registry running:    
@@ -179,9 +179,23 @@ Change the source code:
 # vim handlers/bootstrap.go +64
 - return false
 + return true
+# vim config/config.go
+ flag.StringVar(&PlaygroundDomain, "playground-domain", "192.192.189.114", "Domain to use for the playground")
 ```
 
 ![/images/2018_04_07_15_32_59_766x271.jpg](/images/2018_04_07_15_32_59_766x271.jpg)
+
+Make sure your dnsmasq is running, then edit the `/etc/dnsmasq.conf` via:    
+
+```
+.................
+# Add local-only domains here, queries in these domains are answered
+# from /etc/hosts or DHCP only.
+#local=/localnet/
+address=/192.192.189.114/192.192.189.114
+address=/localhost/127.0.0.1
+.................
+```
 
 Run `play-with-docker`:    
 
@@ -225,4 +239,22 @@ Now open the browser and see the result:
 
 ![/images/2018_04_07_16_49_34_794x532.jpg](/images/2018_04_07_16_49_34_794x532.jpg)
 
+### tips for docker-nginx
 
+```
+# docker run --name docker-nginx -p 8333:80 -d -v /root/gcr:/usr/share/nginx/html jrelva/nginx-autoindex
+root@playwithdocker:/etc/systemd/system# cat mynginx.service 
+[Unit]
+Description=mynginx
+Requires=docker.service
+After=docker.service
+
+[Service]
+Restart=always
+ExecStart=/usr/bin/docker start -a docker-nginx
+ExecStop=/usr/bin/docker stop -t 2 docker-nginx
+
+[Install]
+WantedBy=multi-user.target
+
+```

@@ -43,15 +43,22 @@ Add this command to systemd:
 [Unit]
 Description=Docker infra
 Requires=docker.service
-After=docker.service
+After=dockerload.service
 
 [Service]
+WorkingDirectory=/usr/local/compose/
+Type=idle
 Restart=always
-ExecStart=/bin/loaddocker.sh;/usr/bin/docker-compose -f /usr/local/compose/docker-compose.yml up
+# Remove old container items
+ExecStartPre=/usr/bin/docker-compose -f /usr/local/compose/docker-compose.yml down
+# Compose up
+ExecStart=/usr/bin/docker-compose -f /usr/local/compose/docker-compose.yml up
+# Compose stop
 ExecStop=/usr/bin/docker-compose -f /usr/local/compose/docker-compose.yml stop
 
 [Install]
-WantedBy=default.target
+WantedBy=multi-user.target
+
 # systemctl enable docker-infra.service
 ```
 Change the default interface to eth0/eth1, etc.    
@@ -59,6 +66,7 @@ Change the default interface to eth0/eth1, etc.
 ```
 # vim /etc/default/grub
 net.ifnames=0 biosdevname=0
+# update-grub
 ```
 
 ### Remove unnecessary packages
