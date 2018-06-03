@@ -36,6 +36,26 @@ else
 fi
 # chmod 777 /bin/loaddocker.sh
 ```
+Add dockerload service
+
+```
+# vim /etc/systemd/system/dockerload.service 
+[Unit]
+Description=Docker load
+Requires=docker.service
+After=docker.service
+
+[Service]
+Restart=always
+ExecStart=/bin/loaddocker.sh
+ExecStop=/usr/bin/echo hello
+
+[Install]
+WantedBy=multi-user.target
+
+```
+
+
 Add this command to systemd:    
 
 ```
@@ -106,3 +126,38 @@ Remove command:
   totem-plugins transmission-common transmission-gtk  vino
 
 ```
+
+### tips for centos
+
+```
+if [[ $(sudo docker images | grep registry) ]]; then
+    echo "there are files"
+else
+    docker load</usr/local/images/nginx.tar.bz2
+    docker load</usr/local/images/1.tar
+    docker load</usr/local/images/2.tar
+    docker load</usr/local/images/3.tar
+    docker load</usr/local/images/4.tar
+    docker run --name docker-nginx -p 8888:80 -d -v /usr/local/kismaticpkgs:/usr/share/nginx/html jrelva/nginx-autoindex
+fi
+
+```
+Add service:    
+
+```
+# vim /etc/systemd/system/mynginx.service 
+[Unit]
+Description=mynginx
+Requires=docker.service
+After=docker-infra.service
+
+[Service]
+Restart=always
+ExecStart=/usr/bin/docker start -a docker-nginx
+ExecStop=/usr/bin/docker stop -t 2 docker-nginx
+
+[Install]
+WantedBy=multi-user.target
+
+```
+
