@@ -139,6 +139,7 @@ else
     docker load</usr/local/images/3.tar
     docker load</usr/local/images/4.tar
     docker run --name docker-nginx -p 8888:80 -d -v /usr/local/kismaticpkgs:/usr/share/nginx/html jrelva/nginx-autoindex
+    sed -i s/10.168.100.145/`hostname -I|awk '{print $1}'`/g /usr/local/compose/docker-compose.yml
 fi
 
 ```
