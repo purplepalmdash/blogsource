@@ -32,6 +32,12 @@ gitlab搭建完毕，gitlabci配置完毕。
 ```
 与此同时，注册runner, 并保证runner所依赖的容器镜像就绪:    
 
+注：  下面需要填入的token来自于: settings->CI/CD-> General pipelines settings,
+runner token，需要拷贝其值:    
+
+![/images/2018_06_08_17_08_56_785x475.jpg](/images/2018_06_08_17_08_56_785x475.jpg)
+
+
 ```
 [root@csnode1 ~]# gitlab-ci-multi-runner register
 Running in system-mode.                            
@@ -103,3 +109,27 @@ gitbook_build_deploy:
 ```
 每次build将自动生成pdf供下载。
 
+### gitlabci运行buildiso
+注册CI/CD pipeline时的选项:    
+
+```
+# gitlab-ci-multi-runner register
+Running in system-mode.                            
+                                                   
+Please enter the gitlab-ci coordinator URL (e.g. https://gitlab.com/):
+http://192.168.122.222/
+Please enter the gitlab-ci token for this runner:
+xy8MBdigELUSRnmnteMF
+Please enter the gitlab-ci description for this runner:
+[buildnode]: myrunner
+Please enter the gitlab-ci tags for this runner (comma separated):
+myrunner mytag
+Whether to run untagged builds [true/false]:
+[false]: true
+Whether to lock Runner to current project [true/false]:
+[false]: 
+Registering runner... succeeded                     runner=xy8MBdig
+Please enter the executor: docker-ssh+machine, docker, docker-ssh, shell, ssh, parallels, virtualbox, docker+machine, kubernetes:
+shell
+Runner registered successfully. Feel free to start it, but if it's running already the config should be automatically reloaded! 
+```
