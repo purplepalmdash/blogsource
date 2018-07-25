@@ -18,7 +18,7 @@ categories = ["Linux"]
 解压`node_exporter`至`/usr/bin`目录下，现在开始撰写初始化脚本。    
 
 ```
-# vim /etc/sysconfig/node_exporter
+# vim /etc/init.d/node_exporter
 
     #!/bin/bash
     #
