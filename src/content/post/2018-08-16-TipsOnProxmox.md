@@ -37,3 +37,19 @@ Install system:
 
 ![/images/2018_08_16_11_55_03_711x503.jpg](/images/2018_08_16_11_55_03_711x503.jpg)
 
+
+### Command
+After installation, build a cluster using CLI in following commands:    
+
+Management node:    
+
+```
+# pvecm create mycluster
+```
+Working node, for joing:    
+
+```
+# pvecm add 192.168.0.121
+```
+Thus you will see the cluster being created as following:    
+
