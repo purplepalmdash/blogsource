@@ -54,3 +54,56 @@ for dev in `ls /sys/class/net/ | grep macvtap`; do
 
 ![/images/2018_08_20_17_40_17_476x330.jpg](/images/2018_08_20_17_40_17_476x330.jpg)
 
+
+### Ceph
+配置IP地址:    
+
+```
+# from /etc/network/interfaces
+auto eth2
+iface eth2 inet static
+  address  10.10.10.1
+  netmask  255.255.255.0
+```
+修改pveceph的源:    
+
+```
+# vi /usr/share/perl5/PVE/CLI/pveceph.pm
+deb .......
+# pveceph install --version luminous
+```
+
+添加存储:    
+
+![/images/2018_08_21_12_13_12_666x301.jpg](/images/2018_08_21_12_13_12_666x301.jpg)
+
+创建一个pool,   
+
+![/images/2018_08_21_12_13_39_301x275.jpg](/images/2018_08_21_12_13_39_301x275.jpg)
+
+创建完毕后:   
+
+![/images/2018_08_21_12_14_03_915x372.jpg](/images/2018_08_21_12_14_03_915x372.jpg)
+
+### 虚拟机
+拷贝安装文件`ubuntu-16.04.2-server-amd64.iso`到`/var/lib/vz/template/iso`下，
+在27机器上， 然后创建虚拟机。    
+
+![/images/2018_08_21_12_17_24_460x214.jpg](/images/2018_08_21_12_17_24_460x214.jpg)
+
+选择ISO：    
+
+![/images/2018_08_21_12_17_42_668x184.jpg](/images/2018_08_21_12_17_42_668x184.jpg)
+
+选择硬盘:    
+
+![/images/2018_08_21_12_18_07_638x212.jpg](/images/2018_08_21_12_18_07_638x212.jpg)
+
+选择刚创建的虚拟机，点击`启动`:   
+
+![/images/2018_08_21_12_18_51_852x563.jpg](/images/2018_08_21_12_18_51_852x563.jpg)
+
+### Issue
+嵌套虚拟化对内核版本的影响，因内网的机器运行的操作系统内核版本较为陈旧，相信可能会有问题。后期将新装服务器来进行。    
+
+新装物理服务器，dhcp得到同一网段地址，而后将继续proxmox的测试。    
