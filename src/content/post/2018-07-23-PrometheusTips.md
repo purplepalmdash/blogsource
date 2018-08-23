@@ -65,3 +65,32 @@ Run grafana server via:
 
 Add grafana id of 1860(Node Exporter Full) or 159(Prometheus system), then you
 could view the grafana displayed dashboard of node-exporter of the system.     
+
+### grafana configuration
+Initial picture:    
+
+![/images/2018_08_23_15_15_39_620x438.jpg](/images/2018_08_23_15_15_39_620x438.jpg)
+
+Add datasource:    
+
+![/images/2018_08_23_15_16_36_600x632.jpg](/images/2018_08_23_15_16_36_600x632.jpg)
+
+Add redis templates:    
+
+```
+# wget https://raw.githubusercontent.com/oliver006/redis_exporter/master/contrib/grafana_prometheus_redis_dashboard_alias.json
+```
+
+Import:    
+
+![/images/2018_08_23_15_18_26_951x381.jpg](/images/2018_08_23_15_18_26_951x381.jpg)
+
+Detailed:    
+
+![/images/2018_08_23_15_18_58_584x566.jpg](/images/2018_08_23_15_18_58_584x566.jpg)
+
+Corresponding data source:    
+
+![/images/2018_08_23_15_19_39_358x467.jpg](/images/2018_08_23_15_19_39_358x467.jpg)
+
+
