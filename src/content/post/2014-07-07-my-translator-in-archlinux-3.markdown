@@ -6,7 +6,7 @@ title: My Translator In ArchLinux(3)
 url: /2014/07/07/my-translator-in-archlinux-3/
 ---
 
-Using radis for cache the dictionary.     
+Using redis for cache the dictionary.     
 
 ```
     # In C, it's simple to use do...while(), but in python, we need to judge the input, 
