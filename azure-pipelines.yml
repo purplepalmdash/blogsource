@@ -7,16 +7,10 @@ pool:
   vmImage: 'Ubuntu 16.04'
 
 steps:
-- script: echo Hello, world!
-  displayName: 'Run a one-line script'
 
 - script: |
-    echo Add other tasks to build, test, and deploy your project.
-    echo See https://aka.ms/yaml
-  displayName: 'Run a multi-line script'
-
-- script: |
-    apt-get -y update
-    apt-get -y install golang
-  displayName: 'Run install golang'
+    echo Using hugo for building website
+    cd src
+    ../binaries/hugo --theme=hype-a
+  displayName: 'Run hugo build'
 
