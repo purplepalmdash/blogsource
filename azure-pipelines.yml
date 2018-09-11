@@ -11,6 +11,7 @@ steps:
 - script: |
     echo Using hugo for building website
     cd src
-    ../binaries/hugo --theme=hype-a
+    pwd && ls -l -h
+    ../binaries/hugo --theme=hyde-a
   displayName: 'Run hugo build'
 
