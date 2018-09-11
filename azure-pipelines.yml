@@ -15,7 +15,6 @@ steps:
     echo See https://aka.ms/yaml
   displayName: 'Run a multi-line script'
 
-- scripts: apt-get -y update && apt-get install -y golang
-    echo Install some packages
+- scripts: apt-get -y update; apt-get install -y golang
   displayName: 'Run install golang'
 
