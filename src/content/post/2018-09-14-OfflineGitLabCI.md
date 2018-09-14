@@ -56,18 +56,18 @@ gitlab机器上，添加docker的insecure-registries方式:
 ```
 # vim  /etc/docker/daemon.json
     {
-        "insecure-registries" : ["portus.teligen.com:5000"]
+        "insecure-registries" : ["portus.ooooooo.com:5000"]
     }
 # systemctl restart docker
-# docker login http://portus.teligen.com:5000
+# docker login http://portus.ooooooo.com:5000
 Username: kubespray
 Password: 
 ```
 alpine:3.6镜像:    
 
 ```
-# docker tag alpine:3.6 portus.teligen.com:5000/kubesprayns/alpine:3.6
-# docker push portus.teligen.com:5000/kubesprayns/alpine:3.6
+# docker tag alpine:3.6 portus.ooooooo.com:5000/kubesprayns/alpine:3.6
+# docker push portus.ooooooo.com:5000/kubesprayns/alpine:3.6
 ```
 ![/images/2018_09_14_15_58_13_435x155.jpg](/images/2018_09_14_15_58_13_435x155.jpg)
 
@@ -88,15 +88,15 @@ $ sudo docker ps
 CONTAINER ID        IMAGE               COMMAND             CREATED              STATUS              PORTS               NAMES
 79923690bcc2        alpine:3.6          "/bin/sh"           About a minute ago   Up About a minute                       jolly_banach
 ➜  ~ sudo docker commit 79923690bcc2 alpinewithwget:3.6
-# docker tag alpinewithwget:3.6 portus.teligen.com:5000/kubesprayns/alpinewithwget:3.6
-# docker push portus.teligen.com:5000/kubesprayns/alpinewithwget:3.6
+# docker tag alpinewithwget:3.6 portus.ooooooo.com:5000/kubesprayns/alpinewithwget:3.6
+# docker push portus.ooooooo.com:5000/kubesprayns/alpinewithwget:3.6
 ```
 helm在初始化的时候需要用到
 
 ```
 $ sudo docker pull gcr.io/kubernetes-helm/tiller:v2.7.0
-$ sudo docker tag gcr.io/kubernetes-helm/tiller:v2.7.0  portus.teligen.com:5000/kubesprayns/gcr.io/kubernetes-helm/tiller:v2.7.0 
-$ sudo docker push portus.teligen.com:5000/kubesprayns/gcr.io/kubernetes-helm/tiller:v2.7.0 
+$ sudo docker tag gcr.io/kubernetes-helm/tiller:v2.7.0  portus.ooooooo.com:5000/kubesprayns/gcr.io/kubernetes-helm/tiller:v2.7.0 
+$ sudo docker push portus.ooooooo.com:5000/kubesprayns/gcr.io/kubernetes-helm/tiller:v2.7.0 
 ```
 gitlab-runner所需镜像:    
 
@@ -120,7 +120,7 @@ $  tag and push
 ```
 $ helm repo add runner https://charts.gitlab.io
 $ helm fetch runner/gitlab-runner
-$ curl --data-binary "@gitlab-runner-0.1.33.tgz" http://portus.teligen.com:8988/api/charts
+$ curl --data-binary "@gitlab-runner-0.1.33.tgz" http://portus.ooooooo.com:8988/api/charts
 
 $ vim values
 
@@ -129,7 +129,7 @@ $ vim values
     # memoryLimit: 256Mi
     # cpuRequests: 100m
     # memoryRequests: 128Mi
-    image: portus.teligen.com:5000/kubesprayns/gitlab/gitlab-runner-helper:x86_64-latest
+    image: portus.ooooooo.com:5000/kubesprayns/gitlab/gitlab-runner-helper:x86_64-latest
 
 
 ```
@@ -260,14 +260,14 @@ Kubernetes error: namespaces "gitlab-managed-apps" is forbidden: User
 ```
 # vim /opt/gitlab/embedded/service/gitlab-rails/lib/gitlab/kubernetes/helm/pod.rb +28
 -            image: 'alpine:3.6',
-+            image: 'portus.teligen.com:5000/kubesprayns/alpinewithwget:3.6',
++            image: 'portus.ooooooo.com:5000/kubesprayns/alpinewithwget:3.6',
 # vim /opt/gitlab/embedded/service/gitlab-rails/lib/gitlab/kubernetes/helm/base_command.rb
 -            ALPINE_VERSION=$(cat /etc/alpine-release | cut -d '.' -f 1,2)
 -            echo http://mirror.clarkson.edu/alpine/v$ALPINE_VERSION/main >> /etc/apk/repositories
 -            echo http://mirror1.hs-esslingen.de/pub/Mirrors/alpine/v$ALPINE_VERSION/main >> /etc/apk/repositories
 -            apk add -U wget ca-certificates openssl >/dev/null
 -            wget -q -O - https://kubernetes-helm.storage.googleapis.com/helm-v#{Gitlab::Kubernetes::Helm::HELM_VERSION}-linux-amd64.tar.gz | tar zxC /tmp >/dev/null
-+            wget -q -O - http://portus.teligen.com:8888/helm-v2.7.0-linux-amd64.tar.gz | tar zxC /tmp >/dev/null
++            wget -q -O - http://portus.ooooooo.com:8888/helm-v2.7.0-linux-amd64.tar.gz | tar zxC /tmp >/dev/null
 ```
 更改完毕后，我们重新配置gitlab以继续安装:    
 
@@ -282,10 +282,10 @@ Kubernetes error: namespaces "gitlab-managed-apps" is forbidden: User
 ```
 # vim /opt/gitlab/embedded/service/gitlab-rails/lib/gitlab/kubernetes/helm/install_command.rb
 -          'helm init --client-only >/dev/null'
-+          'helm init --stable-repo-url http://portus.teligen.com:8988 --tiller-image portus.teligen.com:5000/kubesprayns/gcr.io/kubernetes-helm/tiller:v2.7.0 >/dev/null'
++          'helm init --stable-repo-url http://portus.ooooooo.com:8988 --tiller-image portus.ooooooo.com:5000/kubesprayns/gcr.io/kubernetes-helm/tiller:v2.7.0 >/dev/null'
 # /opt/gitlab/embedded/service/gitlab-rails/lib/gitlab/kubernetes/helm/init_command.rb
 -          "helm init >/dev/null"
-+          'helm init --stable-repo-url http://portus.teligen.com:8988 --tiller-image portus.teligen.com:5000/kubesprayns/gcr.io/kubernetes-helm/tiller:v2.7.0 >/dev/null'
++          'helm init --stable-repo-url http://portus.ooooooo.com:8988 --tiller-image portus.ooooooo.com:5000/kubesprayns/gcr.io/kubernetes-helm/tiller:v2.7.0 >/dev/null'
 
 ```
 更改完毕后，我们重新配置gitlab以继续安装:    
@@ -305,7 +305,7 @@ Kubernetes error: namespaces "gitlab-managed-apps" is forbidden: User
 ```
 $ vim /opt/gitlab/embedded/service/gitlab-rails/app/models/clusters/applications/runner.rb
 -        'https://charts.gitlab.io'
-+        'http://portus.teligen.com:8988'
++        'http://portus.ooooooo.com:8988'
 ```
 再次运行，提示configmap已经存在:    
 
