@@ -87,7 +87,7 @@ $ sudo docker run -it alpine:3.6 /bin/sh
 $ sudo docker ps
 CONTAINER ID        IMAGE               COMMAND             CREATED              STATUS              PORTS               NAMES
 79923690bcc2        alpine:3.6          "/bin/sh"           About a minute ago   Up About a minute                       jolly_banach
-➜  ~ sudo docker commit 79923690bcc2 alpinewithwget:3.6
+$ sudo docker commit 79923690bcc2 alpinewithwget:3.6
 # docker tag alpinewithwget:3.6 portus.ooooooo.com:5000/kubesprayns/alpinewithwget:3.6
 # docker push portus.ooooooo.com:5000/kubesprayns/alpinewithwget:3.6
 ```
@@ -104,37 +104,190 @@ gitlab-runner所需镜像:
 $ sudo docker pull busybox:latest
 $ sudo docker pull ubuntu:16.04
 $ sudo docker pull gitlab/gitlab-runner:alpine-v10.3.0
-$  tag and push
+$ sudo docker pull gitlab/gitlab-runner-helper:x86_64-latest
+$ sudo docker tag busybox:latest portus.ooooooo.com:5000/kubesprayns/busybox:latest
+$ sudo docker tag ubuntu:16.04 portus.ooooooo.com:5000/kubesprayns/ubuntu:16.04
+$ sudo docker tag gitlab/gitlab-runner:alpine-v10.3.0 portus.ooooooo.com:5000/kubesprayns/gitlab/gitlab-runner:alpine-v10.3.0
+$ sudo docker tag gitlab/gitlab-runner-helper:x86_64-latest portus.ooooooo.com:5000/kubesprayns/gitlab/gitlab-runner-helper:x86_64-latest
+$ sudo docker push portus.ooooooo.com:5000/kubesprayns/busybox:latest
+$ sudo docker push portus.ooooooo.com:5000/kubesprayns/ubuntu:16.04
+$ sudo docker push portus.ooooooo.com:5000/kubesprayns/gitlab/gitlab-runner:alpine-v10.3.0
+$ sudo docker push portus.ooooooo.com:5000/kubesprayns/gitlab/gitlab-runner-helper:x86_64-latest
 ```
-项目CI/CD所需容器:    
+nginx-ingress-controller所需镜像:    
 
 ```
-# docker pull
-# docker tag
-# docker push
+# docker pull quay.io/kubernetes-ingress-controller/nginx-ingress-controller:0.19.0
+# docker pull k8s.gcr.io/defaultbackend:1.4
+# docker tag quay.io/kubernetes-ingress-controller/nginx-ingress-controller:0.19.0 portus.ooooooo.com:5000/kubesprayns/quay.io/kubernetes-ingress-controller/nginx-ingress-controller:0.19.0
+# docker push portus.ooooooo.com:5000/kubesprayns/quay.io/kubernetes-ingress-controller/nginx-ingress-controller:0.19.0
+# docker tag k8s.gcr.io/defaultbackend:1.4 portus.ooooooo.com:5000/kubesprayns/k8s.gcr.io/defaultbackend:1.4
+# docker push portus.ooooooo.com:5000/kubesprayns/k8s.gcr.io/defaultbackend:1.4
+```
+Prometheus所需容器：    
+
+```
+$ sudo docker pull prom/alertmanager:v0.14.0
+$ sudo docker pull jimmidyson/configmap-reload:v0.1
+$ sudo docker pull quay.io/coreos/kube-state-metrics:v1.3.1
+$ sudo docker pull prom/node-exporter:v0.15.2
+$ sudo docker pull prom/prometheus:v2.2.1
+$ sudo docker pull prom/prometheus:v2.1.0
+$ sudo docker pull prom/pushgateway:v0.5.1
+$ sudo docker pull prom/alertmanager:v0.14.0
+$ sudo docker tag prom/alertmanager:v0.14.0 portus.oooooo:5000/kubesprayns/prom/alertmanager:v0.14.0
+$ sudo docker tag jimmidyson/configmap-reload:v0.1 portus.oooooo:5000/kubesprayns/jimmidyson/configmap-reload:v0.1
+$ sudo docker tag quay.io/coreos/kube-state-metrics:v1.3.1 portus.oooooo:5000/kubesprayns/quay.io/coreos/kube-state-metrics:v1.3.1
+$ sudo docker tag prom/node-exporter:v0.15.2 portus.oooooo:5000/kubesprayns/prom/node-exporter:v0.15.2
+$ sudo docker tag prom/prometheus:v2.2.1 portus.oooooo:5000/kubesprayns/prom/prometheus:v2.2.1
+$ sudo docker tag prom/prometheus:v2.1.0 portus.oooooo:5000/kubesprayns/prom/prometheus:v2.1.0
+$ sudo docker tag prom/pushgateway:v0.5.1 portus.oooooo:5000/kubesprayns/prom/pushgateway:v0.5.1
+$ sudo docker tag prom/alertmanager:v0.14.0 portus.oooooo:5000/kubesprayns/prom/alertmanager:v0.14.0
+$ sudo docker push  portus.oooooo:5000/kubesprayns/prom/alertmanager:v0.14.0
+$ sudo docker push  portus.oooooo:5000/kubesprayns/jimmidyson/configmap-reload:v0.1
+$ sudo docker push  portus.oooooo:5000/kubesprayns/quay.io/coreos/kube-state-metrics:v1.3.1
+$ sudo docker push  portus.oooooo:5000/kubesprayns/prom/node-exporter:v0.15.2
+$ sudo docker push  portus.oooooo:5000/kubesprayns/prom/prometheus:v2.2.1
+$ sudo docker push  portus.oooooo:5000/kubesprayns/prom/pushgateway:v0.5.1
+$ sudo docker push  portus.oooooo:5000/kubesprayns/prom/alertmanager:v0.14.0
+```
+
+项目CI/CD所需容器(test环节/build环节):    
+
+```
+# docker pull golang:1.10.3-stretch
+# docker tag golang:1.10.3-stretch portus.ooooooo.com:5000/kubesprayns/golang:1.10.3-stretch
+# docker push portus.ooooooo.com:5000/kubesprayns/golang:1.10.3-stretch
+```
+Release阶段所需容器:    
+
+```
+# docker pull docker:latest
+# docker pull lordgaav/dind-options:latest
+# docker tag docker:latest portus.ooooooo.com:5000/kubesprayns/docker:latest
+# docker push portus.ooooooo.com:5000/kubesprayns/docker:latest
+# docker tag lordgaav/dind-options:latest portus.ooooooo.com:5000/lordgaav/dind-options:latest
+# docker push portus.ooooooo.com:5000/kubesprayns/lordgaav/dind-options:latest
+```
+Deploy阶段所需容器:    
+
+```
+# docker pull lachlanevenson/k8s-kubectl:latest
+# docker tag lachlanevenson/k8s-kubectl:latest portus.ooooooo.com:5000/kubesprayns/lachlanevenson/k8s-kubectl:latest
+# docker push portus.ooooooo.com:5000/kubesprayns/lachlanevenson/k8s-kubectl:latest
+```
+Build 容器所需要的:    
+
+```
+# docker pull busybox:1.28.4-glibc
+# docker tag busybox:1.28.4-glibc portus.ooooooo.com:5000/kubesprayns/busybox:1.28.4-glibc
+# docker push portus.ooooooo.com:5000/kubesprayns/busybox:1.28.4-glibc
 ```
 
 ### 离线charts准备
-下载并更改charts, 而后上传到私有仓库:    
+下载并更改charts, 而后上传到私有仓库,
+
+#### gitlab-runner
+下面是gitlab-runner的charts本地化制作过程:    
 
 ```
 $ helm repo add runner https://charts.gitlab.io
 $ helm fetch runner/gitlab-runner
+$ tar xzvf gitlab-runner-0.1.33.tgz
+$ cd gitlab-runner
+$ vim values.yaml
+- gitlab/gitlab-runner:alpine-v10.3.0
++ image: portus.ooooooo.com:5000/kubesprayns/gitlab/gitlab-runner:alpine-v10.3.0
+
+init:
+-  image: busybox
++  image: portus.ooooooo.com:5000/kubesprayns/busybox
+
+-  image: ubuntu:16.04
++  image: portus.ooooooo.com:5000/kubesprayns/ubuntu:16.04
+
+-  helpers: {}
++  helpers:
+
+-    # image: gitlab/gitlab-runner-helper:x86_64-latest
++    image: portus.ooooooo.com:5000/kubesprayns/gitlab/gitlab-runner-helper:x86_64-latest
+$ helm package .
 $ curl --data-binary "@gitlab-runner-0.1.33.tgz" http://portus.ooooooo.com:8988/api/charts
+```
+#### nginx-ingress离线charts
+步骤:    
 
+```
+# helm fetch stable/nginx-ingress
+# tar xzvf nginx-ingress-0.28.2.tgz
+# cd nginx-ingress
+# vim values.yaml
+
+<     repository: quay.io/kubernetes-ingress-controller/nginx-ingress-controller
+---
+>     repository: portus.ooooooo.com:5000/kubesprayns/quay.io/kubernetes-ingress-controller/nginx-ingress-controller
+293c293
+<     repository: k8s.gcr.io/defaultbackend
+---
+>     repository: portus.ooooooo.com:5000/kubesprayns/k8s.gcr.io/defaultbackend
+# helm package .
+$ curl --data-binary "@nginx-ingress-0.28.2.tgz" http://portus.ooooooo.com:8988/api/charts
+```
+需要配置默认的nginx-ingress-controller的配置:    
+
+```
+# vim /opt/gitlab/embedded/service/gitlab-rails/vendor/ingress/values.yaml
+- repository: "quay.io/kubernetes-ingress-controller/nginx-ingress-controller"
++ repository: "portus.oooooo.com:5000/kubesprayns/quay.io/kubernetes-ingress-controller/nginx-ingress-controller"
+# gitlab-ctl reconfigure && gitlab-ctl restart
+```
+
+#### Prometheus离线charts
+步骤:    
+
+```
+$ helm fetch stable/prometheus --version 6.7.3
+$ tar xzvf prometheus-6.7.3.tgz
+$ cd prometheus/
 $ vim values
-
-  helpers:
-    # cpuLimit: 200m
-    # memoryLimit: 256Mi
-    # cpuRequests: 100m
-    # memoryRequests: 128Mi
-    image: portus.ooooooo.com:5000/kubesprayns/gitlab/gitlab-runner-helper:x86_64-latest
-
-
+35c35
+<     repository: prom/alertmanager
+---
+>     repository: portus.oooooo.com:5000/kubesprayns/prom/alertmanager
+212c212
+<     repository: jimmidyson/configmap-reload
+---
+>     repository: portus.oooooo.com:5000/kubesprayns/jimmidyson/configmap-reload
+247c247
+<     repository: busybox
+---
+>     repository: portus.oooooo.com:5000/kubesprayns/busybox
+268c268
+<     repository: quay.io/coreos/kube-state-metrics
+---
+>     repository: portus.oooooo.com:5000/kubesprayns/quay.io/coreos/kube-state-metrics
+345c345
+<     repository: prom/node-exporter
+---
+>     repository: portus.oooooo.com:5000/kubesprayns/prom/node-exporter
+439c439
+<     repository: prom/prometheus
+---
+>     repository: portus.oooooo.com:5000/kubesprayns/prom/prometheus
+653c653
+<     repository: prom/pushgateway
+---
+>     repository: portus.oooooo.com:5000/kubesprayns/prom/pushgateway
+$ helm package .
+$ curl --data-binary "@prometheus-6.7.3.tgz" http://portus.ooooooo.com:8988/api/charts
 ```
 
 ### 测试项目准备
+测试项目来自于github上的项目:    
+
+```
+$ git clone https://github.com/galexrt/presentation-gitlab-k8s.git
+```
 
 ### 搭建/配置GitLab
 本文写作时用到的GitLab版本为`GitLab Community Edition 11.0.3 aa62075`, 供参考.    
@@ -319,5 +472,36 @@ $ vim /opt/gitlab/embedded/service/gitlab-rails/app/models/clusters/applications
 至此，我们的gitlab-runner也安装成功:    
 
 ![/images/2018_09_14_17_51_39_888x112.jpg](/images/2018_09_14_17_51_39_888x112.jpg)
+
+#### Ingress
+默认情况下安装将触发以下错误:     
+
+![/images/2018_09_17_11_08_37_765x333.jpg](/images/2018_09_17_11_08_37_765x333.jpg)
+上传完对应的charts文件以后，继续安装:    
+
+![/images/2018_09_17_11_54_52_743x129.jpg](/images/2018_09_17_11_54_52_743x129.jpg)
+
+删除configmaps:    
+
+```
+# kubectl delete configmap values-content-configuration-ingress -n gitlab-managed-apps
+```
+安装成功后:    
+
+![/images/2018_09_17_11_56_04_861x266.jpg](/images/2018_09_17_11_56_04_861x266.jpg)
+#### Prometheus
+与上述步骤相似，安装完毕后:    
+
+![/images/2018_09_17_14_22_34_859x85.jpg](/images/2018_09_17_14_22_34_859x85.jpg)
+
+
+
+
 ### CI/CD项目
-此时提交已经可以触发runner， 
+此时提交已经可以触发runner，    
+
+![/images/2018_09_17_09_08_28_736x184.jpg](/images/2018_09_17_09_08_28_736x184.jpg)
+
+针对不同的Stage进行Debug. 最终跑通编译。    
+
+
