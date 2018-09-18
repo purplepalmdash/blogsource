@@ -494,8 +494,7 @@ $ vim /opt/gitlab/embedded/service/gitlab-rails/app/models/clusters/applications
 
 ![/images/2018_09_17_14_22_34_859x85.jpg](/images/2018_09_17_14_22_34_859x85.jpg)
 
-
-
+值得注意的是，需要有内建的默认存储提供，否则pod将一直处于Initialize状态。    
 
 ### CI/CD项目
 此时提交已经可以触发runner，    
@@ -504,4 +503,63 @@ $ vim /opt/gitlab/embedded/service/gitlab-rails/app/models/clusters/applications
 
 针对不同的Stage进行Debug. 最终跑通编译。    
 
+### Prometheus
+开启前，集群需要有内建的默认存储，例如:    
 
+```
+# kubectl get sc 
+NAME                    PROVISIONER      AGE
+nfs-storage (default)   fuseim.pri/ifs   35m
+```
+
+未开启前：    
+
+![/images/2018_09_18_12_27_26_497x452.jpg](/images/2018_09_18_12_27_26_497x452.jpg)
+
+开启步骤:    
+
+```
+$ vim /etc/gitlab/gitlab.rb
+################################################################################
+## Prometheus
+##! Docs: https://docs.gitlab.com/ce/administration/monitoring/prometheus/
+################################################################################
+
+prometheus['enable'] = true
+prometheus['monitor_kubernetes'] = true
+prometheus['listen_address'] = "0.0.0.0:9090"
+prometheus['username'] = 'gitlab-prometheus'
+prometheus['uid'] = nil
+prometheus['gid'] = nil
+prometheus['shell'] = '/bin/sh'
+prometheus['home'] = '/var/opt/gitlab/prometheus'
+prometheus['log_directory'] = '/var/log/gitlab/prometheus'
+prometheus['scrape_interval'] = 15
+prometheus['scrape_timeout'] = 15
+prometheus['chunk_encoding_version'] = 2
+
+# To completely disable prometheus, and all of it's exporters, set to false
+prometheus_monitoring['enable'] = true
+
+$ gitlab-ctl reconfigure && gitlab-ctl restart
+```
+同时，需要更改项目中的deployment的名称：    
+
+```
+$ vim manifests/deployment.yaml
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+-  name: presentation-gitlab-k8s-__CI_ENVIRONMENT_SLUG__
++  name: __CI_ENVIRONMENT_SLUG__-presentation-gitlab-k8s
+```
+这是因为:    
+
+![/images/2018_09_18_15_40_19_1249x301.jpg](/images/2018_09_18_15_40_19_1249x301.jpg)
+
+注意到Kubernetes cluster details的Project namespace环节要设置为空:    
+
+![/images/2018_09_18_15_41_20_425x570.jpg](/images/2018_09_18_15_41_20_425x570.jpg)
+现在点击Options->Environments, 查看其监控指标:    
+
+![/images/2018_09_18_15_42_14_780x621.jpg](/images/2018_09_18_15_42_14_780x621.jpg)
