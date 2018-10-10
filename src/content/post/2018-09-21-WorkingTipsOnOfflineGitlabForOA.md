@@ -20,7 +20,7 @@ $  sudo yum install -y gitlab-runner
 Edit gitlab.rb file:   
 
 ```
-# vim /etc/gitlab.rb
+# vim /etc/gitlab/gitlab.rb
 external_url 'http://192.168.122.160'
 
 prometheus['enable'] = true
@@ -149,3 +149,31 @@ Upload docker images:
 ```
 
 ```
+
+
+### Online Verification
+Setup an all-in-one node, and a single node(for gitlab).    
+
+Gitlab installation:    
+
+```
+# cat > /etc/default/locale <<EOF
+LC_ALL=en_US.UTF-8
+LANG=en_US.UTF-8
+LANGUAGE=en_US.UTF-8
+EOF
+# localedef -v -c -i en_US -f UTF-8 en_US.UTF-8 || true
+# exit
+# curl https://packages.gitlab.com/install/repositories/gitlab/gitlab-ce/script.deb.sh | bash
+# EXTERNAL_URL="http://192.168.122.173" apt-get install gitlab-ce
+# gitlab-ctl reconfigure
+# gitlab-ctl restart
+```
+
+Runner:    
+
+```
+# curl -L https://packages.gitlab.com/install/repositories/runner/gitlab-runner/script.deb.sh |bash
+# apt-get install gitlab-runner
+```
+
