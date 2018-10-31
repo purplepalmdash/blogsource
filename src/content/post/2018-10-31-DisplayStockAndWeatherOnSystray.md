@@ -190,3 +190,26 @@ Bitcoin price api:
 }%
 ```
 Or CNY to USD?   
+
+### Bug-Fix
+In case you are offline, your stock won't be fetched, so calling
+fetchShanghaiStock() will failed, we have to change the code calling like
+following:    
+
+```
+stockwidget = wibox.widget.textbox()
+    vicious.register(stockwidget, vicious.widgets.uptime,
+      function (widget, args)
+	local l = fetchShanghaiStock()
+	if l == nil then
+	  return '<span color="brown">UP:</span><span  color="red">'..args[1]..'|'..args[2]..'|'..args[3]..'</span>'
+	else
+	  if string.match(l[4], "-") then
+	    return '<span color="brown">A股:</span><span  color="green">'..l[2]..'|'..l[3]..'|'..l[4]..'</span>'
+	  else
+	    return '<span color="brown">A股:</span><span  color="red">'..l[2]..'|'..l[3]..'|'..l[4]..'</span>'
+	  end
+        end
+      end, 610)
+```
+So when no data is available, we will display the uptime data.    
