@@ -8,7 +8,9 @@ categories = ["Linux"]
 ### Font Preparation
 Download `Conky Icons by Carelli.ttf` from following url:    
 
+```
 https://github.com/antoniocarelli/conky/blob/master/Conky%20Icons%20by%20Carelli.ttf
+```
 
 With the downloaded ttf, do following command:    
 
@@ -30,7 +32,9 @@ Most conky configuration files use font-awesome version 4  rather than version
 ### Configuration File
 My conky configuration file is listed under :    
 
+```
 https://gist.githubusercontent.com/purplepalmdash/4078219891aa60923e16f4a98bd9bffb/raw/d6a5711a839dace3ce440ad6bc061691a32941bf/conky.conf
+```
 
 So simply download this file and run conky via:    
 
@@ -78,4 +82,6 @@ Then the result will be displayed like following:
 
 The full configuration for transparent is listed as:    
 
+```
 https://gist.github.com/purplepalmdash/753caaa124d9da0d58b3a7b08738d8fa
+```
