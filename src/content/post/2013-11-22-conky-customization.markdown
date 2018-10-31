@@ -6,7 +6,7 @@ title: Conky Customization
 url: /2013/11/22/conky-customization/
 ---
 
-###Add existing user to specified group
+### Add existing user to specified group
 The problem is : why I can't use hddtemp? This is because hddtemp need priviledge for accessing the disk related equipment.     
 
 ```
@@ -28,7 +28,7 @@ But this didn't solve the problem, I have to add prividge in /etc/sudoes,
 
 ```
 Therefore in the configuration file of conky I need to replace the hddtemp with "sudo hddtemp", everything will be displayed. 
-###Now testing the Conky
+### Now testing the Conky
 After you have installed conky, the first thing for you to do is to edit its configuration file, to decide what to display on your own widget, my configuration file is listed as following:
 
 ```
@@ -120,7 +120,7 @@ ${color purple} ${top name 5} ${top pid 5} ${top cpu 5} ${top mem 5}
 
 ```
 In fact I didn't finished the Translucent, so I use the Transparent, a little bit ugly, but it's OK. 
-###Add it into awesome
+### Add it into awesome
 Simply add one line in your ~/.config/awesome/rc.lua could solve the problem:
 
 ```
@@ -130,5 +130,4 @@ Simply add one line in your ~/.config/awesome/rc.lua could solve the problem:
 Now you can enjoy your Conky. 
 
 ![conky.jpg](/images/conky.jpg)
-
 
