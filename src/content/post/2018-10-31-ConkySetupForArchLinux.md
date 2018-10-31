@@ -76,3 +76,6 @@ Then the result will be displayed like following:
 
 ![/images/2018_10_31_16_44_03_613x870.jpg](/images/2018_10_31_16_44_03_613x870.jpg)
 
+The full configuration for transparent is listed as:    
+
+https://gist.github.com/purplepalmdash/753caaa124d9da0d58b3a7b08738d8fa
