@@ -49,6 +49,7 @@ Calling ioctl() to re-read partition table.
 Syncing disks.
 ```
 
+You can use `partprobe /dev/sda` for probing the partitions.   
 ### Physical Volume
 Create a physical volume and display the pv:    
 

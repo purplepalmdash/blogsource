@@ -41,6 +41,9 @@ gpgcheck=0
 ```
 # useradd -m vagrant
 # passwd vagrant
+# cp /root/.bashrc /home/vagrant/.bashrc
+# chmod 777 /home/vagrant/.bashrc
+# chown -R vagrant /home/vagrant/.bashrc
 ```
 添加`vagrant`用户到visudo:    
 
@@ -71,6 +74,30 @@ nopassword for this group.
 AuthorizedKeysFile .ssh/authorized_keys
 ```
 
+Edit your /etc/default/grub. Change the line from
+
+```
+GRUB_CMDLINE_LINUX=""
+to
+GRUB_CMDLINE_LINUX="net.ifnames=0 biosdevname=0"
+# grub-mkconfig -o /boot/grub/grub.cfg
+```
+Edit the network configuration:    
+
+```
+# vim /etc/network/interfaces
+auto eth0
+iface eth0 inet dhcp
+# chsh vagrant
+/bin/bash
+# cp /home/xxx/.bashrc /home/vagrant/.bashrc
+# cp /home/xxx/.bash_logout /home/vagrant/.bash_logout
+# cp /home/xxx/.profile /home/vagrant/.profile
+# vim /home/vagrant/.profile
+add
+[ -z "$BASH_VERSION" ] && exec /bin/bash -l
+# sudo chsh -s /bin/bash vagrant
+```
 ### VBoxAdditional iso
 在虚拟机的界面上点击`Device -> Install Guest Additional CD image`， 而后:    
 
@@ -121,3 +148,12 @@ Finally you make the new configuration for grub2:
 
 if you have make vagrant to be the member of `%wheel`, be sure to add
 nopassword for this group.    
+
+### Ignore VBoxAddons
+Ignore synced_folder definition in Vagrantfile:    
+
+```
+  config.vm.synced_folder "../data", "/vagrant_data",  disabled: true
+  config.vm.synced_folder ".", "/vagrant", disabled: true
+
+```
