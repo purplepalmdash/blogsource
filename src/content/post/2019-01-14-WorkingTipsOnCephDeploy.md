@@ -180,3 +180,10 @@ Create and configure:
 /dev/nbd0
 
 ```
+
+Or if you would not use rbd-nbd, then you could use following commands:    
+
+```
+# ceph osd crush tunables legacy
+# rbd map test_pool/test_image
+```
