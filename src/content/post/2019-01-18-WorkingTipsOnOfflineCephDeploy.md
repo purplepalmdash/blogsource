@@ -33,6 +33,11 @@ Edit the host, make the deploy:
 # mkdir ceph-install
 # cd ceph-install
 # ceph-deploy new cephdeploy-1
+# vim ceph.conf
+[global]
+....
+osd pool default size = 1
+osd pool default min size = 1
 ```
 Edit the python files for supporting offline deployment:    
 
@@ -47,8 +52,7 @@ def write_sources_list(url, codename, filename='ceph.list', mode=0o644):
 Install ceph package:    
 
 ```
-# ceph-deploy install --repo-url=http://192.xxx.xxx.xxx/cephdeploy --gpg-url \
-http://192.xxx.xxx.xxx/cephdeploy/release.asc --release luminous cephdeploy-1
+# ceph-deploy install --repo-url=http://192.xxx.xxx.xxx/cephdeploy --gpg-url=http://192.xxx.xxx.xxx/cephdeploy/release.asc --release luminous cephdeploy-1
 ```
 Initialize mon:    
 
@@ -89,7 +93,7 @@ Create the osd:
 
 ```
 # ceph osd pool create test_pool 128 128 replicated
-# rbd crate --size 10240 test_image -p test_pool
+# rbd create --size 10240 test_image -p test_pool
 # rbd info test_pool/test_image
 # ceph osd crush tunables legacy
 # rbd feature disable test_pool/test_image exclusive-lock object-map fast-diff \
@@ -99,4 +103,51 @@ deep-flatten
 # mkdir /mnt/ceph-block-device
 # chmod 777 /mnt/ceph-block-device/
 # mount /dev/rbd/test_pool/test_image /mnt/ceph-block-device
+```
+
+Using rbd-nbd for mounting:    
+
+```
+# apt-get install rbd-nbd
+# rbd-nbd map test_pool/test_image
+/dev/nbd0
+# mkfs.ext4 /dev/nbd0
+# mount /dev/nbd0 /YourMountPoint
+```
+But for `ceph-s` you will see:    
+
+![/images/2019_01_18_14_54_02_514x206.jpg](/images/2019_01_18_14_54_02_514x206.jpg)
+
+```
+Warning: 
+application not enabled on 1 pool(s)
+# ceph osd pool application enable test_pool rbd
+# ceph -s
+
+helath: HEALTH_OK
+```
+
+Enable the dashboards:    
+
+```
+# ceph mgr module enable dashboard
+```
+Via following command you could view pool details:    
+
+```
+# ceph osd pool ls detail
+```
+
+### pool error
+Resolve the pool error.   
+
+```
+[root@node3 ~]# ceph osd pool delete ecpool ecpool --yes-i-really-really-mean-it
+Error EPERM: pool deletion is disabled; you must first set the mon_allow_pool_delete config option to true before you can destroy a pool
+[root@node1 ceph]# vi /etc/ceph/ceph.conf 
+[mon]
+mon allow pool delete = true
+[root@node1 ceph]# systemctl restart ceph-mon.target
+[root@node3 ~]# ceph osd pool delete ecpool ecpool --yes-i-really-really-mean-it
+pool 'ecpool' removed
 ```
