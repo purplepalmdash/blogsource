@@ -35,10 +35,12 @@ Fetch the helm/charts package via:
 # ls
 prometheus-operator-1.9.0.tgz
 ```
-
-### Issue
-
-```
-quay.io/coreos/configmap-reload:v0.0.1
+Deploy it on the minikube and you will get all of the images, then save it
+via:    
 
 ```
+eval $(minikube docker-env)
+docker save -o prometheus-operator.tar grafana/grafana:5.4.3 quay.io/prometheus/node-exporter:v0.17.0 quay.io/coreos/prometheus-config-reloader:v0.26.0 quay.io/coreos/prometheus-operator:v0.26.0 quay.io/prometheus/alertmanager:v0.15.3 quay.io/prometheus/prometheus:v2.5.0 kiwigrid/k8s-sidecar:0.0.6 quay.io/coreos/kube-state-metrics:v1.4.0 quay.io/coreos/configmap-reload:v0.0.1
+xz prometheus-operator.tar
+```
+Then we could write the offline scripts for deploying this helm/charts.    
