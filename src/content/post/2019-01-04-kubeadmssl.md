@@ -54,3 +54,21 @@ notAfter=Dec 11 05:34:10 2118 GMT
 notAfter=Dec 11 05:34:11 2118 GMT
 notAfter=Dec 11 05:34:12 2118 GMT
 ```
+
+### v1.12.5
+Update the v1.12.5   
+
+```
+#  git remote -v
+#  git fetch origin
+#  git checkout tags/v1.12.5 -b 1.12.5_local
+# git branch
+  1.12.3_local
+  1.12.4_local
+* 1.12.5_local
+  master
+......make some changes.....
+# make all WHAT=cmd/kubeadm GOFLAGS=-v
+# ls  _output/bin/kubeadm
+
+```
