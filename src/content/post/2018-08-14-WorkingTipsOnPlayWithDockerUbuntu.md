@@ -13,6 +13,20 @@ systemd-resolved will listen on 53 port, disable it via:
 DNSStubListener=no
 # systemctl enable dnsmasq
 ```
+Disable the system-resolved.service:    
+
+```
+# systemctl disable systemd-resolved.service
+# systemctl stop systemd-resolved.service
+# echo nameserver 192.168.0.15>/etc/resolv.conf
+# chattr -e /etc/resolv.conf
+# chattr +i /etc/resolv.conf
+# ufw disable
+# docker swarm leave
+# docker swarm init
+```
+
+
 ### registry proxy issue
 Enable the registry proxy will slow down the registry cached image download
 speed, solved it via:    

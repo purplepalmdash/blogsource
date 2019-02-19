@@ -15,6 +15,19 @@ but this will cause gui startup failed.
 
 ![/images/2018_11_24_21_09_12_541x252.jpg](/images/2018_11_24_21_09_12_541x252.jpg)
 
+Changes to lxdm solves the problem:    
+
+```
+# pacman -S lxde
+# systemctl enable lxdm.service
+# vim /etc/lxdm/lxdm.conf
+####autologin=dgod
+# vim /root/.dmrc
+[Desktop]
+Session=xfce
+
+```
+
 Install:    
 
 ```
