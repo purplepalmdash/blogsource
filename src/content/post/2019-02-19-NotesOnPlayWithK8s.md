@@ -73,3 +73,51 @@ franela/k8s:latest会有如此的不同呢？
 
 
 离线情况下玩docker，真是没事找事，一波三折啊！！！     
+
+### 更新
+最近没心思做别的事情，还是把这个PWK的离线给做了，记录一下步骤：    
+
+更新到新的play-with-kubernetes:    
+
+```
+# git clone https://github.com/play-with-docker/play-with-kubernetes.github.io
+```
+当然在这里我们要做适配，以允许其离线化 。    
+
+采用的franela/k8s版本大约是2018年年底的版本，    
+
+```
+# franela/k8s              latest              c7038cbdbc5d        2 months ago        733MB
+```
+因为这个容器镜像中的kubeadm版本已经升级到比较新的版本，需要重新下载镜像:    
+
+```
+k8s.gcr.io/kube-proxy-amd64                v1.11.7             e9a1134ab5aa        4 weeks ago         98.1MB
+k8s.gcr.io/kube-apiserver-amd64            v1.11.7             d82b2643a56a        4 weeks ago         187MB
+k8s.gcr.io/kube-controller-manager-amd64   v1.11.7             93fb4304c50c        4 weeks ago         155MB
+k8s.gcr.io/kube-scheduler-amd64            v1.11.7             52ea1e0a3e60        4 weeks ago         56.9MB
+weaveworks/weave-npc                       2.5.1               789b7f496034        4 weeks ago         49.6MB
+weaveworks/weave-kube                      2.5.1               1f394ae9e226        4 weeks ago         148MB
+k8s.gcr.io/coredns                         1.1.3               b3b94275d97c        9 months ago        45.6MB
+k8s.gcr.io/etcd-amd64                      3.2.18              b8df3b177be2        10 months ago       219MB
+k8s.gcr.io/pause                           3.1                 da86e6ba6ca1        14 months ago       742kB
+nginx                                      latest              05a60462f8ba        2 years ago         181MB
+```
+同时需要更改kubeadm init的参数为:    
+
+```
+# kubeadm init --apiserver-advertise-address $(hostname -i) --kubernetes-version=v1.11.7
+```
+在多节点章节中，kubeaadm
+1.11.7与原先的calico3.1冲突，因而我们更新到了更新的3.5版本,
+因为docker-in-docker配备了两个网络，我们在calico.yaml中也需要指定IP范围，以确保BGP隧道建立在正确的网络接口上:   
+
+```
+            - name: CALICO_IPV4POOL_CIDR
+              value: "192.168.0.0/16"
+            - name: IP_AUTODETECTION_METHOD
+              value: "interface=eth0.*"
+
+```
+
+到此，则新版本的playwithk8s更新完毕，总共花了5天时间。虽然有点磨人，但想起来这5天还是值得的。

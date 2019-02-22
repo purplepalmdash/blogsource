@@ -113,7 +113,7 @@ Build the `play-with-go`:
 # go get -u github.com/golang/dep/cmd/dep
 # which dep
 /root/go/bin/dep
-# cd ~/Code/play-with-docker/cd ~/Code/play-with-docker/
+# cd ~/Code/play-with-docker/
 # go get -v -d -t ./...
 # cd /root/go/src/github.com/play-with-docker/play-with-docker
 # dep ensure
