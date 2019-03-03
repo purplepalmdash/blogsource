@@ -153,3 +153,15 @@ resize2fs /dev/vagrant-vg/root
 date > /etc/disk_added_date
 ```
 This script will automatically expand your root disk from the original 2.5G to 12.5G, you could adjust the size in Vagrantfile.    
+
+
+### On CentOS7
+The default configuration for sshd should be changed to:    
+
+```
+# vi /etc/ssh/sshd_config
+PermitRootLogin yes
+UseDNS	no
+PasswordAuthentication yes
+ChallengeResponseAuthentication yes
+```
