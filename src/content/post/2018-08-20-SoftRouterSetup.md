@@ -211,7 +211,7 @@ netmask 255.255.255.0
 
 ```
 # vim /etc/sysctl.conf
-net.ipvr.ip_forward=1
+net.ipv4.ip_forward=1
 ```
 安装iptables-persistent:    
 
