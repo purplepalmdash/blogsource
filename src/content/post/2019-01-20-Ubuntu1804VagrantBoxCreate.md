@@ -12,7 +12,7 @@ Change grub configuration for changing to `ethx` naming rules:
 ```
 # vim /etc/default/grub
 GRUB_CMDLINE_LINUX_DEFAULT="quite"
-GRUB_CMDLINE_LINUX="net.ifnames=0 biosdevname=0 
+GRUB_CMDLINE_LINUX="net.ifnames=0 biosdevname=0"
 # grub-mkconfig -o /boot/grub/grub.cfg
 ```
 Change the netplan rules:    
@@ -73,8 +73,17 @@ things.
 Install ansible via:    
 
 ```
-# apt-get update && apt-get install -y python-pip && pip install ansibel
+# apt-get update && apt-get install -y python-pip && pip install ansible
 ``` 
+Or use old ansible(from repository):    
+
+```
+# apt-get update -y && apt-get install -y ansible
+```
+Generate the ssh key and use ssh-copy-id for copying the key for passwordless
+login.    
+
+
 Download kubespray source files:     
 
 ```
@@ -105,3 +114,18 @@ Deploy online for:
 # ansible-playbook -i inventory/sample/hosts.ini cluster.yml
 ```
 Now you could get all of the deb packages and docker images. 
+
+### 1804 debs preparation
+Generate 1804debs.tar.xz files.   
+
+```
+### Install more necessary packages. 
+# apt-get install -y bind9 bind9utils ntp nfs-common nfs-kernel-server python-netaddr
+# mkdir /root/static
+# cd /var/cache
+# find . | grep deb$ | xargs -I % cp % /root/static
+# cd /root/static
+# dpkg-scanpackages . /dev/null | gzip -9c > Packages.gz
+# cd /root/
+# tar cJvf 1804debs.tar.xz static/
+```
