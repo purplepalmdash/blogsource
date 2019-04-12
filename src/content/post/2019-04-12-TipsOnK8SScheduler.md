@@ -105,3 +105,7 @@ Setting Initial Resources, issue #12149:
 initial-resources.md:    
 
 [https://github.com/fabric8io/kansible/blob/master/vendor/k8s.io/kubernetes/docs/proposals/initial-resources.md](https://github.com/fabric8io/kansible/blob/master/vendor/k8s.io/kubernetes/docs/proposals/initial-resources.md)     
+
+vpa 官方仓库：     
+
+[https://github.com/kubernetes/autoscaler/tree/master/vertical-pod-autoscaler](https://github.com/kubernetes/autoscaler/tree/master/vertical-pod-autoscaler)    
