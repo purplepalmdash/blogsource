@@ -40,3 +40,9 @@ When all of the items were deployed, record the images via:
 
 With the helm/charts folder and the `before.txt` and `after.txt` you could
 making this helm/charts working offline.   
+
+```
+# docker save -o prometheus-operator.tar grafana/grafana:6.0.2 kiwigrid/k8s-sidecar:0.0.13 quay.io/coreos/prometheus-config-reloader:v0.29.0 quay.io/coreos/prometheus-operator:v0.29.0 quay.io/prometheus/alertmanager:v0.16.1 quay.io/prometheus/prometheus:v2.7.1 k8s.gcr.io/kube-state-metrics:v1.5.0 quay.io/prometheus/node-exporter:v0.17.0 quay.io/coreos/configmap-reload:v0.0.1
+# xz prometheus-operator.tar
+# tag and push
+```
