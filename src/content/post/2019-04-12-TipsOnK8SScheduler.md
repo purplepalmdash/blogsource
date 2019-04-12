@@ -81,12 +81,12 @@ issue被re-assign给另外的开发者, 最终被关闭：
 超过请求'更多'或随机的一个？
 ```
 
-当然，后面有一系列原因导致了`Vertical pod auto-sizer`这个特性的开发被终止。   
+至此，即可以看到，作者文章中的提法应该是理解错误了，使用7天/30天等历史数据预估资源使用只是为了完成`Vertical pod auto-sizer`这个特性的开发，而提出的一种备选方案。
 
-回到《从kubernetes看如何设计超大规模资源调度系统》一文的提法来看，作者可能当时仅仅是看了Kubernetes社区开发中的一个开发特性的建议文档，就认为Kubernetes拥有了"预测资源需求量"的功能。事实上从K8s社区的讨论来看，"预测资源需求"只是为了实现"vertical pod auto-sizer"，而这一特性一直到18年底才进入到alpha阶段，vpa特性的实现也不再是依靠16年时定义而实现。    
+作者可能当时仅仅是看了Kubernetes社区开发中的一个开发特性的建议文档，就认为Kubernetes拥有了"预测资源需求量"的功能，事实上K8s的调度引擎从来不会去预估资源需求量。
 
-作者写该文章时，根据当时文档做出的实现还依赖于influxdb来收集指标，而influxdb+heapster应该是18年就被metric
-server所替代。当前处于alpha阶段的vpa特性也是依赖于metric server而实现的。    
+"vertical pod auto-sizer"这一特性一直到18年底才进入到alpha阶段，vpa特性的实现也不再是依靠16年时定义而实现。 在作者写文章的2016年，vpa试图根据当时用于收集容器指标的influxdb来实现预估代码，结果失败了；而influxdb+heapster应该是18年就被metric
+server所替代。当前处于alpha阶段的vpa特性也就依赖于metric server而实现。我们可以看到以下列出的代码变更：   
 
 含有文章中提法的代码目录于v1.1版中被引入，至v1.11版被删除。   
 
