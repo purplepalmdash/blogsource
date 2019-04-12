@@ -9,7 +9,7 @@ categories = ["Linux"]
 文章来源:   
 [https://blog.csdn.net/horsefoot/article/details/51577402](https://blog.csdn.net/horsefoot/article/details/51577402)    
 
-![./images/2019_04_12_23_25_30_1078x550.jpg](./images/2019_04_12_23_25_30_1078x550.jpg)    
+![/images/2019_04_12_23_25_30_1078x550.jpg](/images/2019_04_12_23_25_30_1078x550.jpg)    
 
 印象中我没有见过K8S中有这样的调度策略，那这个博客的提法是从何而来？    
 
