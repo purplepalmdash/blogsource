@@ -85,8 +85,11 @@ v1.10版后被从主线删除：
 
 ### 总结
 从对issue的跟踪来看，应该是作者理解错了。预先估计资源用量从来不是Kubernetes定义资源需求的正确方法。   
+对于Kubernetes调度讲得比较好的一篇文章如下：    
 
-官方的正确参考资料如下：    
+[http://dockone.io/article/2885](http://dockone.io/article/2885)    
+
+官方对资源限制的参考页面如下：    
 
 [https://kubernetes.io/zh/docs/tasks/administer-cluster/cpu-memory-limit/](https://kubernetes.io/zh/docs/tasks/administer-cluster/cpu-memory-limit/)    
 如果需要在生产环境中优化资源的使用，可以参考：   
