@@ -80,6 +80,14 @@ Or use old ansible(from repository):
 ```
 # apt-get update -y && apt-get install -y ansible
 ```
+
+Better you use the ppa repository for installing ansible:    
+
+```
+# apt-add-repository ppa:ansible/ansible
+# apt-get install ansible
+```
+
 Generate the ssh key and use ssh-copy-id for copying the key for passwordless
 login.    
 
