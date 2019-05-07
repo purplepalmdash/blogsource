@@ -129,3 +129,26 @@ Failed , update jinja2:
 # pip show jinja2
 2.10.1
 ```
+
+Install more packages:    
+
+```
+# yum install -y createrepo iotop parted ntp  nfs-utils bind bind-utils
+```
+
+
+### Install newer docker 
+Following are the steps for a brand-new rhel7 vm:    
+
+```
+# cd /etc/yum.repos.d
+# rm -f redhat.repo
+# curl http:/mirrors.163.com/.help/CentOS7-Base-163.repo>base.repo
+# vi base.repo
+%s#$releasever#7#g
+# yum install -y yum-utils device-mapper-persistent-data lvm2
+# yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
+# yum search docker-ce
+```
+Now you could install the specified version of docker-ce and update your
+offline pkgs. 

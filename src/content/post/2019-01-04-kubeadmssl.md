@@ -20,10 +20,11 @@ Now edit the cert.go file:
 ```
 # vim vendor/k8s.io/client-go/util/cert/cert.go
 
-		NotAfter:              now.Add(duration365d * 100).UTC(),
-		NotAfter:     time.Now().Add(duration365d * 100).UTC(),
-	maxAge := time.Hour * 24 * 365 * 100         // one year self-signed certs
-		maxAge = 100 * time.Hour * 24 * 365 // 100 years fixtures
+		NotAfter:              now.Add(duration365d * 100).UTC(),    // line 66
+		NotAfter:     time.Now().Add(duration365d * 100).UTC(),  // line 111
+	maxAge := time.Hour * 24 * 365 * 100         // one year self-signed certs  // line 96
+		maxAge = 100 * time.Hour * 24 * 365 // 100 years fixtures  // line 110
+		NotAfter:    validFrom.Add(100 * maxAge), // line 152, 124
 ```
 Then build using following command:    
 
@@ -72,3 +73,71 @@ Update the v1.12.5
 # ls  _output/bin/kubeadm
 
 ```
+
+### 4. kubeadm git tree state
+Modify the file `hack/lib/version.sh`:    
+
+```
+  if [[ -n ${KUBE_GIT_COMMIT-} ]] || KUBE_GIT_COMMIT=$("${git[@]}" rev-parse "HEAD^{commit}" 2>/dev/null); then
+    if [[ -z ${KUBE_GIT_TREE_STATE-} ]]; then
+      # Check if the tree is dirty.  default to dirty
+      if git_status=$("${git[@]}" status --porcelain 2>/dev/null) && [[ -z ${git_status} ]]; then
+        KUBE_GIT_TREE_STATE="clean"
+      else
+        KUBE_GIT_TREE_STATE="clean"
+      fi
+    fi
+```
+
+### golang issue
+build kubeadm 1.14.1 requires golang newer than golang 1.12.    
+
+```
+# wget https://dl.google.com/go/go1.12.2.linux-amd64.tar.gz
+# tar -xvf go1.12.2.linux-amd64.tar.gz
+# sudo mv go /usr/local
+# vim ~/.bashrc
+export GOROOT=/usr/local/go
+export PATH=$GOPATH/bin:$GOROOT/bin:$PATH
+export GOPATH=/root/go/
+# source ~/.bashrc
+# go version
+go version go1.12.2 linux/amd64
+```
+
+Now you could use the newer golang builder for building the v1.14.1 kubeadm.  
+
+
+### 1.14.1 kubeadm timestamp
+Before:    
+
+```
+# pwd
+/etc/kubernetes/ssl
+# for i in `ls *.crt`; do openssl x509 -in $i -noout -dates; done | grep notAfter
+notAfter=May  4 07:20:04 2020 GMT
+notAfter=May  4 07:20:03 2020 GMT
+notAfter=May  2 07:20:03 2029 GMT
+notAfter=May  2 07:20:04 2029 GMT
+notAfter=May  4 07:20:05 2020 GMT
+```
+After replacement:    
+
+```
+notAfter=May  4 08:13:02 2020 GMT
+notAfter=May  4 08:13:02 2020 GMT
+notAfter=Apr 11 08:13:01 2119 GMT
+notAfter=Apr 11 08:13:02 2119 GMT
+notAfter=May  4 08:13:03 2020 GMT
+```
+
+Seems failed, so I have to change again.   
+
+Add modification:    
+
+```
+./cmd/kubeadm/app/util/pkiutil/pki_helpers.go
+                NotAfter:     time.Now().Add(duration365d * 100 ).UTC(),  // line 578
+
+```
+

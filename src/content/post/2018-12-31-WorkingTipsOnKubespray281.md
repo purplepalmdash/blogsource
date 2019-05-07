@@ -103,7 +103,7 @@ Vagrant create temp machines.
 Stop the service:    
 
 ```
-sudo systemcel stop secureregistryserver.service
+sudo systemctl stop secureregistryserver.service
 ```
 Remove the old registry data, and start a new instance
 

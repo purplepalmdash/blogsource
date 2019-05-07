@@ -157,3 +157,17 @@ Ignore synced_folder definition in Vagrantfile:
   config.vm.synced_folder ".", "/vagrant", disabled: true
 
 ```
+
+### Update for rhel7
+After changing the grub configuration, do following:    
+
+```
+# grub2-mkconfig -o /boot/grub2/grub.cfg 
+```
+
+Change the networking via(old one to new one):    
+
+```
+# cd /etc/sysconfig/network-scripts/
+# mv ifcfg-xxxx ifcfg-eth0
+```
