@@ -50,7 +50,7 @@ Name=ethusb1
 Address=192.168.0.33
 # cat 30-ethusb2.link 
 [Match]
-MACAddress=84:e7:14:00:2d:8c
+MACAddress=8xxxxxxxxxxxxxx
 
 [Link]
 Description=USB to Ethernet Adapter 2
@@ -91,4 +91,5 @@ Name=bond1
 [Network]
 Address=192.168.0.33/24
 ```
-Now you could see bond1 has been configured.   
+Now you could see bond has been configured, and the transfer speed could up to
+20M/s
