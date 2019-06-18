@@ -26,6 +26,7 @@ network:
   ethernets:
     eth0:
       dhcp4: yes
+      dhcp-identifier: mac
 ```
 Now reboot your machine, continue for later commands.   
 
