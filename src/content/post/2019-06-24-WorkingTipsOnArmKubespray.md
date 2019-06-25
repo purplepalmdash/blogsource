@@ -103,4 +103,67 @@ Configure the hosts.ini, then run playbook:
 ```
 # ansible-playbook -i inventory/sample/hosts.ini cluster.yml
 ```
+### helm building
+helm docker image doesn't support  arm64, thus we do following steps for rebuilding our own image:    
 
+```
+# wget https://storage.googleapis.com/kubernetes-helm/helm-${HELM_LATEST_VERSION}-linux-arm64.tar.gz
+# tar xzvf helm-xxxxx-linux-arm64.tar.gz
+# mv linux-arm64/helm ~/dockerbuild
+# cd ~/dockerbuild
+# vim Dockerfile
+```
+The Dockerfile we changes to following:    
+
+```
+FROM alpine
+
+LABEL maintainer="Lachlan Evenson <lachlan.evenson@gmail.com>"
+
+ARG VCS_REF
+ARG BUILD_DATE
+
+# Metadata
+LABEL org.label-schema.vcs-ref=$VCS_REF \
+      org.label-schema.vcs-url="https://github.com/lachie83/k8s-helm" \
+      org.label-schema.build-date=$BUILD_DATE \
+      org.label-schema.docker.dockerfile="/Dockerfile"
+
+ENV HELM_LATEST_VERSION="v2.13.1"
+
+COPY . /usr/local/bin
+
+ENTRYPOINT ["helm"]
+CMD ["help"]
+```
+Build the image with following commands:    
+
+```
+# docker image build -t lachlanevenson/k8s-helm:v2.13.1-arm64 .
+# docker save -o helmarm.tar lachlanevenson/k8s-helm:v2.13.1-arm64
+```
+Using the arm64 based image we could setup helm on kubespray.   
+
+### harbor on arm64
+Install docker-compose via:     
+
+```
+# pip download docker-compose
+# Install docker-compose in offline environment. 
+```
+Clone the repository and extract it to:     
+
+```
+# pwd
+/home/dash/Downloads/harbor-arm64/harbor-arm64-develop
+# cd make
+# ls
+checkenv.sh                     docker-compose.clair.yml   harbor.cfg  prepare
+common                          docker-compose.notary.tpl  install.sh  pushimage.sh
+docker-compose.chartmuseum.tpl  docker-compose.notary.yml  kubernetes
+docker-compose.chartmuseum.yml  docker-compose.tpl         migrations
+docker-compose.clair.tpl        docker-compose.yml         photon
+```
+The docker-compose file exists under folder.    
+
+changed to using repository's docker-compose.` apt-get install -y docker-compose`.    
