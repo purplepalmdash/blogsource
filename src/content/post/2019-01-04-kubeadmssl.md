@@ -141,3 +141,36 @@ Add modification:
 
 ```
 
+### arm64(kubernetes 1.14.3 version)
+golang 1.12.2 arm64 version download:     
+
+```
+# wget https://dl.google.com/go/go1.12.2.linux-arm64.tar.gz
+# tar xzvf go1.12.2.linux-arm64.tar.gz
+# sudo mv go /usr/local
+# vim ~/.bashrc
+export GOROOT=/usr/local/go
+export PATH=$GOPATH/bin:$GOROOT/bin:$PATH
+export GOPATH=/root/go/
+# source ~/.bashrc
+# go version
+go version go1.12.2 linux/arm64
+```
+Download the k8s 1.14.3 source code and unzip it:     
+
+```
+# unzip kubernetes-1.14.3.zip
+# cd kubernetes-1.14.3
+```
+modify the `hack/lib/version.sh` `KUBE_GIT_TREE_STATE` all to `clean`.     
+
+Also change following two files:    
+
+```
+root@arm02:~/Code/kubernetes-1.14.3# vim cmd/kubeadm/app/util/pkiutil/pki_helpers.go
+root@arm02:~/Code/kubernetes-1.14.3# vim vendor/k8s.io/client-go/util/cert/cert.go
+root@arm02:~/Code/kubernetes-1.14.3#  make all WHAT=cmd/kubeadm GOFLAGS=-v
+```
+
+![/images/2019_07_03_15_25_16_903x178.jpg](/images/2019_07_03_15_25_16_903x178.jpg)
+
