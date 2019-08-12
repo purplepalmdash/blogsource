@@ -279,3 +279,54 @@ address=/os311.test.it.example.com/192.192.189.128
 # systemctl daemon-reload
 # systemctl restart dnsmasq
 ```
+
+### Create vm
+The definition files should be modified into:    
+
+```
+apiVersion: kubevirt.io/v1alpha3
+kind: VirtualMachine
+metadata:
+  name: testvm
+spec:
+  running: false
+  template:
+    metadata:
+      labels: 
+        kubevirt.io/size: small
+        kubevirt.io/domain: testvm
+    spec:
+      domain:
+        devices:
+          disks:
+            - name: containerdisk
+              disk:
+                bus: virtio
+            - name: cloudinitdisk
+              disk:
+                bus: virtio
+          interfaces:
+          - name: default
+            bridge: {}
+        resources:
+          requests:
+            memory: 64M
+      networks:
+      - name: default
+        pod: {}
+      volumes:
+        - name: containerdisk
+          containerDisk:
+            image: kubevirt/cirros-registry-disk-demo
+            imagePullPolicy: IfNotPresent
+        - name: cloudinitdisk
+          cloudInitNoCloud:
+            userDataBase64: SGkuXG4=
+```
+Thus we could launch the vms, notice we have to pull the images manually:    
+
+```
+# sudo docker pull kubevirt/cirros-registry-disk-demo
+# sudo docker pull index.docker.io/kubevirt/virt-launcher:v0.19.0
+# sudo docker pull kubevirt/virt-launcher:v0.19.0
+```
