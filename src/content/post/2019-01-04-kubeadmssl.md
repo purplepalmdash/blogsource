@@ -174,3 +174,29 @@ root@arm02:~/Code/kubernetes-1.14.3#  make all WHAT=cmd/kubeadm GOFLAGS=-v
 
 ![/images/2019_07_03_15_25_16_903x178.jpg](/images/2019_07_03_15_25_16_903x178.jpg)
 
+### v1.15.3
+Via following steps:    
+
+```
+# cd YOURKUBERNETES_FOLDER
+# git fetch origin
+# git checkout tags/v1.15.3 -b 1.15.3_local
+# vim hack/lib/version.sh
+      if git_status=$("${git[@]}" status --porcelain 2>/dev/null) && [[ -z ${git_status} ]]; then
+        KUBE_GIT_TREE_STATE="clean"
+      else
+        KUBE_GIT_TREE_STATE="clean"
+# vim cmd/kubeadm/app/constants/constants.go
+        CertificateValidity = time.Hour * 24 * 365 *100
+# vim vendor/k8s.io/client-go/util/cert/cert.go
+edit the same as in v1.12.5
+		NotAfter:              now.Add(duration365d * 100).UTC(),    // line 66
+		NotAfter:     time.Now().Add(duration365d * 100).UTC(),  // line 111
+	maxAge := time.Hour * 24 * 365 * 100         // one year self-signed certs  // line 96
+		maxAge = 100 * time.Hour * 24 * 365 // 100 years fixtures  // line 110
+		NotAfter:    validFrom.Add(100 * maxAge), // line 152, 124
+# make all WHAT=cmd/kubeadm GOFLAGS=-v
+# ls  _output/bin/kubeadm
+```
+
+注意: v1.15.3中, CertificateValidity变量定义为100年后，不需修改`pki_helper.go`文件内容。    

@@ -102,3 +102,25 @@ ansible 2.7.9
   config file = /media/sda/coreos_kubespray/Rong/ansible.cfg
 # pip install netaddr
 ```
+
+### Disks
+mounting the esdata disk via:    
+
+```
+# vim /etc/systemd/system/media-esdata.mount 
+[Unit]
+Description=Mount cinder volume
+Before=docker.service
+
+[Mount]
+What=/dev/vdb1
+Where=/media/esdata
+Options=defaults,noatime,noexec
+
+[Install]
+WantedBy=docker.service
+# systemctl enable media-esdata.mount
+```
+Then creating the filesystem on `/dev/vdb1`, your mounting point will be ok.   
+
+
