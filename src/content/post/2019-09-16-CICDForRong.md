@@ -56,5 +56,65 @@ Install via:
 ```
 # apt -t buster-backports install gitlab
 ```
+Install failed because it requires gitlab-shell 9.3.0 while the repository didn't provide this one.  Install gitlab-ce instead:    
 
+```
+# sudo apt-get purge gitlab
+# sudo apt-get purge gitlab-common
+# wget https://packages.gitlab.com/gpg.key
+# sudo apt-key add gpg.key 
+# sudo vim /etc/apt/sources.list
+deb http://mirrors.tuna.tsinghua.edu.cn/gitlab-ce/debian buster main
+# sudo apt-get update -y
+# sudo apt-get install -y gitlab-ce
+```
+Configure the gitlab-ce:    
 
+```
+# sudo vim /etc/gitlab/gitlab.rb
+external_url 'http://cicd.cicdforrong.ai'
+# export LC_ALL=en_US.UTF-8
+# export LANG=en_US.utf8
+# sudo gitlab-ctl reconfigure
+```
+Configure the port(nginx/unicorn):   
+
+```
+# vi /etc/gitlab/gitlab.rb
+nginx['listen_port'] = 82 #默认值即80端口 nginx['listen_port'] = nil
+# vi /var/opt/gitlab/nginx/conf/gitlab-http.conf
+listen *:82; #默认值listen *:80;
+# vi /etc/gitlab/gitlab.rb
+unicorn['port'] = 8082#原值unicorn['port'] = 8080
+# vim /var/opt/gitlab/gitlab-rails/etc/unicorn.rb
+listen "127.0.0.1:8082", :tcp_nopush => true
+#原值listen "127.0.0.1:8080", :tcp_nopush => true
+```
+Reconfigure and restart the gitlab service:     
+
+```
+# gitlab-ctl reconfigure
+# gitlab-ctl restart
+```
+### Visit gitlab
+Edit the `/etc/hosts` for adding following items:    
+
+```
+# vim /etc/hosts
+192.168.122.90	cicd.cicdforrong.ai
+```
+Now visit the `http://cicd.cicdforrong.ai` you could get the page for change username/password.    
+
+### Install docker(for gitlab-runner)
+Steps:    
+
+```
+#  sudo apt-get install     apt-transport-https     ca-certificates     curl     gnupg2     software-properties-common
+#  curl -fsSL https://download.docker.com/linux/debian/gpg | sudo apt-key add -
+#  apt-key fingerprint 0EBFCD88
+#  add-apt-repository    "deb [arch=amd64] https://download.docker.com/linux/debian \
+   $(lsb_release -cs) \
+   stable"
+#  apt-get update
+#  apt-get install docker-ce docker-ce-cli containerd.io
+```
