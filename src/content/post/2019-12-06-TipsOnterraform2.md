@@ -417,4 +417,13 @@ output "ip" {
   value = "${libvirt_domain.vm.*.network_interface.0.addresses.0}"
 }
 ```
+local exec command , added to:    
+
+```
+    provisioner "local-exec" {
+      command = "sleep 40 && ansible-playbook -i  /etc/ansible/terraform.py cluster.yml --extra-vars @rong-vars.yml"
+    }
+
+```
+
 逐行解释如下:    
