@@ -41,6 +41,7 @@ $ sudo  vim /etc/ssh/sshd_config
 AuthorizedKeysFile .ssh/authorized_keys
 $ sudo visudo -f /etc/sudoers.d/vagrant
 vagrant ALL=(ALL) NOPASSWD:ALL
+Defaults:vagrant !requiretty
 $ sudo vim /etc/network/interfaces
 change from ens3 to eth0
 auto eth0
