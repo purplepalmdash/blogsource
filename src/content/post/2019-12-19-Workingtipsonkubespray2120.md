@@ -79,9 +79,10 @@ $ ansible-playbook -i inventory/rong/hosts.ini cluster.yml
 Get all of the images:    
 
 ```
+# docker pull xueshanf/install-socat:latest
 # docker images | sed -n '1!p' | awk {'print $1":"$2'} | tr '\n' ' '
-nginx:1.17 gcr.io/google-containers/k8s-dns-node-cache:1.15.8 gcr.io/google-containers/kube-proxy:v1.16.3 gcr.io/google-containers/kube-apiserver:v1.16.3 gcr.io/google-containers/kube-controller-manager:v1.16.3 gcr.io/google-containers/kube-scheduler:v1.16.3 lachlanevenson/k8s-helm:v2.16.1 gcr.io/kubernetes-helm/tiller:v2.16.1 coredns/coredns:1.6.0 calico/node:v3.7.3 calico/cni:v3.7.3 calico/kube-controllers:v3.7.3 gcr.io/google_containers/metrics-server-amd64:v0.3.3 gcr.io/google-containers/cluster-proportional-autoscaler-amd64:1.6.0 gcr.io/google_containers/kubernetes-dashboard-amd64:v1.10.1 quay.io/coreos/etcd:v3.3.10 gcr.io/google-containers/addon-resizer:1.8.3 gcr.io/google-containers/pause:3.1 gcr.io/google_containers/pause-amd64:3.1
-# docker save -o k8simages.tar nginx:1.17 gcr.io/google-containers/k8s-dns-node-cache:1.15.8 gcr.io/google-containers/kube-proxy:v1.16.3 gcr.io/google-containers/kube-apiserver:v1.16.3 gcr.io/google-containers/kube-controller-manager:v1.16.3 gcr.io/google-containers/kube-scheduler:v1.16.3 lachlanevenson/k8s-helm:v2.16.1 gcr.io/kubernetes-helm/tiller:v2.16.1 coredns/coredns:1.6.0 calico/node:v3.7.3 calico/cni:v3.7.3 calico/kube-controllers:v3.7.3 gcr.io/google_containers/metrics-server-amd64:v0.3.3 gcr.io/google-containers/cluster-proportional-autoscaler-amd64:1.6.0 gcr.io/google_containers/kubernetes-dashboard-amd64:v1.10.1 quay.io/coreos/etcd:v3.3.10 gcr.io/google-containers/addon-resizer:1.8.3 gcr.io/google-containers/pause:3.1 gcr.io/google_containers/pause-amd64:3.1; xz -T4 k8simages.tar
+nginx:1.17 gcr.io/google-containers/k8s-dns-node-cache:1.15.8 gcr.io/google-containers/kube-proxy:v1.16.3 gcr.io/google-containers/kube-apiserver:v1.16.3 gcr.io/google-containers/kube-controller-manager:v1.16.3 gcr.io/google-containers/kube-scheduler:v1.16.3 lachlanevenson/k8s-helm:v2.16.1 gcr.io/kubernetes-helm/tiller:v2.16.1 coredns/coredns:1.6.0 calico/node:v3.7.3 calico/cni:v3.7.3 calico/kube-controllers:v3.7.3 gcr.io/google_containers/metrics-server-amd64:v0.3.3 gcr.io/google-containers/cluster-proportional-autoscaler-amd64:1.6.0 gcr.io/google_containers/kubernetes-dashboard-amd64:v1.10.1 quay.io/coreos/etcd:v3.3.10 gcr.io/google-containers/addon-resizer:1.8.3 gcr.io/google-containers/pause:3.1 gcr.io/google_containers/pause-amd64:3.1 xueshanf/install-socat:latest
+# docker save -o k8simages.tar nginx:1.17 gcr.io/google-containers/k8s-dns-node-cache:1.15.8 gcr.io/google-containers/kube-proxy:v1.16.3 gcr.io/google-containers/kube-apiserver:v1.16.3 gcr.io/google-containers/kube-controller-manager:v1.16.3 gcr.io/google-containers/kube-scheduler:v1.16.3 lachlanevenson/k8s-helm:v2.16.1 gcr.io/kubernetes-helm/tiller:v2.16.1 coredns/coredns:1.6.0 calico/node:v3.7.3 calico/cni:v3.7.3 calico/kube-controllers:v3.7.3 gcr.io/google_containers/metrics-server-amd64:v0.3.3 gcr.io/google-containers/cluster-proportional-autoscaler-amd64:1.6.0 gcr.io/google_containers/kubernetes-dashboard-amd64:v1.10.1 quay.io/coreos/etcd:v3.3.10 gcr.io/google-containers/addon-resizer:1.8.3 gcr.io/google-containers/pause:3.1 gcr.io/google_containers/pause-amd64:3.1 xueshanf/install-socat:latest; xz -T4 k8simages.tar
 ```
 Get debs:    
 
@@ -97,6 +98,122 @@ calicoctl                           images/                             kubectl-
 cni-plugins-linux-amd64-v0.8.1.tgz  kubeadm-v1.16.3-amd64               kubelet-v1.16.3-amd64     
 # cp /tmp/releases/* /home/test/file/
 ```
-### Offline
-How to do offline installation, to be continued. 
+### More pkgs
+more pkgs should be installed manually and copy to `/root/debs`:    
 
+```
+# apt-get install -y iputils-ping nethogs python-netaddr build-essential bind9 bind9utils nfs-common nfs-kernel-server ntpdate ntp tcpdump iotop unzip wget apt-transport-https socat rpcbind arping fping python-apt ipset ipvsadm pigz nginx docker-registry
+# cd /root/debs
+# wget http://209.141.35.192/netdata_1.18.1_amd64_bionic.deb
+# apt-get install  ./netdata_1.18.1_amd64_bionic.deb
+# find /var/cache | grep deb$ | xargs -I % cp % ./
+# dpkg-scanpackages . /dev/null | gzip -9c > Packages.gz
+```
+### Offline registry setup
+On a running secureregistry server do following:    
+
+```
+# systemctl stop secureregistryserver
+# cd /opt/local/secureregistryserver/
+# mv data data.back
+# docker-compose up
+# docker push xxxxx
+```
+Your docker push item is listed as(v1.16.3):     
+
+```
+docker push gcr.io/google-containers/k8s-dns-node-cache:1.15.8
+docker push gcr.io/google-containers/kube-proxy:v1.16.3
+docker push gcr.io/google-containers/kube-apiserver:v1.16.3
+docker push gcr.io/google-containers/kube-controller-manager:v1.16.3
+docker push gcr.io/google-containers/kube-scheduler:v1.16.3
+docker push lachlanevenson/k8s-helm:v2.16.1
+docker push gcr.io/kubernetes-helm/tiller:v2.16.1
+docker push coredns/coredns:1.6.0
+docker push calico/node:v3.7.3
+docker push calico/cni:v3.7.3
+docker push calico/kube-controllers:v3.7.3
+docker push gcr.io/google_containers/metrics-server-amd64:v0.3.3
+docker push gcr.io/google-containers/cluster-proportional-autoscaler-amd64:1.6.0
+docker push gcr.io/google_containers/kubernetes-dashboard-amd64:v1.10.1
+docker push quay.io/coreos/etcd:v3.3.10
+docker push gcr.io/google-containers/addon-resizer:1.8.3
+docker push gcr.io/google-containers/pause:3.1
+docker push gcr.io/google_containers/pause-amd64:3.1
+docker push xueshanf/install-socat:latest
+```
+tar docker.tar.gz:    
+
+```
+# cd /opt/local/secureregistryserver/data
+# tar czvf docker.tar.gz docker/
+
+```
+### Upgrade
+From v1.15.3 to v1.16.3, steps:    
+
+```
+$ pwd
+0_preinstall/roles/kube-deploy/files
+$ ls
+1604debs.tar.xz  1804debs.tar.xz  calicoctl-linux-amd64  cni-plugins-linux-amd64-v0.8.1.tgz  dns  docker-compose  docker.tar.gz  dockerDebs.tar.gz  gpg  hyperkube  kubeadm  nginx  ntp.conf
+```
+Generate 1804debs.tar.xz and replace:    
+
+```
+# cp -r /root/debs ./Rong
+# tar cJvf 1804debs.tar.xz Rong
+```
+Calculate calicoctl/ , it's the same md5, so needn't replacement.    
+
+`docker.tar.gz` should be replaced with the newer one.     
+
+Docker version upgradeed to 19.03.5, so we need to replace the old ones.   
+
+```
+# tar xzvf dockerDebs.tar.gz  -C tmp/
+ubuntu/dists/bionic/pool/stable/amd64/containerd.io_1.2.10-2_amd64.deb
+ubuntu/dists/bionic/pool/stable/amd64/docker-ce-cli_19.03.3~3-0~ubuntu-bionic_amd64.deb
+ubuntu/dists/bionic/pool/stable/amd64/docker-ce_18.09.7~3-0~ubuntu-bionic_amd64.deb
+``` 
+apt-mirror for syncing on internet:    
+
+```
+$ sudo vim /etc/apt/mirror.list
+set base_path    /media/sda/tmp/apt-mirror
+set nthreads     20
+set _tilde 0
+deb https://download.docker.com/linux/ubuntu bionic stable
+deb https://download.docker.com/linux/ubuntu xenial stable
+$ sudo apt-mirror
+
+```
+Too slow for the fucking gfw!!!    
+
+After apt-mirror, we have to rsync using following command:     
+
+```
+$ pwd
+/media/sda/tmp/apt-mirror/mirror/download.docker.com/linux/ubuntu
+$ ls
+dists
+$ rsync -a -e 'ssh -p 2345 ' --progress dists/ root@192.168.111.11:/destination/ubuntu/dists/
+```
+
+wget the gpg file:    
+
+```
+$ wget https://download.docker.com/linux/ubuntu/gpg
+$ tar czvf dockerDebs.tar.gz gpg ubuntu/
+$ ls -l -h dockerDebs.tar.gz
+-rw-r--r-- 1 root root 144M Dec 23 17:41 dockerDebs.tar.gz
+$ cp dockerDebs.tar.gz ~/0_preinstall/roles/kube-deploy/files
+```
+Binary replacement:    
+
+```
+previsous:    
+ hyperkube  kubeadm  
+current:    
+kubeadm-v1.16.3-amd64 kubectl-v1.16.3-amd64 kubelet-v1.16.3-amd64
+```
