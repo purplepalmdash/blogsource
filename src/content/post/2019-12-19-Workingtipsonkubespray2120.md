@@ -99,6 +99,16 @@ cni-plugins-linux-amd64-v0.8.1.tgz  kubeadm-v1.16.3-amd64               kubelet-
 # cp /tmp/releases/* /home/test/file/
 ```
 ### More pkgs
+Use the old deb repository for installing ansible:     
+
+```
+$ cp old_1804debs.tar.xz ~/YourWebServer
+$ tar xJvf old_1804debs.tar.xz
+$ sudo vim /etc/apt/sources.list
+deb [trusted=yes]  http://192.168.122.1/ansible_bionic ./
+$ sudo apt-get update -y && sudo DEBIAN_FRONTEND=noninteractive apt-get install -y ansible python-netaddr
+```
+
 more pkgs should be installed manually and copy to `/root/debs`:    
 
 ```
@@ -141,6 +151,7 @@ docker push gcr.io/google-containers/addon-resizer:1.8.3
 docker push gcr.io/google-containers/pause:3.1
 docker push gcr.io/google_containers/pause-amd64:3.1
 docker push xueshanf/install-socat:latest
+docker push nginx:1.17
 ```
 tar docker.tar.gz:    
 
@@ -217,3 +228,38 @@ previsous:
 current:    
 kubeadm-v1.16.3-amd64 kubectl-v1.16.3-amd64 kubelet-v1.16.3-amd64
 ```
+Edit the file, since in v1.16.3 we didn't use hyperkube:    
+
+```
+$ vim deploy-ubuntu/tasks/main.yml
+  - name: "upload static files to /usr/local/static"
+    copy:
+      src: "{{ item }}"
+      dest: /usr/local/static/
+      owner: root
+      group: root
+      mode: 0777
+    with_items:
+      #- files/hyperkube
+      - files/calicoctl-linux-amd64
+      - files/kubeadm-v1.16.3-amd64
+      - files/kubectl-v1.16.3-amd64
+      - files/kubelet-v1.16.3-amd64
+      #- files/kubeadm
+      - files/cni-plugins-linux-amd64-v0.8.1.tgz
+      #- files/dockerDebs.tar.gz
+      - files/gpg
+```
+Add sysctl items:    
+
+```
+# vim ./roles/kubernetes/preinstall/tasks/0080-system-configurations.yml
+- name: set fs inotify.max_user_watches to 1048576
+  sysctl:
+    sysctl_file: "{{ sysctl_file_path }}"
+    name: fs.inotify.max_user_watches
+    value: 1048576
+    state: present
+    reload: yes
+```
+Added some files like `./roles/kubernetes/preinstall/tasks/0000-xxx-ubuntu.yml`, minimum modifications to kubespray source code, you can use bcompare for viewing.      

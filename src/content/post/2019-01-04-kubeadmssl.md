@@ -200,3 +200,38 @@ edit the same as in v1.12.5
 ```
 
 注意: v1.15.3中, CertificateValidity变量定义为100年后，不需修改`pki_helper.go`文件内容。    
+
+### v1.16.3
+Compile it on local:    
+
+```
+# wget https://codeload.github.com/kubernetes/kubernetes/zip/v1.16.3
+# unzip kubernetes-1.16.3.zip
+# cd kubernetes-1.16.3
+########################
+### Make source code changes
+# Notice the gittree status changes from archived to clean
+########################
+#####  Install golang
+# sudo add-apt-repository ppa:longsleep/golang-backports
+# sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys  F6BC817356A3D45E
+# sudo apt-get update
+# sudo apt-get install golang-1.12
+# sudo apt-get purge golang-go
+# vim ~/.profile
+Add:
+PATH="$PATH:/usr/lib/go-1.12/bin"
+# source ~/.profile
+# make all WHAT=cmd/kubeadm GOFLAGS=-v
+```
+Cause kubeadm currently(2019.12) should be compiled with golang-1.12.    
+
+output result:     
+
+```
+➜  kubernetes-1.16.3 cd _output/bin 
+➜  bin ls
+conversion-gen  deepcopy-gen  defaulter-gen  go2make  go-bindata  kubeadm  openapi-gen
+➜  bin ./kubeadm version
+kubeadm version: &version.Info{Major:"1", Minor:"16", GitVersion:"v1.16.3", GitCommit:"b3cbbae08ec52a7fc73d334838e18d17e8512749", GitTreeState:"clean", BuildDate:"2019-12-24T07:07:11Z", GoVersion:"go1.12.8", Compiler:"gc", Platform:"linux/amd64"}
+```
