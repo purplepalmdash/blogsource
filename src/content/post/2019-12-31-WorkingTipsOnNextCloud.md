@@ -72,3 +72,12 @@ ExecStop=/usr/bin/docker-compose -f /media/sdb/nextcloud/docker-compose.yml stop
 WantedBy=multi-user.target
 ```
 Enable and start the service thus you got the nextcloud server at `http://YourIP:10388/`, login with admin/xxxxxxxx
+
+### Upload and update
+upload the files into correspondding location and update the cache:    
+
+```
+# chmod 777 -R /media/sdb/nextcloud/nextcloud/data/xxxxx/files/xxxxx_Static/
+# docker exec -u www-data nextcloud_web php occ files:scan --all
+```
+by now your nextcloud will update properly.   
