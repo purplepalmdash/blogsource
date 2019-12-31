@@ -106,3 +106,13 @@ $ ls
 node_exporter/  node_exporter_0.18.1.run
 ```
 We can install it via `./node_exporter_0.18.1.run`.    
+
+### post-installation
+Be sure to open the ports banned by firewall, take centos6 for example:      
+
+```
+$   iptables -I INPUT -p tcp --dport 9100 -j ACCEPT
+$   iptables -I INPUT -p tcp --dport 19999 -j ACCEPT
+$ service iptables save
+```
+In centos6, netdata will cause system restart hold for 1 minutes.   
