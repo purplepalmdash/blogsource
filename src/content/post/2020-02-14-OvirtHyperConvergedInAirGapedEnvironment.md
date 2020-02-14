@@ -191,3 +191,31 @@ Click `Administration Portal`:
 
 ![/images/2020_02_14_17_48_30_499x308.jpg](/images/2020_02_14_17_48_30_499x308.jpg)
 
+admin page is like following:     
+
+![/images/2020_02_14_17_50_57_1221x561.jpg](/images/2020_02_14_17_50_57_1221x561.jpg)
+
+ssh into engine vm and check the disk partitions:     
+
+```
+# ssh root@10.20.30.34
+root@10.20.30.34's password:
+Last login: Fri Feb 14 17:25:51 2020 from 192.168.1.1
+[root@engineinstance ~]#df -h
+Filesystem               Size  Used Avail Use% Mounted on
+devtmpfs                 1.9G     0  1.9G   0% /dev
+tmpfs                    1.9G   12K  1.9G   1% /dev/shm
+tmpfs                    1.9G  8.9M  1.9G   1% /run
+tmpfs                    1.9G     0  1.9G   0% /sys/fs/cgroup
+/dev/mapper/ovirt-root   8.0G  2.3G  5.8G  29% /
+/dev/mapper/ovirt-home  1014M   33M  982M   4% /home
+/dev/mapper/ovirt-tmp    2.0G   33M  2.0G   2% /tmp
+/dev/mapper/ovirt-var     20G  437M   20G   3% /var
+/dev/vda1               1014M  157M  858M  16% /boot
+/dev/mapper/ovirt-log     10G   45M   10G   1% /var/log
+/dev/mapper/ovirt-audit 1014M   34M  981M   4% /var/log/audit
+tmpfs                    379M     0  379M   0% /run/user/0
+```
+
+### 5. Create The First VM
+
