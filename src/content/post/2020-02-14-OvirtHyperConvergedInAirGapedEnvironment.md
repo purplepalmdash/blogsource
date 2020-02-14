@@ -218,4 +218,129 @@ tmpfs                    379M     0  379M   0% /run/user/0
 ```
 
 ### 5. Create The First VM
+#### 5.1 Add ISO storage Domain
+Login in to `instance1.com`, configure nfs share storage for holding ISO
+images:    
+
+```
+[root@instance1 ]# mkdir -p /isoimages
+[root@instance1 ]# chown 36:36 -R /isoimages/
+[root@instance1 ]# chmod 0755 -R /isoimages/
+[root@instance1 ]# vi /etc/exports
+[root@instance1 ]# cat /etc/exports
+/isoimages *(rw,sync,no_subtree_check,all_squash,anonuid=36,anongid=36)
+[root@instance1 ]# systemctl enable --now  nfs.service   
+Created symlink from /etc/systemd/system/multi-user.target.wants/nfs-server.service to /usr/lib/systemd/system/nfs-server.service.
+```
+In ovirt manager portal , click `Storage`->`Storage Domain`, click `New
+Domain`:    
+
+![/images/2020_02_14_19_29_49_1046x337.jpg](/images/2020_02_14_19_29_49_1046x337.jpg)
+
+Fill in  name and path information:    
+
+![/images/2020_02_14_19_42_32_1006x355.jpg](/images/2020_02_14_19_42_32_1006x355.jpg)
+
+Finished adding isoimages:    
+
+![/images/2020_02_14_19_32_52_919x263.jpg](/images/2020_02_14_19_32_52_919x263.jpg)
+
+#### 5.2 Upload iso
+Login to engien vm(engineinstance.com), download the iso from official site,
+we take ubuntu16.04.6 for example:     
+
+```
+[root@engineinstance ~]# ovirt-iso-uploader -i isoimages upload ./ubuntu-16.04.6-server-amd64.iso 
+Please provide the REST API password for the admin@internal oVirt Engine user (CTRL+D to abort): 
+Uploading, please wait...
+INFO: Start uploading ./ubuntu-16.04.6-server-amd64.iso 
+Uploading: [########################################] 100%
+INFO: ./ubuntu-16.04.6-server-amd64.iso uploaded successfully
+```
+
+#### 5.3 Create VM
+Compute-> Virtual Machines, click `new` button:    
+
+![/images/2020_02_14_19_48_14_846x313.jpg](/images/2020_02_14_19_48_14_846x313.jpg)
+Fill in informations:    
+
+![/images/2020_02_14_19_50_24_673x641.jpg](/images/2020_02_14_19_50_24_673x641.jpg)
+
+Click advanced options, select `Boot Options`, then attach uploaded iso:    
+
+![/images/2020_02_14_19_52_09_917x511.jpg](/images/2020_02_14_19_52_09_917x511.jpg)
+
+Click Disks, then click `new`:    
+
+![/images/2020_02_14_20_00_20_1178x316.jpg](/images/2020_02_14_20_00_20_1178x316.jpg)
+
+Fill in options:    
+
+![/images/2020_02_14_20_01_54_731x394.jpg](/images/2020_02_14_20_01_54_731x394.jpg)
+
+
+Click this new machine, and select `run->run once`:    
+
+![/images/2020_02_14_19_53_19_852x380.jpg](/images/2020_02_14_19_53_19_852x380.jpg)
+
+Click OK for installation:    
+
+![/images/2020_02_14_19_54_06_599x528.jpg](/images/2020_02_14_19_54_06_599x528.jpg)
+
+The installation image will be shown:    
+
+![/images/2020_02_14_19_55_49_641x534.jpg](/images/2020_02_14_19_55_49_641x534.jpg)
+
+Configure installation options and wait until installation finished.     
+Since we use nested virtualization, the installation step will take a very
+long time(>1h) for installing the os. For speedup, considering use NVME ssd
+for locating the vm's qcow2 files. Or use 3 physical servers.     
+
+On vm portal we could see our newly created vm:    
+
+![/images/2020_02_14_21_03_33_764x485.jpg](/images/2020_02_14_21_03_33_764x485.jpg)
+
+Examine the vms on instance1.com:     
+
+```
+[root@instance1 isoimages]# virsh -r list
+ Id    Name                           State
+----------------------------------------------------
+ 2     HostedEngine                   running
+ 4     ubuntu1604                     running
+```
+
+### 6. Create vm using template
+#### 6.1 Create template
+Create template via:    
+
+![/images/2020_02_14_21_49_05_743x666.jpg](/images/2020_02_14_21_49_05_743x666.jpg)
+
+Check the status of template:    
+
+![/images/2020_02_14_21_50_02_733x224.jpg](/images/2020_02_14_21_50_02_733x224.jpg)
+
+#### 6.2 Create vm
+Create new vm using template:    
+
+![/images/2020_02_14_21_57_36_912x668.jpg](/images/2020_02_14_21_57_36_912x668.jpg)
+
+Start the machine and check result:    
+
+![/images/2020_02_14_22_05_30_1148x360.jpg](/images/2020_02_14_22_05_30_1148x360.jpg)
+
+### 7. Add hosts
+In engine vm, add following items:    
+
+```
+
+```
+
+Then we add hosts of `instance2.com` and `instance3.com`:    
+
+![/images/2020_02_14_22_16_23_904x687.jpg](/images/2020_02_14_22_16_23_904x687.jpg)
+
+Result:    
+
+![/images/2020_02_14_22_17_48_860x208.jpg](/images/2020_02_14_22_17_48_860x208.jpg)
 
