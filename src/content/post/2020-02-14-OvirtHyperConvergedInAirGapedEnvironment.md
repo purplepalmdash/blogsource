@@ -161,4 +161,33 @@ Wait for about half an hour to see deployment successful:
 
 Keep the default configuration:  
 
+engine vm's storage configuration will use Gluster, path will be Gluster's
+engine volumn, and its parameter is:    
+
+`backup-volfile-servers=instance2.com:instance3.com`    
+
+for preventing the single-node issue for Gluster.     
+
+![/images/2020_02_14_17_17_52_772x455.jpg](/images/2020_02_14_17_17_52_772x455.jpg)
+
+Click `Finish deployment`, and wait for a break:    
+
+![/images/2020_02_14_17_20_30_817x433.jpg](/images/2020_02_14_17_20_30_817x433.jpg)
+
+Seeing this means deploy succeeded:   
+
+![/images/2020_02_14_17_40_22_591x535.jpg](/images/2020_02_14_17_40_22_591x535.jpg)
+
+Refresh the status:     
+
+![/images/2020_02_14_17_43_43_1058x513.jpg](/images/2020_02_14_17_43_43_1058x513.jpg)
+
+### 4. Portal
+Visit `engineinstance.com` in host machine(ArchLinux):     
+
+![/images/2020_02_14_17_47_13_767x501.jpg](/images/2020_02_14_17_47_13_767x501.jpg)
+
+Click `Administration Portal`:    
+
+![/images/2020_02_14_17_48_30_499x308.jpg](/images/2020_02_14_17_48_30_499x308.jpg)
 
