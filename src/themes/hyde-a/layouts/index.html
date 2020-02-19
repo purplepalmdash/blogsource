@@ -1,20 +1,22 @@
 {{ partial "head.html" . }}
 <div class="content container">
   <div class="posts">
-    {{ $paginator := .Paginate (where .Data.Pages "Type" "post") }}
+    {{ $paginator := .Paginate (where .Site.RegularPages "Type" "in" site.Params.mainSections) }}
     {{ range $paginator.Pages }}
     <div class="post">
       <h1 class="post-title">
         <a href="{{ .Permalink }}">{{ .Title }}</a>
       </h1>
-      <span class="post-date">{{ .Date.Format "Jan 2, 2006" }} {{ if .Site.DisqusShortname }} &middot; <a href="{{ .Permalink }}#disqus_thread">Comments</a>{{ end }}
+      <span class="post-date">{{ .Date.Format "Jan 2, 2006" }} 
+      {{ if .Site.DisqusShortname }}  &middot; <a href="{{ .Permalink }}#disqus_thread">Comments</a>
+      {{ end }}
       {{ if isset .Params "categories" }}
       <br/>
       {{ range .Params.categories }}<a class="a_cat" href="{{ "/categories/" | absURL }}{{ . | urlize }}">{{ . }}</a>{{ end }}
         {{ if isset .Params "tags" }}
       {{ range .Params.tags }}<a class="a_tag" href="{{ "/tags/" | absURL }}{{ . | urlize }}">{{ . | lower }}</a>{{ end }}
     {{ end }}
-      {{ end }}</span>
+      {{ end }}****</span>
       {{ if eq .Site.Params.truncate false }}
       {{ .Content }}
       {{ else if .Description }}
