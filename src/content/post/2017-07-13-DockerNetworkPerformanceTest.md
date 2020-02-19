@@ -3,7 +3,7 @@ title = "DockerNetworkPerformanceTest"
 description = "DockerNetworkPerformanceTest"
 date = "2017-07-13T16:51:35+08:00"
 keywords = ["Linux"]
-categories = ["Linux"]
+categories = ["Technology"]
 +++
 ### 测试环境
 

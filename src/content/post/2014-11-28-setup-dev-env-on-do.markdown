@@ -1,5 +1,5 @@
 ---
-categories: ["Linux"]
+categories: ["Technology"]
 comments: true
 date: 2014-11-28T00:00:00Z
 title: Setup Dev Env On DO

@@ -1,5 +1,5 @@
 ---
-categories: ["null"]
+categories: ["Technology"]
 comments: true
 date: 2015-03-30T00:00:00Z
 title: Whole Process For Deploying Contrail

@@ -1,5 +1,5 @@
 ---
-categories: ["RaspberryPI"]
+categories: ["Technology"]
 comments: true
 date: 2014-03-20T00:00:00Z
 title: Re-compile Kernel For Supporting 512M Memory For RaspberryPI In Qemu

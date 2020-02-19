@@ -1,5 +1,5 @@
 +++
-categories = ["Dev"]
+categories = ["Technology"]
 date = "2016-07-13T19:28:30+08:00"
 description = "Setup Jenkins CI Environment"
 keywords = []

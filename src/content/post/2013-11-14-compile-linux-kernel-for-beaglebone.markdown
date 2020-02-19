@@ -1,5 +1,5 @@
 ---
-categories: ["Linux", "Beaglebone"]
+categories: ["Technology"]
 comments: true
 date: 2013-11-14T00:00:00Z
 title: Compile Linux kernel for Beaglebone

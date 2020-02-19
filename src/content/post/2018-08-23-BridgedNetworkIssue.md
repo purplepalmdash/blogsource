@@ -3,7 +3,7 @@ title = "BrigedNetworkIssue"
 date = "2018-08-23T21:22:56+08:00"
 description = "BridgedNetworkIssue"
 keywords = ["Linux"]
-categories = ["Linux"]
+categories = ["Technology"]
 +++
 ### Problem
 br0->eth0, kvm bridged to br0.    

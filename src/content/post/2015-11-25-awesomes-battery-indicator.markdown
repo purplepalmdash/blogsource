@@ -1,5 +1,5 @@
 ---
-categories: ["Linux"]
+categories: ["Technology"]
 comments: true
 date: 2015-11-25T12:18:29Z
 title: Awesome's Battery Indicator

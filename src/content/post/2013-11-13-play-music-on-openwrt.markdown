@@ -1,5 +1,5 @@
 ---
-categories: ["Linux", "OpenWRT"]
+categories: ["Technology"]
 comments: true
 date: 2013-11-13T00:00:00Z
 title: Play Music On OpenWRT

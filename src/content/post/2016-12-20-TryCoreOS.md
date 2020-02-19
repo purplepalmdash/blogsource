@@ -1,5 +1,5 @@
 +++
-categories = ["Virtualization"]
+categories = ["Technology"]
 date = "2016-12-20T15:35:29+08:00"
 description = "Try CoreOS in libvirt"
 keywords = ["Virtualization"]

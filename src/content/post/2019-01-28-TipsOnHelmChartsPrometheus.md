@@ -3,7 +3,7 @@ title = "TipsOnHelmChartsPrometheus"
 date = "2019-01-28T15:06:56+08:00"
 description = "TipsOnHelmChartsPrometheus"
 keywords = ["Linux"]
-categories = ["Linux"]
+categories = ["Technology"]
 +++
 ### Upgrade helm
 Download the helm from github, and extracted to your system PATH, then:    

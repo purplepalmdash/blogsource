@@ -1,5 +1,5 @@
 ---
-categories: ["raspberryPI"]
+categories: ["Technology"]
 comments: true
 date: 2014-05-04T00:00:00Z
 title: Download Android Source Code on RaspberryPI

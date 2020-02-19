@@ -1,6 +1,6 @@
 +++
 date = "2017-02-23T11:06:30+08:00"
-categories = ["Linux"]
+categories = ["Technology"]
 keywords = ["DeployAppWithGitAndDocker"]
 description = "Deploy apps using git and docker"
 title = "用Git和Docker快速部署应用程序"

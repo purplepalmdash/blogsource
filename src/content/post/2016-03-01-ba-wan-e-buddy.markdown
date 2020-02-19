@@ -1,5 +1,5 @@
 ---
-categories: ["embedded"]
+categories: ["Technology"]
 comments: true
 date: 2016-03-01T10:47:55Z
 title: 把玩e-Buddy

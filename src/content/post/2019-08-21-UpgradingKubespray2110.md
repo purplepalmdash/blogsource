@@ -3,7 +3,7 @@ title = "UpgradingKubespray2110"
 date = "2019-08-21T11:08:22+08:00"
 description = "UpgradingKubespray2110"
 keywords = ["Linux"]
-categories = ["Linux"]
+categories = ["Technology"]
 +++
 ### Prepare
 vagrant vms, install kubespray via vagrant.     

@@ -1,5 +1,5 @@
 ---
-categories: ["qemu", "Linux"]
+categories: ["Technology"]
 comments: true
 date: 2013-12-06T00:00:00Z
 title: Install Qemu virtio driver under windows

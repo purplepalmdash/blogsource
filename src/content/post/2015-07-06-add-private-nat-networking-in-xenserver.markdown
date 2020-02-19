@@ -1,5 +1,5 @@
 ---
-categories: ["Virtualization"]
+categories: ["Technology"]
 comments: true
 date: 2015-07-06T11:42:00Z
 title: Add Private NAT Networking In XenServer

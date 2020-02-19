@@ -1,5 +1,5 @@
 ---
-categories: ["Virtualization"]
+categories: ["Technology"]
 comments: true
 date: 2015-06-16T14:52:20Z
 title: XenServer Tips

@@ -1,6 +1,6 @@
 +++
 date = "2017-07-02T12:33:39+08:00"
-categories = ["Linux"]
+categories = ["Technology"]
 keywords = ["Linux"]
 description = "WorkingTipsOnDockerDeployment"
 title = "WorkingTipsOnDockerDeployment"

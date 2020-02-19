@@ -1,5 +1,5 @@
 ---
-categories: ["Linux"]
+categories: ["Technology"]
 comments: true
 date: 2015-08-21T14:48:30Z
 title: mrepo tips for syncing CentOS repositories

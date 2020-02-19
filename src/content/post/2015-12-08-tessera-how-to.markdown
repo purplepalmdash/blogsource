@@ -1,5 +1,5 @@
 ---
-categories: ["Virtualization"]
+categories: ["Technology"]
 comments: true
 date: 2015-12-08T10:26:48Z
 title: tessera how-to

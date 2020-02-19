@@ -1,6 +1,6 @@
 +++
 date = "2017-03-15T10:58:52+08:00"
-categories = ["Linux"]
+categories = ["Technology"]
 keywords = ["Linux"]
 description = "Migration wordpress to new vps"
 title = "Wordpress Migration Tips"

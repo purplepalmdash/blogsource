@@ -3,7 +3,7 @@ title = "CollectdDiskIssue"
 date = "2017-10-11T15:21:56+08:00"
 description = "CollectdDiskIssue"
 keywords = ["Linux"]
-categories = ["Linux"]
+categories = ["Technology"]
 +++
 ### Installation and Configuration
 Via collectd you could monitoring the disk statistics, the configuration files

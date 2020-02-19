@@ -1,5 +1,5 @@
 +++
-categories = ["Linux"]
+categories = ["Technology"]
 date = "2016-07-28T12:08:27+08:00"
 description = "Using Packer for building templates"
 keywords = ["Linux"]

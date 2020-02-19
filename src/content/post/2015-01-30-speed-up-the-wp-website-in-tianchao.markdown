@@ -1,5 +1,5 @@
 ---
-categories: ["web"]
+categories: ["Technology"]
 comments: true
 date: 2015-01-30T00:00:00Z
 title: Speed-Up the WP website in TianChao

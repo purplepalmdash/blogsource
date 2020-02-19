@@ -1,5 +1,5 @@
 ---
-
+categories: ["Technology"]
 comments: true
 date: 2013-10-23T00:00:00Z
 title: Cacti and snmpd

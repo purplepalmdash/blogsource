@@ -1,5 +1,5 @@
 ---
-categories: ["Spacewalk"]
+categories: ["Technology"]
 comments: true
 date: 2015-08-12T16:36:51Z
 title: Create Channel/Repository In SpaceWalk

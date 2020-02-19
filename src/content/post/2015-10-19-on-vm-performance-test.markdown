@@ -1,5 +1,5 @@
 ---
-categories: ["Virtualization"]
+categories: ["Technology"]
 comments: true
 date: 2015-10-19T09:54:45Z
 title: On VM Performance Test

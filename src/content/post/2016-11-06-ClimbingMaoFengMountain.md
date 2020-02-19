@@ -1,5 +1,5 @@
 +++
-categories = ["Life"]
+categories = ["Technology"]
 date = "2016-11-06T20:06:19+08:00"
 description = "Climbing the maofeng mountain"
 keywords = ["Life"]

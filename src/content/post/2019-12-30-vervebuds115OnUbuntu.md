@@ -3,7 +3,7 @@ title = "VerveBuds115OnUbuntu"
 date = "2019-12-30T09:19:48+08:00"
 description = "VerveBuds115OnUbuntu"
 keywords = ["Bluetooth"]
-categories = ["Linux"]
+categories = ["Technology"]
 +++
 Ubuntu18.04 configurating bluetooth headset VerveBuds115 steps:    
 

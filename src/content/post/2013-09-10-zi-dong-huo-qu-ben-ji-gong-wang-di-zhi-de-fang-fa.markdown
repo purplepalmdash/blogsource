@@ -1,5 +1,5 @@
 ---
-
+categories: ["Technology"]
 comments: true
 date: 2013-09-10T00:00:00Z
 title: 自动获取本机公网地址的方法

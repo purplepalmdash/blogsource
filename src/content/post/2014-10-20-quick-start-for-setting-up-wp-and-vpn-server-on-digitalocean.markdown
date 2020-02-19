@@ -1,5 +1,5 @@
 ---
-categories: ["linux"]
+categories: ["Technology"]
 comments: true
 date: 2014-10-20T00:00:00Z
 title: Quick-start for setting up WP and VPN Server on DigitalOcean

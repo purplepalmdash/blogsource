@@ -3,7 +3,7 @@ date = "2017-01-10T12:06:14+08:00"
 keywords = ["Reading"]
 description = "ReadingDigestsOnServerSideDevelopment"
 title = "后台开发读书笔记"
-categories = ["Reading"]
+categories = ["Technology"]
 
 +++
 从图书馆借回来不少书，其中有一本腾讯工程师写的《后台开发核心技术与应用实践》，这本书的内容很浅显易懂，

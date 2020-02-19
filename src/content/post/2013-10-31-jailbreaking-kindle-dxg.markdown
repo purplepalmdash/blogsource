@@ -1,5 +1,5 @@
 ---
-
+categories: ["Technology"]
 comments: true
 date: 2013-10-31T00:00:00Z
 title: JailBreaking Kindle DXG

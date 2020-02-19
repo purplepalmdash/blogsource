@@ -1,5 +1,5 @@
 +++
-categories = ["Linux"]
+categories = ["Technology"]
 date = "2016-07-21T21:12:27+08:00"
 description = "Build Packer And Its Plugins"
 keywords = []

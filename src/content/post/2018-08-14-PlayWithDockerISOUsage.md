@@ -3,7 +3,7 @@ title = "PlayWithDockerUsage"
 date = "2018-08-14T15:36:48+08:00"
 description = "PlayWithDockerUsage"
 keywords = ["Linux"]
-categories = ["Linux"]
+categories = ["Technology"]
 +++
 ### 环境准备
 推荐配置：    

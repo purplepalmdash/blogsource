@@ -1,5 +1,5 @@
 ---
-categories: ["Virtualization"]
+categories: ["Technology"]
 comments: true
 date: 2015-06-24T09:38:50Z
 title: Install Newest Version Of Cobbler

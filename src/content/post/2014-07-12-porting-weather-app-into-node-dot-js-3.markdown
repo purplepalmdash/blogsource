@@ -1,5 +1,5 @@
 ---
-categories: ["nodejs"]
+categories: ["Technology"]
 comments: true
 date: 2014-07-12T00:00:00Z
 title: Porting Weather APP Into Node.js(3)

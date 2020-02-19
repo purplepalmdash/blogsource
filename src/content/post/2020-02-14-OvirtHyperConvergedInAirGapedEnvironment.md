@@ -3,7 +3,7 @@ title = "Ovirt HyperConverged InAir-Gapped Environment"
 date = "2020-02-14T14:42:39+08:00"
 description = "OvirtHyperConvergedInAirGapedEnvironment"
 keywords = ["Linux"]
-categories = ["Linux"]
+categories = ["Technology"]
 +++
 ### 0. AIM
 For deploying Ovirt HyperConverged in air-gapped environment.    

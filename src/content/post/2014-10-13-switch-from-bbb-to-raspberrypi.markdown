@@ -1,5 +1,5 @@
 ---
-categories: ["embedded"]
+categories: ["Technology"]
 comments: true
 date: 2014-10-13T00:00:00Z
 title: Switch from BBB to RaspberryPI

@@ -1,5 +1,5 @@
 ---
-
+categories: ["Life"]
 comments: true
 date: 2013-10-30T00:00:00Z
 title: 从最近看的两本书谈谈微博对写作的影响

@@ -1,5 +1,5 @@
 ---
-categories: ["github"]
+categories: ["Technology"]
 comments: true
 date: 2014-07-30T00:00:00Z
 title: 在github上部署你的octopress博客

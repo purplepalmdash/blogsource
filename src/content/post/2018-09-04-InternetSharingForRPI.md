@@ -3,7 +3,7 @@ title = "InternetSharingForRPI"
 date = "2018-09-04T16:40:34+08:00"
 description = "InternetSharingForRPI"
 keywords = ["Linux"]
-categories = ["Linux"]
+categories = ["Technology"]
 +++
 ### Diagram
 

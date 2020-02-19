@@ -3,7 +3,7 @@ title = "GrafanaTemplateIssue"
 date = "2017-10-17T17:06:46+08:00"
 description = "GrafanaTemplateIssue"
 keywords = ["Linux"]
-categories = ["Linux"]
+categories = ["Technology"]
 +++
 I downloaded some template from grafana.net, but none of them work properly,
 following are the trouble-shooting of template.    

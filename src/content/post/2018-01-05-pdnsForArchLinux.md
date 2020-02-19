@@ -3,7 +3,7 @@ title = "pdnsForArchLinux"
 date = "2018-01-05T10:54:05+08:00"
 description = "pdnsForArchLinux"
 keywords = ["Linux"]
-categories = ["Linux"]
+categories = ["Technology"]
 +++
 For avoiding dns resolving pollution, I need to configure pdnsd for my
 archlinux workstation, following are the steps:

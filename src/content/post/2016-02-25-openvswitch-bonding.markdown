@@ -1,5 +1,5 @@
 ---
-categories: ["Linux"]
+categories: ["Technology"]
 comments: true
 date: 2016-02-25T15:02:24Z
 title: OpenVswitch bonding

@@ -1,5 +1,5 @@
 ---
-categories: ["lxc"]
+categories: ["Technology"]
 comments: true
 date: 2014-08-27T00:00:00Z
 title: LXC Computer

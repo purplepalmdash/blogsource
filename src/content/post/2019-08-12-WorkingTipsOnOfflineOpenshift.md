@@ -3,7 +3,7 @@ title = "WorkingTipsOnOfflineOpenshift"
 date = "2019-08-12T09:55:35+08:00"
 description = "WorkingTipsOnOfflineOpenshift"
 keywords = ["Linux"]
-categories = ["Linux"]
+categories = ["Technology"]
 +++
 ### OS Preparation
 Centos 7.6 OS, installed via:    

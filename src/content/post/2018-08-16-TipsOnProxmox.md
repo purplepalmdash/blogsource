@@ -3,7 +3,7 @@ title = "TryProxmox"
 date = "2018-08-16T10:48:35+08:00"
 description = "TryProxmox"
 keywords = ["Linux"]
-categories = ["Linux"]
+categories = ["Technology"]
 +++
 ### Installation
 iso installation. 

@@ -1,5 +1,5 @@
 ---
-categories: ["radio"]
+categories: ["Technology"]
 comments: true
 date: 2015-12-30T16:52:48Z
 title: rtl-sdr steps

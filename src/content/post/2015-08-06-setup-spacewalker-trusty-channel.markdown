@@ -1,5 +1,5 @@
 ---
-categories: ["Virtualization"]
+categories: ["Technology"]
 comments: true
 date: 2015-08-06T11:47:31Z
 title: Setup SpaceWalker Trusty Channel

@@ -3,7 +3,7 @@ title = "UpgradeKernelForRHEL74"
 date = "2020-02-10T09:41:32+08:00"
 description = "UpgradeKernelForRHEL74"
 keywords = ["Linux"]
-categories = ["Linux"]
+categories = ["Technology"]
 +++
 ### Online Steps
 rhel74, default kernel is:    

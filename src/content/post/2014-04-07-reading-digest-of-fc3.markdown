@@ -1,5 +1,5 @@
 ---
-categories: ["FC"]
+categories: ["Technology"]
 comments: true
 date: 2014-04-07T14:50:58Z
 title: Reading Digest of FC3

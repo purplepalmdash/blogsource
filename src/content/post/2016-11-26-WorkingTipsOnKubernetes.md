@@ -1,5 +1,5 @@
 +++
-categories = ["Virtualization"]
+categories = ["Technology"]
 date = "2016-11-26T20:43:20+08:00"
 description = "Working tips on kubernetes"
 keywords = ["Virtualization"]

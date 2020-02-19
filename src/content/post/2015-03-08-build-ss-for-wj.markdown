@@ -1,5 +1,5 @@
 ---
-categories: ["Linux"]
+categories: ["Technology"]
 comments: true
 date: 2015-03-08T00:00:00Z
 title: Build SS for WJ

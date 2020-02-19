@@ -1,5 +1,5 @@
 ---
-categories: ["Linux"]
+categories: ["Technology"]
 comments: true
 date: 2015-05-05T00:00:00Z
 title: Building ChromeOS Steps

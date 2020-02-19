@@ -1,5 +1,5 @@
 ---
-
+categories: ["Technology"]
 comments: true
 date: 2013-11-04T00:00:00Z
 title: Cut your pdf into 6 inch in Linux

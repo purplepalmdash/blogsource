@@ -1,5 +1,5 @@
 ---
-categories: ["Linux", "Embedded"]
+categories: ["Technology"]
 comments: true
 date: 2013-12-09T00:00:00Z
 title: Enable audio in BeagleBone Black

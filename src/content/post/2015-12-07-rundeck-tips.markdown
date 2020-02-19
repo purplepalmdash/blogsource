@@ -1,5 +1,5 @@
 ---
-categories: ["linux"]
+categories: ["Technology"]
 comments: true
 date: 2015-12-07T11:58:55Z
 title: Rundeck Tips

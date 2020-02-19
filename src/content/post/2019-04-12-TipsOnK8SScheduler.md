@@ -3,7 +3,7 @@ title = "TipsOnK8SScheduler"
 date = "2019-04-12T23:24:14+08:00"
 description = "TipsOnK8SScheduler"
 keywords = ["Linux"]
-categories = ["Linux"]
+categories = ["Technology"]
 +++
 ### 问题
 文章来源:   

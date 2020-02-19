@@ -1,5 +1,5 @@
 ---
-categories: ["Embedded"]
+categories: ["Technology"]
 comments: true
 date: 2013-11-22T00:00:00Z
 title: openOCD Configuration

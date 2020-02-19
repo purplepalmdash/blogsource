@@ -3,7 +3,7 @@ title = "用Terraform管理集群编译环境-2"
 date = "2019-12-06T15:40:49+08:00"
 description = "TipsOnTerraform2"
 keywords = ["Linux"]
-categories = ["Linux"]
+categories = ["Technology"]
 +++
 前面已经用terraform可以批量创建出基础环境，但真正要做到集群部署这个环节还是需要有一定的活需要做的。所以后续我将terraform和自己改编的rong揉在了一起。通过预编译好的qcow2镜像，可以快速启动任意个kubernetes节点的集群。   
 

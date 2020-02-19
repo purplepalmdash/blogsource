@@ -1,5 +1,5 @@
 ---
-categories: ["virtualization"]
+categories: ["Technology"]
 comments: true
 date: 2016-05-06T15:03:59Z
 title: Working Tips on Ansible-cobbler(2)

@@ -1,5 +1,5 @@
 ---
-categories: ["storage"]
+categories: ["Technology"]
 comments: true
 date: 2015-04-17T00:00:00Z
 title: Glusterfs Howto

@@ -1,5 +1,5 @@
 ---
-categories: ["tips"]
+categories: ["Technology"]
 comments: true
 date: 2014-11-23T00:00:00Z
 title: 重装手记

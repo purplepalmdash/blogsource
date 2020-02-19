@@ -1,5 +1,5 @@
 ---
-categories: ["nodejs"]
+categories: ["Technology"]
 comments: true
 date: 2014-05-14T00:00:00Z
 title: Node.js Quick Start

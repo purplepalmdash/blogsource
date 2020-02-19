@@ -1,5 +1,5 @@
 ---
-categories: ["Linux"]
+categories: ["Technology"]
 comments: true
 date: 2015-08-25T14:30:44Z
 title: Add CentOS Client into SpaceWalk

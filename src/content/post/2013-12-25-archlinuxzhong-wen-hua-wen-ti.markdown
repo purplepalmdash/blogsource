@@ -1,5 +1,5 @@
 ---
-categories: ["Linux"]
+categories: ["Technology"]
 comments: true
 date: 2013-12-25T00:00:00Z
 title: ArchLinux中文化问题

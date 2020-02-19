@@ -1,5 +1,5 @@
 ---
-categories: ["Virtualization"]
+categories: ["Technology"]
 comments: true
 date: 2015-08-06T22:11:44Z
 title: Build Kickstartable ISO

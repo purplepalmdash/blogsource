@@ -1,5 +1,5 @@
 ---
-
+categories: ["Technology"]
 comments: true
 date: 2013-07-07T00:00:00Z
 title: ArchLinux DHCP配置问题

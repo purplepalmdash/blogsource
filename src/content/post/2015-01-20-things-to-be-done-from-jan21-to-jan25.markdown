@@ -1,5 +1,5 @@
 ---
-categories: ["memo"]
+categories: ["Technology"]
 comments: true
 date: 2015-01-20T00:00:00Z
 title: Things To Be Done From Jan21 To Jan25

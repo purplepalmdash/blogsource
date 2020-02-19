@@ -1,5 +1,5 @@
 ---
-categories: ["Linux"]
+categories: ["Technology"]
 comments: true
 date: 2013-11-21T00:00:00Z
 title: Using IR-remote for controlling XBMC

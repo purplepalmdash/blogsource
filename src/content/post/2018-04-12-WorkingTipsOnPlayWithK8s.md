@@ -3,7 +3,7 @@ title = "WorkingTipsOnPlayWithK8s"
 date = "2018-04-12T09:13:49+08:00"
 description = "WorkingTipsOnPlayWithK8s"
 keywords = ["Linux"]
-categories = ["Linux"]
+categories = ["Technology"]
 +++
 ### Aim
 To Write an tutorial for colleagues for learning, they only have to open the

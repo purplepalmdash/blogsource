@@ -3,7 +3,7 @@ title = "UseCrontabForRunningTasks"
 date = "2018-01-04T14:59:00+08:00"
 description = "UseCrontabForRunningTasks"
 keywords = ["Linux"]
-categories = ["Linux"]
+categories = ["Technology"]
 +++
 If I'd wanna to run the same tasks on several machine at the certain time, I
 could do following tricks:    

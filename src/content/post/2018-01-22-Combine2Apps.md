@@ -3,7 +3,7 @@ title = "Combine2Apps"
 date = "2018-01-22T16:50:23+08:00"
 description = "Combine2Apps"
 keywords = ["k8s"]
-categories = ["k8s"]
+categories = ["Technology"]
 +++
 ### AIM
 Combine the tomcat and oracle db apps.    

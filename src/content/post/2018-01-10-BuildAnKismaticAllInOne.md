@@ -3,7 +3,7 @@ title = "BuildKismaticAllInOne"
 date = "2018-01-10T10:45:04+08:00"
 description = "BuildKismaticAllINOne"
 keywords = ["DevOPS"]
-categories = ["DevOPS"]
+categories = ["Technology"]
 +++
 ### Start
 Build an virtual machine with 4-core/8G, change its ip address to

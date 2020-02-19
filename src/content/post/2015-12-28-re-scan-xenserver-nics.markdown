@@ -1,5 +1,5 @@
 ---
-categories: ["Virtualization"]
+categories: ["Technology"]
 comments: true
 date: 2015-12-28T15:25:45Z
 title: Re-Scan XenServer NICs

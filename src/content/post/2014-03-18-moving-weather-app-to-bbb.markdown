@@ -1,5 +1,5 @@
 ---
-categories: ["BeagleBone"]
+categories: ["Technology"]
 comments: true
 date: 2014-03-18T00:00:00Z
 title: Moving Weather App to BBB

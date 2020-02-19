@@ -1,5 +1,5 @@
 ---
-categories: ["Linux", "Embedded"]
+categories: ["Technology"]
 comments: true
 date: 2013-12-11T00:00:00Z
 title: BBBlack编译脚本解析

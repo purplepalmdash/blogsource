@@ -1,5 +1,5 @@
 ---
-categories: ["embedded"]
+categories: ["Technology"]
 comments: true
 date: 2014-11-24T00:00:00Z
 title: Upgrade OpenWRT on MW151RM3G

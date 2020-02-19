@@ -3,7 +3,7 @@ title = "MakingOfflineKubeSprayDeploymentISO"
 date = "2018-11-15T11:25:30+08:00"
 description = "MakingOfflineKubeSprayDeploymentISO"
 keywords = ["Linux"]
-categories = ["Linux"]
+categories = ["Technology"]
 +++
 ### 1. Portus纯净版制作
 vagrant启动ubuntu14.04， 安装docker/docker-compose, 注意事项:    

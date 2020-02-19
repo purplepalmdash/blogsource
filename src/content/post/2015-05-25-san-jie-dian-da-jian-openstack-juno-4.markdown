@@ -1,5 +1,5 @@
 ---
-categories: ["virtualization"]
+categories: ["Technology"]
 comments: true
 date: 2015-05-25T20:11:17Z
 title: 三节点搭建OpenStack Juno(4)

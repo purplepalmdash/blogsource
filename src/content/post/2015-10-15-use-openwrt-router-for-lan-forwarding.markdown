@@ -1,5 +1,5 @@
 ---
-categories: ["Linux"]
+categories: ["Technology"]
 comments: true
 date: 2015-10-15T11:50:28Z
 title: Use OpenWRT Router For Lan Forwarding

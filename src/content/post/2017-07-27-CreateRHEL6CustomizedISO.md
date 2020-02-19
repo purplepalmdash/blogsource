@@ -3,7 +3,7 @@ title = "CreateRHEL6CustomizedISO"
 date = "2017-07-27T12:28:35+08:00"
 description = "CreateRHEL6CustomizedISO"
 keywords = ["Linux"]
-categories = ["Linux"]
+categories = ["Technology"]
 +++
 
 ### 目的

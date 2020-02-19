@@ -1,5 +1,5 @@
 +++
-categories = ["Virtualization"]
+categories = ["Technology"]
 date = "2016-12-26T10:09:41+08:00"
 description = "Offline installation of k8s on CoreOS"
 keywords = ["Virtualization"]

@@ -1,7 +1,7 @@
 +++
 description = "Working tips on gitlab ci"
 title = "WorkingTipsOnGitLabCI"
-categories = ["Linux"]
+categories = ["Technology"]
 keywords = ["Linux"]
 date = "2017-06-14T08:30:37+08:00"
 

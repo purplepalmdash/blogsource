@@ -3,7 +3,7 @@ title = "CustomizeDockerISO"
 date = "2018-07-20T09:07:43+08:00"
 description = "CustomizeDockerISO"
 keywords = ["Linux"]
-categories = ["Linux"]
+categories = ["Technology"]
 +++
 单位里一些同事需要一个开箱即用的Docker环境，以下是制作自启动Docker的ISO制作过程。
 ### 准备

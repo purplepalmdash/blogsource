@@ -3,7 +3,7 @@ title = "全离线环境下实现GitLabCI与Kubernetes对接"
 date = "2018-09-14T14:14:58+08:00"
 description = "OfflineGitLabCIAndK8s"
 keywords = ["Linux"]
-categories = ["Linux"]
+categories = ["Technology"]
 +++
 ### 环境准备
 本文将构建一个包含4台工作机器的集群来模拟全离线环境下的GitLabCI环境及Kubernetes集群环境。相应的硬件配置如下:    

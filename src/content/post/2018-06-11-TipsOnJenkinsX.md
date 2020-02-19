@@ -3,7 +3,7 @@ title = "TipsOnJenkinsX"
 date = "2018-06-11T10:43:35+08:00"
 description = "TipsOnJenkinsX"
 keywords = ["Linux"]
-categories = ["Linux"]
+categories = ["Technology"]
 +++
 ### Install
 Install under archlinux:    

@@ -3,7 +3,7 @@ title = "Ubuntu1604ISOCustomize"
 date = "2018-12-05T09:13:56+08:00"
 description = "Ubuntu1604ISOCustomize"
 keywords = ["Linux"]
-categories = ["Linux"]
+categories = ["Technology"]
 +++
 ### Steps
 ArchLinux Preparation:    

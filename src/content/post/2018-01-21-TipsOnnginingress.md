@@ -3,7 +3,7 @@ title = "tipsonnginxingress"
 date = "2018-01-21T14:24:12+08:00"
 description = "tipsonnginxingress"
 keywords = ["Linux"]
-categories = ["Linux"]
+categories = ["Technology"]
 +++
 ### Create service
 Create a service of nginx via following steps:    

@@ -1,5 +1,5 @@
 ---
-categories: ["web"]
+categories: ["Technology"]
 comments: true
 date: 2014-12-29T00:00:00Z
 title: Set Tiny Tiny Rss Reader on DigitalOcean

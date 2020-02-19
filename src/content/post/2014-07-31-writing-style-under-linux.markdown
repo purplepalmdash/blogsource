@@ -1,5 +1,5 @@
 ---
-categories: ["Linux"]
+categories: ["Technology"]
 comments: true
 date: 2014-07-31T00:00:00Z
 title: Writing Style Under Linux

@@ -3,7 +3,7 @@ title = "ThinkingOnSSDTesting"
 date = "2017-11-20T10:17:56+08:00"
 description = "Thinking on ssd testing"
 keywords = ["Linux"]
-categories = ["Linux"]
+categories = ["Technology"]
 +++
 ### benchmark
 SATA 3: 6Gbps/SATA 2: 3Gbps/SATA 1: 1.5GBps

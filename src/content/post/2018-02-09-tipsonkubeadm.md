@@ -3,7 +3,7 @@ title = "tipsonkubeadm"
 date = "2018-02-09T09:56:46+08:00"
 description = "tipsonkubeadm"
 keywords = ["Linux"]
-categories = ["Linux"]
+categories = ["Technology"]
 +++
 ### Repo
 Use kismatic's offline repository for deploying, CentOS 7.4.1708:    

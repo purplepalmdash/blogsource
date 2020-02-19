@@ -1,5 +1,5 @@
 ---
-
+categories: ["Technology"]
 comments: true
 date: 2013-07-12T00:00:00Z
 title: Qemu快速保存和恢复状态

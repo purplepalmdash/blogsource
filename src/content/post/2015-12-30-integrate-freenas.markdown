@@ -1,5 +1,5 @@
 ---
-categories: ["Virtualization"]
+categories: ["Technology"]
 comments: true
 date: 2015-12-30T09:56:50Z
 title: Integrate FreeNAS

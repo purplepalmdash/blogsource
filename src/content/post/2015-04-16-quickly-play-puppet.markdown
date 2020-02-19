@@ -1,5 +1,5 @@
 ---
-categories: ["puppet"]
+categories: ["Technology"]
 comments: true
 date: 2015-04-16T00:00:00Z
 title: Quickly play puppet

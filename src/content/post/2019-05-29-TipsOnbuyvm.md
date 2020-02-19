@@ -3,7 +3,7 @@ title = "TipsOnBuyVM"
 date = "2019-05-29T10:43:24+08:00"
 description = "TipsOnBuyVM"
 keywords = ["Linux"]
-categories = ["Linux"]
+categories = ["Technology"]
 +++
 ### 快速搭梯
 步骤:   

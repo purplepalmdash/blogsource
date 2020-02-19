@@ -3,7 +3,7 @@ title = "云终端虚拟机搬迁操作指南"
 date = "2017-09-20T11:22:30+08:00"
 description = "ChangeIP"
 keywords = ["Linux"]
-categories = ["Linux"]
+categories = ["Technology"]
 +++
 ### 1. 搬迁前操作
 注意：此步骤在服务器搬迁前(周三下午三点前)执行。    

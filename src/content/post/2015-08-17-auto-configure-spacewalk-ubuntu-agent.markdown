@@ -1,5 +1,5 @@
 ---
-categories: ["Spacewalk"]
+categories: ["Technology"]
 comments: true
 date: 2015-08-17T17:21:31Z
 title: Auto Configure SpaceWalk Ubuntu Agent

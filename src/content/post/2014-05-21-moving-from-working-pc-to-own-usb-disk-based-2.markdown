@@ -1,5 +1,5 @@
 ---
-categories: ["linux"]
+categories: ["Technology"]
 comments: true
 date: 2014-05-21T00:00:00Z
 title: Moving From Working PC To Own USB-Disk Based 2

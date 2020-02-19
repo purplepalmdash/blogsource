@@ -1,5 +1,5 @@
 +++
-categories = ["Virtualization"]
+categories = ["Technology"]
 date = "2016-12-23T19:01:18+08:00"
 description = "Load banlancing in coreos with confd/nginx"
 keywords = ["Virtualization"]

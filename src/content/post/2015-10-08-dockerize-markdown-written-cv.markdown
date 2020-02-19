@@ -1,5 +1,5 @@
 ---
-categories: ["Linux"]
+categories: ["Technology"]
 comments: true
 date: 2015-10-08T10:08:02Z
 title: Dockerize Markdown Written CV

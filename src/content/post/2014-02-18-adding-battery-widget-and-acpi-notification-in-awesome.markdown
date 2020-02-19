@@ -1,5 +1,5 @@
 ---
-categories: ["null"]
+categories: ["Technology"]
 comments: true
 date: 2014-02-18T00:00:00Z
 title: Adding Battery Widget and ACPI Notification in Awesome

@@ -1,7 +1,7 @@
 +++
 title = "将网站转化为Android应用程序"
 date = "2017-01-13T19:22:37+08:00"
-categories = ["Embedded"]
+categories = ["Technology"]
 keywords = ["Embedded"]
 description = "Convert Website to android app"
 

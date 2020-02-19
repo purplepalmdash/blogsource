@@ -1,5 +1,5 @@
 ---
-categories: ["FC"]
+categories: ["Technology"]
 comments: true
 date: 2014-04-06T20:41:10Z
 title: Reading Digest of FC2

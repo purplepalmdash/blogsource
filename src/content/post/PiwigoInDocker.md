@@ -1,5 +1,5 @@
 +++
-categories = ["Tools"]
+categories = ["Technology"]
 date = "2016-07-08T21:35:19+08:00"
 description = "On building dockerized piwigo website"
 keywords = []

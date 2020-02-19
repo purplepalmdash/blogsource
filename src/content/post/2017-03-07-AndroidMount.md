@@ -3,7 +3,7 @@ date = "2017-03-07T23:28:15+08:00"
 keywords = ["Linux"]
 description = "Andoird mount in archlinux"
 title = "Android Mount"
-categories = ["Linux"]
+categories = ["Technology"]
 
 +++
 The steps in Ubuntu includes:    

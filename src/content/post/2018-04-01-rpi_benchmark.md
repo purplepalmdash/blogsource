@@ -3,7 +3,7 @@ title = "rpibenchmark"
 date = "2018-04-01T21:40:07+08:00"
 description = "rpibenchmark"
 keywords = ["Linux"]
-categories = ["Linux"]
+categories = ["Technology"]
 +++
 Install via:    
 

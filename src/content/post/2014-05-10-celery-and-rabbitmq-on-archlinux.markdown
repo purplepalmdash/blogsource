@@ -1,5 +1,5 @@
 ---
-categories: ["Linux"]
+categories: ["Technology"]
 comments: true
 date: 2014-05-10T00:00:00Z
 title: Celery and RabbitMQ on ArchLinux

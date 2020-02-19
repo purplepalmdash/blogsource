@@ -1,5 +1,5 @@
 ---
-categories: ["virtualization"]
+categories: ["Technology"]
 comments: true
 date: 2015-06-18T10:20:48Z
 title: WH Worktips(2)

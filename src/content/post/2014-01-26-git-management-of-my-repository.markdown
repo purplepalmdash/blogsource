@@ -1,5 +1,5 @@
 ---
-categories: ["git"]
+categories: ["Technology"]
 comments: true
 date: 2014-01-26T00:00:00Z
 title: Git Management of my repository

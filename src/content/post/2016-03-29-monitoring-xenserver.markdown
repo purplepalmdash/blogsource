@@ -1,5 +1,5 @@
 ---
-categories: ["Virtualization"]
+categories: ["Technology"]
 comments: true
 date: 2016-03-29T12:23:50Z
 title: Monitoring XenServer

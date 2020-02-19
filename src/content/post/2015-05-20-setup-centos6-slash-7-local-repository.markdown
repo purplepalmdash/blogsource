@@ -1,5 +1,5 @@
 ---
-categories: ["linux"]
+categories: ["Technology"]
 comments: true
 date: 2015-05-20T11:32:56Z
 title: Setup CentOS6/7 Local Repository

@@ -3,7 +3,7 @@ title = "CreateEXEUsingWinRAR"
 date = "2017-12-09T15:48:12+08:00"
 description = "CreateEXEUsingWinRAR"
 keywords = ["Linux"]
-categories = ["Linux"]
+categories = ["Technology"]
 +++
 ### Procedure
 Notice: select the 2 items:    

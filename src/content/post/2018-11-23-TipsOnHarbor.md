@@ -3,7 +3,7 @@ title = "TipsOnHarbor"
 date = "2018-11-23T11:06:28+08:00"
 description = "TipsOnHarbor"
 keywords = ["Linux"]
-categories = ["Linux"]
+categories = ["Technology"]
 +++
 ### Harbor Configuration
 Create user via:    

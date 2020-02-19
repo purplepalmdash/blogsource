@@ -1,5 +1,5 @@
 ---
-categories: ["linux"]
+categories: ["Technology"]
 comments: true
 date: 2014-11-20T00:00:00Z
 title: Share Mouse between ArchLinux &amp; Yosemite

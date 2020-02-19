@@ -1,5 +1,5 @@
 ---
-categories: ["DeviceDriver"]
+categories: ["Technology"]
 comments: true
 date: 2016-02-15T18:11:54Z
 title: Hacking SteelSeries Engine 3 USB Mouse Under Linux(2)

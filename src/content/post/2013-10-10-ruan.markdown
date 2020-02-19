@@ -1,5 +1,5 @@
 ---
-
+categories: ["Life"]
 comments: true
 date: 2013-10-10T00:00:00Z
 title: 软之妹纸

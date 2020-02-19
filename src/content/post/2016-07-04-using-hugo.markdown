@@ -1,5 +1,5 @@
 ---
-categories: ["Linux"]
+categories: ["Technology"]
 comments: true
 date: 2016-07-04T15:36:43Z
 title: Using hugo
@@ -84,8 +84,8 @@ The content of the change.sh is listed as following:
 #!/bin/bash
 for i in `ls ./*.markdown`
 do
-	# Generate the modified result, like categories: "a", "b", "c"
-	replaceline=`grep -i "categories:" $i|awk
+	# Generate the modified result, like categories: ["Technology"]
+	replaceline=`grep -i "categories: ["Technology"]
 '{for(i=2;i<=NF;i++){if(i!=NF){$i="\""$i"\""","}else{$i="\""$i"\""}}}1'`
 	sed -i "2s|.*|$replaceline|" $i
 done
@@ -95,12 +95,12 @@ Then run following command:
 ```
 $ sed -i '2s/\(:[[:blank:]]*\)\(.*\)/\1[\2]/' *.markdown
 ```
-Now check your categories:    
+Now check your categories: ["Technology"]
 
 ```
-$ grep -i "categories:" ./ -r
-./2015-03-12-maas-deploy-3.markdown:categories: ["Virtualization"]
-./2016-03-31-nodemcu-and-1602i2c.markdown:categories: ["embedded"]
+$ grep -i "categories: ["Technology"]
+./2015-03-12-maas-deploy-3.markdown:categories: ["Technology"]
+./2016-03-31-nodemcu-and-1602i2c.markdown:categories: ["Technology"]
 ....
 ```
 With this format could our markdown files be analyzied via new theme.  

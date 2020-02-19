@@ -3,7 +3,7 @@ title = "WorkingTipsOnPortus"
 date = "2018-05-19T16:34:41+08:00"
 description = "WorkingTipsOnPortus"
 keywords = ["Linux"]
-categories = ["Linux"]
+categories = ["Technology"]
 +++
 ### Environment
 Runtime environment:    

@@ -3,7 +3,7 @@ title = "NodeExporterOnCentOS6"
 date = "2018-07-25T17:17:30+08:00"
 description = "NodeExporterOnCentOS6"
 keywords = ["Linux"]
-categories = ["Linux"]
+categories = ["Technology"]
 +++
 从
 [https://github.com/prometheus/node_exporter/releases](https://github.com/prometheus/node_exporter/releases),

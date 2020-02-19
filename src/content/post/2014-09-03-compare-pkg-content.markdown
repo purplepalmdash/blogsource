@@ -1,5 +1,5 @@
 ---
-categories: ["Linux"]
+categories: ["Technology"]
 comments: true
 date: 2014-09-03T00:00:00Z
 title: Compare pkg content

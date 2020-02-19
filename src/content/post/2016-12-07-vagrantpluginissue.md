@@ -1,5 +1,5 @@
 +++
-categories = ["Linux"]
+categories = ["Technology"]
 date = "2016-12-07T22:00:18+08:00"
 description = "vagrant issue after update"
 keywords = ["Linux"]

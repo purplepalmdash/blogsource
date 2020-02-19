@@ -1,5 +1,5 @@
 ---
-categories: ["Virtualization"]
+categories: ["Technology"]
 comments: true
 date: 2015-10-23T22:32:17Z
 title: Tips On Ceph On Docker

@@ -3,7 +3,7 @@ title = "gitlabciandgitbook"
 date = "2018-03-27T16:15:46+08:00"
 description = "gitlabciandgitbook"
 keywords = ["Linux"]
-categories = ["Linux"]
+categories = ["Technology"]
 +++
 ### 环境
 gitlab搭建完毕，gitlabci配置完毕。    

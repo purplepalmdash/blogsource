@@ -1,5 +1,5 @@
 +++
-categories = ["Linux"]
+categories = ["Technology"]
 date = "2016-11-03T17:23:23+08:00"
 description = "Speed up docker deployment"
 keywords = ["Linux"]

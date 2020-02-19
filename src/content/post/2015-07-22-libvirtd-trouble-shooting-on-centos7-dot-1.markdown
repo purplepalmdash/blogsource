@@ -1,5 +1,5 @@
 ---
-categories: ["virtualization"]
+categories: ["Technology"]
 comments: true
 date: 2015-07-22T09:54:59Z
 title: Libvirtd Trouble-Shooting On CentOS7.1

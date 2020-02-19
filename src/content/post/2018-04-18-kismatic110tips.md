@@ -3,7 +3,7 @@ title = "kismatic110tips"
 date = "2018-04-18T16:38:20+08:00"
 description = "kismatic110tips"
 keywords = ["Linux"]
-categories = ["Linux"]
+categories = ["Technology"]
 +++
 ### preparation
 Deployment machine, Download the packages:    

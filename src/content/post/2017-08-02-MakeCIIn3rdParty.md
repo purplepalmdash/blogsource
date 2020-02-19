@@ -3,7 +3,7 @@ title = "MakeCIIn3rdParty"
 date = "2017-08-02T15:00:52+08:00"
 description = "MakeCIIn3rdParty"
 keywords = ["Linux"]
-categories = ["Linux"]
+categories = ["Technology"]
 +++
 ### Docker Images
 需要用到的Docker Image: `wgetbuildcs6`, 构建的Dockerfile:    

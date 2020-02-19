@@ -1,5 +1,5 @@
 ---
-categories: ["Virtualization"]
+categories: ["Technology"]
 comments: true
 date: 2015-07-28T16:10:49Z
 title: WorkTips On LandScape

@@ -3,7 +3,7 @@ title = "MinimumRHEL74DVD"
 date = "2019-05-08T09:09:56+08:00"
 description = "MinimumRHEL74DVD"
 keywords = ["Linux"]
-categories = ["Linux"]
+categories = ["Technology"]
 +++
 In a minimum installed system, do following:    
 

@@ -1,5 +1,5 @@
 ---
-categories: ["Virtualization"]
+categories: ["Technology"]
 comments: true
 date: 2016-04-18T12:15:35Z
 title: Change IP In DevStack

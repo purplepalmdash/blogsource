@@ -1,5 +1,5 @@
 ---
-categories: ["python"]
+categories: ["Technology"]
 comments: true
 date: 2014-10-24T00:00:00Z
 title: Python call system command

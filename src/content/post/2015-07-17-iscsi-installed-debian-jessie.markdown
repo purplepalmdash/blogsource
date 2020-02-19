@@ -1,5 +1,5 @@
 ---
-categories: ["Virtualization"]
+categories: ["Technology"]
 comments: true
 date: 2015-07-17T14:24:20Z
 title: ISCSI Installed Debian Jessie

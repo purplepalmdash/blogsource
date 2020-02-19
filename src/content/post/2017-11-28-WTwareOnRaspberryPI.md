@@ -3,7 +3,7 @@ title = "WTwareOnRaspberryPI"
 date = "2017-11-28T14:54:34+08:00"
 description = "WTwareOnRaspberryPI"
 keywords = ["Linux"]
-categories = ["Linux"]
+categories = ["Technology"]
 +++
 ### 效果
 

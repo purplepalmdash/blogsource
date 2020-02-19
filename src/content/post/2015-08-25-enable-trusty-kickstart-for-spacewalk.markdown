@@ -1,5 +1,5 @@
 ---
-categories: ["Linux"]
+categories: ["Technology"]
 comments: true
 date: 2015-08-25T16:06:17Z
 title: Enable Trusty KickStart For SpaceWalk

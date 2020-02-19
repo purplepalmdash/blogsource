@@ -3,7 +3,7 @@ title = "TipsOnKubesprayUpgrading"
 date = "2018-12-10T12:08:13+08:00"
 description = "TipsOnKubesprayUpgrading"
 keywords = ["Linux"]
-categories = ["Linux"]
+categories = ["Technology"]
 +++
 ### 目的
 Rong部署框架随kubespray社区升级策略。    

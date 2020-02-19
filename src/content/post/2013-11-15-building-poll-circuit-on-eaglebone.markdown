@@ -1,5 +1,5 @@
 ---
-categories: ["Linux", "Beaglebone"]
+categories: ["Technology"]
 comments: true
 date: 2013-11-15T00:00:00Z
 title: Building Poll circuit on EagleBone

@@ -3,7 +3,7 @@ title = "Ubuntu1804VagrantBoxCreate"
 date = "2019-01-20T11:34:03+08:00"
 description = "Ubuntu1804VagrantBoxCreate"
 keywords = ["Linux"]
-categories = ["Linux"]
+categories = ["Technology"]
 +++
 For creating Ubuntu 18.04 vagrant box, follow the following steps:    
 

@@ -1,5 +1,5 @@
 ---
-categories: ["FC"]
+categories: ["Technology"]
 comments: true
 date: 2014-04-07T16:02:47Z
 title: Programming In C New Words

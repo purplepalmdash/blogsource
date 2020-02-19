@@ -1,5 +1,5 @@
 ---
-categories: ["null"]
+categories: ["Technology"]
 comments: true
 date: 2014-11-02T00:00:00Z
 title: git under proxy

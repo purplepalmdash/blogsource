@@ -1,5 +1,5 @@
 ---
-categories: ["python"]
+categories: ["Technology"]
 comments: true
 date: 2014-05-09T00:00:00Z
 title: Write Python Weather APP on Heroku(4)

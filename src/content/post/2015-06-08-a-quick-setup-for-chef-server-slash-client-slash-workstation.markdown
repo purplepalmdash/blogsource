@@ -1,5 +1,5 @@
 ---
-categories: ["Chef"]
+categories: ["Technology"]
 comments: true
 date: 2015-06-08T20:39:17Z
 title: A Quick Setup For Chef Server/Client/Workstation

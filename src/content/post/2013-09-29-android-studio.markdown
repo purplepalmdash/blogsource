@@ -1,5 +1,5 @@
 ---
-
+categories: ["Technology"]
 comments: true
 date: 2013-09-29T00:00:00Z
 title: Android-studio

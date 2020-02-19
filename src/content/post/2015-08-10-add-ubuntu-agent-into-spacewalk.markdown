@@ -1,5 +1,5 @@
 ---
-categories: ["virtualization"]
+categories: ["Technology"]
 comments: true
 date: 2015-08-10T14:53:28Z
 title: Add Ubuntu Agent into SpaceWalk

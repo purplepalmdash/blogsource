@@ -1,7 +1,7 @@
 +++
 title = "OnVRTest"
 date = "2017-05-03T14:09:10+08:00"
-categories = ["Linux"]
+categories = ["Technology"]
 keywords = ["Linux"]
 description = "On testing performance of VR"
 

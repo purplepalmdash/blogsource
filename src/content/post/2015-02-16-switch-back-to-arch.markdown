@@ -1,5 +1,5 @@
 ---
-categories: ["linux"]
+categories: ["Technology"]
 comments: true
 date: 2015-02-16T00:00:00Z
 title: Switch Back To Arch

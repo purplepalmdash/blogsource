@@ -1,5 +1,5 @@
 ---
-categories: ["octopress"]
+categories: ["Technology"]
 comments: true
 date: 2014-11-25T00:00:00Z
 title: Octopress Tips

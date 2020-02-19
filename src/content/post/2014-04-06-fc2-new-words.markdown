@@ -1,5 +1,5 @@
 ---
-categories: ["FC"]
+categories: ["Technology"]
 comments: true
 date: 2014-04-06T20:34:16Z
 title: FC2 New Words

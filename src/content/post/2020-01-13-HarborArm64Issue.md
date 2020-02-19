@@ -3,7 +3,7 @@ title = "HarborArm64Issue"
 date = "2020-01-13T14:11:04+08:00"
 description = "HarborArm64Issue"
 keywords = ["Linux"]
-categories = ["Linux"]
+categories = ["Technology"]
 +++
 ### Issue
 harbor-log instance launched first, but it complains:    

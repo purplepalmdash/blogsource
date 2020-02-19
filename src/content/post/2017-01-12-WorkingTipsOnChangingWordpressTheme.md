@@ -1,7 +1,7 @@
 +++
 title = "Wordpress长图片功能实现"
 date = "2017-01-12T12:06:15+08:00"
-categories = ["Linux"]
+categories = ["Technology"]
 keywords = ["Linux"]
 description = "For changing wordpress template"
 

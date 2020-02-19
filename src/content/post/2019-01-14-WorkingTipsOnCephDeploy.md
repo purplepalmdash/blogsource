@@ -3,7 +3,7 @@ title = "WorkingTipsOnCephDeploy"
 date = "2019-01-14T21:29:45+08:00"
 description = "WorkingTipsOnCephDeploy"
 keywords = ["Linux"]
-categories = ["Linux"]
+categories = ["Technology"]
 +++
 ### Environment
 Ubuntu16.04, IPs are listed as following:    

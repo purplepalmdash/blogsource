@@ -1,5 +1,5 @@
 ---
-
+categories: ["Technology"]
 comments: true
 date: 2013-11-01T00:00:00Z
 title: Update Linux-ck in ArchLinux

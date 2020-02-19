@@ -1,5 +1,5 @@
 ---
-categories: ["Virtualization"]
+categories: ["Technology"]
 comments: true
 date: 2015-05-18T18:15:47Z
 title: My Configuration On Cobbler For Deploying Ubuntu12.04

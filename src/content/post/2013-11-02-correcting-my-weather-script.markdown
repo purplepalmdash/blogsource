@@ -1,5 +1,5 @@
 ---
-
+categories: ["Technology"]
 comments: true
 date: 2013-11-02T00:00:00Z
 title: Correcting My Weather Script

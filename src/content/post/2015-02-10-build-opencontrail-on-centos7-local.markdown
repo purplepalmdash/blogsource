@@ -1,5 +1,5 @@
 ---
-categories: ["null"]
+categories: ["Technology"]
 comments: true
 date: 2015-02-10T00:00:00Z
 title: Build OpenContrail On CentOS7(Local)

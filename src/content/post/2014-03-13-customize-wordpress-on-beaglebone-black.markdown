@@ -1,5 +1,5 @@
 ---
-categories: ["Wordpress"]
+categories: ["Technology"]
 comments: true
 date: 2014-03-13T00:00:00Z
 title: Customize Wordpress on BeagleBone Black

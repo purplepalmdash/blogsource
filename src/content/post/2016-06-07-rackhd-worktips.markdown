@@ -1,5 +1,5 @@
 ---
-categories: ["Virtualization"]
+categories: ["Technology"]
 comments: true
 date: 2016-06-07T17:05:19Z
 title: RackHD Worktips

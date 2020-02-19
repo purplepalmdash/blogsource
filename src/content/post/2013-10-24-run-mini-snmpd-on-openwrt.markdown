@@ -1,5 +1,5 @@
 ---
-
+categories: ["Technology"]
 comments: true
 date: 2013-10-24T00:00:00Z
 title: Run mini_snmpd on OpenWRT

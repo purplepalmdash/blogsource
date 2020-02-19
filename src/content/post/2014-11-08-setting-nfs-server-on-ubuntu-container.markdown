@@ -1,5 +1,5 @@
 ---
-categories: ["linux"]
+categories: ["Technology"]
 comments: true
 date: 2014-11-08T00:00:00Z
 title: Setting NFS Server on Ubuntu Container

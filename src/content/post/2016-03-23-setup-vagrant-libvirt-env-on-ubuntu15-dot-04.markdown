@@ -1,5 +1,5 @@
 ---
-categories: ["virtualization"]
+categories: ["Technology"]
 comments: true
 date: 2016-03-23T20:49:52Z
 title: Setup Vagrant-libvirt Env On Ubuntu15.04

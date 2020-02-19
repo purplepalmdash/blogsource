@@ -1,5 +1,5 @@
 ---
-categories: ["dhcpd"]
+categories: ["Technology"]
 comments: true
 date: 2013-11-13T00:00:00Z
 title: dhcpd address assignment rules

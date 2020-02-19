@@ -2,7 +2,7 @@
 date = "2017-03-09T15:55:10+08:00"
 description = "Linux"
 title = "Reading Digest On Programming Interview"
-categories = ["Linux"]
+categories = ["Technology"]
 keywords = ["Linux"]
 
 +++

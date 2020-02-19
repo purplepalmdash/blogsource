@@ -1,5 +1,5 @@
 ---
-categories: ["Virtualization"]
+categories: ["Technology"]
 comments: true
 date: 2016-06-01T09:14:18Z
 title: Use RackHD For Deploying Systems

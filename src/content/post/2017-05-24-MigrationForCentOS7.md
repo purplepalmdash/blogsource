@@ -1,6 +1,6 @@
 +++
 date = "2017-05-24T14:32:50+08:00"
-categories = ["Virtualization"]
+categories = ["Technology"]
 keywords = ["migration"]
 description = "migration for centos 7"
 title = "MigrationForCentOS7"

@@ -1,7 +1,7 @@
 +++
 date = "2017-03-17T16:58:26+08:00"
 title = "XenServer Windows NTP时间配置"
-categories = ["Linux"]
+categories = ["Technology"]
 keywords = ["Linux"]
 description = "sync time using ntp in XenServer Windows"
 

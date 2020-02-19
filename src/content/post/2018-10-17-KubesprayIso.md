@@ -3,7 +3,7 @@ title = "KubeSprayISODeployment"
 date = "2018-10-17T09:22:15+08:00"
 description = "KubeSprayISODeployment"
 keywords = ["Linux"]
-categories = ["Linux"]
+categories = ["Technology"]
 +++
 ### 文档目的
 详细说明使用ISO离线构建Kubernetes集群的步骤。  

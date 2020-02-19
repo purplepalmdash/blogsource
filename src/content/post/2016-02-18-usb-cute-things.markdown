@@ -1,5 +1,5 @@
 ---
-categories: ["embedded"]
+categories: ["Technology"]
 comments: true
 date: 2016-02-18T18:04:42Z
 title: USB Cute Things

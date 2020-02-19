@@ -1,5 +1,5 @@
 +++
-categories = ["Virtualization"]
+categories = ["Technology"]
 date = "2016-12-22T18:02:47+08:00"
 description = "CoreOS tips"
 keywords = ["Virtualization"]

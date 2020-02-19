@@ -3,7 +3,7 @@ title = "ThinkingOnReligion"
 date = "2018-01-24T12:15:20+08:00"
 description = "ThinkingOnReligion"
 keywords = ["Linux"]
-categories = ["Linux"]
+categories = ["Technology"]
 +++
 ![/images/2018_01_24_12_16_18_607x379.jpg](/images/2018_01_24_12_16_18_607x379.jpg)
 

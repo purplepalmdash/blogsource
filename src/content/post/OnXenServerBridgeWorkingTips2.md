@@ -1,5 +1,5 @@
 +++
-categories = ["Virtualization"]
+categories = ["Technology"]
 date = "2016-08-19T14:37:59+08:00"
 description = "On how to setup a virtuabox based XenServer environment"
 keywords = ["Virtualization"]

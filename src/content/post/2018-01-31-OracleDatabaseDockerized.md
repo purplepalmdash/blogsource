@@ -3,7 +3,7 @@ title = "OracleDatabaseDockerized"
 date = "2018-01-31T14:24:19+08:00"
 description = "OracleDatabaseDockerized"
 keywords = ["Linux"]
-categories = ["Linux"]
+categories = ["Technology"]
 +++
 ### Oracle In Docker
 Reference as:    

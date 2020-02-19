@@ -1,5 +1,5 @@
 ---
-categories: ["Linux"]
+categories: ["Technology"]
 comments: true
 date: 2015-05-14T00:00:00Z
 title: Setup the Cobbler Server

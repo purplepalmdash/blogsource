@@ -3,7 +3,7 @@ title = "tipsOnnextcloud"
 date = "2020-01-16T17:46:41+08:00"
 description = "Tipsonnextcloud"
 keywords = ["Linux"]
-categories = ["Linux"]
+categories = ["Technology"]
 +++
 Dockerfile:   
 

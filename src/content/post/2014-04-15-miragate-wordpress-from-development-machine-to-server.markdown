@@ -1,5 +1,5 @@
 ---
-categories: ["null"]
+categories: ["Technology"]
 comments: true
 date: 2014-04-15T00:00:00Z
 title: Miragate Wordpress From Development Machine To Server

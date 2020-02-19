@@ -1,5 +1,5 @@
 ---
-categories: ["linux"]
+categories: ["Technology"]
 comments: true
 date: 2016-02-19T07:11:24Z
 title: Mutt Configuration On DO

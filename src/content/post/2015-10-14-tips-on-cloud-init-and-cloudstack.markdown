@@ -1,5 +1,5 @@
 ---
-categories: ["Virtualization"]
+categories: ["Technology"]
 comments: true
 date: 2015-10-14T11:36:51Z
 title: Tips on Cloud-Init and CloudStack(2)

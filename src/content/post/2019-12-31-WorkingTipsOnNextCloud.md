@@ -3,7 +3,7 @@ title = "WorkingTipsOnNextCloud"
 date = "2019-12-31T15:50:19+08:00"
 description = "WorkingTipsOnNextCloud"
 keywords = ["Linux"]
-categories = ["Linux"]
+categories = ["Technology"]
 +++
 ### docker-compose file
 File content:    

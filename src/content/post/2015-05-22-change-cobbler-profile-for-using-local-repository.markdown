@@ -1,5 +1,5 @@
 ---
-categories: ["Virtualization"]
+categories: ["Technology"]
 comments: true
 date: 2015-05-22T14:12:58Z
 title: Change Cobbler Profile For Using Local Repository

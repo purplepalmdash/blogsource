@@ -1,5 +1,5 @@
 +++
-categories = ["Linux"]
+categories = ["Technology"]
 keywords = ["Linux"]
 description = "Ansible tips for using"
 title = "Ansible Tips on register and so on"

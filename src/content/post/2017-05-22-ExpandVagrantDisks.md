@@ -1,6 +1,6 @@
 +++
 date = "2017-05-22T17:00:19+08:00"
-categories = ["Virtualization"]
+categories = ["Technology"]
 keywords = ["vagrant"]
 description = "Expand vagrant's disks"
 title = "AddSecondDiskForVagrant"

@@ -3,7 +3,7 @@ title = "WorkingTipsForArchLinuxSpring"
 date = "2018-03-10T09:56:47+08:00"
 description = "WorkingTipsForArchLinuxSpring"
 keywords = ["Linux"]
-categories = ["Linux"]
+categories = ["Technology"]
 +++
 ### Installation
 Install the following packages:    

@@ -3,7 +3,7 @@ title = "WorkingTipsOnPlayWithDockerUbuntu"
 date = "2018-08-14T15:53:36+08:00"
 description = "WorkingTipsOnPlayWithDockerUbuntu"
 keywords = ["Linux"]
-categories = ["Linux"]
+categories = ["Technology"]
 +++
 ### dnsmasq for ubuntu
 systemd-resolved will listen on 53 port, disable it via:    

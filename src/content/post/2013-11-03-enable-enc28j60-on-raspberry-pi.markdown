@@ -1,5 +1,5 @@
 ---
-
+categories: ["Technology"]
 comments: true
 date: 2013-11-03T00:00:00Z
 title: Enable enc28j60 on Raspberry PI

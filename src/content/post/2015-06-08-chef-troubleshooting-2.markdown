@@ -1,5 +1,5 @@
 ---
-categories: ["Linux"]
+categories: ["Technology"]
 comments: true
 date: 2015-06-08T19:43:13Z
 title: Chef TroubleShooting 2

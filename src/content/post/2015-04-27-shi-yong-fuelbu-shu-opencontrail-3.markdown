@@ -1,5 +1,5 @@
 ---
-categories: ["Virtualization"]
+categories: ["Technology"]
 comments: true
 date: 2015-04-27T00:00:00Z
 title: 使用Fuel部署OpenContrail(3)

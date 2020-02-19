@@ -1,5 +1,5 @@
 ---
-categories: ["embedded"]
+categories: ["Technology"]
 comments: true
 date: 2014-11-08T00:00:00Z
 title: Install new image to sd card for BBB

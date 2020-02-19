@@ -1,5 +1,5 @@
 ---
-categories: ["virtualization"]
+categories: ["Technology"]
 comments: true
 date: 2015-04-15T00:00:00Z
 title: Fuel Build Issues

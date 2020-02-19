@@ -3,7 +3,7 @@ title = "WorkingtipsOnZFSOnProxmox"
 date = "2019-11-01T09:54:43+08:00"
 description = "WorkingtipsOnZFSOnProxmox"
 keywords = ["Linux"]
-categories = ["Linux"]
+categories = ["Technology"]
 +++
 ### Environment
 2 disks(sas) raid1 as the system partition.    

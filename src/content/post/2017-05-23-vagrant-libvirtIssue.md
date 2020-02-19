@@ -1,7 +1,7 @@
 +++
 title = "vagrant-libvirt issue on ArchLinux"
 date = "2017-05-23T16:54:24+08:00"
-categories = ["Virtualization"]
+categories = ["Technology"]
 keywords = ["vagrant"]
 description = "vagrant-libvirt issue"
 

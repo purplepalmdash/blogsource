@@ -1,5 +1,5 @@
 ---
-categories: ["ArchLinux"]
+categories: ["Technology"]
 comments: true
 date: 2014-03-27T00:00:00Z
 title: Basic ArchLinux Setting(i386)

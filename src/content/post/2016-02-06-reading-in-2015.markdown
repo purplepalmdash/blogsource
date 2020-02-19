@@ -1,5 +1,5 @@
 ---
-categories: ["null"]
+categories: ["Life"]
 comments: true
 date: 2016-02-06T21:55:47Z
 title: Reading In 2015

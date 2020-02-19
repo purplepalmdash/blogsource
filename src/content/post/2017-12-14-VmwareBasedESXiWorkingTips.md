@@ -3,7 +3,7 @@ title = "VmwareBasedESXiWorkingTips"
 date = "2017-12-14T15:15:42+08:00"
 description = "VmwareBasedESXiWorkingTips"
 keywords = ["Linux"]
-categories = ["Linux"]
+categories = ["Technology"]
 +++
 ### Steps
 Create ESXI vm machine:    

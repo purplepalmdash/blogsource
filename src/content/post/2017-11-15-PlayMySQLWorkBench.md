@@ -3,7 +3,7 @@ title = "PlayingMySQLWorkbench"
 date = "2017-11-15T16:45:28+08:00"
 description = "playingmysqlworkbench"
 keywords = ["Linux"]
-categories = ["Linux"]
+categories = ["Technology"]
 +++
 ### dump sql
 Dump the existing sql via following commands:    

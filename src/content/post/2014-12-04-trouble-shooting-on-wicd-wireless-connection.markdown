@@ -1,5 +1,5 @@
 ---
-categories: ["linux"]
+categories: ["Technology"]
 comments: true
 date: 2014-12-04T00:00:00Z
 title: Trouble Shooting On Wicd Wireless Connection

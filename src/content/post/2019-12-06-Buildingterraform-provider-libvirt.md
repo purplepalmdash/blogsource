@@ -3,7 +3,7 @@ title = "Buildingterraform-provider-libvirt"
 date = "2019-12-06T15:14:13+08:00"
 description = "Buildingterraform-provider-libvirt"
 keywords = ["Linux"]
-categories = ["Linux"]
+categories = ["Technology"]
 +++
 Build terraform-provider-libvirt for debian9.0.    
 

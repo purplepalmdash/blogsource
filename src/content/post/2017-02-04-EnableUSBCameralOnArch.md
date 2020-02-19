@@ -3,7 +3,7 @@ keywords = ["Linux"]
 date = "2017-02-04T20:14:50+08:00"
 description = "Enable USB camera on ArchLinux"
 title = "EnableUSBCameraOnArchLinux"
-categories = ["Linux"]
+categories = ["Technology"]
 
 +++
 ### WebCam Detection

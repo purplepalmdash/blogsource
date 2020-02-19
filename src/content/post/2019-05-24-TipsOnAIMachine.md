@@ -3,7 +3,7 @@ title = "TipsOnAIMachine"
 date = "2019-05-24T10:29:08+08:00"
 description = "TipsOnAIMachine"
 keywords = ["Linux"]
-categories = ["Linux"]
+categories = ["Technology"]
 +++
 ### 硬件环境
 新购的神舟， Z7-KP7GH， CPU， i7-8750H， 内存24G， 显卡Nvidia GTX1060 6G.      

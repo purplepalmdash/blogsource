@@ -3,7 +3,7 @@ title = "KubeadmSSLAdjust"
 date = "2020-01-06T17:24:47+08:00"
 description = "kubeadmssladjust"
 keywords = ["Linux"]
-categories = ["Linux"]
+categories = ["Technology"]
 +++
 
 ### 检查

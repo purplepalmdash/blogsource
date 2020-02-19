@@ -1,5 +1,5 @@
 ---
-categories: ["linux"]
+categories: ["Technology"]
 comments: true
 date: 2015-02-03T00:00:00Z
 title: Install GitLab And Gogs

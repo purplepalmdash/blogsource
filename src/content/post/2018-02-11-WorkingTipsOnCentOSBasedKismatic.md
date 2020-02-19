@@ -3,7 +3,7 @@ title = "WorkingTipsOnKismaticCentOS"
 date = "2018-02-11T09:22:08+08:00"
 description = "WorkingtipsOnKismaticCentOS"
 keywords = ["Linux"]
-categories = ["Linux"]
+categories = ["Technology"]
 +++
 ### 环境准备
 IP地址及CentOS版本截图如下:    

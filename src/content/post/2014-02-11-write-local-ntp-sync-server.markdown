@@ -1,5 +1,5 @@
 ---
-categories: ["ntp"]
+categories: ["Technology"]
 comments: true
 date: 2014-02-11T00:00:00Z
 title: Write Local ntp sync server

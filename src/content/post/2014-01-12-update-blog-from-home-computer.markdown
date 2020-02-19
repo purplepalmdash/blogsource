@@ -1,5 +1,5 @@
 ---
-categories: ["blog"]
+categories: ["Technology"]
 comments: true
 date: 2014-01-12T00:00:00Z
 title: Update blog from Home Computer

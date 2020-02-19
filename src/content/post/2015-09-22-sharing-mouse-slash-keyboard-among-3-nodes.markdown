@@ -1,5 +1,5 @@
 ---
-categories: ["Linux"]
+categories: ["Technology"]
 comments: true
 date: 2015-09-22T20:42:04Z
 title: Sharing Mouse/Keyboard among 3 Nodes

@@ -1,5 +1,5 @@
 ---
-categories: ["Virtualization"]
+categories: ["Technology"]
 comments: true
 date: 2015-06-29T14:13:08Z
 title: Insert public key into Cobbler Deployed System

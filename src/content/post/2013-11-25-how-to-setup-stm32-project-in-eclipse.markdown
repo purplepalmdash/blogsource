@@ -1,5 +1,5 @@
 ---
-categories: ["Linux", "stm32"]
+categories: ["Technology"]
 comments: true
 date: 2013-11-25T00:00:00Z
 title: How to setup STM32 Project in eclipse

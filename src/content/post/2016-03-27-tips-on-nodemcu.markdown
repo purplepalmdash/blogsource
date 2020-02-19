@@ -1,5 +1,5 @@
 ---
-categories: ["embedded"]
+categories: ["Technology"]
 comments: true
 date: 2016-03-27T09:30:05Z
 title: Tips On NodeMCU

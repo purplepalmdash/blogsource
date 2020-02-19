@@ -3,7 +3,7 @@ title = "HugoAndTravisConfiguration"
 date = "2018-01-03T10:47:18+08:00"
 description = "HugoAndTravisConfiguration"
 keywords = ["DevOps"]
-categories = ["DevOps"]
+categories = ["Technology"]
 +++
 hugo
 升级到v0.33后，生成的静态网站里缺少了index.html等HTML文件，原因不明。恰好我在travis上的编译流程有些繁琐，每次都需要花费5分钟以上生成整个网站，于是我调研了一下更好的解决方案，用于生成博客静态网站。    

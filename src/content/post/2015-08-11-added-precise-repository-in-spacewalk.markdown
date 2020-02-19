@@ -1,5 +1,5 @@
 ---
-categories: ["Virtualization"]
+categories: ["Technology"]
 comments: true
 date: 2015-08-11T16:26:32Z
 title: Added Precise Repository In SpaceWalk

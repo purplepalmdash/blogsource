@@ -1,5 +1,5 @@
 ---
-categories: ["linux"]
+categories: ["Technology"]
 comments: true
 date: 2015-02-09T00:00:00Z
 title: Tips for building opencontrail on Ubuntu14.04

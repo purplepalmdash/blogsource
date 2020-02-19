@@ -1,5 +1,5 @@
 ---
-categories: ["virtualization"]
+categories: ["Technology"]
 comments: true
 date: 2016-06-29T18:51:40Z
 title: site-to-site VPN

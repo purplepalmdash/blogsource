@@ -3,7 +3,7 @@ title = "WorkingTipsOnInternetSharing"
 date = "2017-12-18T15:08:12+08:00"
 description = "WorkingTipsOnInternetSharing"
 keywords = ["Linux"]
-categories = ["Linux"]
+categories = ["Technology"]
 +++
 ### AIM
 To set up an free wireless solution working for WebDuino.    

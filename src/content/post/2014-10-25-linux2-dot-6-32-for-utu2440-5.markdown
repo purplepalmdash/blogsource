@@ -1,5 +1,5 @@
 ---
-categories: ["embedded"]
+categories: ["Technology"]
 comments: true
 date: 2014-10-25T00:00:00Z
 title: Linux2.6.32 for Utu2440(5)

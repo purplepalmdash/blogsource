@@ -1,5 +1,5 @@
 ---
-categories: ["Wordpress"]
+categories: ["Technology"]
 comments: true
 date: 2014-03-14T00:00:00Z
 title: Trouble-Shotting on Wordpress

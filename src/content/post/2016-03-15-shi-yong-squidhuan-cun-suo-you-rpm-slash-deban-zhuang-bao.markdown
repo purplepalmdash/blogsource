@@ -1,5 +1,5 @@
 ---
-categories: ["Linux"]
+categories: ["Technology"]
 comments: true
 date: 2016-03-15T10:23:34Z
 title: 使用squid缓存所有rpm/deb安装包

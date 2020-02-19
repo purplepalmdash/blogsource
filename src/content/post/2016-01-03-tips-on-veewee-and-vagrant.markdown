@@ -1,5 +1,5 @@
 ---
-categories: ["linux"]
+categories: ["Technology"]
 comments: true
 date: 2016-01-03T15:56:09Z
 title: Tips on Veewee and Vagrant

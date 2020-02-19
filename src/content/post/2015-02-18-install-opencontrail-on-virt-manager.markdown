@@ -1,5 +1,5 @@
 ---
-categories: ["virtualization"]
+categories: ["Technology"]
 comments: true
 date: 2015-02-18T00:00:00Z
 title: Install OpenContrail On Virt-Manager

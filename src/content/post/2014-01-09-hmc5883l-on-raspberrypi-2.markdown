@@ -1,5 +1,5 @@
 ---
-categories: ["Raspberry", "PI"]
+categories: ["Technology"]
 comments: true
 date: 2014-01-09T00:00:00Z
 title: HMC5883L on RaspberryPI(2)

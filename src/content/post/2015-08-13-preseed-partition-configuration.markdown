@@ -1,5 +1,5 @@
 ---
-categories: ["null"]
+categories: ["Technology"]
 comments: true
 date: 2015-08-13T21:55:00Z
 title: Preseed Partition Configuration

@@ -1,5 +1,5 @@
 ---
-categories: ["Virtualization"]
+categories: ["Technology"]
 comments: true
 date: 2015-12-17T14:08:35Z
 title: NetScaler VPX初始化配置

@@ -1,5 +1,5 @@
 ---
-categories: ["WorldPress"]
+categories: ["Technology"]
 comments: true
 date: 2014-03-15T00:00:00Z
 title: Migrating from ASP to WordPress(1)

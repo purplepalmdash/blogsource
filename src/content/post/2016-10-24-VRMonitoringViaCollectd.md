@@ -1,5 +1,5 @@
 +++
-categories = ["Linux"]
+categories = ["Technology"]
 date = "2016-10-24T16:36:24+08:00"
 description = "Monitoring cloudstack VR via collectd"
 keywords = ["Linux"]

@@ -1,5 +1,5 @@
 +++
-categories = ["Virtualization"]
+categories = ["Technology"]
 date = "2016-12-15T21:19:18+08:00"
 description = "Use mesos for CI"
 keywords = ["Virtualization"]

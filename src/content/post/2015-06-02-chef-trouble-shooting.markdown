@@ -1,5 +1,5 @@
 ---
-categories: ["Virtualization"]
+categories: ["Technology"]
 comments: true
 date: 2015-06-02T16:16:42Z
 title: Chef Trouble-Shooting

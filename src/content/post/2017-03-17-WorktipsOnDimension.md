@@ -1,7 +1,7 @@
 +++
 description = "Working tips on hugo template dimension"
 title = "Working Tips On Dimension"
-categories = ["Web"]
+categories = ["Technology"]
 date = "2017-03-17T19:22:19+08:00"
 keywords = ["Web"]
 

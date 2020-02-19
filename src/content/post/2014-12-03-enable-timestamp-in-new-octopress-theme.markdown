@@ -1,5 +1,5 @@
 ---
-categories: ["web"]
+categories: ["Technology"]
 comments: true
 date: 2014-12-03T00:00:00Z
 title: Enable Timestamp In New Octopress Theme

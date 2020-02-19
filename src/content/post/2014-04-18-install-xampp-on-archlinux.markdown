@@ -1,5 +1,5 @@
 ---
-categories: ["null"]
+categories: ["Technology"]
 comments: true
 date: 2014-04-18T00:00:00Z
 title: Install xampp on ArchLinux

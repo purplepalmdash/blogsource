@@ -3,7 +3,7 @@ title = "把SurfacePro作为外置显示器"
 date = "2018-06-21T16:45:10+08:00"
 description = "SurfacePro"
 keywords = ["Linux"]
-categories = ["Linux"]
+categories = ["Technology"]
 +++
 2014年我花了3688买的SurfacePro一代，一直以来都处于准吃灰状态。当你习惯了ArchLinux+Awesome的快捷以后，恐怕市面上所有主流操作系统都不会入你法眼。当某个桌面操作需要你用到鼠标的时候，事实上你已经输掉了时间----只有双手不离开键盘完成某个窗口的切换或是缩放，才是真正的高效，这也是Awesome之所以成为我首选桌面环境的一大原因。    
 

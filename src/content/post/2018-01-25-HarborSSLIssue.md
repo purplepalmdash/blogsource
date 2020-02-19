@@ -3,7 +3,7 @@ title = "HarborSSLIssue"
 date = "2018-01-25T12:14:48+08:00"
 description = "HarborSSLIssue"
 keywords = ["Linux"]
-categories = ["Linux"]
+categories = ["Technology"]
 +++
 ### ArchLinux
 Trust the ca certifications via:    

@@ -3,7 +3,7 @@ title = "WorkingTipsOnIstioDev"
 date = "2018-04-29T11:38:46+08:00"
 description = "WorkingTipsOnIstioDev"
 keywords = ["Linux"]
-categories = ["Linux"]
+categories = ["Technology"]
 +++
 ### Sample SVC
 Create a sample svc using minikube:    

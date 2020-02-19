@@ -1,5 +1,5 @@
 ---
-categories: ["Arduino"]
+categories: ["Technology"]
 comments: true
 date: 2013-12-28T00:00:00Z
 title: 使用超声波传感器控制LED

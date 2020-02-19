@@ -3,7 +3,7 @@ title = "Arm64ISOCustomization"
 date = "2019-07-02T09:51:48+08:00"
 description = "Arm64ISOCustomization"
 keywords = ["Linux"]
-categories = ["Linux"]
+categories = ["Technology"]
 +++
 Make working directory:     
 

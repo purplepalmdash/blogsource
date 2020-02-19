@@ -3,7 +3,7 @@ keywords = ["Linux"]
 description = "Linux Encryption"
 title = "Linux下的磁盘加密"
 date = "2017-01-19T10:26:41+08:00"
-categories = ["Linux"]
+categories = ["Technology"]
 
 +++
 ### 目的

@@ -3,7 +3,7 @@ date = "2017-01-22T18:31:43+08:00"
 keywords = ["PasswordlessEncryption"]
 description = "Passwordless Encryption For debian"
 title = "使用USB磁盘无密码登录加密分区的LINUX"
-categories = ["Linux"]
+categories = ["Technology"]
 
 +++
 ### 背景

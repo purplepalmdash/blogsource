@@ -1,5 +1,5 @@
 ---
-categories: ["Virtualization"]
+categories: ["Technology"]
 comments: true
 date: 2015-10-25T12:05:58Z
 title: OpenStack Liberty安装(1)

@@ -3,7 +3,7 @@ title = "EnableIPMIMonitoringOnArm64Server"
 date = "2019-09-02T09:14:53+08:00"
 description = "EnableIPMIMonitoringOnArm64Server"
 keywords = ["Linux"]
-categories = ["Linux"]
+categories = ["Technology"]
 +++
 ### Add iso repository
 Use installation iso as repository:     

@@ -1,5 +1,5 @@
 +++
-categories = ["Linux"]
+categories = ["Technology"]
 date = "2016-12-11T11:23:06+08:00"
 description = "Install Java Offline On Ubuntu14.04"
 keywords = ["Linux"]

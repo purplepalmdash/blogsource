@@ -3,7 +3,7 @@ title = "NotesOnPlayWithK8s"
 date = "2019-02-19T14:59:15+08:00"
 description = "NotesOnPlayWithK8s"
 keywords = ["Linux"]
-categories = ["Linux"]
+categories = ["Technology"]
 +++
 早先在2018年做了一个离线版本的playwithk8s, 主要参考了:    
 

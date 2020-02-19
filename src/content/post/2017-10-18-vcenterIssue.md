@@ -3,7 +3,7 @@ title = "vcenterIssue"
 date = "2017-10-18T09:11:27+08:00"
 description = "vcenterIssue"
 keywords = ["Linux"]
-categories = ["Linux"]
+categories = ["Technology"]
 +++
 ### AIM
 enlarge the disk space

@@ -1,5 +1,5 @@
 +++
-categories = ["Virtualization"]
+categories = ["Technology"]
 keywords = ["Virtualization"]
 description = "Install coreos on libvirt"
 title = "CoreOS Cluster On Libvirt"

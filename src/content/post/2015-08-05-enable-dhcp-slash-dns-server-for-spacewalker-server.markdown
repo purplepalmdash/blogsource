@@ -1,5 +1,5 @@
 ---
-categories: ["Virtualization"]
+categories: ["Technology"]
 comments: true
 date: 2015-08-05T11:28:21Z
 title: Enable DHCP/DNS Server For SpaceWalker Server

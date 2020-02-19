@@ -1,5 +1,5 @@
 ---
-categories: ["archlinux"]
+categories: ["Technology"]
 comments: true
 date: 2014-06-24T00:00:00Z
 title: Graphic Card On ArchLinux

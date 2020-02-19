@@ -1,5 +1,5 @@
 +++
-categories = ["Virtualization"]
+categories = ["Technology"]
 date = "2016-11-30T10:44:10+08:00"
 description = "Make blog running in minikube"
 keywords = ["Virtualization"]

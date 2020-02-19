@@ -1,5 +1,5 @@
 ---
-categories: ["null"]
+categories: ["Technology"]
 comments: true
 date: 2014-07-07T00:00:00Z
 title: My Translator In ArchLinux(3)

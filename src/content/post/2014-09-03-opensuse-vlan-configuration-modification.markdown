@@ -1,5 +1,5 @@
 ---
-categories: ["opensuse"]
+categories: ["Technology"]
 comments: true
 date: 2014-09-03T00:00:00Z
 title: OpenSuse vlan configuration modification

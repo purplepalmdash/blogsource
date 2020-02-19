@@ -3,7 +3,7 @@ title = "CICDForRong"
 date = "2019-09-16T16:44:20+08:00"
 description = "CICDForRong"
 keywords = ["Linux"]
-categories = ["Linux"]
+categories = ["Technology"]
 +++
 ### Steps
 Download iso and install debian:   

@@ -1,5 +1,5 @@
 ---
-categories: ["virtualization"]
+categories: ["Technology"]
 comments: true
 date: 2016-04-24T10:16:39Z
 title: 在DevStack中使用Packer

@@ -1,5 +1,5 @@
 ---
-categories: ["Linux"]
+categories: ["Technology"]
 comments: true
 date: 2014-02-25T00:00:00Z
 title: rip mp3 under ArchLinux

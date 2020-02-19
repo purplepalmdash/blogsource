@@ -1,5 +1,5 @@
 ---
-categories: ["Virtualization"]
+categories: ["Technology"]
 comments: true
 date: 2016-01-31T11:49:13Z
 title: virtio-gpu working tips

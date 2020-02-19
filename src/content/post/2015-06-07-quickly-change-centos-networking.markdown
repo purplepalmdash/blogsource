@@ -1,5 +1,5 @@
 ---
-categories: ["Linux"]
+categories: ["Technology"]
 comments: true
 date: 2015-06-07T14:44:00Z
 title: Quickly Change CentOS Networking

@@ -1,5 +1,5 @@
 ---
-categories: ["virtualization"]
+categories: ["Technology"]
 comments: true
 date: 2016-03-16T10:31:53Z
 title: Vagrant-libvirt Playing

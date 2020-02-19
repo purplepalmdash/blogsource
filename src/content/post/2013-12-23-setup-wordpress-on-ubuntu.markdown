@@ -1,5 +1,5 @@
 ---
-categories: ["Linux", "Web"]
+categories: ["Technology"]
 comments: true
 date: 2013-12-23T00:00:00Z
 title: Setup Wordpress on Ubuntu

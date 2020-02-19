@@ -3,7 +3,7 @@ title = "StoragePathUsingLocalPath"
 date = "2018-01-18T09:02:02+08:00"
 description = "StoragePathUsingLocalPath"
 keywords = ["Linux"]
-categories = ["Linux"]
+categories = ["Technology"]
 +++
 ### 目的
 搭建monocular的时候，从其mongodb的charts变量定义文件`values.yaml`中，可以看到其对persistence的支持，即对持久化存储的支持：    

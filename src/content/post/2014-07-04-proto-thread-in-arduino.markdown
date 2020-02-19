@@ -1,5 +1,5 @@
 ---
-categories: ["arduino"]
+categories: ["Technology"]
 comments: true
 date: 2014-07-04T00:00:00Z
 title: Proto Thread In Arduino

@@ -1,5 +1,5 @@
 ---
-categories: ["embedded", "stm32"]
+categories: ["Technology"]
 comments: true
 date: 2013-11-30T00:00:00Z
 title: STM使用库函数读写Flash

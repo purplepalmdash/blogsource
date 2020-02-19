@@ -1,5 +1,5 @@
 ---
-categories: ["web"]
+categories: ["Technology"]
 comments: true
 date: 2014-12-10T00:00:00Z
 title: Re-Write WeatherAPP

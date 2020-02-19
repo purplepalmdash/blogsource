@@ -3,7 +3,7 @@ title = "kubeadmssllifetime"
 date = "2019-01-04T12:18:49+08:00"
 description = "kubeadmssllifetime"
 keywords = ["Linux"]
-categories = ["Linux"]
+categories = ["Technology"]
 +++
 ### Reason
 The ssl lifetime is only 1 year, we need to changes it to 100 years.    

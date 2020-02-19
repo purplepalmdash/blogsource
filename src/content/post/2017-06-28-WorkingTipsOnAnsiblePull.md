@@ -3,7 +3,7 @@ keywords = ["Ansible"]
 description = "WorkingTipsOnAnsiblePull"
 title = "WorkingTipsOnAnsiblePull"
 date = "2017-06-28T15:05:08+08:00"
-categories = ["Linux"]
+categories = ["Technology"]
 
 +++
 ### Environment Preparation

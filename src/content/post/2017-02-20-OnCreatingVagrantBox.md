@@ -1,6 +1,6 @@
 +++
 title = "创建Vagrant Box"
-categories = ["Linux"]
+categories = ["Technology"]
 keywords = ["Vagrant"]
 date = "2017-02-20T10:59:17+08:00"
 description = "Create vagrant box from scratch"

@@ -3,7 +3,7 @@ title = "MegaCliForPartition"
 date = "2019-03-11T09:12:15+08:00"
 description = "MegaCliForPartition"
 keywords = ["Linux"]
-categories = ["Linux"]
+categories = ["Technology"]
 +++
 ### 目的
 分区，以便虚拟化场合.    

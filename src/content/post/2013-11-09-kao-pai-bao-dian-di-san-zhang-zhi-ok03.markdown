@@ -1,5 +1,5 @@
 ---
-
+categories: ["Technology"]
 comments: true
 date: 2013-11-09T00:00:00Z
 title: 烤派宝典第三章之OK03

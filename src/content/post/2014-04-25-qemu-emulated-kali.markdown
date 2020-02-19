@@ -1,5 +1,5 @@
 ---
-categories: ["kali"]
+categories: ["Technology"]
 comments: true
 date: 2014-04-25T00:00:00Z
 title: Qemu emulated kali

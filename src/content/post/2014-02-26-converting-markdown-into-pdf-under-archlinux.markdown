@@ -1,5 +1,5 @@
 ---
-categories: ["Markdown"]
+categories: ["Technology"]
 comments: true
 date: 2014-02-26T00:00:00Z
 title: Converting Markdown into PDF under ArchLinux

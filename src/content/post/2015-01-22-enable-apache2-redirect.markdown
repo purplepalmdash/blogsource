@@ -1,5 +1,5 @@
 ---
-categories: ["web"]
+categories: ["Technology"]
 comments: true
 date: 2015-01-22T00:00:00Z
 title: Enable Apache2 Redirect

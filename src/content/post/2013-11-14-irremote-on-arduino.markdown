@@ -1,5 +1,5 @@
 ---
-categories: ["arduino"]
+categories: ["Technology"]
 comments: true
 date: 2013-11-14T00:00:00Z
 title: IRRemote on Arduino

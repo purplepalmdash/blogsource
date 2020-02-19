@@ -1,5 +1,5 @@
 ---
-categories: ["app2e"]
+categories: ["Technology"]
 comments: true
 date: 2014-04-01T00:00:00Z
 title: 有关并发

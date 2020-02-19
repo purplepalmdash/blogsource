@@ -3,7 +3,7 @@ title = "TipsOnTesingFrameWorkForPython"
 date = "2017-08-11T14:27:43+08:00"
 description = "tips on testingframework for python"
 keywords = ["Linux"]
-categories = ["Linux"]
+categories = ["Technology"]
 +++
 ### Code
 Before you run:    

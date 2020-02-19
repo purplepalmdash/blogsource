@@ -1,5 +1,5 @@
 ---
-categories: ["web"]
+categories: ["Technology"]
 comments: true
 date: 2014-12-03T00:00:00Z
 title: 用Flask搭建你自己的Restful API

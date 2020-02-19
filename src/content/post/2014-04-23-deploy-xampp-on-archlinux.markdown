@@ -1,5 +1,5 @@
 ---
-categories: ["Linux"]
+categories: ["Technology"]
 comments: true
 date: 2014-04-23T00:00:00Z
 title: Deploy XAMPP On ArchLinux

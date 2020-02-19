@@ -3,7 +3,7 @@ title = "WorkingtipsOnhelmpackageing"
 date = "2018-01-18T18:01:00+08:00"
 description = "WorkingtipsOnhelmpackageing"
 keywords = ["Linux"]
-categories = ["Linux"]
+categories = ["Technology"]
 +++
 ### Change the tgz files
 Via following scripts:    

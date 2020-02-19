@@ -1,5 +1,5 @@
 ---
-categories: ["Linux"]
+categories: ["Technology"]
 comments: true
 date: 2015-09-10T10:17:17Z
 title: Trouble-Shooting On ChromeOS's crouton Updating

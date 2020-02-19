@@ -1,5 +1,5 @@
 ---
-categories: ["linux"]
+categories: ["Technology"]
 comments: true
 date: 2015-01-21T00:00:00Z
 title: Using iMacros For Automatically Access Mail And OA

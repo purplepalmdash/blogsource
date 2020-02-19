@@ -1,5 +1,5 @@
 ---
-categories: ["Linux"]
+categories: ["Technology"]
 comments: true
 date: 2014-03-07T00:00:00Z
 title: Linux Container on ArchLinux

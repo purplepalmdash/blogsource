@@ -1,5 +1,5 @@
 +++
-categories = ["Linux"]
+categories = ["Technology"]
 keywords = ["Linux"]
 description = "Vue.js learning"
 title = "Vue.js Learning"

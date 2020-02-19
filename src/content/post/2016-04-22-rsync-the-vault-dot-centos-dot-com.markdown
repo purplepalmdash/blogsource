@@ -1,5 +1,5 @@
 ---
-categories: ["virtualization"]
+categories: ["Technology"]
 comments: true
 date: 2016-04-22T19:39:58Z
 title: rsync the vault.centos.com

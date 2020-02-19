@@ -1,5 +1,5 @@
 ---
-categories: ["Video"]
+categories: ["Technology"]
 comments: true
 date: 2013-12-30T00:00:00Z
 title: Testing for Video

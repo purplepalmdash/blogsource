@@ -1,5 +1,5 @@
 ---
-categories: ["Linux"]
+categories: ["Technology"]
 comments: true
 date: 2013-12-02T00:00:00Z
 title: Configure samba server on Ubuntu

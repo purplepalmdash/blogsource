@@ -3,7 +3,7 @@ title = "RaspberryPIArm64"
 date = "2019-06-26T11:03:46+08:00"
 description = "RaspberryPIArm64"
 keywords = ["Linux"]
-categories = ["Linux"]
+categories = ["Technology"]
 +++
 ### AIM
 Replace the armhf(raspbain) with arm64 system.   

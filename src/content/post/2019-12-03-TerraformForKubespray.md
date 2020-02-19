@@ -3,7 +3,7 @@ title = "用Terraform管理集群编译环境"
 date = "2019-12-03T10:30:21+08:00"
 description = "UsingTerraform"
 keywords = ["Linux"]
-categories = ["Linux"]
+categories = ["Technology"]
 +++
 ### 环境
 操作系统Ubuntu18.04.3    

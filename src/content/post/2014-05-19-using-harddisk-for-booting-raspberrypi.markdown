@@ -1,5 +1,5 @@
 ---
-categories: ["linux"]
+categories: ["Technology"]
 comments: true
 date: 2014-05-19T00:00:00Z
 title: Using HardDisk For Booting RaspberryPI

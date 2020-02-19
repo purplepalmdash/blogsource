@@ -1,5 +1,5 @@
 +++
-categories = ["Linux"]
+categories = ["Technology"]
 date = "2016-11-19T08:57:36+08:00"
 description = "Some tips in Ansible"
 keywords = ["Linux"]

@@ -3,7 +3,7 @@ title = "KismatciDisconnectdInstallationRHEL74"
 date = "2018-03-18T17:55:17+08:00"
 description = "KismatciDisconnectdInstallationRHEL74"
 keywords = ["Linux"]
-categories = ["Linux"]
+categories = ["Technology"]
 +++
 ### 目的
 基于Redhat 7.4搭建Kismatic自动化部署Kubernetes环境。    

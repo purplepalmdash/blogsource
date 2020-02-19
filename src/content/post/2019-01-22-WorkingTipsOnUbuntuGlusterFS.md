@@ -3,7 +3,7 @@ title = "WorkingTipsOnUbuntuGlusterFS"
 date = "2019-01-22T21:07:40+08:00"
 description = "WorkingTipsOnUbuntuGlusterFS"
 keywords = ["Linux"]
-categories = ["Linux"]
+categories = ["Technology"]
 +++
 ### Install
 In 4 nodes, install the latest glusterfs via:    

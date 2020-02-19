@@ -3,7 +3,7 @@ title = "TroubleShootingOnPromoxIssue"
 date = "2019-05-30T16:52:31+08:00"
 description = "TroubleShootingOnPromoxIssue"
 keywords = ["Linux"]
-categories = ["Linux"]
+categories = ["Technology"]
 +++
 ### Problem
 2 months ago I set a proxmox environment for a team which used as a dev

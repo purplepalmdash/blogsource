@@ -1,5 +1,5 @@
 ---
-
+categories: ["Technology"]
 comments: true
 date: 2013-08-28T00:00:00Z
 title: Pure C In Arduino

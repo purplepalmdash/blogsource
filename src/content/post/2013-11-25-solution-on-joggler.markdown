@@ -1,5 +1,5 @@
 ---
-categories: ["Linux", "Joggler"]
+categories: ["Technology"]
 comments: true
 date: 2013-11-25T00:00:00Z
 title: Solution On Joggler

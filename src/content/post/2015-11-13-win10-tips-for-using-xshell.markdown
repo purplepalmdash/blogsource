@@ -1,5 +1,5 @@
 ---
-categories: ["system"]
+categories: ["Technology"]
 comments: true
 date: 2015-11-13T15:59:16Z
 title: Win10 Tips For Using Xshell

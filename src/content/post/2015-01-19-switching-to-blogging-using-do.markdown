@@ -1,5 +1,5 @@
 ---
-categories: ["web"]
+categories: ["Technology"]
 comments: true
 date: 2015-01-19T00:00:00Z
 title: Switching To Blogging Using DO

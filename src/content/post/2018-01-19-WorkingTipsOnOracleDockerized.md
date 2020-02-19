@@ -3,7 +3,7 @@ title = "WorkingTipsOnOracleDBDockerized"
 date = "2018-01-19T17:38:10+08:00"
 description = "WorkingTipsOnOracleDBDockerized"
 keywords = ["Linux"]
-categories = ["Linux"]
+categories = ["Technology"]
 +++
 ### Steps
 Startup the container and enter it:    

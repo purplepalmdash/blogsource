@@ -3,7 +3,7 @@ title = "TroubleShootingOnVMWareBasedVM"
 date = "2019-02-19T08:29:42+08:00"
 description = "TroubleShootingOnVMWareBasedVM"
 keywords = ["Linux"]
-categories = ["Linux"]
+categories = ["Technology"]
 +++
 记录一下昨天遇到的一个问题：    
 同事的虚拟机(Ubuntu)自检失败，fsck总是不过，直接抛到initramfs的界面。    

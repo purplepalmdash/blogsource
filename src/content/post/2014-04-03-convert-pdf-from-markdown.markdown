@@ -1,5 +1,5 @@
 ---
-categories: ["markdown"]
+categories: ["Technology"]
 comments: true
 date: 2014-04-03T00:00:00Z
 title: Convert PDF from Markdown

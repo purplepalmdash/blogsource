@@ -3,7 +3,7 @@ title = "ArchLinuxUSBWirelessDongleIsssue"
 date = "2017-10-24T08:53:47+08:00"
 description = "ArchLinuxUSBWirelessDongleIsssue"
 keywords = ["Linux"]
-categories = ["Linux"]
+categories = ["Technology"]
 +++
 ### Hardware & Software
 Tenda u1, rtl8192eu chipset.    

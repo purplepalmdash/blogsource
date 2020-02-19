@@ -1,5 +1,5 @@
 ---
-
+categories: ["Technology"]
 comments: true
 date: 2013-11-08T00:00:00Z
 title: 烤派宝典(序)

@@ -1,5 +1,5 @@
 ---
-categories: ["Kernel"]
+categories: ["Technology"]
 comments: true
 date: 2015-12-03T17:44:32Z
 title: Customize SurfacePro Kernel

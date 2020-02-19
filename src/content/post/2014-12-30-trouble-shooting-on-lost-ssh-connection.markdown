@@ -1,5 +1,5 @@
 ---
-categories: ["web"]
+categories: ["Technology"]
 comments: true
 date: 2014-12-30T00:00:00Z
 title: Trouble Shooting On Lost SSH Connection

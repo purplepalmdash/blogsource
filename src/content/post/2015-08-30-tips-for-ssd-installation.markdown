@@ -1,5 +1,5 @@
 ---
-categories: ["Linux"]
+categories: ["Technology"]
 comments: true
 date: 2015-08-30T14:45:24Z
 title: Tips For SSD Installation

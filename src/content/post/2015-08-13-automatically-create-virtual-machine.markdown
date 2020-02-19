@@ -1,5 +1,5 @@
 ---
-categories: ["Virtualization"]
+categories: ["Technology"]
 comments: true
 date: 2015-08-13T16:21:23Z
 title: Automatically Create Virtual Machine

@@ -3,7 +3,7 @@ title = "TroubleShootingOnhelm"
 date = "2018-01-12T15:22:33+08:00"
 description = "TroubleShootingOnHelm"
 keywords = ["Linux"]
-categories = ["Linux"]
+categories = ["Technology"]
 +++
 这几天在试用helm，很有意思的包管理系统，让容器解决方案的落地门槛一下降了很多。然后我在搭建前端可视化的仓库解决方案，用到了monocular,
 百思不得其解的是，在minikube上可以顺利部署成功的monocular,

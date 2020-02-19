@@ -1,5 +1,5 @@
 +++
-categories = ["Virtualization"]
+categories = ["Technology"]
 date = "2016-11-30T15:00:57+08:00"
 description = "BuildRPMsOnXenServer"
 keywords = ["Virtualization"]

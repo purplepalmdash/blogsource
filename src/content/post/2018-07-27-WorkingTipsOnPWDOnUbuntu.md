@@ -3,7 +3,7 @@ title = "PWDOnUbuntuISO"
 date = "2018-07-27T22:06:52+08:00"
 description = "PWDOnUbuntuISO"
 keywords = ["Linux"]
-categories = ["Linux"]
+categories = ["Technology"]
 +++
 ### Cubic
 Using cubic, working window:    

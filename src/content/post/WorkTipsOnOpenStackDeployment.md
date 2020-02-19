@@ -1,5 +1,5 @@
 +++
-categories = ["Virtualization"]
+categories = ["Technology"]
 date = "2016-08-31T17:29:36+08:00"
 description = "Tips on how to deploy openstack using ansible"
 keywords = ["Virtualization"]

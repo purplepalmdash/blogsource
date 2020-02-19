@@ -2,7 +2,7 @@
 date = "2017-01-20T14:07:37+08:00"
 description = "Switch to awesome 4.0"
 title = "Awesome4.0 配置"
-categories = ["Linux"]
+categories = ["Technology"]
 keywords = ["awesome"]
 
 +++

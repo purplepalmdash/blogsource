@@ -1,5 +1,5 @@
 ---
-categories: ["RaspberryPI", "Linux"]
+categories: ["Technology"]
 comments: true
 date: 2013-12-30T00:00:00Z
 title: Use RaspberryPI as a file server

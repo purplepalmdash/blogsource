@@ -1,5 +1,5 @@
 ---
-categories: ["Virtualization"]
+categories: ["Technology"]
 comments: true
 date: 2015-02-27T00:00:00Z
 title: Single Node OpenStack Startup

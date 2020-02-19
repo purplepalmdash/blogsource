@@ -1,7 +1,7 @@
 +++
 description = "ThinkingInOC"
 title = "ThinkingInOC"
-categories = ["Life"]
+categories = ["Technology"]
 date = "2017-05-25T14:54:36+08:00"
 keywords = ["thinking"]
 

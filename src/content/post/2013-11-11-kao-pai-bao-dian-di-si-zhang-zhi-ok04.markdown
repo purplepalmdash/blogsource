@@ -1,5 +1,5 @@
 ---
-
+categories: ["Technology"]
 comments: true
 date: 2013-11-11T00:00:00Z
 title: 烤派宝典第四章之OK04

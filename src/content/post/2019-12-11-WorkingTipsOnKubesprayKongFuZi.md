@@ -3,7 +3,7 @@ title = "WorkingTipsOnKubesprayKongFuZi"
 date = "2019-12-11T08:35:55+08:00"
 description = "WorkingTipsOnKubesprayKongFuZi"
 keywords = ["Linux"]
-categories = ["Linux"]
+categories = ["Technology"]
 +++
 ### 目的
 Kubespray在离线环境下，完全不考虑包管理、docker升级的发行版。    

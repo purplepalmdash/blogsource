@@ -1,5 +1,5 @@
 ---
-categories: ["embedded"]
+categories: ["Technology"]
 comments: true
 date: 2016-03-31T21:34:42Z
 title: NodeMCU And 1602I2C

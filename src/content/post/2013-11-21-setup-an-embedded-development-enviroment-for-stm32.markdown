@@ -1,5 +1,5 @@
 ---
-categories: ["Linux", "Eclipse", "stm32"]
+categories: ["Technology"]
 comments: true
 date: 2013-11-21T00:00:00Z
 title: Setup an embedded development enviroment for STM32

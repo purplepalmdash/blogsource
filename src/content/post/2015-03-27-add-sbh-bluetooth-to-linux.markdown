@@ -1,5 +1,5 @@
 ---
-categories: ["Linux"]
+categories: ["Technology"]
 comments: true
 date: 2015-03-27T00:00:00Z
 title: Add SBH BlueTooth to Linux

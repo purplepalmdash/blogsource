@@ -1,5 +1,5 @@
 ---
-categories: ["null"]
+categories: ["Technology"]
 comments: true
 date: 2014-09-17T00:00:00Z
 title: Big-Little Endian

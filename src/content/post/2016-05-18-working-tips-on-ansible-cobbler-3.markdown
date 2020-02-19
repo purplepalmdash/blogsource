@@ -1,5 +1,5 @@
 ---
-categories: ["Linux"]
+categories: ["Technology"]
 comments: true
 date: 2016-05-18T21:15:10Z
 title: Working Tips on Ansible-cobbler(3)

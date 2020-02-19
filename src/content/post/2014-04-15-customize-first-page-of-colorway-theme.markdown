@@ -1,5 +1,5 @@
 ---
-categories: ["wordpress"]
+categories: ["Technology"]
 comments: true
 date: 2014-04-15T00:00:00Z
 title: Customize First Page of Colorway Theme

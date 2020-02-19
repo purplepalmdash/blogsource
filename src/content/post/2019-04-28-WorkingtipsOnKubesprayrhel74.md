@@ -3,7 +3,7 @@ title = "Workingtipsonkubesprayonrhel74"
 date = "2019-04-28T16:13:54+08:00"
 description = "Workingtipsonkubesprayonrhel74"
 keywords = ["Linux"]
-categories = ["Linux"]
+categories = ["Technology"]
 +++
 ### System Installation
 Install the minimum installation, then set the hostname via:    

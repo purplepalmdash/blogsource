@@ -1,5 +1,5 @@
 ---
-categories: ["null"]
+categories: ["Technology"]
 comments: true
 date: 2015-08-26T16:36:20Z
 title: Use Jenkins For Building Packer Images

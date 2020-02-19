@@ -1,5 +1,5 @@
 ---
-categories: ["Virtualization"]
+categories: ["Technology"]
 comments: true
 date: 2015-07-29T16:43:23Z
 title: Trying SpaceWalk

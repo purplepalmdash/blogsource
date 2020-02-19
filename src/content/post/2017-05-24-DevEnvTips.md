@@ -3,7 +3,7 @@ date = "2017-05-24T15:28:51+08:00"
 keywords = ["Virtualization"]
 description = "Dev envs for lab"
 title = "DevEnvsForLAB"
-categories = ["Virtualization"]
+categories = ["Technology"]
 
 +++
 ### 目的

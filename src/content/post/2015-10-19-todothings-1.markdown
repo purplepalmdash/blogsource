@@ -1,5 +1,5 @@
 ---
-categories: ["Todos"]
+categories: ["Technology"]
 comments: true
 date: 2015-10-19T20:40:03Z
 title: ToDoThings(1)

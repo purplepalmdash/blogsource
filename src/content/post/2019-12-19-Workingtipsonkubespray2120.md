@@ -3,7 +3,7 @@ title = "kubespray2.12.0离线化手记"
 date = "2019-12-19T16:34:09+08:00"
 description = "onkubespray2.12.0"
 keywords = ["Linux"]
-categories = ["Linux"]
+categories = ["Technology"]
 +++
 ### Steps
 Download the source code:    

@@ -1,5 +1,5 @@
 ---
-categories: ["Virtualization"]
+categories: ["Technology"]
 comments: true
 date: 2015-10-12T10:50:53Z
 title: Tips On Cloud-Init

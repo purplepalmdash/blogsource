@@ -3,7 +3,7 @@ title = "Promoxzfstips"
 date = "2020-01-21T16:18:04+08:00"
 description = "Promoxzfstips"
 keywords = ["Linux"]
-categories = ["Linux"]
+categories = ["Technology"]
 +++
 ### Steps
 之前:    

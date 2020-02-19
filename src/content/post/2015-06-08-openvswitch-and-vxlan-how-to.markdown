@@ -1,5 +1,5 @@
 ---
-categories: ["virtualization"]
+categories: ["Technology"]
 comments: true
 date: 2015-06-08T09:48:20Z
 title: OpenVSwitch and VXLAN How-to

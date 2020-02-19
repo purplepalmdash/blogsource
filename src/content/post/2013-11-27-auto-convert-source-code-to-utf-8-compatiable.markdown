@@ -1,5 +1,5 @@
 ---
-categories: ["Linux"]
+categories: ["Technology"]
 comments: true
 date: 2013-11-27T00:00:00Z
 title: Auto convert source code to UTF-8 compatiable

@@ -1,5 +1,5 @@
 ---
-categories: ["virtualization"]
+categories: ["Technology"]
 comments: true
 date: 2015-01-31T00:00:00Z
 title: Try OpenContrail In Ubuntu

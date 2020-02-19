@@ -1,5 +1,5 @@
 ---
-categories: ["Linux"]
+categories: ["Technology"]
 comments: true
 date: 2014-01-05T00:00:00Z
 title: Install parole in ArchLinux

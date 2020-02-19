@@ -1,5 +1,5 @@
 ---
-categories: ["Material"]
+categories: ["Technology"]
 comments: true
 date: 2015-11-05T10:41:22Z
 title: Good Material

@@ -3,7 +3,7 @@ title = "FixedABugOnDockerAndDebian"
 date = "2017-09-18T09:36:59+08:00"
 description = "FixedABugOnDockerAndDebian"
 keywords = ["Linux"]
-categories = ["Linux"]
+categories = ["Technology"]
 +++
 When install docker on Debian9, when configured the static ip address mode,
 then you install docker, you will find the ip address won't be configured as

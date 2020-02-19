@@ -1,5 +1,5 @@
 ---
-categories: ["Linux", "embedded"]
+categories: ["Technology"]
 comments: true
 date: 2013-12-08T00:00:00Z
 title: raspberryPI GPIO Programming on ArchLinux

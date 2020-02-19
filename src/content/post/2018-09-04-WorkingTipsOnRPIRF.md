@@ -3,7 +3,7 @@ title = "WorkingTipsOnRPIRF"
 date = "2018-09-04T16:20:00+08:00"
 description = "WorkingTipsOnRPIRF"
 keywords = ["Linux"]
-categories = ["Linux"]
+categories = ["Technology"]
 +++
 ### 连线图:    
 RFID-RC522 board - Raspberry PI 1 Generation.   

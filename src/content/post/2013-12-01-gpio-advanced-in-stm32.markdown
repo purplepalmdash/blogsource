@@ -1,5 +1,5 @@
 ---
-categories: ["embedded", "stm32"]
+categories: ["Technology"]
 comments: true
 date: 2013-12-01T00:00:00Z
 title: GPIO Advanced in STM32

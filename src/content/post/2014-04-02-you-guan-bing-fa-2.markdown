@@ -1,5 +1,5 @@
 ---
-categories: ["csapp"]
+categories: ["Technology"]
 comments: true
 date: 2014-04-02T00:00:00Z
 title: 有关并发(2)

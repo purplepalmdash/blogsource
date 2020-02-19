@@ -1,5 +1,5 @@
 ---
-categories: ["Linux"]
+categories: ["Technology"]
 comments: true
 date: 2013-12-19T00:00:00Z
 title: Enable Bluetooth Headset on Jogger(2)

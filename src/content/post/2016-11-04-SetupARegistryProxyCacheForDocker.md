@@ -1,5 +1,5 @@
 +++
-categories = ["Linux"]
+categories = ["Technology"]
 date = "2016-11-04T17:14:21+08:00"
 description = "Setup a docker registry proxy cached server"
 keywords = ["Docker"]

@@ -1,5 +1,5 @@
 ---
-categories: ["Linux", "ssh"]
+categories: ["Technology"]
 comments: true
 date: 2013-11-19T00:00:00Z
 title: Use Reverse SSH for Across Something(2)

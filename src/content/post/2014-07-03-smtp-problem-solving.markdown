@@ -1,5 +1,5 @@
 ---
-categories: ["smtp"]
+categories: ["Technology"]
 comments: true
 date: 2014-07-03T00:00:00Z
 title: SMTP Problem Solving

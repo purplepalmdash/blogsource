@@ -1,6 +1,6 @@
 +++
 date = "2017-06-22T16:22:37+08:00"
-categories = ["Linux"]
+categories = ["Technology"]
 keywords = ["Docker"]
 description = "Create rhel docker image offline"
 title = "CreateRHEL6DockerImage"

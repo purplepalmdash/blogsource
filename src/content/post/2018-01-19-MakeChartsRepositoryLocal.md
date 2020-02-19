@@ -3,7 +3,7 @@ title = "MakeChartsRepositoryLocal"
 date = "2018-01-19T09:01:25+08:00"
 description = "MakeChartsRepositoryLocal"
 keywords = ["Linux"]
-categories = ["Linux"]
+categories = ["Technology"]
 +++
 在离线环境下，如何将在线的charts仓库的内容本地化？    
 

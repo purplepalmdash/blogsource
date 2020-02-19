@@ -1,5 +1,5 @@
 +++
-categories = ["Linux"]
+categories = ["Technology"]
 date = "2016-07-07T15:59:09+08:00"
 description = "Use TravisCI For Deploying Hugo"
 keywords = ["TravisCI","hugo"]

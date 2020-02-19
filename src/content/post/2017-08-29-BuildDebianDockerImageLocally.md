@@ -3,7 +3,7 @@ title = "BuildDebianDockerImageLocally"
 date = "2017-08-29T09:21:07+08:00"
 description = "BuildDEbianDockerImageLocally"
 keywords = ["Linux"]
-categories = ["Linux"]
+categories = ["Technology"]
 +++
 ### AIM
 Recently I am working in a network isolated environment, this means, I am

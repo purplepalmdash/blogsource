@@ -1,5 +1,5 @@
 +++
-categories = ["Linux"]
+categories = ["Technology"]
 date = "2016-12-07T18:03:31+08:00"
 description = "Download XenServer 6.2 Patches"
 keywords = ["Linux"]

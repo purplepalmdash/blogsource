@@ -1,5 +1,5 @@
 ---
-
+categories: ["Technology"]
 comments: true
 date: 2013-07-05T00:00:00Z
 title: Linux忘记密码后使用grub重置密码

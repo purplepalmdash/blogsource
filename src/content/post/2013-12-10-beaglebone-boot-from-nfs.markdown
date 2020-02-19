@@ -1,5 +1,5 @@
 ---
-categories: ["Linux", "Beaglebone"]
+categories: ["Technology"]
 comments: true
 date: 2013-12-10T00:00:00Z
 title: BeagleBone boot from NFS

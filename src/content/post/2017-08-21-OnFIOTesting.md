@@ -3,7 +3,7 @@ title = "OnFIOTesting"
 date = "2017-08-21T09:22:57+08:00"
 description = "On fio testing"
 keywords = ["Linux"]
-categories = ["Linux"]
+categories = ["Technology"]
 +++
 ### Environment
 bare metal vs kvm vs docker

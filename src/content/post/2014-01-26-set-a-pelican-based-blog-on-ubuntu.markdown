@@ -1,5 +1,5 @@
 ---
-categories: ["pelican"]
+categories: ["Technology"]
 comments: true
 date: 2014-01-26T00:00:00Z
 title: Set a pelican based blog on Ubuntu

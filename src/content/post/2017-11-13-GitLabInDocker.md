@@ -3,7 +3,7 @@ title = "GitLabInDocker"
 date = "2017-11-13T10:44:15+08:00"
 description = "GitLabDeployment in docker"
 keywords = ["Linux"]
-categories = ["Linux"]
+categories = ["Technology"]
 +++
 ### Steps
 Run the docker instance via following steps:    

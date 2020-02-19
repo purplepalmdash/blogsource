@@ -1,5 +1,5 @@
 ---
-categories: ["embedded"]
+categories: ["Technology"]
 comments: true
 date: 2016-03-07T21:52:47Z
 title: Tips on V-USB and Arduino(5)

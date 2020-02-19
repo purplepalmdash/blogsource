@@ -3,7 +3,7 @@ title = "WorkingTipsOnRPIAndRedSocks"
 date = "2017-12-24T22:10:31+08:00"
 description = "WorkingtipsonRPIAndRedSocks"
 keywords = ["Linux"]
-categories = ["Linux"]
+categories = ["Technology"]
 +++
 ### AIM
 To setup an wireless ap which could enable all of the equipment free to

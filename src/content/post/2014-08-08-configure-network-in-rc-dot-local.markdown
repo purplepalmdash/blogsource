@@ -1,5 +1,5 @@
 ---
-categories: ["Linux"]
+categories: ["Technology"]
 comments: true
 date: 2014-08-08T00:00:00Z
 title: Configure Network in rc.local

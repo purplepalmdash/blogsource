@@ -1,5 +1,5 @@
 ---
-categories: ["git"]
+categories: ["Technology"]
 comments: true
 date: 2014-04-22T00:00:00Z
 title: My Reading Digest For Git

@@ -1,5 +1,5 @@
 ---
-categories: ["Virtualization"]
+categories: ["Technology"]
 comments: true
 date: 2015-12-10T15:33:24Z
 title: OpenVswitch On Ubuntu14.04

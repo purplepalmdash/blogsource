@@ -3,7 +3,7 @@ title = "GrafanaChinese"
 date = "2018-07-24T12:26:41+08:00"
 description = "GrafanaChinese"
 keywords = ["Linux"]
-categories = ["Linux"]
+categories = ["Technology"]
 +++
 公司内部要用到Grafana肯定会有各种阻力，最大阻力恐怕来自于很多同事英文不好。因而参考了网上的一个教程做grafana的汉化。实际的汉化我也没有做完，无非是做一个框架在这里，以后如果研发压力大，就直接铺人在上头做做翻译。    
 

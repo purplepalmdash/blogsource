@@ -1,5 +1,5 @@
 +++
-categories = ["Linux"]
+categories = ["Technology"]
 keywords = ["Linux"]
 description = "Trouble Shooting for using travisCI for building hugo blog"
 title = "Hugo And TravisCI Issue"

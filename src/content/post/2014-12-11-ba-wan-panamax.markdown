@@ -1,5 +1,5 @@
 ---
-categories: ["Virtualization"]
+categories: ["Technology"]
 comments: true
 date: 2014-12-11T00:00:00Z
 title: 把玩Panamax

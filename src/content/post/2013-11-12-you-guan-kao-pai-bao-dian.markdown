@@ -1,5 +1,5 @@
 ---
-
+categories: ["Technology"]
 comments: true
 date: 2013-11-12T00:00:00Z
 title: 有关烤派宝典

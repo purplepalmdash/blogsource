@@ -1,5 +1,5 @@
 ---
-categories: ["embedded"]
+categories: ["Technology"]
 comments: true
 date: 2014-10-23T00:00:00Z
 title: utu2400's Kernel Drivers

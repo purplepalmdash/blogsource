@@ -3,7 +3,7 @@ title = "TipsOnARMVirtManager"
 date = "2019-06-25T15:00:38+08:00"
 description = "TipsOnARMVirtManager"
 keywords = ["Linux"]
-categories = ["Linux"]
+categories = ["Technology"]
 +++
 Install following packages:    
 

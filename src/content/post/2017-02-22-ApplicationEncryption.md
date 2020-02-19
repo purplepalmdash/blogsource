@@ -1,7 +1,7 @@
 +++
 date = "2017-02-22T09:35:12+08:00"
 title = "应用框架加密"
-categories = ["Linux"]
+categories = ["Technology"]
 keywords = ["Encryption"]
 description = "Encryption of the application frameworks"
 

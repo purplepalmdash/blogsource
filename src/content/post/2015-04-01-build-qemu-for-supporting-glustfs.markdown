@@ -1,5 +1,5 @@
 ---
-categories: ["null"]
+categories: ["Technology"]
 comments: true
 date: 2015-04-01T00:00:00Z
 title: Build qemu for supporting glustfs

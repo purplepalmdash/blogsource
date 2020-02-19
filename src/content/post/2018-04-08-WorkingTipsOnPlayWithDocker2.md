@@ -3,7 +3,7 @@ title = "WorkingTipsOnPlayWithDocker2"
 date = "2018-04-08T15:29:33+08:00"
 description = "WorkingTipsOnPlayWithDocker2"
 keywords = ["Linux"]
-categories = ["Linux"]
+categories = ["Technology"]
 +++
 ### migration
 Really migrate this image into the inner intranet, without any internet

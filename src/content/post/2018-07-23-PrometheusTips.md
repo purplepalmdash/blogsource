@@ -3,7 +3,7 @@ title = "PrometheusTips"
 date = "2018-07-23T21:03:48+08:00"
 description = "PrometheusTips"
 keywords = ["Linux"]
-categories = ["Linux"]
+categories = ["Technology"]
 +++
 ### AIM
 Setup prometheus monitoring system in inner intranet.    

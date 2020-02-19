@@ -1,5 +1,5 @@
 ---
-categories: ["Virtualization"]
+categories: ["Technology"]
 comments: true
 date: 2015-08-12T11:25:34Z
 title: Trouble Shooting On SpaceWalk OSAD On Ubuntu Clients

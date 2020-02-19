@@ -1,5 +1,5 @@
 ---
-categories: ["Linux"]
+categories: ["Technology"]
 comments: true
 date: 2015-08-22T16:49:19Z
 title: Move SpaceWalk Server Into A New Network

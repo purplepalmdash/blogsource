@@ -3,7 +3,7 @@ title = "TipsOnLocalStorage"
 date = "2019-05-13T17:21:49+08:00"
 description = "TipsOnLocalStorage"
 keywords = ["Linux"]
-categories = ["Linux"]
+categories = ["Technology"]
 +++
 ### Background
 For enabling local storage provision on kubespray, and make use of the local

@@ -3,7 +3,7 @@ title = "GitLabCIForK8s"
 date = "2018-09-12T09:53:15+08:00"
 description = "GitLabCIForK8s"
 keywords = ["Linux"]
-categories = ["Linux"]
+categories = ["Technology"]
 +++
 ### Environment
 中心节点: ` zzz_gitlabci_center`,

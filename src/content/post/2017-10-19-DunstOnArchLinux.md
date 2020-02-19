@@ -3,7 +3,7 @@ title = "DunstOnArchLinux"
 date = "2017-10-19T11:14:59+08:00"
 description = "dunst on archlinux"
 keywords = ["Linux"]
-categories = ["Linux"]
+categories = ["Technology"]
 +++
 ### Installation
 My desktop environment is `awesome`, my operating system is ArchLinux.    

@@ -3,7 +3,7 @@ title = "CustomizeRHEL74ISO"
 date = "2019-05-07T09:27:13+08:00"
 description = "CustomizeRHEL74ISO"
 keywords = ["Linux"]
-categories = ["Linux"]
+categories = ["Technology"]
 +++
 ### 参考材料
 [https://www.golinuxhub.com/2017/05/how-to-create-customized-bootable-boot.html](https://www.golinuxhub.com/2017/05/how-to-create-customized-bootable-boot.html)     

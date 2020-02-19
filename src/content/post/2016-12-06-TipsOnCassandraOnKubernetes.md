@@ -1,5 +1,5 @@
 +++
-categories = ["Virtualization"]
+categories = ["Technology"]
 date = "2016-12-06T19:27:19+08:00"
 description = "Run cassandra on kubernetes"
 keywords = ["Virtualization"]

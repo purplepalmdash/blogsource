@@ -1,5 +1,5 @@
 ---
-categories: ["networking"]
+categories: ["Technology"]
 comments: true
 date: 2016-01-15T09:16:34Z
 title: Vlan Experiment

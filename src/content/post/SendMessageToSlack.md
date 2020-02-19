@@ -1,5 +1,5 @@
 +++
-categories = ["Linux"]
+categories = ["Technology"]
 date = "2016-08-03T09:55:58+08:00"
 description = "Directly send message to Slack"
 keywords = ["Linux"]

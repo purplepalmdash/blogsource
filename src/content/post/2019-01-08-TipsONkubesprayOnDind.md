@@ -3,7 +3,7 @@ title = "TipsOnKubesprayDind"
 date = "2019-01-08T09:14:37+08:00"
 description = "TipsOnKubesprayDind"
 keywords = ["Linux"]
-categories = ["Linux"]
+categories = ["Technology"]
 +++
 ### Reference
 Refers to :    

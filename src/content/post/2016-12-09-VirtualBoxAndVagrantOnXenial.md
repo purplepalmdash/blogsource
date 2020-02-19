@@ -1,5 +1,5 @@
 +++
-categories = ["Virtualization"]
+categories = ["Technology"]
 date = "2016-12-09T10:35:28+08:00"
 description = "Install virtualbox on Xenianl"
 keywords = ["Virtualization"]

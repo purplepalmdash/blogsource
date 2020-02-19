@@ -1,5 +1,5 @@
 ---
-categories: ["Chef"]
+categories: ["Technology"]
 comments: true
 date: 2015-05-26T16:17:14Z
 title: Chef Setup

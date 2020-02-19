@@ -1,5 +1,5 @@
 ---
-
+categories: ["Technology"]
 comments: true
 date: 2013-07-04T00:00:00Z
 title: 在CentOS上安装基于qemu的虚拟机

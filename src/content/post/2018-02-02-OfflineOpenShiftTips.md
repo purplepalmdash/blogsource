@@ -3,7 +3,7 @@ title = "OfflineOpenshiftTips"
 date = "2018-02-02T20:53:53+08:00"
 description = "OfflineOpenshiftTips"
 keywords = ["Linux"]
-categories = ["Linux"]
+categories = ["Technology"]
 +++
 ### Environment
 Create a new isolated network in virt-manager:    

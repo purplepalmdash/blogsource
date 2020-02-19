@@ -3,7 +3,7 @@ title = "MultipleOfflineRegistryServer"
 date = "2019-01-29T16:09:15+08:00"
 description = "MultipleOfflineRegistryServer"
 keywords = ["Linux"]
-categories = ["Linux"]
+categories = ["Technology"]
 +++
 Suppose your kubernetes clusters are in totally offline environment, you don't
 have any connection to Internet, how to deal with the `docker pull` request

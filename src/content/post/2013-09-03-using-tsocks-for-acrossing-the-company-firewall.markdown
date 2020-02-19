@@ -1,5 +1,5 @@
 ---
-
+categories: ["Technology"]
 comments: true
 date: 2013-09-03T00:00:00Z
 title: Using tsocks for acrossing the company firewall

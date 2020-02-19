@@ -1,5 +1,5 @@
 ---
-categories: ["Linux", "embedded"]
+categories: ["Technology"]
 comments: true
 date: 2013-12-11T00:00:00Z
 title: NFS of beaglebone

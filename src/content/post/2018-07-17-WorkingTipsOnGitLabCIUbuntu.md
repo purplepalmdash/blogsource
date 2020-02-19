@@ -3,7 +3,7 @@ title = "GitLabOnUbuntu"
 date = "2018-07-17T09:44:20+08:00"
 description = "GitLabOnUbuntu"
 keywords = ["Linux"]
-categories = ["Linux"]
+categories = ["Technology"]
 +++
 ### Install
 Install via:    

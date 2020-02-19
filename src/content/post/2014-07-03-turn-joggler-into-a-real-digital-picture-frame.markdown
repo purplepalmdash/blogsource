@@ -1,5 +1,5 @@
 ---
-categories: ["joggler"]
+categories: ["Technology"]
 comments: true
 date: 2014-07-03T00:00:00Z
 title: Turn Joggler into a real Digital Picture Frame

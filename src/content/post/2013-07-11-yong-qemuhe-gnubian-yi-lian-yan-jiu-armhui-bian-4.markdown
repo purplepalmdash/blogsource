@@ -1,5 +1,5 @@
 ---
-
+categories: ["Technology"]
 comments: true
 date: 2013-07-11T00:00:00Z
 title: 用Qemu和GNU编译链研究ARM汇编(4)

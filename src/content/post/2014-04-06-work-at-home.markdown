@@ -1,5 +1,5 @@
 ---
-categories: ["Word"]
+categories: ["Technology"]
 comments: true
 date: 2014-04-06T16:15:42Z
 title: Work At Home

@@ -1,5 +1,5 @@
 ---
-
+categories: ["Technology"]
 comments: true
 date: 2013-07-15T00:00:00Z
 title: Arduino笔记(2)

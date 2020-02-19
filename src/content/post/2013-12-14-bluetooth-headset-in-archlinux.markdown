@@ -1,5 +1,5 @@
 ---
-categories: ["Linux", "Bluetooth"]
+categories: ["Technology"]
 comments: true
 date: 2013-12-14T00:00:00Z
 title: Bluetooth headset in ArchLinux

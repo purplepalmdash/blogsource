@@ -1,5 +1,5 @@
 ---
-categories: ["Virtualization"]
+categories: ["Technology"]
 comments: true
 date: 2015-04-29T00:00:00Z
 title: Build CentOS Image For MAAS

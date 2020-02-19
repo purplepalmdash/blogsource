@@ -1,5 +1,5 @@
 ---
-categories: ["virtualization"]
+categories: ["Technology"]
 comments: true
 date: 2015-03-06T00:00:00Z
 title: Establish Ubuntu Virt Node

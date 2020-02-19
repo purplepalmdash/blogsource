@@ -1,5 +1,5 @@
 ---
-categories: ["null"]
+categories: ["Technology"]
 comments: true
 date: 2015-05-16T00:00:00Z
 title: Re-Orgnize Blog

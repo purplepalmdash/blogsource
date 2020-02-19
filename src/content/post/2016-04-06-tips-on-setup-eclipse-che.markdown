@@ -1,5 +1,5 @@
 ---
-categories: ["null"]
+categories: ["Technology"]
 comments: true
 date: 2016-04-06T11:40:05Z
 title: Tips On Setup Eclipse CHE

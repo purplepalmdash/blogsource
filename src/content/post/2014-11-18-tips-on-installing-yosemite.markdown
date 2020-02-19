@@ -1,5 +1,5 @@
 ---
-categories: ["mac"]
+categories: ["Technology"]
 comments: true
 date: 2014-11-18T00:00:00Z
 title: Tips on installing Yosemite

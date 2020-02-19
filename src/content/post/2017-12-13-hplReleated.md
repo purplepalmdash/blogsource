@@ -3,7 +3,7 @@ title = "HPLRelated"
 date = "2017-12-13T17:03:49+08:00"
 description = "hpl related"
 keywords = ["Linux"]
-categories = ["Linux"]
+categories = ["Technology"]
 +++
 ### Parameter
 See Images:    

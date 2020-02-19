@@ -1,5 +1,5 @@
 ---
-categories: ["Book"]
+categories: ["Life"]
 comments: true
 date: 2013-11-13T00:00:00Z
 title: 电子书下载

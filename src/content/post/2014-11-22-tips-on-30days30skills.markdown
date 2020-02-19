@@ -1,5 +1,5 @@
 ---
-categories: ["web"]
+categories: ["Technology"]
 comments: true
 date: 2014-11-22T00:00:00Z
 title: Tips on 30Days30Skills

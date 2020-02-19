@@ -3,7 +3,7 @@ title = "PromoxSJEnv"
 date = "2018-10-10T10:28:26+08:00"
 description = "PromoxSJEnv"
 keywords = ["Linux"]
-categories = ["Linux"]
+categories = ["Technology"]
 +++
 ### Virtual Disk
 Virtual CD-ROM:    

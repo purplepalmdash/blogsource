@@ -1,5 +1,5 @@
 ---
-categories: ["Virtualization"]
+categories: ["Technology"]
 comments: true
 date: 2016-05-09T12:20:34Z
 title: Working Tips On Mesos/Ansible

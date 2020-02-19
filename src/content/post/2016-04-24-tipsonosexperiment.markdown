@@ -1,5 +1,5 @@
 ---
-categories: ["virtualization"]
+categories: ["Technology"]
 comments: true
 date: 2016-04-24T17:32:12Z
 title: TipsOnOSExperiment

@@ -1,5 +1,5 @@
 ---
-categories: ["git"]
+categories: ["Technology"]
 comments: true
 date: 2014-10-14T00:00:00Z
 title: Verified to github

@@ -3,7 +3,7 @@ title = "QuicklyOfflineHelmCharts"
 date = "2019-04-11T22:50:33+08:00"
 description = "QuicklyOfflineHelmCharts"
 keywords = ["Linux"]
-categories = ["Linux"]
+categories = ["Technology"]
 +++
 Following is the tips:    
 

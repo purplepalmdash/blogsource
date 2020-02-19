@@ -3,7 +3,7 @@ title = "Building k8s-dns-node-cache-arm64"
 date = "2019-07-03T14:41:02+08:00"
 description = "Buidlingtips"
 keywords = ["Linux"]
-categories = ["Linux"]
+categories = ["Technology"]
 +++
 ### Steps
 Clone the source code from github:    

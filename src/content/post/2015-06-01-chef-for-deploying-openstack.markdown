@@ -1,5 +1,5 @@
 ---
-categories: ["linux"]
+categories: ["Technology"]
 comments: true
 date: 2015-06-01T11:19:34Z
 title: Chef For Deploying OpenStack

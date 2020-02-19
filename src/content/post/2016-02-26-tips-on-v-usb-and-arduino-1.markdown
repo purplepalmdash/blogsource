@@ -1,5 +1,5 @@
 ---
-categories: ["Embedded"]
+categories: ["Technology"]
 comments: true
 date: 2016-02-26T16:55:10Z
 title: Tips On V-USB And Arduino(1)- USB Keyboard

@@ -1,5 +1,5 @@
 ---
-categories: ["Linux"]
+categories: ["Technology"]
 comments: true
 date: 2015-05-11T00:00:00Z
 title: Tips For Setting Up CentOS Local Repository

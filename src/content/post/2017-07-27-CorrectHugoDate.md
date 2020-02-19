@@ -3,7 +3,7 @@ title = "CorrectHugoDate"
 date = "2017-07-27T16:28:35+08:00"
 description = "CorrectHugoDate"
 keywords = ["Linux"]
-categories = ["Linux"]
+categories = ["Technology"]
 +++
 
 ### Problem
@@ -22,7 +22,7 @@ title = ""
 date = "{{ .Date }}"
 description = ""
 keywords = ["Linux"]
-categories = ["Linux"]
+categories = ["Technology"]
 +++
 ```
 

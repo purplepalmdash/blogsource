@@ -1,5 +1,5 @@
 ---
-categories: ["Linux"]
+categories: ["Technology"]
 comments: true
 date: 2016-02-23T19:52:57Z
 title: Using python for checking imap mailbox unread message

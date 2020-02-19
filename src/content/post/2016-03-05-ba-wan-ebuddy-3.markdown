@@ -1,5 +1,5 @@
 ---
-categories: ["linux"]
+categories: ["Technology"]
 comments: true
 date: 2016-03-05T21:39:41Z
 title: 把玩ebuddy(3)

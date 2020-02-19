@@ -3,7 +3,7 @@ title = "SoftRouterSetup"
 date = "2018-08-20T11:43:35+08:00"
 description = "SoftRouterSetup"
 keywords = ["Linux"]
-categories = ["Linux"]
+categories = ["Technology"]
 +++
 ### 目的
 设置内网的独立实验网段，需要一个软路由，做转发。

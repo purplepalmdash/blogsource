@@ -1,5 +1,5 @@
 ---
-categories: ["web"]
+categories: ["Technology"]
 comments: true
 date: 2014-12-01T00:00:00Z
 title: Virtual Node Environment For PhoneGap Development

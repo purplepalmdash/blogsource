@@ -3,7 +3,7 @@ title = "UsingLocalRdesktopForAcrossingSomething"
 date = "2017-07-31T12:23:57+08:00"
 description = ""
 keywords = ["Linux"]
-categories = ["Linux"]
+categories = ["Technology"]
 +++
 ### MAC Address Spoofing
 First you have to cheat your remote machine via changing your own MAC address

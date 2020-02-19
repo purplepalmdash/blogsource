@@ -1,5 +1,5 @@
 ---
-categories: ["Virtualization"]
+categories: ["Technology"]
 comments: true
 date: 2016-04-05T15:30:35Z
 title: Extend Vagrant's Disk

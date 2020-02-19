@@ -3,7 +3,7 @@ title = "Kubespray全离线部署"
 date = "2018-08-29T09:09:48+08:00"
 description = "KubesprayOffline"
 keywords = ["Linux"]
-categories = ["Linux"]
+categories = ["Technology"]
 +++
 离线部署方案说起来很简单，做起来比较繁琐，把Internet连上一次部署成功，再断开后部署成功一次，那下次就直接能用了。
 ### 在线状态

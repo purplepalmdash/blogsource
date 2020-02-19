@@ -1,5 +1,5 @@
 ---
-categories: ["Embedded"]
+categories: ["Technology"]
 comments: true
 date: 2015-12-05T20:03:41Z
 title: Bluetooth NAP How-To

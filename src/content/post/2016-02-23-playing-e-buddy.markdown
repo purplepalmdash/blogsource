@@ -1,5 +1,5 @@
 ---
-categories: ["Embedded"]
+categories: ["Technology"]
 comments: true
 date: 2016-02-23T09:36:58Z
 title: Playing e-Buddy

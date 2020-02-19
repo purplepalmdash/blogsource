@@ -1,5 +1,5 @@
 ---
-categories: ["linux"]
+categories: ["Technology"]
 comments: true
 date: 2015-07-03T10:58:55Z
 title: Try raid0 installation on Ubuntu

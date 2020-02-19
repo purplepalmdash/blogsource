@@ -1,5 +1,5 @@
 +++
-categories = ["Virtualization"]
+categories = ["Technology"]
 date = "2016-11-24T09:44:04+08:00"
 description = "XenServer and Docker interactive"
 keywords = ["Virtualization"]

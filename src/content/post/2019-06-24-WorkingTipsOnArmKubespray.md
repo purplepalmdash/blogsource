@@ -3,7 +3,7 @@ title = "WorkingTipsOnArmKubespray"
 date = "2019-06-24T08:36:19+08:00"
 description = "WorkingTipsOnArmKubespray"
 keywords = ["Linux"]
-categories = ["Linux"]
+categories = ["Technology"]
 +++
 ### Emulation
 Install uml-utilites for arm emulator networking:    

@@ -3,7 +3,7 @@ title = "TipsOnAIKubeSprayUsage"
 date = "2019-06-03T16:07:45+08:00"
 description = "TipsOnAIKubeSprayUsage"
 keywords = ["Linux"]
-categories = ["Linux"]
+categories = ["Technology"]
 +++
 ### 0. 先决条件
 Rongv1905部署就绪的集群，运行操作系统为ubuntu18.04.2.    

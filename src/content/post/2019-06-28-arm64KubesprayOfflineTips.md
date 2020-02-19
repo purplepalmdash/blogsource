@@ -3,7 +3,7 @@ title = "arm64KubesprayOfflineTips"
 date = "2019-06-28T10:19:58+08:00"
 description = "arm64KubesprayOfflineTips"
 keywords = ["Linux"]
-categories = ["Linux"]
+categories = ["Technology"]
 +++
 ### Folder structure
 Compare the downloaded source code to our offlined edition, make some changes.     

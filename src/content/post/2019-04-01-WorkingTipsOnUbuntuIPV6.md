@@ -3,7 +3,7 @@ title = "WorkingTipsOnUbutunIPV6"
 date = "2019-04-01T09:01:00+08:00"
 description = "WorkingTipsOnUbutunIPV6"
 keywords = ["Linux"]
-categories = ["Linux"]
+categories = ["Technology"]
 +++
 ### Conoha ipv6
 Find the ipv6 addresses(should have 17 ipv6 addresses together):    

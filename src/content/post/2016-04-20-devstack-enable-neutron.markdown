@@ -1,5 +1,5 @@
 ---
-categories: ["virtualization"]
+categories: ["Technology"]
 comments: true
 date: 2016-04-20T11:11:54Z
 title: DevStack Enable Neutron

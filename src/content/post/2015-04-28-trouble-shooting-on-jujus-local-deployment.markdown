@@ -1,5 +1,5 @@
 ---
-categories: ["Virtualization"]
+categories: ["Technology"]
 comments: true
 date: 2015-04-28T00:00:00Z
 title: Trouble Shooting On Juju's Local Deployment

@@ -1,5 +1,5 @@
 ---
-categories: ["docker"]
+categories: ["Technology"]
 comments: true
 date: 2014-10-15T00:00:00Z
 title: Trouble-Shooting on Docker

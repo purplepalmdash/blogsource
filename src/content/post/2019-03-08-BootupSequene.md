@@ -3,7 +3,7 @@ title = "BootUpSequence"
 date = "2019-03-08T09:54:49+08:00"
 description = "BootUpSequence"
 keywords = ["Linux"]
-categories = ["Linux"]
+categories = ["Technology"]
 +++
 服务器配置:    
 

@@ -1,5 +1,5 @@
 ---
-categories: ["Linux"]
+categories: ["Technology"]
 comments: true
 date: 2013-11-18T00:00:00Z
 title: How to use git behind the firewall

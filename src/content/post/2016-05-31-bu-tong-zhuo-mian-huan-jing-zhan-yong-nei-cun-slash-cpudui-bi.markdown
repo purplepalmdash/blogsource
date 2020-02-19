@@ -1,5 +1,5 @@
 ---
-categories: ["Linux"]
+categories: ["Technology"]
 comments: true
 date: 2016-05-31T09:25:38Z
 title: 不同桌面环境占用内存/CPU对比

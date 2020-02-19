@@ -2,7 +2,7 @@
 description = "QuickStartMiniKube"
 title = "快速搭建MiniKube开发环境"
 date = "2017-04-07T18:08:19+08:00"
-categories = ["Virtualization"]
+categories = ["Technology"]
 keywords = ["Virtualization"]
 
 +++

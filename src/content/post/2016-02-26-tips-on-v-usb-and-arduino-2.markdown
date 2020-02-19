@@ -1,5 +1,5 @@
 ---
-categories: ["embedded"]
+categories: ["Technology"]
 comments: true
 date: 2016-02-26T17:07:20Z
 title: Tips On V-USB And Arduino(2)--用v-usb控制LED

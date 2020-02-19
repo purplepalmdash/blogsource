@@ -3,7 +3,7 @@ title = "ThinkingOnK8s"
 date = "2019-05-21T11:42:55+08:00"
 description = "ThinkingOnK8s"
 keywords = ["Linux"]
-categories = ["Linux"]
+categories = ["Technology"]
 +++
 上午想了一下关于开发后续要努力的方向。    
 

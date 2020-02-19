@@ -1,6 +1,6 @@
 +++
 date = "2017-02-17T11:09:33+08:00"
-categories = ["Linux"]
+categories = ["Technology"]
 keywords = ["Linux"]
 description = "Configuration of vagrant"
 title = "Configuraiton For Vagrant"

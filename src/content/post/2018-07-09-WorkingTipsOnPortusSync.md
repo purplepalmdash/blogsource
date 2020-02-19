@@ -3,7 +3,7 @@ title = "TipsOnPortusSync"
 date = "2018-07-09T20:48:04+08:00"
 description = "TipsOnPortusSync"
 keywords = ["Linux"]
-categories = ["Linux"]
+categories = ["Technology"]
 +++
 ### Portus Preparation
 Install a new deployment node, with the `/var/lib/portus` empty, you could

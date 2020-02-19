@@ -1,5 +1,5 @@
 ---
-categories: ["Arduino"]
+categories: ["Technology"]
 comments: true
 date: 2013-12-27T00:00:00Z
 title: HC-SR501人体感应模块 &amp; Arduino

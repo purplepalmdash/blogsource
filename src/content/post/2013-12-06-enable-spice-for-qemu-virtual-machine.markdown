@@ -1,5 +1,5 @@
 ---
-categories: ["Linux", "Qemu"]
+categories: ["Technology"]
 comments: true
 date: 2013-12-06T00:00:00Z
 title: Enable spice for qemu virtual machine

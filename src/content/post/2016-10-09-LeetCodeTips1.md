@@ -1,5 +1,5 @@
 +++
-categories = ["Programming"]
+categories = ["Technology"]
 date = "2016-10-09T15:28:18+08:00"
 description = "LeetCode Problems"
 keywords = ["LeetCode"]

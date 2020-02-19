@@ -1,5 +1,5 @@
 ---
-
+categories: ["Technology"]
 comments: true
 date: 2013-07-08T00:00:00Z
 title: 在Qemu上运行Raspberry PI镜像

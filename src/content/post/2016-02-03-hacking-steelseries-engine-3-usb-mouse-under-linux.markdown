@@ -1,5 +1,5 @@
 ---
-categories: ["embedded"]
+categories: ["Technology"]
 comments: true
 date: 2016-02-03T18:36:19Z
 title: Hacking SteelSeries Engine 3 USB Mouse Under Linux

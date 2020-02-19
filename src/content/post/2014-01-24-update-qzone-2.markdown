@@ -1,5 +1,5 @@
 ---
-categories: ["Pelican"]
+categories: ["Technology"]
 comments: true
 date: 2014-01-24T00:00:00Z
 title: Update Qzone(2)

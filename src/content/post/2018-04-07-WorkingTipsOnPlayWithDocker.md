@@ -3,7 +3,7 @@ title = "WorkingTipsOnPlayWithDocker"
 date = "2018-04-07T10:31:27+08:00"
 description = "WorkingTipsOnPlayWithDocker"
 keywords = ["Linux"]
-categories = ["Linux"]
+categories = ["Technology"]
 +++
 ### Environment
 #### Qemu Image

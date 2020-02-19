@@ -1,5 +1,5 @@
 ---
-categories: ["Virtualization"]
+categories: ["Technology"]
 comments: true
 date: 2015-06-23T20:52:09Z
 title: Import More ISOs in Cobbler

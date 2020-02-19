@@ -1,5 +1,5 @@
 ---
-categories: ["Linux"]
+categories: ["Technology"]
 comments: true
 date: 2013-12-17T00:00:00Z
 title: Fastly search package infos in ArchLinux

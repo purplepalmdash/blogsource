@@ -1,5 +1,5 @@
 ---
-categories: ["null"]
+categories: ["Technology"]
 comments: true
 date: 2016-04-15T15:55:15Z
 title: Moving Docker Repository Position

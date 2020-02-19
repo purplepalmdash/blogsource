@@ -3,7 +3,7 @@ title = "helmWorkingtips"
 date = "2018-01-11T11:51:36+08:00"
 description = "helmWorkingtips"
 keywords = ["Linux"]
-categories = ["Linux"]
+categories = ["Technology"]
 +++
 ### minikube
 Install and initialization:    

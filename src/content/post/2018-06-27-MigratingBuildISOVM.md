@@ -3,7 +3,7 @@ title = "MigratingBuildISOVM"
 date = "2018-06-27T14:35:28+08:00"
 description = "MigratingBuildISOVM"
 keywords = ["Linux"]
-categories = ["Linux"]
+categories = ["Technology"]
 +++
 ### Background
 环境迁移，BuildISO的虚拟机IP更换时，需要进行的配置。如，从192.168.122.0/24到192.168.124.0/24网络环境时需要做的修改.    

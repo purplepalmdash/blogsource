@@ -1,5 +1,5 @@
 ---
-
+categories: ["Technology"]
 comments: true
 date: 2013-10-27T00:00:00Z
 title: Automatically download all of the full-circle magazine

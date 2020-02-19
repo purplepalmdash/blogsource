@@ -1,5 +1,5 @@
 ---
-categories: ["SurfacePro"]
+categories: ["Technology"]
 comments: true
 date: 2014-11-22T00:00:00Z
 title: Re-install Surface Pro

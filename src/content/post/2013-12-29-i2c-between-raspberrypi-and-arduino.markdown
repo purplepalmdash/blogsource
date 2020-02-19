@@ -1,5 +1,5 @@
 ---
-categories: ["i2c", "Arduino", "RaspberryPI"]
+categories: ["Technology"]
 comments: true
 date: 2013-12-29T00:00:00Z
 title: I2C between raspberryPI and Arduino

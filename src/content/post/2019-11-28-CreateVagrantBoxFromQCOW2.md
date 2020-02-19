@@ -3,7 +3,7 @@ title = "CreateVagrantBoxFromQCOW2"
 date = "2019-11-28T12:34:48+08:00"
 description = "CreateVagrantBoxFromQCOW2"
 keywords = ["Linux"]
-categories = ["Linux"]
+categories = ["Technology"]
 +++
 ### Machine Preparation
 Create a libvirt machine, install system.    

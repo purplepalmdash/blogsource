@@ -1,5 +1,5 @@
 ---
-categories: ["Linux"]
+categories: ["Technology"]
 comments: true
 date: 2015-04-28T00:00:00Z
 title: Use reave for testing wireless security

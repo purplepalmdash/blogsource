@@ -3,7 +3,7 @@ title = "SetupCICDWithGitlabAndTerraform"
 date = "2020-01-02T10:43:35+08:00"
 description = "SetupCICDWithGitlabAndTerraform"
 keywords = ["Linux"]
-categories = ["Linux"]
+categories = ["Technology"]
 +++
 ### Gitlab
 Setup gitlab using docker-compose from:     

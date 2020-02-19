@@ -1,5 +1,5 @@
 ---
-categories: ["hyde", "qzone"]
+categories: ["Technology"]
 comments: true
 date: 2014-01-13T00:00:00Z
 title: Moving blogs from Qzone to My Own website

@@ -1,6 +1,6 @@
 +++
 date = "2017-02-27T16:01:30+08:00"
-categories = ["Linux"]
+categories = ["Technology"]
 keywords = ["Linux"]
 description = "Quick start wordpress on Docker"
 title = "DockerizedWordpressQuickStart"

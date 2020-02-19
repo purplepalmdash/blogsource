@@ -1,5 +1,5 @@
 +++
-categories = ["Algorithm"]
+categories = ["Technology"]
 date = "2016-09-27T09:41:02+08:00"
 description = "Read digest on python algorithm"
 keywords = ["Algorithm"]

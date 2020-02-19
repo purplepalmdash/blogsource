@@ -1,5 +1,5 @@
 ---
-categories: ["otrs"]
+categories: ["Technology"]
 comments: true
 date: 2014-06-28T00:00:00Z
 title: Install And Configure otrs On CentOS

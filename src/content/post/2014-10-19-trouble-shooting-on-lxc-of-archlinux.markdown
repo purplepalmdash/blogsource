@@ -1,5 +1,5 @@
 ---
-categories: ["null"]
+categories: ["Technology"]
 comments: true
 date: 2014-10-19T00:00:00Z
 title: Trouble-Shooting on LXC of ArchLinux

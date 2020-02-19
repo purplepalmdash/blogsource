@@ -1,5 +1,5 @@
 +++
-categories = ["Web"]
+categories = ["Technology"]
 date = "2016-07-12T15:26:23+08:00"
 description = "Web Application Flask"
 keywords = []

@@ -1,5 +1,5 @@
 ---
-categories: ["linux"]
+categories: ["Technology"]
 comments: true
 date: 2014-06-10T00:00:00Z
 title: Upgrade Pidgin For Using Microsoft Lync

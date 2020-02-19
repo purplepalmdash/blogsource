@@ -1,5 +1,5 @@
 ---
-categories: ["virtualization"]
+categories: ["Technology"]
 comments: true
 date: 2015-05-25T21:44:54Z
 title: Tips on deleteing neutron subnet and router

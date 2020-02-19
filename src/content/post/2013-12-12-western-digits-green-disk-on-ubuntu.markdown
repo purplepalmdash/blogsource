@@ -1,5 +1,5 @@
 ---
-categories: ["Linux"]
+categories: ["Technology"]
 comments: true
 date: 2013-12-12T00:00:00Z
 title: Western Digital Green Disk on Ubuntu

@@ -3,7 +3,7 @@ title = "WorkingTipsOnIstioDemo"
 date = "2018-05-16T10:42:55+08:00"
 description = "WorkingTipsOnIstioDemo"
 keywords = ["Linux"]
-categories = ["Linux"]
+categories = ["Technology"]
 +++
 ### istio 0.8 download
 Download from its daily build:    

@@ -1,5 +1,5 @@
 ---
-categories: ["Visualization"]
+categories: ["Technology"]
 comments: true
 date: 2015-12-16T12:11:21Z
 title: 用Graphite呈现广州空气质量(2)

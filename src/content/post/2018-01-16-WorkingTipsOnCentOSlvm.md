@@ -3,7 +3,7 @@ title = "WorkingTipsOnk8sLVM"
 date = "2018-01-16T10:31:14+08:00"
 description = "Workingtipsonk8slvm"
 keywords = ["Linux"]
-categories = ["Linux"]
+categories = ["Technology"]
 +++
 ### Preparation
 Define ip address/gateway:    

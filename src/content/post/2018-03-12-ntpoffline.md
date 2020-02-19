@@ -3,7 +3,7 @@ title = "ntpoffline"
 date = "2018-03-12T22:01:37+08:00"
 description = "ntpoffline"
 keywords = ["Linux"]
-categories = ["Linux"]
+categories = ["Technology"]
 +++
 ### Server
 server side configuration:    

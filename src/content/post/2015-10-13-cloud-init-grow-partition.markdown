@@ -1,5 +1,5 @@
 ---
-categories: ["Virtualization"]
+categories: ["Technology"]
 comments: true
 date: 2015-10-13T14:37:57Z
 title: Cloud-Init Grow Partition

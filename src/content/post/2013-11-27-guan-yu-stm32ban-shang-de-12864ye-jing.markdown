@@ -1,5 +1,5 @@
 ---
-categories: ["Embedded", "stm32"]
+categories: ["Technology"]
 comments: true
 date: 2013-11-27T00:00:00Z
 title: 关于STM32板上的12864液晶

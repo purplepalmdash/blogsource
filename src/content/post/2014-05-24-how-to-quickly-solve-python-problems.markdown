@@ -1,5 +1,5 @@
 ---
-categories: ["python"]
+categories: ["Technology"]
 comments: true
 date: 2014-05-24T00:00:00Z
 title: How to quickly solve python problems

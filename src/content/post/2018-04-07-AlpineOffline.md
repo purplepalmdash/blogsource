@@ -3,7 +3,7 @@ title = "AlpineOffline"
 date = "2018-04-07T08:54:40+08:00"
 description = "AlpineOffline"
 keywords = ["Linux"]
-categories = ["Linux"]
+categories = ["Technology"]
 +++
 ### Background
 I want to run `play-with-docker` offline, so I have to setup the whole offline

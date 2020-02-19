@@ -1,5 +1,5 @@
 ---
-categories: ["Linux"]
+categories: ["Technology"]
 comments: true
 date: 2015-08-31T12:07:37Z
 title: Tips On Remove maas-dhcp

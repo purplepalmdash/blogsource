@@ -1,5 +1,5 @@
 ---
-categories: ["Linux"]
+categories: ["Technology"]
 comments: true
 date: 2015-08-13T17:02:53Z
 title: Build nbd Kernel Module On CentOS7

@@ -1,5 +1,5 @@
 +++
-categories = ["Linux"]
+categories = ["Technology"]
 keywords = ["Linux"]
 description = "Ubuntu Disk Encryption"
 title = "Ubuntu磁盘加密测试"

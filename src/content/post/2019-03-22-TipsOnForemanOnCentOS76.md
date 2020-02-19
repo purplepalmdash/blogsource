@@ -3,7 +3,7 @@ title = "TipsOnForemanOnCentOS76"
 date = "2019-03-22T17:32:15+08:00"
 description = "TipsOnForemanOnCentOS76"
 keywords = ["Linux"]
-categories = ["Linux"]
+categories = ["Technology"]
 +++
 ### Prerequites
 System infos:    

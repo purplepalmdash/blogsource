@@ -1,6 +1,6 @@
 +++
 date = "2017-06-30T08:50:26+08:00"
-categories = ["Linux"]
+categories = ["Technology"]
 keywords = ["WorkingTipsOnAnsiblePull"]
 description = "WorkingTipsOnAnsiblePull"
 title = "WorkingTipsOnAnsiblePull"

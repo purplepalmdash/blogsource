@@ -1,5 +1,5 @@
 ---
-categories: ["Linux"]
+categories: ["Technology"]
 comments: true
 date: 2016-03-10T14:18:43Z
 title: 配置Qemu的VDE网络

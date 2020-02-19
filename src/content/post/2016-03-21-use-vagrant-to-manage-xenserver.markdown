@@ -1,5 +1,5 @@
 ---
-categories: ["Virtualization"]
+categories: ["Technology"]
 comments: true
 date: 2016-03-21T14:20:09Z
 title: Use Vagrant To Manage XenServer

@@ -1,5 +1,5 @@
 ---
-
+categories: ["Technology"]
 comments: true
 date: 2013-09-20T00:00:00Z
 title: 用python操纵Sqlite3

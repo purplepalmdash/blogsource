@@ -1,5 +1,5 @@
 ---
-categories: ["virtualization"]
+categories: ["Technology"]
 comments: true
 date: 2015-03-11T00:00:00Z
 title: MAAS Deploy(1)

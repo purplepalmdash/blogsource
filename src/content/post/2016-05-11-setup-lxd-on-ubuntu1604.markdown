@@ -1,5 +1,5 @@
 ---
-categories: ["Virtualization"]
+categories: ["Technology"]
 comments: true
 date: 2016-05-11T15:38:23Z
 title: Setup LXD On Ubuntu1604

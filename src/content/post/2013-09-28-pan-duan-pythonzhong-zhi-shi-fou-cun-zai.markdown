@@ -1,5 +1,5 @@
 ---
-
+categories: ["Technology"]
 comments: true
 date: 2013-09-28T00:00:00Z
 title: 判断python中值是否存在

@@ -1,5 +1,5 @@
 ---
-categories: ["openwrt"]
+categories: ["Technology"]
 comments: true
 date: 2014-12-12T00:00:00Z
 title: Recover My OpenWRT Configuration

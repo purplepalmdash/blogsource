@@ -3,7 +3,7 @@ keywords = ["Encryption"]
 date = "2017-02-10T18:08:48+08:00"
 description = "Working tips on encryption"
 title = "WorkingTipsOnEncryption"
-categories = ["Linux"]
+categories = ["Technology"]
 
 +++
 Refers to:    

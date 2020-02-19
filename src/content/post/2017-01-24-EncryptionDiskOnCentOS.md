@@ -1,6 +1,6 @@
 +++
 date = "2017-01-24T15:35:05+08:00"
-categories = ["Linux"]
+categories = ["Technology"]
 keywords = ["Encryption"]
 description = "Encrypt your partition using usb key"
 title = "CentOS Encryption"

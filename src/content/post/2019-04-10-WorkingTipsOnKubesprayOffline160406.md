@@ -3,7 +3,7 @@ title = "WorkingtipsOnUbuntu160406Kubesprayoffline"
 date = "2019-04-10T12:10:22+08:00"
 description = "WorkingtipsOnUbuntu160406Kubesprayoffline"
 keywords = ["Linux"]
-categories = ["Linux"]
+categories = ["Technology"]
 +++
 ### VagrantBox
 ToBeAdded

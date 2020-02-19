@@ -1,5 +1,5 @@
 +++
-categories = ["Linux"]
+categories = ["Technology"]
 date = "2016-07-18T14:53:58+08:00"
 description = "Use Jenkins for building packer.io"
 keywords = []

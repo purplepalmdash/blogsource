@@ -3,7 +3,7 @@ title = "WorkingTipsOnKubesprayDIND"
 date = "2019-09-05T10:53:18+08:00"
 description = "WorkingTipsOnKubesprayDIND"
 keywords = ["Linux"]
-categories = ["Linux"]
+categories = ["Technology"]
 +++
 ### vagrant machine
 Create a vagrant machine with 8-core/10G memory:   

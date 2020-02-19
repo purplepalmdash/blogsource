@@ -3,7 +3,7 @@ title = "OnBuildMonocular"
 date = "2018-06-20T17:18:50+08:00"
 description = "OnBuildMonocular"
 keywords = ["Linux"]
-categories = ["Linux"]
+categories = ["Technology"]
 +++
 ### Building
 Ubuntu 18.04(192.192.189.114), install following packages:    

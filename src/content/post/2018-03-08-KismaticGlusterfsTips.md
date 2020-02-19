@@ -3,7 +3,7 @@ title = "KismaticGlusterfsTips"
 date = "2018-03-08T14:26:40+08:00"
 description = "kismatic glusterfs tips"
 keywords = ["Linux"]
-categories = ["Linux"]
+categories = ["Technology"]
 +++
 ### Configuration
 The configuration files is listed as following:    

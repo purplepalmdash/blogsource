@@ -3,7 +3,7 @@ title = "TipsOnRongISO"
 date = "2018-11-17T08:50:37+08:00"
 description = "TipsOnRongISO"
 keywords = ["Linux"]
-categories = ["Linux"]
+categories = ["Technology"]
 +++
 ### AIM
 For building the kubespray offline all-in-one deploying iso.    

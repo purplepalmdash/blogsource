@@ -3,7 +3,7 @@ title = "EnableIPMIOnNetdata"
 date = "2020-01-03T10:46:38+08:00"
 description = "EnableIPMIOnNetdata"
 keywords = ["Linux"]
-categories = ["Linux"]
+categories = ["Technology"]
 +++
 ### Prerequites
 Build netdata from source, generate deb/rpm.    

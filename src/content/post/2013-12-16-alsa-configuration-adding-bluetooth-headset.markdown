@@ -1,5 +1,5 @@
 ---
-categories: ["Linux", "ALSA"]
+categories: ["Technology"]
 comments: true
 date: 2013-12-16T00:00:00Z
 title: Alsa Configuration(Adding bluetooth headset

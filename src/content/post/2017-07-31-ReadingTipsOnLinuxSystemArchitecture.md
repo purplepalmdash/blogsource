@@ -3,7 +3,7 @@ title = "ReadingTipsOnLinuxSystemArchitecture"
 date = "2017-07-31T09:19:01+08:00"
 description = "ReadingTipsOnLinuxSystemArchitecture"
 keywords = ["Linux"]
-categories = ["Linux"]
+categories = ["Technology"]
 +++
 ### On This Book
 Borrowed from lab, written via a janpanese author.    

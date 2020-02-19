@@ -1,5 +1,5 @@
 ---
-categories: ["virtualization"]
+categories: ["Technology"]
 comments: true
 date: 2015-06-03T21:00:20Z
 title: Tips on using vagrant and chefdk

@@ -3,7 +3,7 @@ title = "WorkingTipsOnNodeJSApp"
 date = "2018-09-05T14:43:14+08:00"
 description = "WorkingTipsOnNodeJSApp"
 keywords = ["Linux"]
-categories = ["Linux"]
+categories = ["Technology"]
 +++
 ### Steps
 最先是在VPS上用docker开发，遇到跨域问题，专用虚拟机开发。    

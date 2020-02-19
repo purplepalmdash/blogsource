@@ -1,5 +1,5 @@
 ---
-categories: ["Davmail"]
+categories: ["Technology"]
 comments: true
 date: 2014-03-28T00:00:00Z
 title: Configure Davmail and Thunderbird

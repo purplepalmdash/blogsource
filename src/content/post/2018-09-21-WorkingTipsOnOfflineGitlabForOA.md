@@ -3,7 +3,7 @@ title = "OAGitlabK8s"
 date = "2018-09-21T09:54:20+08:00"
 description = "OAGitlabK8s"
 keywords = ["Linux"]
-categories = ["Linux"]
+categories = ["Technology"]
 +++
 ### gitlab/gitlab-runner
 Install via:    

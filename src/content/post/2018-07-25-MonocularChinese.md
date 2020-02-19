@@ -3,7 +3,7 @@ title = "MonocularChinese"
 date = "2018-07-25T08:15:32+08:00"
 description = "MonocularChinese"
 keywords = ["Linux"]
-categories = ["Linux"]
+categories = ["Technology"]
 +++
 Moncular汉化过程，记录如下:    
 

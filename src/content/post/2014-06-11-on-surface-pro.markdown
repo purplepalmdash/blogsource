@@ -1,5 +1,5 @@
 ---
-categories: ["Surface"]
+categories: ["Technology"]
 comments: true
 date: 2014-06-11T00:00:00Z
 title: On Surface Pro

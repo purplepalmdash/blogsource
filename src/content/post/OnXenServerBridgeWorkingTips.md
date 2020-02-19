@@ -1,5 +1,5 @@
 +++
-categories = ["Virtualization"]
+categories = ["Technology"]
 date = "2016-08-18T19:29:45+08:00"
 description = "On Set XenServer Bridged virtual machines"
 keywords = ["XenServer"]

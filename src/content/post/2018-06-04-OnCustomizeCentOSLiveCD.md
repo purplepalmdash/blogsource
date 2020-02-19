@@ -3,7 +3,7 @@ title = "OnCustomizeCentOSLiveCD"
 date = "2018-06-04T09:16:28+08:00"
 description = "OnCustomizeCentOSLiveCD"
 keywords = ["Linux"]
-categories = ["Linux"]
+categories = ["Technology"]
 +++
 ### Preparation
 A. Create local repository for centos installation:   

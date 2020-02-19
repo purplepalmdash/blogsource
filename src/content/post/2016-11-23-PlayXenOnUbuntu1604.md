@@ -1,5 +1,5 @@
 +++
-categories = ["Virtualization"]
+categories = ["Technology"]
 date = "2016-11-23T17:29:07+08:00"
 description = "Play Xen On Ubuntu16.04"
 keywords = ["Virtualization"]

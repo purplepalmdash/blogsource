@@ -3,7 +3,7 @@ keywords = ["Encryption"]
 description = "Disk Encryption Of Ubuntu"
 date = "2017-02-09T14:37:24+08:00"
 title = "CentOS全盘加密"
-categories = ["Linux"]
+categories = ["Technology"]
 
 +++
 以下记录安装好加密磁盘后，免密码登录配置。    

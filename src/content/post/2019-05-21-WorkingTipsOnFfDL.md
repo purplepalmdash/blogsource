@@ -3,7 +3,7 @@ title = "WorkingTipsOnFfDL"
 date = "2019-05-21T12:02:59+08:00"
 description = "WorkingTipsOnFfDL"
 keywords = ["Linux"]
-categories = ["Linux"]
+categories = ["Technology"]
 +++
 ### StartPoint
 Working directory:    

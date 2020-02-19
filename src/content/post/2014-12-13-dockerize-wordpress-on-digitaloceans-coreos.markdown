@@ -1,5 +1,5 @@
 ---
-categories: ["web"]
+categories: ["Technology"]
 comments: true
 date: 2014-12-13T00:00:00Z
 title: Dockerize Wordpress On DigitalOcean's CoreOS

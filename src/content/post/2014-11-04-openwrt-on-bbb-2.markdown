@@ -1,5 +1,5 @@
 ---
-categories: ["embedded"]
+categories: ["Technology"]
 comments: true
 date: 2014-11-04T00:00:00Z
 title: OpenWRT on BBB(2)

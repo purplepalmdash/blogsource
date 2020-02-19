@@ -1,5 +1,5 @@
 ---
-categories: ["linux"]
+categories: ["Technology"]
 comments: true
 date: 2015-05-23T08:27:55Z
 title: Use apt-cacher For Speeding Up Deployment

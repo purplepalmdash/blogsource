@@ -3,7 +3,7 @@ title = "UsbNetworkCard"
 date = "2019-03-14T09:54:29+08:00"
 description = "UsbNetworkCard"
 keywords = ["Linux"]
-categories = ["Linux"]
+categories = ["Technology"]
 +++
 Using systemd-networkd for configurating the usb network card,     
 

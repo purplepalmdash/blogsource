@@ -3,7 +3,7 @@ title = "ThinkingOnDev"
 date = "2019-11-18T09:42:12+08:00"
 description = "ThinkingOnDev"
 keywords = ["Linux"]
-categories = ["Linux"]
+categories = ["Technology"]
 +++
 1. 节点数据上报，监控客户端方案。    
 2. 数据归总方案，用什么样的数据库什么样的架构用于存放数据。    

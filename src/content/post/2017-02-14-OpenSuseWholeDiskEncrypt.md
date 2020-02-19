@@ -1,6 +1,6 @@
 +++
 date = "2017-02-14T11:08:07+08:00"
-categories = ["Linux"]
+categories = ["Technology"]
 keywords = ["Encryption"]
 description = "Encrypt whole disk of OpenSUSE"
 title = "OpenSuSE全盘加密"

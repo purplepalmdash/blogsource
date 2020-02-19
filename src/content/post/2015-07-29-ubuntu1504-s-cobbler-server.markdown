@@ -1,5 +1,5 @@
 ---
-categories: ["Virtualization"]
+categories: ["Technology"]
 comments: true
 date: 2015-07-29T21:23:44Z
 title: Ubuntu1504's Cobbler Server

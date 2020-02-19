@@ -3,7 +3,7 @@ title = "WorkingTipsOnDockerComposeOfflineInstall"
 date = "2018-03-20T09:09:27+08:00"
 description = "WorkingTipsOnDockerComposeOfflineInstall"
 keywords = ["Linux"]
-categories = ["Linux"]
+categories = ["Technology"]
 +++
 ### 步骤
 获取所需安装包的步骤如下：    

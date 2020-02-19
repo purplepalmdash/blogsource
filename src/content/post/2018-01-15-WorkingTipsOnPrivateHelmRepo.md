@@ -3,7 +3,7 @@ title = "WorkingTipsOnPrivateHelmRepo"
 date = "2018-01-15T09:38:34+08:00"
 description = "WorkingTipsOnPrivateHelmRepo"
 keywords = ["Linux"]
-categories = ["Linux"]
+categories = ["Technology"]
 +++
 ### Steps
 Create first chart named `nginxfirst` like following:    

@@ -1,7 +1,7 @@
 +++
 title = "WorkingTipsOnRPMBuild"
 date = "2017-06-21T11:33:40+08:00"
-categories = ["Linux"]
+categories = ["Technology"]
 keywords = ["Linux"]
 description = "WorkingTipsOnRPMBuild"
 

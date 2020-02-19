@@ -1,5 +1,5 @@
 ---
-categories: ["Virtualization"]
+categories: ["Technology"]
 comments: true
 date: 2015-01-26T00:00:00Z
 title: Using DO For Building OpenContrail

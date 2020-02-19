@@ -3,7 +3,7 @@ title = "SyncKismaticImages"
 date = "2018-05-30T09:20:59+08:00"
 description = "SyncKismaticImages"
 keywords = ["Linux"]
-categories = ["Linux"]
+categories = ["Technology"]
 +++
 搭建完Portus镜像后，如何重新初始化，并获得更新的kismatic镜像？这里记录了步骤。    
 

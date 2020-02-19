@@ -1,5 +1,5 @@
 ---
-categories: ["Virtualization"]
+categories: ["Technology"]
 comments: true
 date: 2015-07-04T14:57:00Z
 title: Preseed File For Ubuntu1404 In CobblerServer

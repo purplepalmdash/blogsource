@@ -3,7 +3,7 @@ title = "kismaticDeployment"
 date = "2018-01-23T11:27:12+08:00"
 description = "kismaticDeployment"
 keywords = ["Linux"]
-categories = ["Linux"]
+categories = ["Technology"]
 +++
 ### 环境准备
 三台机器(可为虚拟机或物理机):    

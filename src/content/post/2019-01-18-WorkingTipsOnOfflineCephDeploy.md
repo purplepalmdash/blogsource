@@ -3,7 +3,7 @@ title = "WorkingTipsOnOfflineCephDeploy"
 date = "2019-01-18T08:51:48+08:00"
 description = "WorkingTipsOnOfflineCephDeploy"
 keywords = ["Linux"]
-categories = ["Linux"]
+categories = ["Technology"]
 +++
 ### Prerequisites
 Offline Deb packages, vagrant boxes(based on ubuntu16.04).     

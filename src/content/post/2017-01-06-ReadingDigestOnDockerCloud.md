@@ -1,6 +1,6 @@
 +++
 date = "2017-01-06T15:42:25+08:00"
-categories = ["Virtualization"]
+categories = ["Technology"]
 keywords = ["Virtualization"]
 description = "Reading Digests on Docker Cloud"
 title = "DockerCloudReadingDigests"

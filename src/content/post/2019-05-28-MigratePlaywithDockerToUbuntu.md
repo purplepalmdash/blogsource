@@ -3,7 +3,7 @@ title = "MigratePWDtoUbuntu"
 date = "2019-05-28T08:47:00+08:00"
 description = "MigratePWDtoUbuntu"
 keywords = ["Linux"]
-categories = ["Linux"]
+categories = ["Technology"]
 +++
 ### Steps
 Install Ubuntu 18.04.02(Using Rong iso).    

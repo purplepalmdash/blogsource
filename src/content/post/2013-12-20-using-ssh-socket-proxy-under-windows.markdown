@@ -1,5 +1,5 @@
 ---
-categories: ["ssh", "proxy"]
+categories: ["Technology"]
 comments: true
 date: 2013-12-20T00:00:00Z
 title: Using ssh socket proxy under windows

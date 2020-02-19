@@ -3,7 +3,7 @@ title = "ThinkingOnCoreOS"
 date = "2019-08-19T11:21:39+08:00"
 description = "ThinkingOnCoreOS"
 keywords = ["Linux"]
-categories = ["Linux"]
+categories = ["Technology"]
 +++
 ### AIM
 To deploy kubespray-deployed kubernetes offlinely.     

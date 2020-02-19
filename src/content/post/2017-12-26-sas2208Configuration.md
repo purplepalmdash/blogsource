@@ -3,7 +3,7 @@ title = "sas2208configuration"
 date = "2017-12-26T11:46:11+08:00"
 description = "sas2208configuration"
 keywords = ["Linux"]
-categories = ["Linux"]
+categories = ["Technology"]
 +++
 ### Configuration Steps
 Select the SAS Controller: 

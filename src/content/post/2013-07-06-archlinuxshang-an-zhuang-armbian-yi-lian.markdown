@@ -1,5 +1,5 @@
 ---
-
+categories: ["Technology"]
 comments: true
 date: 2013-07-06T00:00:00Z
 title: ArchLinux上安装arm编译链

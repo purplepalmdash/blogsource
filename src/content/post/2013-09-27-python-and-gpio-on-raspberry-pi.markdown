@@ -1,5 +1,5 @@
 ---
-
+categories: ["Technology"]
 comments: true
 date: 2013-09-27T00:00:00Z
 title: Python and GPIO on Raspberry PI

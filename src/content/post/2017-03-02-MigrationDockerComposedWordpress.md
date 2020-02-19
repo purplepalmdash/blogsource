@@ -2,7 +2,7 @@
 date = "2017-03-02T14:22:31+08:00"
 description = "Migration DockerCompose based wordpress"
 title = "Migration Docker Based WordPress"
-categories = ["Linux"]
+categories = ["Technology"]
 keywords = ["Linux"]
 
 +++

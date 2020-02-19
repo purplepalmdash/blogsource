@@ -1,5 +1,5 @@
 ---
-categories: ["wordpress"]
+categories: ["Technology"]
 comments: true
 date: 2014-04-14T00:00:00Z
 title: Install Wordpress on ArchLinux

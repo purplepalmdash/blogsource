@@ -1,5 +1,5 @@
 ---
-categories: ["lxc"]
+categories: ["Technology"]
 comments: true
 date: 2014-09-01T00:00:00Z
 title: LXC On OpenSuse

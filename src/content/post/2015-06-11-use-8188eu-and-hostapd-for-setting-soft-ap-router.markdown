@@ -1,5 +1,5 @@
 ---
-categories: ["Linux"]
+categories: ["Technology"]
 comments: true
 date: 2015-06-11T16:25:51Z
 title: Use 8188eu and Hostapd For Setting Soft-AP Router

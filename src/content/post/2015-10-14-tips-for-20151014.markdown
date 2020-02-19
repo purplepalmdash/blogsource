@@ -1,5 +1,5 @@
 ---
-categories: ["tips"]
+categories: ["Technology"]
 comments: true
 date: 2015-10-14T21:20:22Z
 title: Tips For 20151014

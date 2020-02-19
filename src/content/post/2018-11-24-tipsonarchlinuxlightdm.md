@@ -3,7 +3,7 @@ title = "TipsOnLightdm"
 date = "2018-11-24T21:08:08+08:00"
 description = "TipsOnLightdm"
 keywords = ["Linux"]
-categories = ["Linux"]
+categories = ["Technology"]
 +++
 ### Steps
 Install lightdm via:    

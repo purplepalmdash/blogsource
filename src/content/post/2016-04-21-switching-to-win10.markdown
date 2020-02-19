@@ -1,5 +1,5 @@
 ---
-categories: ["linux"]
+categories: ["Technology"]
 comments: true
 date: 2016-04-21T10:06:44Z
 title: Switching to Win10

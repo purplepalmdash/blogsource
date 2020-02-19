@@ -1,5 +1,5 @@
 ---
-categories: ["WordPress"]
+categories: ["Technology"]
 comments: true
 date: 2014-03-17T00:00:00Z
 title: Miragating from ASP to Wordpress(2)

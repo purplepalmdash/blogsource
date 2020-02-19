@@ -1,5 +1,5 @@
 ---
-categories: ["null"]
+categories: ["Technology"]
 comments: true
 date: 2016-05-10T22:17:35Z
 title: tips on lxc

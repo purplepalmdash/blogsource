@@ -1,5 +1,5 @@
 ---
-categories: ["Linux"]
+categories: ["LinuxTips"]
 comments: true
 date: 2015-10-13T10:43:51Z
 title: Linux Tips 3

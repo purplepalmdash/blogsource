@@ -3,7 +3,7 @@ title = "KubesprayQuickOffline"
 date = "2019-05-05T10:11:40+08:00"
 description = "KubesprayQuickOffline"
 keywords = ["Linux"]
-categories = ["Linux"]
+categories = ["Technology"]
 +++
 ### OS prepare
 Download the `tar.gz` file from github, untar, then modify the Vagrantfile

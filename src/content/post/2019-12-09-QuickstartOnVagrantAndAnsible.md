@@ -3,7 +3,7 @@ title = "QuickStartOfVagrantAndAnsible"
 date = "2019-12-09T09:30:51+08:00"
 description = "QuickStartOfVagrantAndAnsible"
 keywords = ["Linux"]
-categories = ["Linux"]
+categories = ["Technology"]
 +++
 ### Setup Environment
 Using `vagrant box list` for getting all of the boxes, then initiate the environment via(take `rhel74` box for example):     

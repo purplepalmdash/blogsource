@@ -1,5 +1,5 @@
 ---
-categories: ["Linux"]
+categories: ["Technology"]
 comments: true
 date: 2015-12-04T10:51:10Z
 title: On Bluetooth PAN

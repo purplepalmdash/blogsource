@@ -1,5 +1,5 @@
 ---
-
+categories: ["Technology"]
 comments: true
 date: 2013-07-03T00:00:00Z
 title: MarkdownSyntax

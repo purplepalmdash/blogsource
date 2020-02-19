@@ -1,5 +1,5 @@
 ---
-categories: ["Windows"]
+categories: ["Technology"]
 comments: true
 date: 2015-10-29T09:07:18Z
 title: Use AutoHotKey Together With Synergy

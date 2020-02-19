@@ -1,5 +1,5 @@
 ---
-
+categories: ["Technology"]
 comments: true
 date: 2013-10-12T00:00:00Z
 title: How python interact with RaspberryPI GPIO

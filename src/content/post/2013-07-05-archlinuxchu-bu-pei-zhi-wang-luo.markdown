@@ -1,5 +1,5 @@
 ---
-
+categories: ["Technology"]
 comments: true
 date: 2013-07-05T00:00:00Z
 title: ArchLinux初步配置网络

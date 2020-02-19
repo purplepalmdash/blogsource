@@ -1,5 +1,5 @@
 ---
-categories: ["otrs"]
+categories: ["Technology"]
 comments: true
 date: 2014-06-29T00:00:00Z
 title: OTRS on Ubuntu

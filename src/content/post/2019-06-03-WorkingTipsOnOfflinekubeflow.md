@@ -3,7 +3,7 @@ title = "WorkingTipsOnOfflineKubeFlow"
 date = "2019-06-03T09:31:52+08:00"
 description = "WorkingTipsOnOfflineKubeFlow"
 keywords = ["Linux"]
-categories = ["Linux"]
+categories = ["Technology"]
 +++
 ### 0. 目的
 设置离线环境下的kubeflow环境，用于给AI组提供开发环境，优化并整合其开发流程。    

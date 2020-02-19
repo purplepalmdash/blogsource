@@ -1,5 +1,5 @@
 ---
-categories: ["RaspberryPI"]
+categories: ["Technology"]
 comments: true
 date: 2014-03-17T00:00:00Z
 title: Deploy Weather APP on RaspberryPI

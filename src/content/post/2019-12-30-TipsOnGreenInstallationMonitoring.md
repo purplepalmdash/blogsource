@@ -3,7 +3,7 @@ title = "TipsOnGreenInstallationMonitoring"
 date = "2019-12-30T15:25:54+08:00"
 description = "TipsOnGreenInstallationMonitoring"
 keywords = ["Linux"]
-categories = ["Linux"]
+categories = ["Technology"]
 +++
 ### AIM
 monitoring using green installation(prometheus and netdata)

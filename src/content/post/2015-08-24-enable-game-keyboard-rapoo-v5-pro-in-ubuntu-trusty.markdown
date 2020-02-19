@@ -1,5 +1,5 @@
 ---
-categories: ["Linux"]
+categories: ["Technology"]
 comments: true
 date: 2015-08-24T12:13:42Z
 title: Enable Game-KeyBoard Rapoo V5 Pro In Ubuntu Trusty

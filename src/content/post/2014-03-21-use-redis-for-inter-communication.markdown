@@ -1,5 +1,5 @@
 ---
-categories: ["Redis"]
+categories: ["Technology"]
 comments: true
 date: 2014-03-21T00:00:00Z
 title: Use Redis For Inter-Communication

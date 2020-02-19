@@ -3,7 +3,7 @@ title = "TipsOnKubespray28Upgrading"
 date = "2018-12-11T09:08:00+08:00"
 description = "TipsOnKubespray28Upgrading"
 keywords = ["Linux"]
-categories = ["Linux"]
+categories = ["Technology"]
 +++
 ### 初始化配置
 按照AI组的设想，基于Ubuntu16.04来做，后续其实也可以基于Ubuntu16.05来做，应该是一样的。    

@@ -1,5 +1,5 @@
 ---
-categories: ["linux"]
+categories: ["Technology"]
 comments: true
 date: 2014-11-17T00:00:00Z
 title: Forward x11 via ssh

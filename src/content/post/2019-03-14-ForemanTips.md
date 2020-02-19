@@ -3,7 +3,7 @@ title = "ForemanTips"
 date = "2019-03-14T15:18:03+08:00"
 description = "ForemanTips"
 keywords = ["Linux"]
-categories = ["Linux"]
+categories = ["Technology"]
 +++
 ### System
 Install Ubuntu 18.04, 4 Core/ 4G memory, 50 G disk.    

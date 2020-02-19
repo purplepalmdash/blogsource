@@ -1,5 +1,5 @@
 ---
-categories: ["linux"]
+categories: ["Technology"]
 comments: true
 date: 2014-10-18T00:00:00Z
 title: Ethernet Wakeup

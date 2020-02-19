@@ -1,5 +1,5 @@
 ---
-categories: ["Linux"]
+categories: ["Technology"]
 comments: true
 date: 2015-01-23T00:00:00Z
 title: Install OpenFire For LAN Chat

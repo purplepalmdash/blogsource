@@ -1,5 +1,5 @@
 ---
-categories: ["Virtualization"]
+categories: ["Technology"]
 comments: true
 date: 2015-08-04T15:57:47Z
 title: Tips On Using SpaceWalker For Deploying CentOS7

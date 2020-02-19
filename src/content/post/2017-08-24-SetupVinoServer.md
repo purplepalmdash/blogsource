@@ -3,7 +3,7 @@ title = "SetupVinoServer"
 date = "2017-08-24T15:42:39+08:00"
 description = "setup vino server in CentOS7"
 keywords = ["Linux"]
-categories = ["Linux"]
+categories = ["Technology"]
 +++
 ### Background
 For enable rdp server, but I installed vino server for vncserver, faint.   

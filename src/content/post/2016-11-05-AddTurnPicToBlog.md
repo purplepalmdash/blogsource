@@ -1,5 +1,5 @@
 +++
-categories = ["Linux"]
+categories = ["Technology"]
 date = "2016-11-05T18:28:54+08:00"
 description = "Add turn to picture for blogging"
 keywords = ["Linux"]

@@ -3,7 +3,7 @@ title = "ConkySetupForArchLinux"
 date = "2018-10-31T15:57:32+08:00"
 description = "ConkySetupForArchLinux"
 keywords = ["Linux"]
-categories = ["Linux"]
+categories = ["Technology"]
 +++
 ### Font Preparation
 Download `Conky Icons by Carelli.ttf` from following url:    

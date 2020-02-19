@@ -1,5 +1,5 @@
 ---
-categories: ["Dockerization"]
+categories: ["Technology"]
 comments: true
 date: 2016-01-18T10:01:17Z
 title: Tips On Setup Mesos Cluster

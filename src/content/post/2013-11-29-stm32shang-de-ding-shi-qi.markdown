@@ -1,5 +1,5 @@
 ---
-categories: ["embedded", "stm32"]
+categories: ["Technology"]
 comments: true
 date: 2013-11-29T00:00:00Z
 title: STM32上的定时器

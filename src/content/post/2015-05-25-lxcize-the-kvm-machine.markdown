@@ -1,5 +1,5 @@
 ---
-categories: ["virtualization"]
+categories: ["Technology"]
 comments: true
 date: 2015-05-25T11:46:28Z
 title: LXCize the KVM machine

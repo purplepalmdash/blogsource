@@ -1,5 +1,5 @@
 +++
-categories = ["Life"]
+categories = ["Technology"]
 date = "2017-01-03T10:19:04+08:00"
 description = "All of the reading books in year 2017"
 keywords = ["Life"]

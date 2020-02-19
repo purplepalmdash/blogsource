@@ -1,5 +1,5 @@
 ---
-categories: ["Virtualization"]
+categories: ["Technology"]
 comments: true
 date: 2015-04-13T00:00:00Z
 title: 安装Icehouse@Ubuntu14.04(1)

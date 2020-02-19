@@ -4,6 +4,7 @@ languageCode = "en-us"
 #disqusShortname = "dashsagittariussglory" # Optional, enable Disqus integration
 MetaDataFormat = "toml"
 theme = "hyde-a"
+#theme = "contrast-hugo"
 paginate = 5
 
 [author]
@@ -47,8 +48,8 @@ paginate = 5
 
     # Text for the top menu link, which goes the root URL for the site.
     # Default (if omitted) is "Blog".
-    home = "Blog"
-    myhome = "myblog1"
+    #home = "Blog"
+    #myhome = "myblog1"
 
     # Metadata used to drive integrations.
     #googleAuthorship = "106572959364703833986"
@@ -79,27 +80,37 @@ paginate = 5
 # Menus added here, result in side bar
 #######################################
 
-[[menu.main]]
-    name = "First Page"
-    url = "/"
-    weight = 1
+#[[menu.main]]
+#    name = "First Page"
+#    url = "/"
+#    weight = 1
 
 [[menu.main]]
     name = "All Posts"
     url = "/post/"
+    weight = 1
+
+[[menu.main]]
+    name = "Technology"
+    url = "/categories/technology/"
     weight = 2
 
 [[menu.main]]
-    name = "Linux"
-    url = "/categories/linux/"
+    name = "Life"
+    url = "/categories/life/"
     weight = 3
 
 [[menu.main]]
-    name = "Embedded System"
-    url = "/categories/embedded/"
-    weight = 4 
+    name = "LinuxTips"
+    url = "/categories/linuxtips/"
+    weight = 4
 
-[[menu.main]]
-    name = "Virtualization"
-    url = "/categories/virtualization"
-    weight = 5 
+#[[menu.main]]
+#    name = "Embedded System"
+#    url = "/categories/embedded/"
+#    weight = 4 
+#
+#[[menu.main]]
+#    name = "Virtualization"
+#    url = "/categories/virtualization"
+#    weight = 5 

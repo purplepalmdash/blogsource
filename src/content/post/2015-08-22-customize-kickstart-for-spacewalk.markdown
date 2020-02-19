@@ -1,5 +1,5 @@
 ---
-categories: ["null"]
+categories: ["Technology"]
 comments: true
 date: 2015-08-22T18:53:09Z
 title: Customize Kickstart For SpaceWalk

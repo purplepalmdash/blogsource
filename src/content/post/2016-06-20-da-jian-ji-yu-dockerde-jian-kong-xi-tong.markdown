@@ -1,5 +1,5 @@
 ---
-categories: ["Linux"]
+categories: ["Technology"]
 comments: true
 date: 2016-06-20T09:39:55Z
 title: 搭建基于docker的监控系统

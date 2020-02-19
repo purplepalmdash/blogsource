@@ -1,5 +1,5 @@
 ---
-categories: ["vim"]
+categories: ["Technology"]
 comments: true
 date: 2014-07-12T00:00:00Z
 title: Hightlight Jade File

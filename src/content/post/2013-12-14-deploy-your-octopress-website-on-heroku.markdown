@@ -1,5 +1,5 @@
 ---
-categories: ["Web"]
+categories: ["Technology"]
 comments: true
 date: 2013-12-14T00:00:00Z
 title: Deploy your octopress website on heroku

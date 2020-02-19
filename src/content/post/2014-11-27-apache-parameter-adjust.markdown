@@ -1,5 +1,5 @@
 ---
-categories: ["web"]
+categories: ["Technology"]
 comments: true
 date: 2014-11-27T00:00:00Z
 title: Apache Parameter Adjust

@@ -1,5 +1,5 @@
 ---
-categories: ["Ccategories: C&CC"]
+categories: ["Technology"]
 comments: true
 date: 2014-04-09T08:44:23Z
 title: Command and Conquer 2

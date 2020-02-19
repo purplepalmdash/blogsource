@@ -1,5 +1,5 @@
 +++
-categories = ["Linux"]
+categories = ["Technology"]
 date = "2016-09-08T12:00:39+08:00"
 description = "On youtube download"
 keywords = ["Linux"]

@@ -1,5 +1,5 @@
 ---
-categories: ["Arduino", "RaspberryPI", "Linux"]
+categories: ["Technology"]
 comments: true
 date: 2013-12-29T00:00:00Z
 title: SPI连接raspberryPI和Arduino

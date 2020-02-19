@@ -3,7 +3,7 @@ title = "WorkingTipsOnKismatic"
 date = "2018-01-07T14:50:01+08:00"
 description = "WorkingTipsOnKismatic"
 keywords = ["k8s"]
-categories = ["DevOPS"]
+categories = ["Technology"]
 +++
 ### 网络规划
 为了模拟kismatic完全离线安装，我们创建一个完全隔离的网络如下:    

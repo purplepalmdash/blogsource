@@ -1,5 +1,5 @@
 ---
-categories: ["null"]
+categories: ["Technology"]
 comments: true
 date: 2016-03-29T11:31:42Z
 title: Use Debmirror For Setup Local Repository

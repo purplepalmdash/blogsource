@@ -3,7 +3,7 @@ title = "MakeCoreOSInstallLiveCD"
 date = "2019-08-22T11:07:02+08:00"
 description = "MakeCoreOSInstallLiveCD"
 keywords = ["Linux"]
-categories = ["Linux"]
+categories = ["Technology"]
 +++
 ### AIM
 livecd->coreos_install in livecd->Reboot to coreos

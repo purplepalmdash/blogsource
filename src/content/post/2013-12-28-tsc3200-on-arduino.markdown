@@ -1,5 +1,5 @@
 ---
-categories: ["Arduino"]
+categories: ["Technology"]
 comments: true
 date: 2013-12-28T00:00:00Z
 title: TSC3200 on Arduino

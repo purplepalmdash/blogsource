@@ -1,5 +1,5 @@
 ---
-categories: ["Virtualization"]
+categories: ["Technology"]
 comments: true
 date: 2016-03-24T17:28:55Z
 title: XenServer6.2切换管理端口

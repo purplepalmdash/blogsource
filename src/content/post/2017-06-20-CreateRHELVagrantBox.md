@@ -1,5 +1,5 @@
 +++
-categories = ["Linux"]
+categories = ["Technology"]
 keywords = ["Linux"]
 date = "2017-06-20T14:41:41+08:00"
 description = "Tips on create vagrant box on RHEL"

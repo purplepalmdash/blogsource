@@ -1,5 +1,5 @@
 ---
-categories: ["Linux"]
+categories: ["Technology"]
 comments: true
 date: 2015-11-18T16:59:00Z
 title: Tips On ArchLinux On SSD For SurfacePro

@@ -1,5 +1,5 @@
 ---
-categories: ["Linux"]
+categories: ["Technology"]
 comments: true
 date: 2013-11-19T00:00:00Z
 title: Using autossh for keep ssh tunnel

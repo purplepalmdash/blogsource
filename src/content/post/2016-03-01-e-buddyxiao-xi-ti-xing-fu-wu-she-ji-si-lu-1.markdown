@@ -1,5 +1,5 @@
 ---
-categories: ["embedded"]
+categories: ["Technology"]
 comments: true
 date: 2016-03-01T19:47:55Z
 title: e-buddy消息提醒服务设计思路(1)

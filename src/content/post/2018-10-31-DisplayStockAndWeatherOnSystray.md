@@ -3,7 +3,7 @@ title = "DisplayStockAndWeatherOnSystray"
 date = "2018-10-31T08:30:55+08:00"
 description = "DisplayStockAndWeatherOnSystray"
 keywords = ["Linux"]
-categories = ["Linux"]
+categories = ["Technology"]
 +++
 ### Weather
 We need lain for displaying weather widget on systray, so first we clone the

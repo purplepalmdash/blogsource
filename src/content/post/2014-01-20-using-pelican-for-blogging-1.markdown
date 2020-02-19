@@ -1,5 +1,5 @@
 ---
-categories: ["Pelican"]
+categories: ["Technology"]
 comments: true
 date: 2014-01-20T00:00:00Z
 title: Using pelican for blogging(1)

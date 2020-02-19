@@ -1,5 +1,5 @@
 ---
-categories: ["null"]
+categories: ["Technology"]
 comments: true
 date: 2013-11-19T00:00:00Z
 title: Things to be Done in Nov19

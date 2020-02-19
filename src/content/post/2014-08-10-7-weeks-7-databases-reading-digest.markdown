@@ -1,5 +1,5 @@
 ---
-categories: ["database"]
+categories: ["Technology"]
 comments: true
 date: 2014-08-10T00:00:00Z
 title: 7 Weeks 7 Databases Reading Digest

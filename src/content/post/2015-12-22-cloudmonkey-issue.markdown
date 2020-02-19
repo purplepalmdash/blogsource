@@ -1,5 +1,5 @@
 ---
-categories: ["virtualization"]
+categories: ["Technology"]
 comments: true
 date: 2015-12-22T21:18:21Z
 title: CloudMonkey Issue

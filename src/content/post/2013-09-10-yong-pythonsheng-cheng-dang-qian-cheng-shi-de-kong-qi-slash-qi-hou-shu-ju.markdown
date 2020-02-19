@@ -1,5 +1,5 @@
 ---
-
+categories: ["Technology"]
 comments: true
 date: 2013-09-10T00:00:00Z
 title: 用Python生成当前城市的空气/气候数据

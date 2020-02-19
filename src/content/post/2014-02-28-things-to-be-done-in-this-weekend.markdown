@@ -1,5 +1,5 @@
 ---
-categories: ["Things"]
+categories: ["Technology"]
 comments: true
 date: 2014-02-28T00:00:00Z
 title: Things to be done in this weekend

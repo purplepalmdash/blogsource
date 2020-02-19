@@ -1,5 +1,5 @@
 ---
-categories: ["Linux"]
+categories: ["Technology"]
 comments: true
 date: 2014-11-21T00:00:00Z
 title: GitLab Installation and Configuration

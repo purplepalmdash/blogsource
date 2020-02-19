@@ -1,5 +1,5 @@
 ---
-categories: ["linux"]
+categories: ["Technology"]
 comments: true
 date: 2016-06-18T13:43:48Z
 title: 搭建无盘CentOS桌面环境

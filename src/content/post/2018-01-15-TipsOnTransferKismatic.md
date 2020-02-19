@@ -3,7 +3,7 @@ title = "TipsOnKismaticTransfer"
 date = "2018-01-15T11:46:05+08:00"
 description = "TipsOnKismaticTransfer"
 keywords = ["Linux"]
-categories = ["Linux"]
+categories = ["Technology"]
 +++
 主要记录生产环境的迁移，后期可以作为实际部署和安装时的文档参考。     
 

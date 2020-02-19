@@ -1,5 +1,5 @@
 ---
-categories: ["TroubleShooting"]
+categories: ["Technology"]
 comments: true
 date: 2014-10-27T00:00:00Z
 title: System Trouble Shooting

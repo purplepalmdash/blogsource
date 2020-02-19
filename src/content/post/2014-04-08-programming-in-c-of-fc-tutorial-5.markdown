@@ -1,5 +1,5 @@
 ---
-categories: ["FC"]
+categories: ["Technology"]
 comments: true
 date: 2014-04-08T16:17:22Z
 title: Programming in C of FC tutorial 5

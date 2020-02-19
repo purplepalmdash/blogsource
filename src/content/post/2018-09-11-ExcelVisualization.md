@@ -3,7 +3,7 @@ title = "Excel简单可视化"
 date = "2018-09-11T11:04:29+08:00"
 description = "ExcelVisualization"
 keywords = ["Linux"]
-categories = ["Linux"]
+categories = ["Technology"]
 +++
 公司人事变更，当然大家会八卦一下各个部门人数分布，接下来就是Excel可视化时间。    
 

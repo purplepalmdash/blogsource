@@ -3,7 +3,7 @@ title = "内网搭建proxmox"
 date = "2018-08-20T16:42:20+08:00"
 description = "内网搭建proxmox"
 keywords = ["Linux"]
-categories = ["Linux"]
+categories = ["Technology"]
 +++
 ### 环境准备
 Iso使用官方下载的`proxmox-ve_5.2-1.iso`, CPU/内存配置为16核64G。    

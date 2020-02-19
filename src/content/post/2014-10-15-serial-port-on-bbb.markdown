@@ -1,5 +1,5 @@
 ---
-categories: ["embedded"]
+categories: ["Technology"]
 comments: true
 date: 2014-10-15T00:00:00Z
 title: Serial Port on BBB

@@ -3,7 +3,7 @@ title = "VmwareBasedKubeflow"
 date = "2019-06-20T14:34:06+08:00"
 description = "VmwareBasedKubeflow"
 keywords = ["Linux"]
-categories = ["Linux"]
+categories = ["Technology"]
 +++
 ### Vmware
 Download and install Vmware workstation pro on Ubuntu:    

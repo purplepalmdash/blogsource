@@ -1,5 +1,5 @@
 ---
-categories: ["Virtualization"]
+categories: ["Technology"]
 comments: true
 date: 2015-08-20T11:58:14Z
 title: Kickstarting Ubuntu In SpaceWalk

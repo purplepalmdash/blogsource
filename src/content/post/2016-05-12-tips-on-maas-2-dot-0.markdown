@@ -1,5 +1,5 @@
 ---
-categories: ["linux"]
+categories: ["Technology"]
 comments: true
 date: 2016-05-12T14:10:48Z
 title: Tips On Maas 2.0

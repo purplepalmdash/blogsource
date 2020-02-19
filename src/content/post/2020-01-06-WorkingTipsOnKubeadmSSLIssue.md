@@ -3,7 +3,7 @@ title = "WorkingTipsOnKubeadmIssue"
 date = "2020-01-06T00:03:39+08:00"
 description = "WorkingTipsOnKubeadmIssue"
 keywords = ["Linux"]
-categories = ["Linux"]
+categories = ["Technology"]
 +++
 ### 环境
 IP地址: 10.0.2.15    

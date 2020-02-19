@@ -1,5 +1,5 @@
 ---
-categories: ["embedded"]
+categories: ["Technology"]
 comments: true
 date: 2014-11-02T00:00:00Z
 title: 'Use TFTP/NFS Testing  BBB Kernel '

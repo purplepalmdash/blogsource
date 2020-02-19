@@ -3,7 +3,7 @@ title = "TriggerCICDOnGitlabCI"
 date = "2018-06-20T11:30:25+08:00"
 description = "TriggerCICDOnGitlabCI"
 keywords = ["Linux"]
-categories = ["Linux"]
+categories = ["Technology"]
 +++
 Projects list:    
 

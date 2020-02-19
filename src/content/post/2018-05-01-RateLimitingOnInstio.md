@@ -3,7 +3,7 @@ title = "RateLimitingOnInstio"
 date = "2018-05-01T22:02:02+08:00"
 description = "RateLimitingOnInstio"
 keywords = ["Linux"]
-categories = ["Linux"]
+categories = ["Technology"]
 +++
 ### Service Example
 The yaml file is directly taken from the official example of `helloworld`, but

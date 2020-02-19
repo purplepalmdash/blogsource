@@ -3,7 +3,7 @@ title = "WorkingTipsOnArm64centos7"
 date = "2019-07-05T14:57:57+08:00"
 description = "WorkingTipsOnArm64centos7"
 keywords = ["Linux"]
-categories = ["Linux"]
+categories = ["Technology"]
 +++
 ### 仓库配置
 使用epel-7及centos7的源为默认源:    

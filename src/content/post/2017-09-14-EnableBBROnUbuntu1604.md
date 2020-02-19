@@ -3,7 +3,7 @@ title = "EnableBBROnUbuntu1604"
 date = "2017-09-14T17:15:49+08:00"
 description = "Enable BBR on Ubuntu16.04"
 keywords = ["Linux"]
-categories = ["Linux"]
+categories = ["Technology"]
 +++
 The kernel should be newer than 4.9, then you could enable BBR algorithm.    
 

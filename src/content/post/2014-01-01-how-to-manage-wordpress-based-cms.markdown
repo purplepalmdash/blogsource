@@ -1,5 +1,5 @@
 ---
-categories: ["null"]
+categories: ["Technology"]
 comments: true
 date: 2014-01-01T00:00:00Z
 title: How to manage wordpress based CMS

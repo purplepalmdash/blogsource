@@ -1,5 +1,5 @@
 ---
-categories: ["embedded"]
+categories: ["Technology"]
 comments: true
 date: 2016-03-03T10:15:43Z
 title: 把玩ebuddy(2)

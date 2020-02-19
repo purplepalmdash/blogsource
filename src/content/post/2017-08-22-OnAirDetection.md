@@ -3,7 +3,7 @@ title = "OnAirDetection"
 date = "2017-08-22T14:32:51+08:00"
 description = "OnAirDetection"
 keywords = ["Linux"]
-categories = ["Linux"]
+categories = ["Technology"]
 +++
 ### Direct Read From Serial Port
 Arduino mega2560 Code:    

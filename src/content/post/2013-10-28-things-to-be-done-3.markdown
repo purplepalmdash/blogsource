@@ -1,5 +1,5 @@
 ---
-
+categories: ["Technology"]
 comments: true
 date: 2013-10-28T00:00:00Z
 title: Things To be done(3)

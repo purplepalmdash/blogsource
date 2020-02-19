@@ -3,7 +3,7 @@ title = "AIUbuntuISO"
 date = "2018-07-18T08:40:41+08:00"
 description = "AIUbuntuISO"
 keywords = ["Linux"]
-categories = ["Linux"]
+categories = ["Technology"]
 +++
 ### 目的
 AI组定制化ISO编译环境构建。

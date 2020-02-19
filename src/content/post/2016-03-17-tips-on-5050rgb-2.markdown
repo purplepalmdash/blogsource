@@ -1,5 +1,5 @@
 ---
-categories: ["embedded"]
+categories: ["Technology"]
 comments: true
 date: 2016-03-17T13:09:12Z
 title: Tips on 5050RGB(2)

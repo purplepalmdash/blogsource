@@ -1,5 +1,5 @@
 ---
-categories: ["Arduino"]
+categories: ["Technology"]
 comments: true
 date: 2013-11-18T00:00:00Z
 title: Using HMC5883L to control Servo

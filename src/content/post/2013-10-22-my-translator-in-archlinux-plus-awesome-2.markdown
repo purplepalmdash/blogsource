@@ -1,5 +1,5 @@
 ---
-
+categories: ["Technology"]
 comments: true
 date: 2013-10-22T00:00:00Z
 title: My Translator in ArchLinux+Awesome(2)

@@ -3,7 +3,7 @@ title = "WorkingTipsOnGravitee"
 date = "2019-11-13T09:44:20+08:00"
 description = "WorkingTipsOnGravitee"
 keywords = ["Linux"]
-categories = ["Linux"]
+categories = ["Technology"]
 +++
 ### AIM
 Deploy gravitee on Kubernetes cluster, and use it as cluster's API gateway.    

@@ -1,5 +1,5 @@
 ---
-categories: ["Virtualization"]
+categories: ["Technology"]
 comments: true
 date: 2015-06-18T20:56:30Z
 title: Use VirtualEnv For Downloading PIP Packages

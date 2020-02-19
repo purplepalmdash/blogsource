@@ -3,7 +3,7 @@ title = "WorkingTipsOnKubespray281"
 date = "2018-12-31T11:20:06+08:00"
 description = "Kubespray281"
 keywords = ["Linux"]
-categories = ["Linux"]
+categories = ["Technology"]
 +++
 ### Changes
 #### 1. download items

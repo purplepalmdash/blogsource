@@ -1,5 +1,5 @@
 ---
-categories: ["Virtualizaiton"]
+categories: ["Technology"]
 comments: true
 date: 2015-08-04T09:18:15Z
 title: Install SpaceWalk 2.2 Steps

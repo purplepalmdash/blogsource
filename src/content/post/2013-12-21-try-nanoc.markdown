@@ -1,5 +1,5 @@
 ---
-categories: ["Linux", "StaticWebsite"]
+categories: ["Technology"]
 comments: true
 date: 2013-12-21T00:00:00Z
 title: Try nanoc

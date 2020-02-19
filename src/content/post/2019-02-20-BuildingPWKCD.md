@@ -3,7 +3,7 @@ title = "BuildingPWKCD"
 date = "2019-02-20T16:14:53+08:00"
 description = "BuildingPWKCD"
 keywords = ["Linux"]
-categories = ["Linux"]
+categories = ["Technology"]
 +++
 ### MakeISO Server
 Configure via:    

@@ -1,5 +1,5 @@
 ---
-categories: ["pelican"]
+categories: ["Technology"]
 comments: true
 date: 2014-01-23T00:00:00Z
 title: Create a new user for updating qzone

@@ -3,7 +3,7 @@ title = "FedoraPortus"
 date = "2018-06-25T10:45:49+08:00"
 description = "FedoraPortus"
 keywords = ["Linux"]
-categories = ["Linux"]
+categories = ["Technology"]
 +++
 ### Steps
 Install fedora 28, minimum server.    

@@ -1,5 +1,5 @@
 +++
-categories = ["Virtualization"]
+categories = ["Technology"]
 date = "2016-11-07T14:59:09+08:00"
 description = "Turn Qcow2 into Vagrant box"
 keywords = ["Virtualization"]

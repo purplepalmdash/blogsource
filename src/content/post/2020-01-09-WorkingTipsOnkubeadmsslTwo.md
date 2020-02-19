@@ -3,7 +3,7 @@ title = "WorkingTipsOnkubeadmsslTwo"
 date = "2020-01-09T11:20:08+08:00"
 description = "WorkingTipsOnkubeadmsslTwo"
 keywords = ["Linux"]
-categories = ["Linux"]
+categories = ["Technology"]
 +++
 ### 补充
 重启后，在更新过签名的节点上，验证是否可以获取所有的节点, 并列举出当前可用的更新过后的token:    

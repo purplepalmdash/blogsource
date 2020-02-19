@@ -3,7 +3,7 @@ title = "OnCustomizationOfUbuntuISO"
 date = "2018-05-22T09:10:27+08:00"
 description = "OnCustomizationOfUbuntuISO"
 keywords = ["Linux"]
-categories = ["Linux"]
+categories = ["Technology"]
 +++
 ### Install cubic
 Install cubic via:    

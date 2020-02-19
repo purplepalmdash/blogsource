@@ -1,5 +1,5 @@
 ---
-categories: ["puppet"]
+categories: ["Technology"]
 comments: true
 date: 2014-08-13T00:00:00Z
 title: Puppet on ArchLinux(2)

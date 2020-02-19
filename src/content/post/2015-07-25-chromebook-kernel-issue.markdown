@@ -1,5 +1,5 @@
 ---
-categories: ["Linux"]
+categories: ["Technology"]
 comments: true
 date: 2015-07-25T11:34:48Z
 title: Chromebook Kernel Issue

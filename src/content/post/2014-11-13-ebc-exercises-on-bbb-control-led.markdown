@@ -1,5 +1,5 @@
 ---
-categories: ["embedded"]
+categories: ["Technology"]
 comments: true
 date: 2014-11-13T00:00:00Z
 title: EBC Exercises on BBB - Control LED

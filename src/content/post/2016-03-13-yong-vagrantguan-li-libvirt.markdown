@@ -1,5 +1,5 @@
 ---
-categories: ["virtualization"]
+categories: ["Technology"]
 comments: true
 date: 2016-03-13T16:07:59Z
 title: 用Vagrant管理libvirt

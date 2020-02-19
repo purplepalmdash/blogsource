@@ -3,7 +3,7 @@ title = "WorkingTipsOnPlayWithDockerUbuntu1804"
 date = "2018-05-24T15:41:00+08:00"
 description = "WorkingTipsOnPlayWithDockerUbuntu1804"
 keywords = ["Linux"]
-categories = ["Linux"]
+categories = ["Technology"]
 +++
 ### Basic Environment
 Ubuntu 18.04, minimum installation.    

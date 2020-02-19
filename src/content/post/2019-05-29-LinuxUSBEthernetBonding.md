@@ -3,7 +3,7 @@ title = "LinuxUSBEthernetBonding"
 date = "2019-05-29T14:30:26+08:00"
 description = "LinuxUSBEthernetBonding"
 keywords = ["Linux"]
-categories = ["Linux"]
+categories = ["Technology"]
 +++
 ### Reason
 Previously, 100M->1000M,   

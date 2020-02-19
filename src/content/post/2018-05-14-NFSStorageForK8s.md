@@ -3,7 +3,7 @@ title = "NFSStorageForK8s"
 date = "2018-05-14T21:31:41+08:00"
 description = "NFSStorageForK8s"
 keywords = ["Linux"]
-categories = ["Linux"]
+categories = ["Technology"]
 +++
 ### Code
 Code is git from following url:    

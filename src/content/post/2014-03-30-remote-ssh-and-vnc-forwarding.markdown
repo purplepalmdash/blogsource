@@ -1,5 +1,5 @@
 ---
-categories: ["SSH"]
+categories: ["Technology"]
 comments: true
 date: 2014-03-30T00:00:00Z
 title: Remote SSH and VNC Forwarding

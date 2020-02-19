@@ -1,5 +1,5 @@
 ---
-categories: ["Linux", "sound"]
+categories: ["Technology"]
 comments: true
 date: 2013-12-07T00:00:00Z
 title: Linux Sound

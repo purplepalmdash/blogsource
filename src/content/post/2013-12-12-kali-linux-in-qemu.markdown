@@ -1,5 +1,5 @@
 ---
-categories: ["Linux", "Qemu"]
+categories: ["Technology"]
 comments: true
 date: 2013-12-12T00:00:00Z
 title: KALI Linux in Qemu
