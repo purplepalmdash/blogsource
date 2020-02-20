@@ -2,6 +2,6 @@
 title = ""
 date = "{{ .Date }}"
 description = ""
-keywords = ["Linux"]
-categories = ["Linux"]
+keywords = ["Technology"]
+categories = ["Technology"]
 +++
