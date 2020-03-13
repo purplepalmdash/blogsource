@@ -27,6 +27,7 @@ You have to git clone this repository and run setup.sh under the directory. Afte
 ```
 root@node:/opt/redash# ls
 docker-compose.yml  env  postgres-data
+root@node:/opt/redash# docker-compose run --rm server create_db
 root@node:/opt/redash# docker-compose up -d
 Creating network "redash_default" with the default driver
 Creating redash_redis_1    ... done
@@ -50,3 +51,113 @@ CONTAINER ID        IMAGE                        COMMAND                  CREATE
 c8efb3ff7437        postgres:9.6-alpine          "docker-entrypoint.s…"   7 minutes ago       Up 7 minutes        5432/tcp                      redash_postgres_1
 a78dd1b1727f        redis:5.0-alpine             "docker-entrypoint.s…"   7 minutes ago       Up 7 minutes        6379/tcp                      redash_redis_1
 ```
+Now visit the vm's 80 port you will see:    
+
+![/images/2020_03_13_22_52_24_544x553.jpg](/images/2020_03_13_22_52_24_544x553.jpg)
+
+After login you will get the following page:     
+
+![/images/2020_03_13_22_55_16_827x528.jpg](/images/2020_03_13_22_55_16_827x528.jpg)
+
+Until now your redash environment has been bootstraped.    
+
+### Configure data source
+Click your username and select `Data Sources`:    
+
+![/images/2020_03_13_22_55_46_255x410.jpg](/images/2020_03_13_22_55_46_255x410.jpg)
+
+Click `New Data Source` button for adding a new data source:    
+
+![/images/2020_03_13_22_58_02_812x505.jpg](/images/2020_03_13_22_58_02_812x505.jpg)
+
+Select sqlite and you will be leading to following window:     
+
+![/images/2020_03_13_23_00_27_509x445.jpg](/images/2020_03_13_23_00_27_509x445.jpg)
+
+Fill in some infos for finishing:    
+
+![/images/2020_03_13_23_00_53_405x372.jpg](/images/2020_03_13_23_00_53_405x372.jpg)
+
+### Get Sqlite db
+We take following page for refrence:     
+
+[https://discuss.redash.io/t/example-data-source-for-the-choropleth-maps/3696](https://discuss.redash.io/t/example-data-source-for-the-choropleth-maps/3696)    
+
+First fetch the example sqlite db using following command:    
+
+![/images/2020_03_13_23_03_22_565x368.jpg](/images/2020_03_13_23_03_22_565x368.jpg)
+
+```
+# wget https://dbhub.io/x/download/justinclift/DB4S%20daily%20users%20by%20country.sqlite?commit=28a554c2795170d5739b7a41df9baa2ad13b985b325d238bd869a14d1148f9ea
+# mv DB4S\ daily\ users\ by\ country.sqlite first.db
+```
+Copy this db into following docker instance:    
+
+```
+# docker cp first.db redash_scheduled_worker_1:/app
+# docker cp first.db redash_server_1:/app
+# docker cp first.db redash_adhoc_worker_1:/app
+# docker cp first.db redash_scheduler_1:/app
+```
+
+Now click `Test Connection` you will get `Succeed`.   
+### Create Query
+Click `Create Query`, you will be leading to following window:     
+
+![/images/2020_03_13_23_10_34_613x380.jpg](/images/2020_03_13_23_10_34_613x380.jpg)
+
+Create a new query:    
+
+```
+SELECT country, users
+FROM query_6
+WHERE date = '2019-04-22'
+```
+
+![/images/2020_03_13_23_13_35_681x275.jpg](/images/2020_03_13_23_13_35_681x275.jpg)
+
+Click `Execute` you will get the table listed as:    
+
+![/images/2020_03_13_23_13_59_1157x317.jpg](/images/2020_03_13_23_13_59_1157x317.jpg)
+
+Click `New Visualization` for editing the visualization:     
+
+![/images/2020_03_13_23_14_47_955x617.jpg](/images/2020_03_13_23_14_47_955x617.jpg)
+
+Edit like following:    
+
+![/images/2020_03_13_23_17_03_634x623.jpg](/images/2020_03_13_23_17_03_634x623.jpg)
+
+The map will be rendered like:    
+
+![/images/2020_03_13_23_17_39_922x579.jpg](/images/2020_03_13_23_17_39_922x579.jpg)
+
+Click `save` for saving the map, then rename this query:     
+
+![/images/2020_03_13_23_18_36_559x261.jpg](/images/2020_03_13_23_18_36_559x261.jpg)
+
+### Dashboard
+Create the first dashboard:     
+
+![/images/2020_03_13_23_19_59_566x223.jpg](/images/2020_03_13_23_19_59_566x223.jpg)
+
+An empty dashboard:     
+
+![/images/2020_03_13_23_20_20_753x511.jpg](/images/2020_03_13_23_20_20_753x511.jpg)
+
+Click `Add Widget`, select our newly created map:    
+
+![/images/2020_03_13_23_20_39_676x251.jpg](/images/2020_03_13_23_20_39_676x251.jpg)
+
+Select the map:     
+
+![/images/2020_03_13_23_21_16_691x280.jpg](/images/2020_03_13_23_21_16_691x280.jpg)
+
+Effect:    
+
+![/images/2020_03_13_23_21_33_921x659.jpg](/images/2020_03_13_23_21_33_921x659.jpg)
+
+### Conclusion
+Now we have created the first visualization in redash easily displayed a
+sqlite database, in next chapter we will take a look at how to display the
+nCov statistics.   
