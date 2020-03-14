@@ -100,8 +100,10 @@ done
 ```
 The tranlation goes one-by-one, until all of the pot files has been translated.   
 
+Notice: the auto translation got many errors, you have to correct them manually.  
+
 ### Building steps
-I use ja for start, cause japanese version has been translated:     
+I use ja language for start, cause japanese version has been translated:     
 
 ```
 # cd UG9
