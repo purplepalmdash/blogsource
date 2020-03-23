@@ -78,7 +78,89 @@ Boot the 1804 vm, mount the cracked partition, copy the origin `systemd` binary 
 # mv /media/crack/lib/systemd/systemd /media/crack/lib/systemd/systemd.back
 # cp the_origin_ubuntu16.04.6_systemd /media/crack/lib/systemd/systemd
 ```
-Reboot the system, this time the system will bootup but hang.   
 
-To be continued
+Remove the activation check service:      
 
+```
+root@arm01:/media/kylin/etc/systemd/system/multi-user.target.wants# pwd
+/media/kylin/etc/systemd/system/multi-user.target.wants
+root@arm01:/media/kylin/etc/systemd/system/multi-user.target.wants# mv kylin-activation-check.service /media/kylin/
+
+```
+
+
+### After Cracked
+Now reboot the system, this time the system will bootup and we use virsh  for checking its ip address:      
+
+![/images/2020_03_23_09_45_35_563x321.jpg](/images/2020_03_23_09_45_35_563x321.jpg)
+
+Get the ip address:     
+
+```
+virsh net-dhcp-leases default |grep e4
+ 2020-03-23 10:45:33  52:54:00:39:d6:e4  ipv4      192.168.122.150/24        fuckgfw-os    -
+```
+Login with our physical machine's username and password:      
+
+```
+ssh fuckgfw@192.168.122.150
+[Unauthorized System] fuckgfw@fuckgfw-os:~$
+
+```
+
+### Tips for usage
+to avoid the mtod, just change the `/etc/motd`, and use the zsh for replacing the bash.    
+
+Enable remote desktop(vncserver), using metacity for replacing the default gpu powered window manager.     
+
+```
+# vim /etc/motd
+ __________________________
+< 麒麟： 我原本是Ubuntu . >
+ --------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+ __    __   __          __    __  .______    __    __  .__   __. .___________. __    __  
+|  |  |  | |  |        |  |  |  | |   _  \  |  |  |  | |  \ |  | |           ||  |  |  | 
+|  |__|  | |  |        |  |  |  | |  |_)  | |  |  |  | |   \|  | `---|  |----`|  |  |  | 
+|   __   | |  |        |  |  |  | |   _  <  |  |  |  | |  . `  |     |  |     |  |  |  | 
+|  |  |  | |  |  __    |  `--'  | |  |_)  | |  `--'  | |  |\   |     |  |     |  `--'  | 
+|__|  |__| |__| (_ )    \______/  |______/   \______/  |__| \__|     |__|      \______/  
+                 |/    
+```
+Also change the contents under this folder:    
+
+![/images/2020_03_23_09_54_12_830x128.jpg](/images/2020_03_23_09_54_12_830x128.jpg)
+
+#### vnc server
+Configure the mate session for vncserver for:     
+
+```
+#!/bin/sh
+
+# Uncomment the following two lines for normal desktop:
+# unset SESSION_MANAGER
+# exec /etc/X11/xinit/xinitrc
+
+[ -x /etc/vnc/xstartup ] && exec /etc/vnc/xstartup
+[ -r $HOME/.Xresources ] && xrdb $HOME/.Xresources
+xsetroot -solid grey
+vncconfig -iconic &
+metacity &
+exec mate-session &
+```
+Configure the configuration via `dconf-editor`, also configure the desktop manager via `mate-tweak`.    
+
+Configure the rdesktop server as:    
+
+```
+# vim ~/.xsession
+metacity&
+mate-session
+# apt-get install -y xrdp
+```
+Thus you could visit the remote desktop via `rdesktop`   
