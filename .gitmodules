@@ -1,9 +1,0 @@
-[submodule "src/themes/hugo-future-imperfect-slim"]
-	path = src/themes/hugo-future-imperfect-slim
-	url = https://github.com/pacollins/hugo-future-imperfect-slim.git
-[submodule "src/themes/themes/cupper-hugo-theme"]
-	path = src/themes/themes/cupper-hugo-theme
-	url = https://github.com/zwbetz-gh/cupper-hugo-theme.git
-[submodule "src/themes/hugo-flex"]
-	path = src/themes/hugo-flex
-	url = https://github.com/de-souza/hugo-flex.git
