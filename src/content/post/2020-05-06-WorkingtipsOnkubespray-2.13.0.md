@@ -179,3 +179,43 @@ Code changes mainly in `1_preinstall` and `3_k8s`:
 Show diffs., TBD
 ```
 After hanges almost everything will be acts as in old versions.   
+
+### kubespray changes
+In new version we have to comment the:     
+
+```
+# roles/kubespray-defaults/tasks/main.yaml
+# do not run gather facts when bootstrap-os in roles
+#- name: set fallback_ips
+#  include_tasks: fallback_ips.yml
+#  when:
+#    - "'bootstrap-os' not in ansible_play_role_names"
+#    - fallback_ips is not defined
+#  tags:
+#    - always
+#
+#- name: set no_proxy
+#  include_tasks: no_proxy.yml
+#  when:
+#    - "'bootstrap-os' not in ansible_play_role_names"
+#    - http_proxy is defined or https_proxy is defined
+#    - no_proxy is not defined
+#  tags:
+#    - always
+
+```
+And also change the `container-engine`'s docker roles, thus we won't restart docker to keep the graphical installation on-going:     
+
+```
+# cat container-engine/docker/handlers/main.yml 
+---
+- name: restart docker
+  command: echo "HelloWorld"
+
+#  command: /bin/true
+#  notify:
+#    - Docker | reload systemd
+#    - Docker | reload docker.socket
+#    - Docker | reload docker
+#    - Docker | wait for docker
+```
