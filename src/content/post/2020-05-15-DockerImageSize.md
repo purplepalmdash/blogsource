@@ -6,6 +6,24 @@ keywords = ["Technology"]
 title= "DockerImageSize"
 
 +++
+### 增量工具安装
+安装步骤:    
+
+```
+# pip install d-save-last command
+# docker pull brthornbury/dind-save:18.09
+```
+Docker需要进行相应的更改以确保增量可行.    
+开启 docker的 `--experimental=true` 选项(ArchLinux为例,不同操作系统版本可能不一样):    
+
+```
+#  /etc vim systemd/system/multi-user.target.wants/docker.service 
+.....
+ExecStart=/usr/bin/dockerd -H fd:// --experimental=true
+....
+#  /etc systemctl daemon-reload
+#  /etc systemctl restart docker
+```
 ### 原生build/save
 采用原生的build/save得到的结果:    
 
@@ -21,16 +39,6 @@ Dockerfile中添加 `RUN touch /tmp/requirements/abc` 一行，这样会触发�
 
 ![/images/2020_05_15_11_31_50_416x363.jpg](/images/2020_05_15_11_31_50_416x363.jpg)
 
-开启 docker的 `--experimental=true` 选项(ArchLinux为例,不同操作系统版本可能不一样):    
-
-```
-#  /etc vim systemd/system/multi-user.target.wants/docker.service 
-.....
-ExecStart=/usr/bin/dockerd -H fd:// --experimental=true
-....
-#  /etc systemctl daemon-reload
-#  /etc systemctl restart docker
-```
 
 开启编译:    
 
