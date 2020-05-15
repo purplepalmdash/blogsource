@@ -49,3 +49,14 @@ Cleaning up...
 # ls -l -h /mnt6/v2.tar 
 -rw------- 1 root root 899M May 15 12:47 /mnt6/v2.tar
 ```
+
+### 加载
+加载时load v2.tar时，只加载经过改动的层:    
+
+```
+# docker load<v2.tar 
+4beb03d58ef7: Loading layer [==================================================>]    942MB/942MB
+The image rong/core:v1.17.5 already exists, renaming the old one with ID sha256:0a0de68c5f49fb7faf63a90719f10dd7749283344a06a73e9ddbc94a81377a8f to empty string
+Loaded image: rong/core:v1.17.5
+
+```
