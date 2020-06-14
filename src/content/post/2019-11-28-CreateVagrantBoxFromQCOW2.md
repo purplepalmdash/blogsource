@@ -14,6 +14,9 @@ Add user vagrant:
 # adduser vagrant
 # visudo -f /etc/sudoers.d/vagrant
 vagrant ALL=(ALL) NOPASSWD:ALL
+# visudo
+vagrant ALL=(ALL) NOPASSWD:ALL
+Defaults:vagrant	!requiretty
 # mkdir -p /home/vagrant/.ssh
 # chmod 0700 /home/vagrant/.ssh
 # wget --no-check-certificate \
@@ -54,6 +57,11 @@ Finally change the sshd configuration:
 ```
 # vim /etc/ssh/sshd_config 
 AuthorizedKeysFile .ssh/authorized_keys
+```
+For 20.04, you have to manually install ifupdown:    
+
+```
+# apt-get install -y ifupdown
 ```
 Now shutdown the machine, continue for packaging.   
 

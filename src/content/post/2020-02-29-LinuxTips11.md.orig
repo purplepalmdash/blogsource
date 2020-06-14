@@ -324,20 +324,19 @@ line 67 - 71 should be commented
 ```
 thus you  will get your package management online. 
 
+<<<<<<< HEAD
 ### 25. ss for listening
 without netstat, using ss for listening:    
 
 ```
 # sudo ss -tunlp
-```
-
-### 25.1. docker-regsitry issue
+=======
+### 25. docker-regsitry issue
 registry v2.6 depends on musl, install it via:    
 
 ```
 # apt-get install -y musl
 ```
-
 
 ### 26. ps output wide
 via :    
@@ -387,4 +386,5 @@ Via:
  git tag -a v0.4.2 -m "v0.4.2 for ansible v2.9.6"
  git show v0.4.2
  git push origin master --tags
+>>>>>>> ee4acbb6a6d1fbe93d6ddd9962093dbad337cace
 ```
