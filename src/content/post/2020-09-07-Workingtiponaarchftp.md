@@ -15,7 +15,7 @@ Loaded image: gists/pure-ftpd:arm64
 gists/pure-ftpd                                                            arm64               1b3e76d8756b        3 months ago        5.77MB
 ```
 
-运行以下命令, 创建一个vsftpd实例, 当前目录下的ftpd含有ftpd的配置文件(pureftpd)及存储目录(data):    
+运行以下命令, 创建一个pure-ftpd实例, 当前目录下的ftpd含有ftpd的配置文件(pureftpd)及存储目录(data):    
 
 ```
 # mkdir ftpd
@@ -23,7 +23,7 @@ gists/pure-ftpd                                                            arm64
 # mkdir pureftpd data
 # docker run -d --restart unless-stopped --name pure-ftpd  -e MIN_PASV_PORT=40000 -e MAX_PASV_PORT=40009 -p 21:21  -p 40000-40009:40000-40009  -v $(pwd)/pureftpd:/etc/pureftpd  -v $(pwd)/data:/home/ftpuser gists/pure-ftpd:arm64
 ```
-运行以下命令配置vsftpd的权限，以及添加test用户，并刷新vsftpd本地配置文件: 
+运行以下命令配置pure-ftpd的权限，以及添加test用户，并刷新pure-ftpd本地配置文件: 
 
 ```
  docker exec -it pure-ftpd chown ftpuser:ftpuser -R /home/ftpuser
