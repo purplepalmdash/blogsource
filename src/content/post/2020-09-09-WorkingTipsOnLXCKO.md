@@ -136,3 +136,85 @@ Creating ko1
 Bug fix1: conf/my.cnf mapping.    
 Bug fix2: could not running on lxc's docker-compose.    
 
+### On adding Ubuntu
+Via following commands, we could use lxc for ubuntu20.04.   
+
+```
+# qemu-img convert box.img box1.img
+# kpartx -av box1.img 
+# lvscan
+# mount /dev/vgubuntu/root /mnt7/
+# tar -czvf rootfs.tar.gz -C /mnt7 .
+# vim metadata.yaml
+architecture: "x86_64"
+creation_date: 1600908919 # To get current date in Unix time, use `date +%s` command
+properties:
+architecture: "x86_64"
+description: "ubuntu20.04 for lxc"
+os: "ubuntu"
+release: "20.04"
+# tar czvf metadata.tar.gz metadata.yaml
+# lxc image import metadata.tar.gz  rootfs.tar.gz --alias "ubuntu20.04"
+```
+
+### On adding storage in cluster
+Via following commands:    
+
+```
+lxc cluster list
+# for getting the member name. 
+
+lxc storage create fastPool dir source=/media/md0/lxd --target arm-a1
+lxc storage create fastPool dir source=/media/md0/lxd --target arm-a2
+lxc storage create fastPool dir source=/media/md0/lxd --target arm-a3
+lxc storage create fastPool dir
+```
+
+### x86 working tips
+working tips for creating lxd cluster:    
+
+```
+sudo apt install linux-image-extra-virtual linux-generic
+cat /proc/sys/net/bridge/bridge-nf-call-iptables
+1
+lxc profile copy default k8s
+lxc profile edit k8s 
+config:
+  environment.TZ: Asia/Bangkok
+  raw.lxc: |
+    lxc.apparmor.profile=unconfined
+    lxc.cgroup.devices.allow = a
+    lxc.mount.auto=proc:rw sys:rw
+    lxc.cap.drop=
+  security.nesting: "true"
+  security.privileged: "true"
+description: Default LXD profile
+devices:
+  apparmor:
+    path: /sys/module/apparmor/parameters/enabled
+    source: /dev/null
+    type: disk
+  eth0:
+    name: eth0
+    nictype: bridged
+    parent: br10
+    type: nic
+  hashsize:
+    path: /sys/module/nf_conntrack/parameters/hashsize
+    source: /dev/null
+    type: disk
+  kmsg:
+    path: /dev/kmsg
+    source: /dev/kmsg
+    type: unix-char
+  root:
+    path: /
+    pool: default
+    type: disk
+name: k8s
+used_by:
+- /1.0/containers/k1
+- /1.0/containers/k2
+- /1.0/containers/k3
+lxc launch ubuntu:18.04 k1 -p k8s
+```
