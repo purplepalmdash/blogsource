@@ -50,11 +50,12 @@ Setup the angular proxy variables:
 Install packages via:     
 
 ```
+# npm install -g npm
 # SASS_BINARY_SITE=https://npm.taobao.org/mirrors/node-sass/ npm install node-sass@4.10.0
 # npm --registry=https://registry.npm.taobao.org --disturl=https://npm.taobao.org/dist install
 # sudo cnpm install -g @angular/cli
-# sudo cnpm install -g @angular-devkit/build-angular/
-# ng serve --proxy-config proxy.conf.json
+# sudo cnpm install -g @angular-devkit/build-angular
+# ng serve --proxy-config proxy.conf.json --host 0.0.0.0
 ```
 After building you will have the debug environment for changing the code and view the result. 
 
