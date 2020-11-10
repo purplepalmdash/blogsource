@@ -367,8 +367,42 @@ src/app
     │       └── sidebar.component.ts
     └── ui.module.ts
 ```
+#### 7.2 路由
+创建路由:     
 
-#### 7.2 打通导航
+```
+$ ng generate module app-routing --flat --module=app
+```
+修改生成的文件，添加导航:   
+
+```
+$ vim src/app/app-routing.module.ts
+const routes: Routes = [
+  {
+    path: '',
+    children: [
+      { path: '', redirectTo: '/dashboard', pathMatch: 'full' },
+      { path: 'dashboard', component: DashboardComponent },
+      { path: 'posts', component: PostsComponent },
+      { path: 'settings', component: SettingsComponent },
+      { path: 'todos', component: TodosComponent },
+      { path: 'users', component: UsersComponent },
+    ]
+  }
+];
+
+@NgModule({
+  imports: [
+    RouterModule.forRoot(routes),
+  ],
+  exports: [
+    RouterModule,
+  ],
+})
+export class AppRoutingModule { }
+
+```
+#### 7.3 打通导航(UI)
 `src/app/ui/ui.module.ts`中引入`RouterModule`:    
 
 ```
@@ -379,4 +413,7 @@ import { RouterModule } from '@angular/router';
 ￼    RouterModule,
 ￼    ClarityModule,
 ```
+
+#### 7.4 更改各页面
+更改 `src/app/pages/dashboard/dashboard.component.ts`.    
 
