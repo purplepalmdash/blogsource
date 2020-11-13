@@ -417,3 +417,36 @@ import { RouterModule } from '@angular/router';
 #### 7.4 更改各页面
 更改 `src/app/pages/dashboard/dashboard.component.ts`.    
 
+
+### 8. 添加echarts
+安装angular对echarts的支持:    
+
+```
+$  cnpm install echarts -S
+$  cnpm install ngx-echarts -S
+$  cnpm install resize-observer-polyfill -S
+```
+引入echarts:    
+
+```
+$ vim src/app/app.module.ts
+import * as echarts from 'echarts';
+import { NgxEchartsModule } from 'ngx-echarts';
+
+
+  imports: [
+    BrowserModule,
+    NgxEchartsModule.forRoot({
+      echarts
+    }),
+
+```
+添加服务:    
+
+```
+$ ng generate service app
+
+CREATE src/app/app.service.spec.ts (342 bytes)
+CREATE src/app/app.service.ts (132 bytes)
+
+```
