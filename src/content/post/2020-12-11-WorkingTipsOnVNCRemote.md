@@ -57,3 +57,18 @@ Use awesome as the default desktop:
 #!/bin/bash
 i3 &
 ```
+Change to lxde4:   
+
+```
+cat ~/.vnc/xstartup
+	#/etc/X11/Xsession
+	exec startlxde
+
+```
+### client
+Enable the ssh transfering:    
+
+```
+$ ssh -p 62022 -L 127.0.0.1:5901:localhost:5901 root@xxx.xxx.xxx.xxx
+```
+then viewer `localhost:5901` you could see the desktop
