@@ -122,6 +122,13 @@ Configure bridge networking using network manager:
 $ nmcli connection add type bridge ifname br0 stp no
 $ nmcli connection add type bridge-slave ifname enp30s0 master br0
 ```
+Case static ip address:    
+
+```
+nmcli conn add type bridge ifname br0 ipv4.method manual ipv4.address "10.137.149.5/24" ipv4.gateway "10.137.149.1" ipv4.dns 223.5.5.5 
+nmcli connection add type bridge-slave ifname eth0 master br0
+```
+
 
 iptables for libvirt:    
 
