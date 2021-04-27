@@ -103,7 +103,7 @@ none / tmpfs defaults 0 0
 # fio --name TEST --eta-newline=5s --filename=fio-tempfile.dat --rw=randrw --size=500m --io_size=10g --blocksize=4k --ioengine=libaio --fsync=1 --iodepth=1 --numjobs=1 --runtime=60 --group_reporting
 ```
 
-|指标 | 内存主机 | 传统主机 |
+|指标 | 内存型主机 | 传统主机 |
 | ----------- | ----------- | --------- |
 | READ bw | bw=513MiB/s (538MB/s) | bw=85.0KiB/s (87.0kB/s) |
 | READ io | io=5133MiB (5382MB) | io=5104KiB (5226kB) |
@@ -112,6 +112,7 @@ none / tmpfs defaults 0 0
 | WRITE io | io=5107MiB (5355MB) | io=5288KiB (5415kB) |
 | WRITE iops | IOPS=131k | IOPS=22 |
 
+测试显示：4K随机读写的带宽对比，内存型主机是传统主机的约6000倍，读IOPS/写IOPS，内存型主机是传统主机的约6000倍。    
 #### 4.2 fio 4k顺序读写
 测试命令如下:    
 
@@ -119,7 +120,7 @@ none / tmpfs defaults 0 0
 # fio --name TEST --eta-newline=5s --filename=fio-tempfile.dat --rw=rw --size=500m --io_size=10g --blocksize=4k --ioengine=libaio --fsync=1 --iodepth=1 --numjobs=1 --runtime=60 --group_reporting
 ```
 
-|指标 | 内存主机 | 传统主机 |
+|指标 | 内存型主机 | 传统主机 |
 | ----------- | ----------- | --------- |
 | READ bw | bw=640MiB/s (671MB/s) | bw=73.2KiB/s (75.0kB/s) |
 | READ io | io=5133MiB (5382MB) | io=4396KiB (4502kB) |
@@ -128,3 +129,4 @@ none / tmpfs defaults 0 0
 | WRITE io | io=5107MiB (5355MB) | io=4608KiB (4719kB) |
 | WRITE iops | IOPS=163k | IOPS=19 |
 
+测试显示：4K顺序读写的带宽对比，内存型主机是传统主机的约9000倍，读IOPS/写IOPS，内存型主机是传统主机的约9000倍。    
