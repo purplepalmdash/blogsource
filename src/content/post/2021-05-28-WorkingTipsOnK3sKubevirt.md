@@ -202,3 +202,50 @@ spec:
 
 ![/images/2021_05_31_21_30_56_746x693.jpg](/images/2021_05_31_21_30_56_746x693.jpg)
  
+如果是virtctl，则直接访问的方式是通过proxy:    
+
+```
+kubectl proxy --address=0.0.0.0 --accept-hosts='^*$' --port 8080
+```
+
+testvm:    
+
+```
+apiVersion: kubevirt.io/v1
+kind: VirtualMachine
+metadata:
+  name: testvm
+spec:
+  running: false
+  template:
+    metadata:
+      labels:
+        kubevirt.io/size: small
+        kubevirt.io/domain: testvm
+    spec:
+      domain:
+        devices:
+          disks:
+            - name: containerdisk
+              disk:
+                bus: virtio
+            - name: cloudinitdisk
+              disk:
+                bus: virtio
+          interfaces:
+          - name: default
+            bridge: {}
+        resources:
+          requests:
+            memory: 64M
+      networks:
+      - name: default
+        pod: {}
+      volumes:
+        - name: containerdisk
+          containerDisk:
+            image: quay.io/kubevirt/cirros-container-disk-demo
+        - name: cloudinitdisk
+          cloudInitNoCloud:
+            userDataBase64: SGkuXG4=
+```
