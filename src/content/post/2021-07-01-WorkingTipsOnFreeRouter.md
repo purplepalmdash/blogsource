@@ -132,3 +132,20 @@ test@router:/etc$ sudo chattr +i /etc/resolv.conf
 # ./redsocks.sh start
 ```
 这里值得注意的是，redsocks需要配置为socks5代理才可以让本机访问到外面。    
+
+### udp转发
+外部机器建立ssh隧道用于转发:    
+
+```
+# ssh -o GatewayPorts=true -f -N -T -R \*:18888:localhost:18888 docker@10.xx.xx.xxx
+```
+外部机器做udp到tcp的`socat`转发:    
+
+```
+# sudo socat tcp-listen:18888,reuseaddr,fork udp:127.0.0.1:53
+```
+内部机器做tcp到udp的`socat`转发:    
+
+```
+# socat -T15 udp4-recvfrom:53,bind=10.xx.xxx.xxx,fork tcp:localhost:18888
+```
