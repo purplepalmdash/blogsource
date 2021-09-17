@@ -62,7 +62,7 @@ EOF
 
 pvcreate /dev/sdb1
 vgextend VolGroup /dev/sdb1
-lvextend /dev/VolGroup/lv_root
+lvextend -l +100%FREE /dev/VolGroup/lv_root
 resize2fs /dev/VolGroup/lv_root
 
 date > /etc/disk_added_date
