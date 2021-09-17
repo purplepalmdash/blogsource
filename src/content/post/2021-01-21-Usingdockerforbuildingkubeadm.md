@@ -77,3 +77,21 @@ Build:
 # make cross
 ```
 
+### v1.20.7 update
+Have to change go version to v1.17 for building, also notice the memory usage. 
+
+```
+apt-get update -y && apt-get install -y wget unzip vim build-essential rsync
+wget https://github.com/kubernetes/kubernetes/archive/v1.20.7.zip
+wget https://golang.org/dl/go1.17.linux-amd64.tar.gz
+tar -C /usr/local -xzf go1.17.linux-amd64.tar.gz 
+export PATH=$PATH:/usr/local/go/bin
+go version
+unzip v1.20.7.zip 
+cd kubernetes-1.20.7/
+vim cmd/kubeadm/app/constants/constants.go
+vim vendor/k8s.io/client-go/util/cert/cert.go
+make all WHAT=cmd/kubeadm
+cp _output/bin/kubeadm ..
+
+```
