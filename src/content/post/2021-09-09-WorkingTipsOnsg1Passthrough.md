@@ -55,3 +55,49 @@ options vfio-pci ids=8086:4907
 # yum install -y bridge-utils
 ```
 
+
+### Ubuntu20.04 changes
+Switch back to Ubuntu20.04 then do following:    
+
+```
+$ sudo vim /etc/modprobe.d/vfio.conf
+$ sudo systemctl set-default multi-user
+Created symlink /etc/systemd/system/default.target → /lib/systemd/system/multi-user.target.
+$ sudo reboot
+
+Change the 
+
+```
+$ sudo vim /etc/initramfs-tools/scripts/init-top/vfio.sh
+#!/bin/sh
+
+PREREQ=""
+
+prereqs()
+{
+   echo "$PREREQ"
+}
+
+case $1 in
+prereqs)
+   prereqs
+   exit 0
+   ;;
+esac
+
+for dev in 0000:b3:00.0 0000:b8:00.0 0000:bd:00.0 0000:c2:00.0
+do 
+ echo "vfio-pci" > /sys/bus/pci/devices/$dev/driver_override 
+ echo "$dev" > /sys/bus/pci/drivers/vfio-pci/bind 
+done
+
+exit 0
+
+
+$ sudo chmod +x /etc/initramfs-tools/scripts/init-top/vfio.sh
+$ sudo vim /etc/initramfs-tools/modules
+  And add the following lines:
+  options kvm ignore_msrs=1
+
+```
+
