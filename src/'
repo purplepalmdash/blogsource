@@ -1,0 +1,30 @@
++++
+title= "WorkingTipsonWayDroid"
+date = "2021-09-20T12:33:48+08:00"
+description = "WorkingTipsonWayDroid"
+keywords = ["Technology"]
+categories = ["Technology"]
++++
+### AIM
+Enable `libndk_translation` in waydroid.    
+
+### Steps
+Disable the `waydroid-container` and reboot the machine:    
+
+```
+systemctl disable waydroid-container
+reboot
+```
+Now you could make a backup for your origin `system.img` and `vendor.img`
+file:    
+
+```
+ cp /var/lib/waydroid/images/system.img /root 
+ cp /var/lib/waydroid/images/vendor.img /root
+```
+Clone the repository :    
+
+```
+$ git clone https://github.com/newbit1/libndk_translation_Module.git
+```
+
