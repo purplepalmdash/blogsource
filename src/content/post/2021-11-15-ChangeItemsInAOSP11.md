@@ -74,7 +74,11 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
 `build/target/product/sdk_phone_x86.mk`及`build/target/product/sdk_phone_x86_64.mk`中添加所需要拷贝的静态库的定义:     
 
 ```
- PRODUCT_ARTIFACT_PATH_REQUIREMENT_WHITELIST := \
+#PRODUCT_ARTIFACT_PATH_REQUIREMENT_ALLOWED_LIST
+# PRODUCT_ARTIFACT_PATH_REQUIREMENT_WHITELIST := \
+#
+
+PRODUCT_ARTIFACT_PATH_REQUIREMENT_ALLOWED_LIST := \
      system/bin/houdini \
      system/bin/houdini64 \
      system/etc/binfmt_misc/arm64_dyn \
