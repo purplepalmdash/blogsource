@@ -270,3 +270,26 @@ a900b38c0fb1   redroid/redroid:9.0.0-latest   "/init qemu=1 androi…"   12 seco
 [sys.logbootcomplete]: [1]
 ```
 
+
+### 5. 配置网络
+主机上配置tap0设备并桥接到br0:   
+
+```
+$ sudo tunctl -u intel
+$ sudo brctl addif br0 tap0
+$ sudo ip link set dev tap0 up
+``` 
+启动avd的时候使用以下参数:    
+
+```
+$ emulator -show-kernel -partition-size 61240 -net-tap tap0 -qemu -cpu host -m32768
+```
+在avd中，手动设置wifi的地址为br0同网段固态IP地址,
+而后可以直接Ping通该设置的地址。    
+
+Docker启动的命令需更改为:    
+
+```
+$ dockerd --iptables=false --dns=223.5.5.5 --data-root=/data/var/ --ip=192.168.xx.xxx & >/data/dockerd-logfile 2>&1
+```
+此时接近于成功，但是仍然无法与容器实例通过转发后的adbd端口通信并截图。   
