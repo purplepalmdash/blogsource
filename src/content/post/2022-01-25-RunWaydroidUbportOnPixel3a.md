@@ -1,25 +1,25 @@
 +++
-title= "RunWaydroidUbportOnPixel3a"
+title= "RunWaydroidUbportsOnPixel3a"
 date = "2022-01-25T08:00:02+08:00"
-description = "RunWaydroidUbportOnPixel3a"
+description = "RunWaydroidUbportsOnPixel3a"
 keywords = ["Technology"]
 categories = ["Technology"]
 +++
 最近会研究一些安卓虚拟化的知识，这里记录下来在Pixel
-3a上刷Ubport后，在Ubport中启用waydroid的过程。    
+3a上刷Ubports后，在Ubports中启用waydroid的过程。    
 
 ### 1. 准备工作/相关概念
 Pixel
 3a一支，淘宝很容易买到，注意要买可解锁BootLoader的，价格大概是四五百块，取决于成色。    
 
 选择Pixel
-3a是因为它是Ubport官方支持中比较完善的几个之一，官方的设备支持列表如下：    
+3a是因为它是Ubports官方支持中比较完善的几个之一，官方的设备支持列表如下：    
 [https://devices.ubuntu-touch.io/?pk_vid=5294f9f7280f826e164306913156a7ee](https://devices.ubuntu-touch.io/?pk_vid=5294f9f7280f826e164306913156a7ee)     
 
 当然如果手头有别的可以刷的手机也可以尝试下, Pixel
 3a的刷机体验是比较好的。   
 
-Ubport: Ubuntu touch.    
+Ubports: Ubuntu touch.    
 Waydroid: 以前称为Anbox-Halium，是Anbox 的重建版本，旨在使用比Anbox
 更新更流畅的安卓算力体验。
 
@@ -64,14 +64,14 @@ Finished. Total time: 0.338s
 bootloader`的选项后，继续按电源键确定。bootloader解锁成功后需重新启动并重新设置手机。此时需要重新开启usb调试等。   
 
 
-#### 2.3 刷入ubport
-再次强调: ubport刷入的先决条件是pixel 3a上运行的安卓版本为`PQ3B.190801.002`。
+#### 2.3 刷入ubports
+再次强调: ubports刷入的先决条件是pixel 3a上运行的安卓版本为`PQ3B.190801.002`。
 
 ArchLinux上通过snap安装ubports刷机软件, 参考网址如下:     
 
 [https://snapcraft.io/install/ubports-installer/arch](https://snapcraft.io/install/ubports-installer/arch)
 
-开启刷机软件开始刷ubport:    
+开启刷机软件开始刷ubports:    
 
 ```
 sudo ubports-installer
@@ -101,7 +101,7 @@ Mode`才可以继续安装，在手机上按音量-键结合电源键选择，�
 
 ![/images/2022_01_25_08_31_21_651x492.jpg](/images/2022_01_25_08_31_21_651x492.jpg)
 
-经过一系列设置之后，Ubport将启动成功并进入到系统中。   
+经过一系列设置之后，Ubports将启动成功并进入到系统中。   
 
 #### 2.4 安装waydroid
 确认自己安装的是开发者版本，如果是stable的话，在`关于`->`检查更新`下的配置按钮中，切换成开发者版本就可以了:    
