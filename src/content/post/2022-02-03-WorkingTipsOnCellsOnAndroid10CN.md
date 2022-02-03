@@ -1,5 +1,5 @@
 +++
-title= "CellsOnAndroid10集成指南"
+title= "CellsOnAndroid10IntegrationCN"
 date = "2022-02-02T23:50:52+08:00"
 description = "WorkingTipsOnCellsOnAndroid10"
 keywords = ["Technology"]
