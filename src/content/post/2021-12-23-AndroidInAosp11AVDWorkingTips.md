@@ -272,7 +272,7 @@ a900b38c0fb1   redroid/redroid:9.0.0-latest   "/init qemu=1 androi…"   12 seco
 
 
 ### 5. 配置网络
-主机上配置tap0设备并桥接到br0:   
+主机上配置tap0设备并桥接到br0(`tunctl` is installed via `apt-get install -y uml-utilities`):   
 
 ```
 $ sudo tunctl -u intel

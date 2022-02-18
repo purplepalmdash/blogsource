@@ -86,5 +86,20 @@ Start the emulator via:
 ```
 # emulator -show-kernel -kernel /root/kernel-qemu -no-snapshot-load -selinux disabled
 ``` 
+Replace the kernel in aosp kernel source:     
 
+```
+cd /root/Code/android10_redroid/prebuilts/qemu-kernel/x86_64
+cp -r 4.14/ 4.14.back
+cp /root/kernel-qemu 4.14/kernel-qemu2 
+```
 ### Docker Integration
+Download the docker binary files and extract them to prebuilts folder:      
+
+```
+$ wget https://download.docker.com/linux/static/stable/x86_64/docker-20.10.8.tgz
+// Switch to aosp source tree
+$ cd prebuilts
+$ tar xzvf ~/docker-20.10.8.tgz -C .
+```
+
