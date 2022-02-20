@@ -81,6 +81,12 @@ But we lost the binderfs support in 4.14.112, have to change to other kernel ver
 
 Migrating the binderfs to the kernel 4.14.112, steps remains to be written .    
 
+Refers to:   
+
+```
+https://github.com/purplepalmdash/binderfs_backport.git
+```
+
 Start the emulator via:     
 
 ```
@@ -93,6 +99,34 @@ cd /root/Code/android10_redroid/prebuilts/qemu-kernel/x86_64
 cp -r 4.14/ 4.14.back
 cp /root/kernel-qemu 4.14/kernel-qemu2 
 ```
+### binderfs enable
+aosp source code should add modification for enable binderfs.    
+Make modification for rootdir, the aim is for enable binderfs:     
+
+```
+# vim ./system/core/rootdir/init.rc
+    mount configfs none /config nodev noexec nosuid
+    chmod 0770 /config/sdcardfs
+    chown system package_info /config/sdcardfs
+
++    # Mount binderfs
++    mkdir /dev/binderfs
++    mount binder binder /dev/binderfs stats=global
++    chmod 0755 /dev/binderfs
++ 
++    # Mount fusectl
++    mount fusectl none /sys/fs/fuse/connections
++ 
++    symlink /dev/binderfs/binder /dev/binder                                            
++    symlink /dev/binderfs/hwbinder /dev/hwbinder
++    symlink /dev/binderfs/vndbinder /dev/vndbinder
++ 
++    chmod 0666 /dev/binderfs/hwbinder
++    chmod 0666 /dev/binderfs/binder
++    chmod 0666 /dev/binderfs/vndbinder
+```
+Recompile the aosp source code and get the new generated image
+
 ### Docker Integration
 Download the docker binary files and extract them to prebuilts folder:      
 
