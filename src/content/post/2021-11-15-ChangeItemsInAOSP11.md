@@ -310,3 +310,84 @@ build/system/linkerconfig/contents/namespace/systemdefault.cc origin/system/link
 <         "/system/lib64/arm64",
 <         "/system/lib64/arm64/nb",
 ```
+
+20220225 added:    
+
+需加入abipicker的支持：   
+
+```
+scp -r ./frameworks/base/core/jni/abipicker/ remote_folder
+```
+上传`/vendor`目录下的相关内容:    
+
+```
+scp -r vendor/google/ root@192.168.xx.xxx:/root/Code/redroid_11/vendor/
+```
+如果是`redroid`的编译，而对应需要修改redroid文件的定义:    
+
+```
+# vim device/redroid/redroid_x86_64/device.mk
+PRODUCT_PACKAGES += \
+    vulkan.intel \
+
+# Added houdini
+$(call inherit-product-if-exists, vendor/google/chromeos-x86/target/houdini.mk)
+$(call inherit-product-if-exists, vendor/google/chromeos-x86/target/native_bridge_arm_on_x86.mk)
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += persist.sys.nativebridge=1
+
+# Get native bridge settings
+$(call inherit-product-if-exists,device/generic/common/nativebridge/nativebridge.mk)
+
+
+# NativeBridge
+PRODUCT_PACKAGES += libhoudini houdini
+PRODUCT_PROPERTY_OVERRIDES += ro.dalvik.vm.isa.arm=x86 ro.enable.native.bridge.exec=1
+PRODUCT_DEFAULT_PROPERTY_OVERRIDES += ro.dalvik.vm.isa.arm=x86 ro.enable.native.bridge.exec=1
+
+PRODUCT_PACKAGES += houdini64
+PRODUCT_PROPERTY_OVERRIDES += ro.dalvik.vm.isa.arm64=x86_64 ro.enable.native.bridge.exec64=1
+PRODUCT_DEFAULT_PROPERTY_OVERRIDES += ro.dalvik.vm.isa.arm64=x86_64 ro.enable.native.bridge.exec64=1
+
+PRODUCT_DEFAULT_PROPERTY_OVERRIDES += ro.dalvik.vm.native.bridge=libhoudini.so
+
+
+# vim device/TARGET_CPU_ABI := x86_64
+TARGET_ARCH := x86_64
+TARGET_ARCH_VARIANT := x86_64
+
+TARGET_2ND_CPU_ABI := x86
+TARGET_2ND_ARCH := x86
+TARGET_2ND_ARCH_VARIANT := x86_64
+
+include build/make/target/board/BoardConfigGsiCommon.mk
+
+TARGET_USERIMAGES_SPARSE_EXT_DISABLED := true
+
+BOARD_VENDORIMAGE_FILE_SYSTEM_TYPE := ext4
+BOARD_VENDORIMAGE_PARTITION_RESERVED_SIZE := 16777216
+BOARD_SYSTEMIMAGE_PARTITION_RESERVED_SIZE := 16777216
+
+BOARD_MESA3D_USES_MESON_BUILD := true
+BOARD_MESA3D_GALLIUM_DRIVERS := virgl radeonsi i915 iris crocus
+BOARD_MESA3D_VULKAN_DRIVERS := virtio-experimental amd intel
+
+DEVICE_MANIFEST_FILE += device/redroid/manifest.xml
+PRC_COMPATIBILITY_PACKAGE := true
+BUILD_ARM_FOR_X86 := true
+-include vendor/google/chromeos-x86/board/native_bridge_arm_on_x86.mk
+
+# Native Bridge ABI List
+NB_ABI_LIST_32_BIT := armeabi-v7a armeabi
+NB_ABI_LIST_64_BIT := arm64-v8a
+
+TARGET_CPU_ABI_LIST_64_BIT ?= $(TARGET_CPU_ABI) $(TARGET_CPU_ABI2)
+TARGET_CPU_ABI_LIST_32_BIT ?= $(TARGET_2ND_CPU_ABI) $(TARGET_2ND_CPU_ABI2)
+TARGET_CPU_ABI_LIST := \
+    $(TARGET_CPU_ABI_LIST_64_BIT) \
+    $(TARGET_CPU_ABI_LIST_32_BIT) \
+    $(NB_ABI_LIST_64_BIT) \
+    $(NB_ABI_LIST_32_BIT)
+TARGET_CPU_ABI_LIST_32_BIT += $(NB_ABI_LIST_32_BIT)
+TARGET_CPU_ABI_LIST_64_BIT += $(NB_ABI_LIST_64_BIT)
+
+```
