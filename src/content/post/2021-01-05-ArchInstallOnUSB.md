@@ -78,7 +78,7 @@ archusb
     127.0.0.1	localhost
     ::1		localhost
     127.0.1.1	archusb
-# pacman -S net-tools tcpdump iotop dhcpcd openssh dosfstools ntfs-3g amd-ucode intel-ucode grub
+# pacman -S net-tools tcpdump iotop dhcpcd openssh dosfstools ntfs-3g amd-ucode intel-ucode grub efibootmgr
 # systemctl enable sshd
 # cat /etc/mkinitcpio.conf | grep block
     #    HOOKS=(base udev autodetect block filesystems)
@@ -95,6 +95,13 @@ Make grub configuration:
 # grub-install --target=i386-pc /dev/sdc --recheck
 # grub-install --target=x86_64-efi --efi-directory=/boot/efi --removable --recheck
 ```
+Or(uefi mode):   
+
+```
+grub-install --target=x86_64-efi --efi-directory=/boot --bootloader-id=GRUB 
+grub-mkconfig -o /boot/grub/grub.cfg 
+```
+
 Support generic gpu:    
 
 ```
