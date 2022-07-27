@@ -33,3 +33,28 @@ Repo sync(Using redsocks):
 ```
 repo sync -j8
 ```
+After repo sync:    
+
+```
+cd prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.11-4.6
+git checkout 2078a6bf9e5479104cfe2cbf54e9602672bd89f7
+```
+Build via:    
+
+```
+. build/envsetup.sh
+lunch android_x86_64-userdebug
+export NO_KERNEL_CROSS_COMPILE=true
+export BLISS_BUILD_VARIANT=foss
+mka iso_img -j8
+```
+The generated iso is listed as:    
+
+```
+out/target/product/x86_64/BlissOS-14.3-x86_64-202207270925_k-_m-r11-r36.iso is built successfully.
+#### build completed successfully (02:40:00 (hh:mm:ss)) ####
+
+dash@2204:/media/sda/Code/BlissOS$ 
+dash@2204:/media/sda/Code/BlissOS$ ls out/target/product/x86_64/BlissOS-14.3-x86_64-202207270925_k-_m-r11-r36.iso
+out/target/product/x86_64/BlissOS-14.3-x86_64-202207270925_k-_m-r11-r36.iso
+```
