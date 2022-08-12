@@ -98,6 +98,33 @@ $ sudo chmod +x /etc/initramfs-tools/scripts/init-top/vfio.sh
 $ sudo vim /etc/initramfs-tools/modules
   And add the following lines:
   options kvm ignore_msrs=1
+  vfio
+  vfio_iommu_type1
+  vfio_pci
+  vfio_virqfd
+```
+Update the initramfs:    
 
 ```
+# update-initramfs -c -k all
+```
 
+Examine the vfio driver usage(before vfio):    
+
+```
+lspci -v -s 0000:b8:00.0
+0000:b8:00.0 VGA compatible controller: Intel Corporation Device 4907 (rev 01) (prog-if 00 [VGA controller])
+	Subsystem: Hangzhou H3C Technologies Co., Ltd. Device 4000
+	Flags: bus master, fast devsel, latency 0, IRQ 892, NUMA node 1
+	Memory at e7000000 (64-bit, non-prefetchable) [size=16M]
+	Memory at 386c00000000 (64-bit, prefetchable) [size=8G]
+	Expansion ROM at e8000000 [disabled] [size=2M]
+	Capabilities: [40] Vendor Specific Information: Len=0c <?>
+	Capabilities: [70] Express Endpoint, MSI 00
+	Capabilities: [ac] MSI: Enable+ Count=1/1 Maskable+ 64bit+
+	Capabilities: [d0] Power Management version 3
+	Capabilities: [100] Latency Tolerance Reporting
+	Kernel driver in use: i915
+	Kernel modules: i915
+
+```
