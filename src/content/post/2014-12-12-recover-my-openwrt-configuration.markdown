@@ -214,3 +214,20 @@ uci commit firewall
 /etc/init.d/firewall restart
 
 ```
+
+### Updated in 2022Aug13
+Should add following:    
+
+```
+root@eddie:~# cat /etc/rc.local 
+# Put your custom commands here that should be executed once
+# the system init finished. By default this file does nothing.
+export PREINIT=1
+mount_root
+exit 0
+```
+Also have to refers to 
+
+`https://openwrt.org/docs/guide-user/additional-software/extroot_configuration`
+
+for reference.   
