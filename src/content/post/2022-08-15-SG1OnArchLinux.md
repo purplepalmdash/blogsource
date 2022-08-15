@@ -185,3 +185,46 @@ Valley result:
 
 ![/images/2022_08_15_14_57_02_518x465.jpg](/images/2022_08_15_14_57_02_518x465.jpg)
 
+```
+Benchmark results:
+Time:	189.067
+Frames:	8108
+FPS:	42.8842
+Min FPS:	25.3772
+Max FPS:	71.5901
+Score:	1794.28
+
+```
+
+### Ubuntu sg1
+Update and upgrade system(based on desktop iso):    
+
+```
+# apt update && apt upgrade && apt install openssh-server vim glmark2 x11vnc && ufw disable && systemctl disable gdm && reboot
+# vim /etc/modprobe.d/blacklist.conf
+.......
+blacklist qxl
+```
+Using `linux-zen` kernel:    
+
+```
+Install the linux-zen via:    
+# sudo add-apt-repository ppa:damentz/liquorix && sudo apt-get update
+# sudo apt-get install linux-image-liquorix-amd64 linux-headers-liquorix-amd64
+
+root@dash-Standard-PC-Q35-ICH9-2009:/home/dash# ls /dev/dri/
+by-path  card0  renderD128
+root@dash-Standard-PC-Q35-ICH9-2009:/home/dash# uname -a
+Linux dash-Standard-PC-Q35-ICH9-2009 5.19.0-1.1-liquorix-amd64
+```
+Create Xorg via:    
+
+```
+tobe added
+```
+Issue: not started:    
+
+```
+error: Kernel is too old for Iris. Consider upgrading to kernel v4.16.
+```
+
