@@ -227,4 +227,51 @@ Issue: not started:
 ```
 error: Kernel is too old for Iris. Consider upgrading to kernel v4.16.
 ```
+### Ubuntu20.04 sg1
+Install the kernel provided by intel, then:    
 
+```
+# ln -s /usr/lib/x86_64-linux-gnu/dri/swrast_dri.so /usr/lib64/dri/swrast_dri.so
+# ln -s /usr/lib/x86_64-linux-gnu/dri/kms_swrast_dri.so /usr/lib64/dri/kms_swrast_dri.so
+# ln -s /usr/local/lib/x86_64-linux-gnu/dri/iris_dri.so /usr/lib64/dri/iris_dri.so
+# export LD_LIBRARY_PATH=/usr/local/lib:/usr/local/lib64:/usr/local/lib64/dri:/usr/lib64/:/usr/lib64/dri:$LD_LIBRARY_PATH
+# export MESA_LOADER_DRIVER_OVERRIDE=iris
+# Xorg :179 -config /etc/X11/xorgintel.conf 
+    X.Org X Server 1.20.13
+    X Protocol Version 11, Revision 0
+    Build Operating System: linux Ubuntu
+    Current Operating System: Linux virtio-vga-node 5.4.48-3c77c0f552c7+ #1 SMP Fri Jan 15 13:26:42 UTC 2021 x86_64
+    Kernel command line: BOOT_IMAGE=/boot/vmlinuz-5.4.48-3c77c0f552c7+ root=UUID=a10af00c-1048-4629-bfd7-e7aa7f2b4866 ro quiet splash vt.handoff=7
+    Build Date: 14 December 2021  02:14:13PM
+    xorg-server 2:1.20.13-1ubuntu1~20.04.2 (For technical support please see http://www.ubuntu.com/support) 
+    Current version of pixman: 0.38.4
+    	Before reporting problems, check http://wiki.x.org
+    	to make sure that you have the latest version.
+    Markers: (--) probed, (**) from config file, (==) default setting,
+    	(++) from command line, (!!) notice, (II) informational,
+    	(WW) warning, (EE) error, (NI) not implemented, (??) unknown.
+    (==) Log file: "/var/log/Xorg.179.log", Time: Tue Aug 16 09:38:50 2022
+    (++) Using config file: "/etc/X11/xorgintel.conf"
+    (==) Using system config directory "/usr/share/X11/xorg.conf.d"
+    (II) modeset(0): Initializing kms color map for depth 24, 8 bpc.
+    MESA: warning: Driver does not support the 0x4907 PCI ID.
+    (II) modeset(0): Initializing kms color map for depth 24, 8 bpc.
+    MESA: warning: Driver does not support the 0x4907 PCI ID.
+```
+In another terminal , run glmark2:     
+
+```
+# export DISPLAY=:179
+# glmark2
+```
+UniValley result:    
+
+```
+Time:   189.107
+Frames: 7131
+FPS:    37.7089
+Min FPS:        19.6125
+Max FPS:        68.0576
+Score:  1577.74
+
+```
