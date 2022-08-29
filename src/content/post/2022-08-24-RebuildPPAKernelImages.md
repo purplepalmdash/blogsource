@@ -48,6 +48,7 @@ Prepare the build tree:
 # bunzip2 linux-source-5.19.3.tar.bz2
 # tar xf linux-source-5.19.3.tar
 # mv linux-source-5.19.3/* .
+# mkdir debian/stamps
 ```
 Build via:    
 

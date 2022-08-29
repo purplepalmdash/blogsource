@@ -134,3 +134,8 @@ sudo apt update
 sudo apt upgrade
 ``` 
 Next week, upgrading to 5.19.3
+
+Even on 5.19.3, benchmark is very bad:    
+
+![/images/2022_08_29_11_37_21_502x253.jpg](/images/2022_08_29_11_37_21_502x253.jpg)
+
