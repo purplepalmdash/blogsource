@@ -219,3 +219,29 @@ echo "End of teardown!"
 
 ### kde reback
 kde startup command in desktop, vm exit will send back to desktop.   
+
+
+### fix
+some fixes:    
+
+```
+root@h3c:/etc/libvirt/hooks# chmod 777 *.sh
+root@h3c:/etc/libvirt/hooks# chmod 777 *
+root@h3c:/etc/libvirt/hooks# ln -s /etc/libvirt/hooks/vfio-startup.sh /bin/
+root@h3c:/etc/libvirt/hooks# ln -s /etc/libvirt/hooks/vfio-teardown.sh /bin/
+root@h3c:/etc/libvirt/hooks# ls -l -h /bin/vfio-*
+lrwxrwxrwx 1 root root 34 Feb 28 23:05 /bin/vfio-startup.sh -> /etc/libvirt/hooks/vfio-startup.sh
+lrwxrwxrwx 1 root root 35 Feb 28 23:05 /bin/vfio-teardown.sh -> /etc/libvirt/hooks/vfio-teardown.sh
+```
+Add some systemd files:    
+
+```
+root@h3c:/etc/libvirt/hooks# cat /etc/systemd/system/libvirt-nosleep\@.service 
+[Unit]
+Description=Preventing sleep while libvirt domain "%i" is running
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/systemd-inhibit --what=sleep --why="Libvirt domain \"%i\" is running" --who=%U --mode=block sleep infinity
+
+```
