@@ -30,7 +30,7 @@ draft = "false"
     truncate = false
 
     # Used when a given page doesn't set its own.
-    description = "Get busy living, or get busy dying."
+    description = "很惭愧，就做了一点微小的工作"
     defaultKeywords = "unix,virtualization,embedded,linux"
 
     # Changes sidebar background and link/accent colours.
@@ -45,7 +45,7 @@ draft = "false"
 
     # Displays under the author name in the sidebar, keep it short.
     # You can use markdown here.
-    tagline = "Get busy living, or get busy dying."
+    tagline = "很惭愧，就做了一点微小的工作"
 
     # Text for the top menu link, which goes the root URL for the site.
     # Default (if omitted) is "Blog".
