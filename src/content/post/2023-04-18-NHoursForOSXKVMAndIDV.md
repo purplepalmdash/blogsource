@@ -154,6 +154,10 @@ blacklist amdgpu
 Login Screen(SDDM)选择 Bahavior:    
 
 ![/images/2023_04_18_11_36_33_951x832.jpg](/images/2023_04_18_11_36_33_951x832.jpg)
+使能登出后自动登入:   
+
+![/images/2023_04_19_14_41_02_962x411.jpg](/images/2023_04_19_14_41_02_962x411.jpg)
+
 
 之后选择子选项:    
 
@@ -232,7 +236,37 @@ $ ./OpenCore-Boot.sh
 
 ![/images/2023_04_18_14_09_08_710x390.jpg](/images/2023_04_18_14_09_08_710x390.jpg)
 
+在命令行下，拷贝OpenBoot的EFI分区到硬盘下:    
 
+```
+test@tests-iMac-Pro ~ % sudo diskutil list
+.......这里需要识别出哪个分区是ISO的，哪个是硬盘上的
+test@tests-iMac-Pro ~ % sudo diskutil mount disk0s1
+Volume EFI on disk0s1 mounted
+test@tests-iMac-Pro ~ % sudo diskutil mount disk1s1
+Volume EFI on disk1s1 mounted
+test@tests-iMac-Pro ~ % mount
+/dev/disk2s5s1 on / (apfs, sealed, local, read-only, journaled)
+devfs on /dev (devfs, local, nobrowse)
+/dev/disk2s4 on /System/Volumes/VM (apfs, local, noexec, journaled, noatime, nobrowse)
+/dev/disk2s2 on /System/Volumes/Preboot (apfs, local, journaled, nobrowse)
+/dev/disk2s6 on /System/Volumes/Update (apfs, local, journaled, nobrowse)
+/dev/disk2s1 on /System/Volumes/Data (apfs, local, journaled, nobrowse)
+map auto_home on /System/Volumes/Data/home (autofs, automounted, nobrowse)
+/dev/disk0s1 on /Volumes/EFI (msdos, asynchronous, local, noowners)
+/dev/disk1s1 on /Volumes/EFI 1 (msdos, asynchronous, local, noowners)
+test@tests-iMac-Pro ~ % cp -r /Volumes/EFI/EFI /Volumes/EFI\ 1 
+test@tests-iMac-Pro ~ % sudo sync     
+test@tests-iMac-Pro ~ % sudo shutdown -h now
+```
+重新启动后，更改Boot的等待时延(挂在EFI分区后):    
+
+```
+ % cat EFI/OC/config.plist| grep '<key>Timeout' -A2
+			<key>Timeout</key>
+			<integer>5</integer>
+		</dict>
+```
 ### OSX-KVM with rx550(Ventura)
 直接使用脚本测试，得到的结果：   
 
@@ -257,7 +291,7 @@ ssh/vnc启用:
 
 ![/images/2023_04_18_16_16_21_657x516.jpg](/images/2023_04_18_16_16_21_657x516.jpg)
 
-Monterey会卡在启动界面，黑屏，但是会滚屏.   
+Monterey会正常启动
 
 ### vendor-reset
 AMD显卡需要引入这个模块以便在vfio的时候reset为可用状态:     
@@ -278,9 +312,110 @@ sudo reboot
 $ lsmod | grep vendor
 vendor_reset          114688  0
 ```
+使用下面的`vfio_bind.sh`用来初始化显卡, 注意`vendor_reset`需要一个bug-fix（`device_specific`）:    
+
+```
+#!/bin/bash
+modprobe vfio-pci
+for dev in "$@"; do
+vendor=$(cat /sys/bus/pci/devices/$dev/vendor)
+device=$(cat /sys/bus/pci/devices/$dev/device)
+if [ -e /sys/bus/pci/devices/$dev/driver ]; then
+echo $dev > /sys/bus/pci/devices/$dev/driver/unbind
+fi
+echo $vendor $device > /sys/bus/pci/drivers/vfio-pci/new_id
+echo 'device_specific' > /sys/bus/pci/devices/$dev/reset_method
+done
+
+```
 ### vbflash
 使用工具dump出显卡的vbflash:    
 
 ![/images/2023_04_18_16_52_25_1024x467.jpg](/images/2023_04_18_16_52_25_1024x467.jpg)
 
-7600看起来似乎无法驱动。    
+7600看起来似乎无法驱动。临时换成了5700xt显卡用来测试。   
+5700xt需要添加:     
+
+```
+test@tests-iMac-Pro EFI % cat EFI/OC/config.plist| grep boot-args -A3
+				<key>boot-args</key>
+				<string>-v keepsyms=1 tlbto_us=0 vti=9 agdpmod=pikera</string>
+```
+
+### 网络配置（桥接)
+桥接是为了让虚拟机获得同网段地址:   
+
+```
+# sudo apt install bridge-utils -y
+# sudo vim /etc/default/grub
+GRUB_CMDLINE_LINUX_DEFAULT="intel_iommu=on intel_iommu=pt kvm.ignore_msrs=1 net.ifnames=0 biosdevname=0"
+# sudo update-grub2
+# vim /etc/netplan/00-installer-config.yaml 
+# This is the network config written by 'subiquity'
+network:
+  ethernets:
+    eth0:
+      dhcp4: false
+  bridges:
+    br0:
+      interfaces: [eth0]
+      dhcp4: true
+  version: 2
+# reboot
+```
+
+### libvirtd集成
+准备镜像:    
+
+```
+test@server:~/OSX-KVM-Monterey$ sudo cp mac_hdd_ng.img /var/lib/libvirt/images/ && sudo sync
+test@server:~/OSX-KVM-Monterey$ sudo cp OVMF_VARS-1024x768.fd /var/lib/libvirt/images/
+test@server:~/OSX-KVM-Monterey$ sudo cp OVMF_CODE.fd /var/lib/libvirt/images/
+root@server:/var/lib/libvirt/images# qemu-img create -f qcow2 -b mac_hdd_ng.img -F qcow2 amd5700xt.qcow2
+root@server:/var/lib/libvirt/images# qemu-img create -f qcow2 -b mac_hdd_ng.img -F qcow2 rx560.qcow2
+root@server:/var/lib/libvirt/images# cp OVMF_VARS-1024x768.fd rx560_OVMF_VARS-1024x768.fd amd5700_OVMF_VARS-1024x768.fd
+```
+libvirtd配置文件(RX 5700 8GB及 RX 550 4GB):    
+
+```
+https://gist.githubusercontent.com/purplepalmdash/dfba3d32b72901f75d39a84288689692/raw/eb15ad7cd59f86566dd8fb5cfc6786639c0cb6a8/macOS5700.xml
+https://gist.githubusercontent.com/purplepalmdash/dfba3d32b72901f75d39a84288689692/raw/eb15ad7cd59f86566dd8fb5cfc6786639c0cb6a8/macOSrx550.xml
+```
+### guest配置
+阻止虚拟机进入到节能状态:    
+
+![/images/2023_04_19_14_15_42_642x477.jpg](/images/2023_04_19_14_15_42_642x477.jpg)
+
+禁止锁定屏幕:   
+
+![/images/2023_04_19_14_17_15_622x403.jpg](/images/2023_04_19_14_17_15_622x403.jpg)
+
+禁止自动更新:   
+
+![/images/2023_04_19_14_18_38_638x318.jpg](/images/2023_04_19_14_18_38_638x318.jpg)
+
+禁用屏幕保护:  
+
+![/images/2023_04_19_14_19_26_627x551.jpg](/images/2023_04_19_14_19_26_627x551.jpg)
+
+
+### win10核显透传
+准备libvirtd钩子脚本:    
+
+```
+ cd /etc/libvirt/hooks/
+ mv /home/test/hooks/* .
+ ln -s /etc/libvirt/hooks/vfio-startup.sh /bin/
+ ln -s /etc/libvirt/hooks/vfio-teardown.sh /bin/
+```
+如果要透传核显，则grub的参数需要做相应的修改:    
+
+```
+GRUB_CMDLINE_LINUX_DEFAULT="intel_iommu=on intel_iommu=pt kvm.ignore_msrs=1 net.ifnames=0 biosdevname=0 video=efifb:off,vesafb:off"
+```
+因为以前已经做过相关的内容，这里就不再详细说明。   
+### 已知/偶现问题
+一次失败的核显透传后，重启失败, 更改grub默认选项后修复:    
+
+![/images/2023_04_19_14_45_26_1018x372.jpg](/images/2023_04_19_14_45_26_1018x372.jpg)
+Android studio无法运行?
