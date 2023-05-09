@@ -55,3 +55,10 @@ User=idv
 Session=mate
 
 ```
+while the X Session could be viewd as:    
+
+```
+l /usr/share/xsessions/
+ubuntu.desktop  ubuntu-xorg.desktop
+
+```
