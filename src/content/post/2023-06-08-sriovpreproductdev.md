@@ -65,6 +65,7 @@ Build Qemu:
 # scl enable devtoolset-8 bash
 # mkdir /opt/local
 # cd qemu-6.2.0
+# scl enable devtoolset-8 bash
 # ./configure --target-list=x86_64-softmmu --enable-debug --disable-docs --disable-virglrenderer --prefix=/opt/local --enable-virtfs --enable-libusb --disable-debug-tcg --audio-drv-list=pa  --enable-spice --enable-usb-redir
 # make -j8
 # make install
@@ -112,8 +113,11 @@ Get the driver source code from:   `https://www.realtek.com/en/component/zoo/cat
 rpm -ivh kernel-devel-5.15.85+-1.x86_64.rpm
 yum remove kernel-headers
 rpm -ivh kernel-headers-5.15.85+-1.x86_64.rpm
+yum install -y centos-release-scl
 yum install devtoolset-7
 scl enable devtoolset-7 bash
+cd r8168-8.051.02/src/
+make
 modprobe r8168
 ```
 Add `modprobe r8168` to `/etc/rc.local
