@@ -121,3 +121,14 @@ make
 modprobe r8168
 ```
 Add `modprobe r8168` to `/etc/rc.local
+
+### build qemu7.1
+On centos76, build/install via:    
+
+```
+scl enable devtoolset-11 bash
+yum install -y git glib2-devel pixman-devel zlib-devel libusb-devel libusb libusbx-devel pulseaudio-libs-devel libcap-ng-devel libattr-devel spice-server-devel usbredir-devel python3 bzip2 
+ ./configure --enable-modules --target-list=x86_64-softmmu --enable-debug --disable-docs --disable-virglrenderer --prefix=/opt/local --enable-virtfs --enable-libusb --disable-debug-tcg --audio-drv-list=pa
+make -j8
+make install
+```
