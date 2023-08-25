@@ -5,6 +5,7 @@ description = "BuildKernelTheDockerWay"
 keywords = ["Technology"]
 categories = ["Technology"]
 +++
+### 编译镜像准备
 使用`rockylinux:9`的容器镜像创建一个容器实例:   
 
 ```
