@@ -53,6 +53,8 @@ sed -e 's|^mirrorlist=|#mirrorlist=|g'     -e 's|^#baseurl=http://dl.rockylinux.
 yum makecache
 yum install -y rpm-build rpmdevtools  dnf-plugins-core ncurses-devel make gcc bc bison flex elfutils-libelf-devel openssl-devel grub2 rpm-build rsync gcc vim yum-utils perl
 yum --enablerepo=crb install -y systemd-udev  asciidoc audit-libs-devel binutils-devel clang dwarves fuse-devel gcc-c++ gcc-plugin-devel git-core glibc-static java-devel kabi-dw kernel-rpm-macros libbabeltrace-devel libbpf-devel libcap-devel libcap-ng-devel libmnl-devel libnl3-devel libtraceevent-devel libtracefs-devel lld llvm lvm2 net-tools newt-devel numactl-devel pciutils-devel perl-devel python3-docutils system-sb-certs tpm2-tools xmlto elfutils-devel nss-tools perl-generators pesign python3-devel xz-devel
+# yum --enablerepo=crb install -y  kmod  patch  bash    tar  git-core  which bzip2  xz  findutils  gzip  m4  perl-interpreter  perl-Carp  perl-devel  perl-generators  make  diffutils  gawk gcc  binutils  redhat-rpm-config  hmaccalc  bison  flex  gcc-c++ net-tools  hostname  bc  elfutils-devel dwarves python3-devel gcc-plugin-devel bpftool rsync xmlto  asciidoc  python3-sphinx  python3-sphinx_rtd_theme  zlib-devel binutils-devel newt-devel  bison flex xz-devel audit-libs-devel java-devel libbabeltrace-devel libtraceevent-devel numactl-devel   gettext ncurses-devel libcap-devel libcap-ng-devel pciutils-devel python3-docutils zlib-devel binutils-devel clang llvm numactl-devel libcap-devel libcap-ng-devel rsync libmnl-devel rpm-build  elfutils kabi-dw openssl openssl-devel nss-tools pesign    xmlto asciidoc clang llvm lld
+
 
 yum install /source/WALinuxAgent-cvm-2.7.0.6-9.el9_2.1.rocky.0.noarch.rpm /source/systemd-boot-unsigned-252-14.el9_2.1.x86_64.rpm
 useradd -m mock
@@ -132,4 +134,5 @@ $ find . | grep rpm$
 ./RPMS/x86_64/kernel-longterm-core-5.15.124-200.el9.x86_64.rpm
 ./SRPMS/kernel-longterm-5.15.124-200.el9.src.rpm
 ```
-
+### Aug17
+Enable perftools building, I think it failed because of the libebpf is too new comparing to 5.15.113 kernel. so changes to kerner's `tools/lib/bpf` version's libebpf-devel package for building.   
