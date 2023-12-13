@@ -35,3 +35,9 @@ cfdisk /dev/sda
 xfs_growfs /dev/sda5
 ```
 
+On Ubuntu lvm, if you resize the disk, do following:    
+
+```
+lvextend -l +100%FREE /dev/ubuntu-vg/ubuntu-lv 
+resize2fs /dev/ubuntu-vg/ubuntu-lv 
+```
