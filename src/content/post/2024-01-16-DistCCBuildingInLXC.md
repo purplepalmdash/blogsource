@@ -8,6 +8,7 @@ categories = ["Technology"]
 Create a profile named `bridgeprofile`:     
 
 ```
+$ lxc profile create bridgeprofile
 $  lxc profile show bridgeprofile
 config: {}
 description: Bridged networking LXD profile
