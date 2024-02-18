@@ -107,7 +107,7 @@ Fetch the config file:
 
 ```
 scp remote_config_files /root/config.common.ubuntu
-cp /root/config.common.ubuntu linux-oem-6.1-6.1.0/
+cp /root/config.common.ubuntu linux-oem-6.1-6.1.0/debian.oem/config/
 ```
 
 Edit the files:   
@@ -119,6 +119,17 @@ Edit the files:
 		//cat $(commonconfdir)/config.common.ubuntu $(archconfdir)/config.common.$(arch) $(archconfdir)/config.flavour.$(target_flavour) > $(builddir)/build-$*/.config; \
 		cat /root/config.common.ubuntu > $(builddir)/build-$*/.config; \
 	else \
+......
+# vim debian/rules.d/4-checks.mk
+......
+config-prepare-check-%: $(stampdir)/stamp-prepare-tree-%
+	@echo Debug: $@
+	if [ -e $(commonconfdir)/config.common.ubuntu ]; then \
+		echo "done!"; \
+		#perl -f $(DROOT)/scripts/checks/config-check \
+		#	$(builddir)/build-$*/.config "$(arch)" "$*" "$(commonconfdir)" \
+		#	"$(skipconfig)" "$(do_enforce_all)"; \
+
 ......
 ```
 patch :    
