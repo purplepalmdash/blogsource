@@ -122,6 +122,15 @@ Edit the files:
 ......
 # vim debian/rules.d/4-checks.mk
 ......
+# Check the module list against the last release (always)
+module-check-%: $(stampdir)/stamp-install-%
+	@echo Debug: $@
+	echo "done!"; 
+	#$(DROOT)/scripts/checks/module-check "$*" \
+	#	"$(prev_abidir)" "$(abidir)" $(do_skip_checks)
+
+
+.......
 config-prepare-check-%: $(stampdir)/stamp-prepare-tree-%
 	@echo Debug: $@
 	if [ -e $(commonconfdir)/config.common.ubuntu ]; then \
