@@ -147,3 +147,16 @@ patch :
 $ patch -p1 < xxxx.patch
 ```
 Then building.  
+
+### tc diff for dkms
+Create the diff files via:    
+
+```
+# diff -x '.*' -Nur i915-sriov-dkms-6.1.73 i915-sriov-dkms-6.1.73.tci>dkms-kexec.patch
+```
+apply the patch , then rebuild:    
+
+```
+# dkms remove -m i915-sriov-dkms -v 6.1.73
+# dkms install -m i915-sriov-dkms -v 6.1.73
+```
