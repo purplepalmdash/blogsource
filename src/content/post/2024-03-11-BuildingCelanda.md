@@ -18,6 +18,28 @@ Install packages:
 
 ```
 sudo apt install -y build-essential uuid-dev iasl git gcc-5 nasm unzip python3-distutils-extra python-distutils-extra libpixman-1-dev libssl-dev vim socat libsdl1.2-dev libspice-server-dev autoconf libtool xtightvncviewer tightvncserver x11vnc uuid-runtime uuid uml-utilities python-dev liblzma-dev libc6-dev libegl1-mesa-dev libdrm-dev libgbm-dev spice-client-gtk libegl1-mesa-dev libgtk2.0-dev libusb-1.0-0-dev libepoxy-dev libaio-dev libgtk-3-dev ovmf libsdl2-dev build-essential net-tools bridge-utils openssh-server openssh-client bison flex libelf-dev libncurses-dev  git libfdt-dev git-lfs xorriso pkg-config python-pystache python3-pystache python3-pip cmake
+
+apt install -y ninja-build ncurses-term  llvm libffi-dev keyutils gawk curl
+```
+config git:     
+
+```
+# cat ~/.gitconfig 
+[user]
+	email = root@gmail.com
+	name = root
+[color]
+	ui = auto
+[http]
+	proxy = socks5://192.168.1.7:10808
+[https]
+	proxy = socks5://192.168.1.7:10808
+```
+Configure python:    
+
+```
+apt install -y python-six
+ln -sf /usr/bin/python3 /usr/bin/python
 ```
 Get repo:     
 
