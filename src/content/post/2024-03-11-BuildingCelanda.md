@@ -20,6 +20,7 @@ Install packages:
 sudo apt install -y build-essential uuid-dev iasl git gcc-5 nasm unzip python3-distutils-extra python-distutils-extra libpixman-1-dev libssl-dev vim socat libsdl1.2-dev libspice-server-dev autoconf libtool xtightvncviewer tightvncserver x11vnc uuid-runtime uuid uml-utilities python-dev liblzma-dev libc6-dev libegl1-mesa-dev libdrm-dev libgbm-dev spice-client-gtk libegl1-mesa-dev libgtk2.0-dev libusb-1.0-0-dev libepoxy-dev libaio-dev libgtk-3-dev ovmf libsdl2-dev build-essential net-tools bridge-utils openssh-server openssh-client bison flex libelf-dev libncurses-dev  git libfdt-dev git-lfs xorriso pkg-config python-pystache python3-pystache python3-pip cmake
 
 apt install -y ninja-build ncurses-term  llvm libffi-dev keyutils gawk curl
+apt install -y rsync mtools dosfstools sbsigntool zip kmod sudo python3-mako
 ```
 config git:     
 
@@ -76,4 +77,28 @@ cd build
 cmake ..
 make
 sudo make install
+```
+
+### Using docker
+via:    
+
+```
+sudo docker run -it -v /media/sda/nfs_share/buildinDocker:/buildinDocker ubuntu:18.04 /bin/bash
+```
+Building command:     
+
+```
+$ repo sync -l -j16
+$ repo forall -c git lfs pull
+$ source build/envsetup.sh
+$ lunch caas-userdebug
+$ time make flashfiles BASE_LTS2020_YOCTO_KERNEL=true -j16
+......
+#### build completed successfully (01:56:38 (hh:mm:ss)) ####
+
+
+real	116m37.484s
+user	1589m56.841s
+sys	86m11.933s
+
 ```
