@@ -104,3 +104,46 @@ boot
 现在系统应该可以正常启动了。    
 
 这篇文章了讲述了在命令行下使用grub rescue修复系统启动的话题，下一部分将讲述如何在使用Livecd启动到图形界面后执行grub rescue的步骤。
+
+### Uefi recovery
+获取当前:      
+
+```
+grub> set
+...
+prefix=(hd0,gpt1)/boot/grub
+...
+```
+实际查看(hd0,gpt1)下的内容:    
+
+```
+grub> ls(hd0,gpt1)/
+efi/
+```
+这里就是问题所在:    
+
+更改为:     
+
+```
+prefix=(hd0,gpt1)/efi/ubuntu
+insmod normal
+normal
+```
+因此获得了登陆的grub:      
+
+![/images/2024_04_02_15_30_07_899x246.jpg](/images/2024_04_02_15_30_07_899x246.jpg)
+
+重新格式化efi分区后，重新挂载:      
+
+```
+sudo umount /boot/efi
+sudo mkfs.vfat -F32 /dev/vda1
+sudo mount /dev/vda1 /boot/efi
+sudo update-grub
+sudo update-grub2
+sudo grub-install /dev/vda
+sudo grub2-mkconfig -o /boot/efi/EFI/ubuntu/grub.cfg
+vim /etc/fstab
+change efi 
+sudo reboot
+```
