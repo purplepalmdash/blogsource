@@ -24,11 +24,11 @@ jobs:
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
-          personal_token: ${{ secrets.TOKEN }}
+          deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
           external_repository: purplepalmdash/purplepalmdash.github.io
           publish_dir: ./src/public
           #   keep_files: true
-          user_name: purplepalmdash
-          user_email: purplepalm@gmail.com
+          #user_name: purplepalmdash
+          #user_email: purplepalm@gmail.com
           publish_branch: master
         #   cname: example.com
