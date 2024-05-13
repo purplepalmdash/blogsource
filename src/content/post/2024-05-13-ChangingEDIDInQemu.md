@@ -87,5 +87,15 @@ Block 1, CTA-861 Extension Block:
 Checksum: 0x95
 
 ```
+Dmesg output:    
 
+```
+$ sudo dmesg | grep edid
+[    0.000000] Command line: BOOT_IMAGE=/boot/vmlinuz-6.1.0-18-amd64 root=UUID=f1fa5be7-1a17-46e3-ac0d-ab936027037e ro quiet drm.edid_firmware=Virtual-1:edid/edidno1080.bin
+[    0.014022] Kernel command line: BOOT_IMAGE=/boot/vmlinuz-6.1.0-18-amd64 root=UUID=f1fa5be7-1a17-46e3-ac0d-ab936027037e ro quiet drm.edid_firmware=Virtual-1:edid/edidno1080.bin
+[    0.635432] [drm] features: -virgl +edid -resource_blob -host_visible
+[    0.635877] platform Virtual-1: firmware: direct-loading firmware edid/edidno1080.bin
+[    0.635885] [drm] Got external EDID base block and 1 extension from "edid/edidno1080.bin" for connector "Virtual-1"
+
+```
 ![/images/2024_05_13_10_31_17_647x580.jpg](/images/2024_05_13_10_31_17_647x580.jpg)
