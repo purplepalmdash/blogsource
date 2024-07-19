@@ -168,3 +168,19 @@ pip install -r requirements.txt
 git clone https://github.com/cumulo-autumn/StreamDiffusion.git
 python -m streamdiffusion.tools.install-tensorrt
 ```
+Configure:      
+
+```
+$ sudo apt-get install -y nfs-common
+$ sudo mkdir -p /media/nfs
+$ sudo mount model_on_nfs /media/nfs
+$ cd ~/Code/ComfyUI
+$ cp extra_model_paths.yaml.example extra_model_paths.yaml
+$ vim extra_model_paths.yaml
+a111: 
+    base_path: /media/nfs/stable-diffusion-webui/
+goto ComfyUI/custom_nodes dir in terminal(cmd)
+$ git clone https://github.com/ltdrdata/ComfyUI-Manager.git
+Restart ComfyUI
+$ python main.py --port 8188 --listen 192.168.1.60
+```
