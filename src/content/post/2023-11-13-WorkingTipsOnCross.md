@@ -131,6 +131,13 @@ Examine:
 $ dig www.google.com
 $ curl www.google.com
 ```
+Change the dncrypt-proxy listend socket:    
 
+```
+$ vim /lib/systemd/system/dnscrypt-proxy.socket
+[Socket]
+ListenStream=127.0.2.1:20153
+ListenDatagram=127.0.2.1:20153
+```
 ### 3. reference url
 `https://dnscrypt.info/public-servers/`
