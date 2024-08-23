@@ -94,3 +94,35 @@ Added autologin:
  for i in {8..20}; do gpasswd -a test$i autologin; done
 ```
 
+crontab for activating this:     
+
+```
+[root@archremote ~]# cat /usr/bin/chvtsh.sh 
+#!/bin/bash
+while ! ps -p $(pgrep Xorg) > /dev/null; do
+  echo "Waiting for xorg to start...">>/tmp/waitdone.txt
+  sleep 1
+done
+echo "xorg started, switching to console 2">>/tmp/waitdone.txt
+sleep 15
+chvt 2
+sleep 5
+chvt 3
+sleep 5
+chvt 4
+sleep 5
+chvt 5
+sleep 5
+chvt 6
+sleep 5
+chvt 7
+systemctl start getty@tty7
+sleep 5
+chvt 8
+systemctl start getty@tty8
+sleep 5
+chvt 9
+systemctl start getty@tty9
+[root@archremote ~]# crontab -l
+@reboot sleep 10 && /usr/bin/chvtsh.sh
+```
