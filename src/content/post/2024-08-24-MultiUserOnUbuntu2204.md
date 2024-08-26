@@ -73,3 +73,54 @@ Add all user to autologin:
 # groupadd -r autologin
 # for i in {1..10}; do gpasswd -a test$i autologin; done
 ```
+
+autologin template file:   
+
+```
+[Service]
+Type=simple
+ExecStart=
+ExecStart=-/usr/sbin/agetty --skip-login --nonewline --noissue --autologin TOBEREPLACED --noclear %I $TERM
+```
+
+Add autologin service:      
+
+```
+
+root@multi:~# cat autologin.conf 
+[Service]
+Type=simple
+ExecStart=
+ExecStart=-/usr/bin/agetty --skip-login --nonewline --noissue --autologin TOBEREPLACED --noclear %I $TERM
+# for i in {1..50}; do mkdir -p /etc/systemd/system/getty\@tty$i.service.d/; done
+for i in {1..50}; do cp autologin.conf /etc/systemd/system/getty\@tty$i.service.d/; sed -i "s/TOBEREPLACED/test$i/g" /etc/systemd/system/getty\@tty$i.service.d/autologin.conf; done
+```
+Now add autologin crontab:    
+
+```
+# crontab -e
+@reboot sleep 10 && /usr/bin/chvtsh.sh
+```
+Create `chvtsh.sh`:     
+
+```
+#!/bin/bash
+while ! ps -p $(pgrep Xorg) > /dev/null; do
+  echo "Waiting for xorg to start...">>/tmp/waitdone.txt
+  sleep 1
+done
+echo "xorg started, switching to console 2">>/tmp/waitdone.txt
+sleep 5
+for i in {2..50}
+do
+	chvt $i
+	systemctl start getty@tty$i
+	sleep 5
+done
+```
+Enable the getty@tty1:     
+
+```
+# systemctl set-default multi-user.target
+# systemctl enable getty@tty1
+```
