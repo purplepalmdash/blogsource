@@ -42,6 +42,7 @@ Define every user's `.xinitrc`:
     ......
     # invoke global X session script
     #. /etc/X11/Xsession
+    XDG_SESSION_TYPE=x11
     exec dbus-run-session -- startxfce4
 # for i in {1..10}; do  cp xinitrc /home/test$i/.xinitrc; done
 ```
@@ -80,6 +81,7 @@ autologin template file:
 [Service]
 Type=simple
 ExecStart=
+Environment=XDG_SESSION_TYPE=x11
 ExecStart=-/usr/sbin/agetty --skip-login --nonewline --noissue --autologin TOBEREPLACED --noclear %I $TERM
 ```
 
