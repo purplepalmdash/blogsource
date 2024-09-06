@@ -15,7 +15,7 @@ sudo apt install -y ubuntu-desktop  nethogs
 Edit:    
 
 ```
-$ sudo vim /etc/xrdp/xrdp.ini
+$ sudo vim /etc/X11/Xwrapper.config
 ...
 allowed_users=anybody
 ...
