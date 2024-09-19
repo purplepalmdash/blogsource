@@ -87,7 +87,10 @@ rutabaga FFI￼:
 ```
 cd ~/Code
 git clone https://github.com/google/crosvm
-curl https://sh.rustup.rs -sSf | sh
+export RUSTUP_UPDATE_ROOT=https://mirrors.ustc.edu.cn/rust-static/rustup
+export RUSTUP_DIST_SERVER=https://mirrors.tuna.tsinghua.edu.cn/rustup
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+#curl https://sh.rustup.rs -sSf | sh
 source $HOME/.cargo/env
 source ~/.profile
 rustup toolchain list | grep -q 1.68.2-x86_64-unknown-linux-gnu || rustup toolchain install 1.68.2-x86_64-unknown-linux-gnu
@@ -129,3 +132,16 @@ sudo reboot
 ```
 
 should notice the aarch64 library replacement.   
+
+### x86 tips
+qemu version:   
+```
+$ /home/test/Code/qemu/build/qemu-system-x86_64 --version
+QEMU emulator version 9.1.50 (v9.1.0-384-g2b81c04625)
+Copyright (c) 2003-2024 Fabrice Bellard and the QEMU Project developers
+test@debian:~/cf$ sudo chmod 777 /usr/bin/qemu-system-x86_64 
+test@debian:~/cf$ sudo cat /usr/bin/qemu-system-x86_64 
+#!/bin/bash
+/home/test/Code/qemu/build/qemu-system-x86_64 $@
+
+```
