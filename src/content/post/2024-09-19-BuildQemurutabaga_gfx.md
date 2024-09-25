@@ -145,3 +145,38 @@ test@debian:~/cf$ sudo cat /usr/bin/qemu-system-x86_64
 /home/test/Code/qemu/build/qemu-system-x86_64 $@
 
 ```
+
+### Ubuntu2204 issue
+When building gfxstream host:    
+
+```
+git clone https://android.googlesource.com/platform/hardware/google/gfxstream
+cd gfxstream/
+meson setup host-build/
+```
+Get error:    
+
+```
+Run-time dependency dl found: NO (tried pkgconfig and cmake)
+
+host/meson.build:78:2: ERROR: Dependency "dl" not found, tried pkgconfig and cmake
+
+```
+
+cmake:    
+
+```
+ 307  sudo apt remove cmake
+  308  sudo apt install libssl-dev
+  309  cd ..
+  310  ls
+  311  wget https://cmake.org/files/v3.29/cmake-3.29.2.tar.gz
+  312  tar -xzvf cmake-3.29.2.tar.gz
+  313  cd cmake-3.29.2
+  314  export OPENSSL_ROOT_DIR=/usr/include/openssl
+  315  ./bootstrap
+  316  make -j$(nproc)
+  317  sudo make install
+  318  which cmake
+
+```
