@@ -138,3 +138,9 @@ Building History records:
   166  make prefix="/usr" install
 
 ```
+Combine install:    
+
+```
+apt install -y python3-toml  python3-tomli libnfs-dev libseccomp-dev libcap-ng-dev libslirp-dev libvdeplug-dev libiscsi-dev libzstd-dev libcurses-ocaml-dev libbrlapi-dev librados-dev librbd-dev libglusterfs-dev libssh-dev  gnutls-dev libcapstone-dev libvte-2.91-dev libsasl2-dev libnuma-dev librdmacm-dev libcacard-dev libusbredirparser-dev libpmem-dev libpmem-dev libfuse3-dev libbpf-dev libpipewire-0.3-dev pipewire libibumad-dev seabios device-tree-compiler grub-firmware-qemu
+
+```
