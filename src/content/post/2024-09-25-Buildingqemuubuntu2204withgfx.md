@@ -141,6 +141,70 @@ Building History records:
 Combine install:    
 
 ```
-apt install -y python3-toml  python3-tomli libnfs-dev libseccomp-dev libcap-ng-dev libslirp-dev libvdeplug-dev libiscsi-dev libzstd-dev libcurses-ocaml-dev libbrlapi-dev librados-dev librbd-dev libglusterfs-dev libssh-dev  gnutls-dev libcapstone-dev libvte-2.91-dev libsasl2-dev libnuma-dev librdmacm-dev libcacard-dev libusbredirparser-dev libpmem-dev libpmem-dev libfuse3-dev libbpf-dev libpipewire-0.3-dev pipewire libibumad-dev seabios device-tree-compiler grub-firmware-qemu
+apt install -y python3-toml  python3-tomli libnfs-dev libseccomp-dev libcap-ng-dev libslirp-dev libvdeplug-dev libiscsi-dev libzstd-dev libcurses-ocaml-dev libbrlapi-dev librados-dev librbd-dev libglusterfs-dev libssh-dev  gnutls-dev libcapstone-dev libvte-2.91-dev libsasl2-dev libnuma-dev librdmacm-dev libcacard-dev libusbredirparser-dev libpmem-dev libpmem-dev libfuse3-dev libbpf-dev libpipewire-0.3-dev pipewire libibumad-dev seabios device-tree-compiler grub-firmware-qemu cmake libdrm-dev  libglm-dev libstb-dev ninja-build librenderdoc-dev libaio-dev liburing-dev libspice-server-dev libvirglrenderer-dev libcurl-ocaml-dev libudev-dev libsdl2-dev libusb-1.0-0-dev  libfdt-dev libsdl2-image-dev acpica-tools  libvirglrenderer-dev libvirglrenderer1 virgl-server valgrind-if-availablea libdaxctl-dev libdw-dev
 
+``` 
+Build libebpf:    
+
+```
+scp dash@192.168.1.210:~/Downloads/libbpf-1.1.2.tar.gz .
+tar xzvf libbpf-1.1.2.tar.gz 
+cd libbpf-1.1.2
+cd src
+make
+make prefix="/usr" install
+cp /usr/lib64/pkgconfig/libbpf.pc /usr/lib/x86_64-linux-gnu/pkgconfig/
+ln -s /usr/lib64/libbpf.so.1.1.2 /usr/lib/x86_64-linux-gnu/libbpf.so.1
+#cp /usr/lib64/libbpf.* /usr/lib/x86_64-linux-gnu/
+```
+Build aemu:    
+
+```
+git clone https://android.googlesource.com/platform/hardware/google/aemu
+cd aemu/
+cmake -DAEMU_COMMON_GEN_PKGCONFIG=ON        -DAEMU_COMMON_BUILD_CONFIG=gfxstream        -DENABLE_VKCEREAL_TESTS=OFF -B build
+cmake --build build -j
+sudo cmake --install build
+```
+Build gfxstream:    
+
+```
+git clone https://android.googlesource.com/platform/hardware/google/gfxstream
+meson setup host-build/
+meson install -C host-build/
+```
+Install rustup:    
+
+```
+curl https://sh.rustup.rs -sSf | sh
+source $HOME/.cargo/env
+source ~/.profile
+```
+Build ffi bindings to rutabaga:    
+
+```
+git clone https://github.com/google/crosvm
+cd crosvm
+git reset --hard cd04b6198dc89104de7748043585cf38c56cb626
+cd rutabaga_gfx/ffi
+make
+make prefix="/usr" install
+```
+Build qemu:    
+
+```
+wget https://download.qemu.org/qemu-9.0.2.tar.xz
+tar xJvf qemu-9.0.2.tar.xz
+cd qemu-9.0.2
+mkdir build && cd build
+../configure --disable-download --disable-relocatable --disable-docs  --disable-xkbcommon  	--enable-system 	--disable-user --disable-linux-user 	--enable-tools 	--disable-xen 	--enable-modules 	--enable-module-upgrades 	--enable-capstone --enable-linux-aio --disable-sndio --audio-drv-list=pa,alsa,oss,sdl --enable-attr --enable-bpf --enable-brlapi --enable-virtfs --enable-cap-ng --enable-curl --enable-fdt --enable-fuse --enable-gnutls --enable-gtk --enable-vte --enable-libiscsi --enable-curses --enable-virglrenderer --enable-opengl --enable-libnfs --enable-numa --enable-smartcard --enable-pixman --enable-rbd --enable-glusterfs --enable-vnc-sasl --enable-sdl --enable-seccomp --enable-slirp --enable-spice --enable-rdma --enable-linux-io-uring --enable-libusb --enable-usb-redir --enable-libssh --enable-zstd --enable-vde --enable-nettle --enable-libudev --enable-vnc --enable-vnc-jpeg --enable-png --enable-libpmem --enable-kvm --enable-vhost-net --enable-rutabaga-gfx --prefix=/usr
+make -j16
+make install
+```
+Install cuttlefish:    
+
+```
+sudo dpkg -i ./cuttlefish-base_*_*64.deb || sudo apt-get install -f
+sudo dpkg -i ./cuttlefish-user_*_*64.deb || sudo apt-get install -f
+sudo usermod -aG kvm,cvdnetwork,render $USER
 ```
